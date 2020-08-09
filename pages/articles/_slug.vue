@@ -16,10 +16,8 @@
 
 <script lang="ts">
 export default {
-  async asyncData(
-    { $content }: { $content: any },
-    { params }: { params: any }
-  ) {
+  //@ts-ignore
+  async asyncData({ $content, params }) {
     const articles = await $content("articles", params.slug || "index").fetch();
     return { articles };
   },
