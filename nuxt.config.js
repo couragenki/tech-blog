@@ -33,7 +33,7 @@ export default {
   generate: {
     async routes() {
       const { $content } = require('@nuxt/content')
-      const files = await $content('news' || 'index').fetch()
+      const files = await $content('articles' || 'index').fetch()
 
       return files.map(file => file.path === '/index' ? '/' : file.path)
     }
