@@ -6,8 +6,6 @@
     <img src="/img/sample.jpg" />
     <!-- assets -->
     <img src="~/assets/img/sample.jpg" />
-
-    <n-link to="articles">articles</n-link>
   </div>
 </template>
 
