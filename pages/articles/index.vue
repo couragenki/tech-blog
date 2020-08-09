@@ -8,7 +8,7 @@
 
 <script lang="ts">
 export default {
-  async asyncData({ $content, params: { params: any } }) {
+  async asyncData({ $content }: { $content: any }) {
     const query = await $content("articles" || "index").limit(15);
     const articles = await query.fetch();
     return { articles };
