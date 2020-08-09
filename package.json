@@ -10,7 +10,7 @@
     "@nuxt/content": "^1.6.0",
     "@nuxt/typescript-runtime": "latest",
     "csvtojson": "^2.0.10",
-    "nuxt": "latest"
+    "nuxt": "^2.14.1"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "latest",
