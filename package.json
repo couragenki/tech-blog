@@ -7,13 +7,16 @@
     "lint": "eslint --ext .ts,.js,.vue ."
   },
   "dependencies": {
+    "@nuxt/content": "^1.6.0",
     "@nuxt/typescript-runtime": "latest",
+    "csvtojson": "^2.0.10",
     "nuxt": "latest"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "latest",
     "@nuxtjs/eslint-config-typescript": "^2.0.0",
     "eslint": "^7.2.0",
+    "globby": "^11.0.1",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2"
   }
