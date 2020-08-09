@@ -1,4 +1,7 @@
 export default {
+  modules: [
+    '@nuxt/content'
+  ],
   buildModules: [
     ['@nuxt/typescript-build', {
       typeCheck: true,
@@ -25,6 +28,14 @@ export default {
     },
     tsx: {
       silent: true
+    }
+  },
+  generate: {
+    async routes() {
+      const { $content } = require('@nuxt/content')
+      const files = await $content('news' || 'index').fetch()
+
+      return files.map(file => file.path === '/index' ? '/' : file.path)
     }
   }
 }
