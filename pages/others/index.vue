@@ -1,18 +1,44 @@
 <template>
   <div>
-    <div v-for="n in others" :key="n.slug">
-      <nuxt-link :to="'/others/'+ n.slug">{{n.title}} {{n.date}}</nuxt-link>
-    </div>
+    <nuxt-link to="/">Home</nuxt-link>
+    <h2>Nuxt.js Blog</h2>
+
+    <input id="search" v-model="q" placeholder="Search..." />
+
+    <ul>
+      <li v-for="article in others" :key="article.slug">
+        <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
+      </li>
+    </ul>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
-  //@ts-ignore
-  async asyncData({ $content }: { $content: any }) {
-    const query = await $content("others" || "index").limit(15);
+  watchQuery: true,
+  async asyncData({ $content, route }) {
+    const q = route.query.q;
+
+    let query = $content("others", { deep: true }).sortBy("date", "desc");
+
+    if (q) {
+      query = query.search(q);
+      // タイトル検索 query = query.search('title', q)
+    }
+
     const others = await query.fetch();
-    return { others };
+
+    return {
+      q,
+      others,
+    };
+  },
+  watch: {
+    q() {
+      this.$router
+        .replace({ query: this.q ? { q: this.q } : undefined })
+        .catch(() => {});
+    },
   },
 };
 </script>
