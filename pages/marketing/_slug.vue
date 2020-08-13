@@ -1,28 +1,45 @@
 <template>
-  <article>
-    <h1>{{marketing.title}}</h1>
-    <dl>
-      <dt>date</dt>
-      <dd>{{marketing.date}}</dd>
-    </dl>
-    <div>
-      <img :src="marketing.image" />
-    </div>
-    <div v-for="tag in marketing.tags" :key="tag">{{tag}}</div>
+  <div>
+    <nuxt-link to="/marketing">Articles</nuxt-link>
+    <h2>{{ article.title }}</h2>
+    <p>{{ article.description }}</p>
 
-    <nuxt-content :document="marketing" />
-  </article>
+    <!-- <nuxt-content :document="article" /> -->
+
+    <nuxt-link
+      v-if="prev"
+      :to="{ name: 'articles-slug', params: { slug: prev.slug } }"
+    >&lt; {{ prev.title }}</nuxt-link>&nbsp;|
+    <br />
+    <nuxt-link
+      v-if="next"
+      :to="{ name: 'articles-slug', params: { slug: next.slug } }"
+    >{{ next.title }} &gt;</nuxt-link>
+  </div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
-  //@ts-ignore
-  async asyncData({ $content, params }) {
-    const marketing = await $content(
-      "marketing",
-      params.slug || "index"
-    ).fetch();
-    return { marketing };
+  async asyncData({ $content, params, error }) {
+    let article;
+
+    try {
+      article = await $content("marketing", params.slug).fetch();
+    } catch (e) {
+      error({ message: "marketing-data not found" });
+    }
+
+    const [prev, next] = await $content("marketing")
+      .only(["title", "slug"])
+      .sortBy("date", "desc")
+      .surround(params.slug)
+      .fetch();
+
+    return {
+      article,
+      prev,
+      next,
+    };
   },
 };
 </script>
