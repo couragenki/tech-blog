@@ -6,12 +6,13 @@
 
 <script lang="ts">
 export default {
-  layout: "default"
+  layout: "default",
 };
 </script>
 
 <style>
-body {
+body,
+ul {
   margin: 0;
   padding: 0;
 }

@@ -13,6 +13,6 @@ export default {
 header {
   width: 100%;
   height: 100px;
-  background: #ffcd70;
+  background: #ec9900;
 }
 </style>

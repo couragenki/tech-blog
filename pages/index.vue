@@ -1,25 +1,26 @@
 <template>
   <div>
     <Header />
+    <Navigation />
     <h2>TOP PAGE</h2>
     <!-- static -->
     <img src="/img/sample.jpg" />
     <!-- assets -->
     <img src="~/assets/img/sample.jpg" />
-
-    <n-link to="tech">tech</n-link>
-    <n-link to="books">books</n-link>
-    <n-link to="marketing">marketing</n-link>
-    <n-link to="others">others</n-link>
+    <Footer />
   </div>
 </template>
 
 <script lang="ts">
 import Header from "@/components/Organisms/header.vue";
+import Navigation from "@/components/Organisms/navigation.vue";
+import Footer from "@/components/Organisms/footer.vue";
 
 export default {
   components: {
     Header,
+    Navigation,
+    Footer,
   },
 };
 </script>
