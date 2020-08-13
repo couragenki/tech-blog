@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nuxt-link to="/tech">tech</nuxt-link>
+    <nuxt-link to="/frontend">frontend</nuxt-link>
     <h2>{{ article.title }}</h2>
     <nuxt-content :document="article" />
   </div>
@@ -14,9 +14,9 @@ export default {
     let article;
 
     try {
-      article = await $content("tech", catergory, family, slug).fetch();
+      article = await $content("frontend", catergory, family, slug).fetch();
     } catch (e) {
-      error({ message: "family-data not found" });
+      error({ message: "frontend-family-data not found" });
     }
 
     return {
