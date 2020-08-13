@@ -7,7 +7,10 @@
     <!-- assets -->
     <img src="~/assets/img/sample.jpg" />
 
-    <n-link to="articles">articles</n-link>
+    <n-link to="tech">tech</n-link>
+    <n-link to="books">books</n-link>
+    <n-link to="marketing">marketing</n-link>
+    <n-link to="others">others</n-link>
   </div>
 </template>
 
