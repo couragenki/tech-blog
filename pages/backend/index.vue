@@ -6,7 +6,7 @@
     <input id="search" v-model="q" placeholder="Search..." />
 
     <ul>
-      <li v-for="article in tech" :key="article.slug">
+      <li v-for="article in backend" :key="article.slug">
         <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
       </li>
     </ul>
@@ -19,18 +19,18 @@ export default {
   async asyncData({ $content, route }) {
     const q = route.query.q;
 
-    let query = $content("tech", { deep: true }).sortBy("date", "desc");
+    let query = $content("backend", { deep: true }).sortBy("date", "desc");
 
     if (q) {
       query = query.search(q);
       // タイトル検索 query = query.search('title', q)
     }
 
-    const tech = await query.fetch();
+    const backend = await query.fetch();
 
     return {
       q,
-      tech,
+      backend,
     };
   },
   watch: {

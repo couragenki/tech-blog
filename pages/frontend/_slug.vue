@@ -24,12 +24,12 @@ export default {
     let article;
 
     try {
-      article = await $content("tech", params.slug).fetch();
+      article = await $content("frontend", params.slug).fetch();
     } catch (e) {
-      error({ message: "tech-data not found" });
+      error({ message: "frontend-data not found" });
     }
 
-    const [prev, next] = await $content("tech")
+    const [prev, next] = await $content("frontend")
       .only(["title", "slug"])
       .sortBy("date", "desc")
       .surround(params.slug)
