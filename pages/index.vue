@@ -1,18 +1,18 @@
 <template>
   <DefaultTemplate>
     <h2>TOP PAGE</h2>
-      <!-- static -->
-      <img src="/img/sample.jpg" />
-      <!-- assets -->
-      <img src="~/assets/img/sample.jpg" />
+    <h3>新着記事</h3>
+    <BlogCrad />
   </DefaultTemplate>
 </template>
 
 <script lang="ts">
 import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
+import BlogCrad from "@/components/Molecules/blogcard.vue";
 export default {
   components: {
     DefaultTemplate,
+    BlogCrad,
   },
 };
 </script>
