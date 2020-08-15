@@ -96,7 +96,7 @@ export default {
   background: #ffdb99;
   &__list {
     width: auto;
-    max-width: 1024px;
+    max-width: 1200px;
     margin: 0 auto;
     list-style: none;
     padding: 0 16px;
