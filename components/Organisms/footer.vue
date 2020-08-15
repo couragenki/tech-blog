@@ -14,7 +14,9 @@
       </div>
       <div class="footer__container__clum">
         <ul>
-          <li>利用規約</li>
+          <n-link to="/policy">
+            <li>プライバシーポリシー</li>
+          </n-link>
           <li>お問い合わせ</li>
         </ul>
       </div>
