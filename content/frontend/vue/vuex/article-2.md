@@ -1,7 +1,7 @@
 ---
-title: Introduction
+title: Vuexについて[2]
 description: Learn how to use @nuxt/content.
-tags: 
+tags:
   - test1
   - test2
 ---

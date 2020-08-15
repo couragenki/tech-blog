@@ -1,6 +1,7 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
     <nuxt-link to="/frontend">frontend</nuxt-link>
+    ファミリースラッグ
     <h2>{{ article.title }}</h2>
     <nuxt-content :document="article" />
   </DefaultTemplate>
@@ -12,13 +13,13 @@ export default {
   components: {
     DefaultTemplate,
   },
-  async asyncData({ $content, params, error }) {
+  async asyncData({ $content, params, route, error }) {
     const { catergory, family, slug } = params;
 
     let article;
 
     try {
-      article = await $content("frontend", catergory, family, slug).fetch();
+      article = await $content('frontend', catergory, family, slug).fetch();
     } catch (e) {
       error({ message: "frontend-family-data not found" });
     }

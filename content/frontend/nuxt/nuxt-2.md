@@ -1,5 +1,5 @@
 ---
-title: Nuxtルーティングについて[1]
+title: Nuxtについて２
 description: Learn how to use @nuxt/content.
 tags:
   - test1

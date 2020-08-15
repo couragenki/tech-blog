@@ -1,6 +1,8 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link to="/articles">Articles</nuxt-link>
+    カテゴリースラッグ
+    {{this.$route.path}}
+    <nuxt-link to="/frontend">frontend</nuxt-link>
     <h2>{{ article.title }}</h2>
     <p>{{ article.description }}</p>
 
@@ -27,7 +29,7 @@ export default {
   created(){
     console.log(this.$route.path)
   },
-  async asyncData({ $content, params, error, route }) {
+  async asyncData({ $content, params, route, error }) {
     let article;
     let path = route.path
 

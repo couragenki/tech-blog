@@ -1,5 +1,5 @@
 ---
-title: Nuxtルーティングについて[1]
+title: フロントエンドについて１
 description: Learn how to use @nuxt/content.
 tags:
   - test1

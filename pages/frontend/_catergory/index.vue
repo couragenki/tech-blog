@@ -1,6 +1,7 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
     <nuxt-link to="/">Home</nuxt-link>
+    カテゴリーページ
     <h2>Nuxt.js Blog</h2>
 
     <input id="search" v-model="q" placeholder="Search..." />
@@ -26,7 +27,7 @@ export default {
   async asyncData({ $content, route }) {
     const q = route.query.q;
 
-    let query = $content("/frontend", { deep: true }).sortBy("date", "desc");
+    let query = $content('frontend', { deep: true }).sortBy("date", "desc");
 
     if (q) {
       query = query.search(q);

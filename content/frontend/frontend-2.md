@@ -1,7 +1,7 @@
 ---
-title: Introduction
+title: フロントエンドについて２
 description: Learn how to use @nuxt/content.
-tags: 
+tags:
   - test1
   - test2
 ---
