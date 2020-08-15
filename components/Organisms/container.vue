@@ -1,14 +1,21 @@
 <template>
   <div class="wrapper">
-    <div class="container" :class="{ PostStyle: isPostsPage }">
-      <slot />
+    <div class="container">
+      <div class="content" :class="{ PostStyle: isPostsPage }">
+        <slot />
+      </div>
+      <SideBar />
     </div>
   </div>
 </template>
 
 <script>
+import SideBar from "@/components/Organisms/sidebar.vue";
 export default {
   name: "Container",
+  components: {
+    SideBar
+  },
   props:{
     isPostsPage: {
       type: Boolean,
@@ -24,15 +31,24 @@ export default {
   padding: 0 16px;
   .container {
     width: 100%;
-    max-width: 1024px;
+    max-width: 1200px;
+    display: flex;
     margin: 0 auto;
-    min-height: 400px;
+    .content {
+      width:  calc(100% - 300px);
+      min-height: 400px;
+    }
   }
+
 }
 @media (max-width: 768px) {
   .wrapper {
-    width: auto;
-    padding: 0 16px;
+    .container {
+      display: block;
+      .content {
+        width: 100%;
+      }
+    }
   }
 }
 @media (max-width: 320px) {

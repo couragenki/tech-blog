@@ -19,7 +19,7 @@ export default {
   background: #ffcd70;
   &__title {
     width: 100%;
-    max-width: 1024px;
+    max-width: 1200px;
     margin: 0 auto;
     font-size: 32px;
     padding: 16px 0;
