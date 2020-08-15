@@ -1,6 +1,8 @@
 <template>
   <header class="header">
-    <div>ブログタイトル</div>
+    <div class="header__title">
+      <p class="header__title__text">ブログタイトル</p>
+    </div>
   </header>
 </template>
 
@@ -10,9 +12,18 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-header {
+.header {
   width: 100%;
-  height: 100px;
   background: #ffcd70;
+  &__title {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    font-size: 32px;
+    padding: 16px 0;
+    &__text {
+      padding-left: 16px;
+    }
+  }
 }
 </style>

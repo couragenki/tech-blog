@@ -80,30 +80,29 @@ export default {
   width: 100%;
   background: #ffdb99;
   &__list {
-    width: 80%;
+    width: 100%;
+    max-width: 1024px;
     margin: 0 auto;
     list-style: none;
-    text-align: center;
     &__item {
       position: relative;
-      width: 200px;
-      padding: 1em;
+      padding: 16px;
       display: inline-block;
       a {
-        font-size: 1.5em;
+        font-size: 0.8em;
         font-weight: bold;
         color: #716666;
         text-decoration-line: none;
       }
       &::after {
         content: "▼";
+        font-size: 0.6em;
         color: #716666;
       }
       .hide {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
         height: auto;
         color: #ffffff;
         background-color: #384878;
@@ -111,11 +110,12 @@ export default {
         animation: fadeIn 1s ease 0s 1 normal;
         -webkit-animation: fadeIn 1s ease 0s 1 normal;
         ul {
-          padding: 3em 1em 1em 3em;
+          width: 120px;
+          padding: 1em;
           list-style: none;
           text-align: left;
           li {
-            padding-bottom: 1em;
+            padding-bottom: 16px;
             a {
               color: #fff;
             }
@@ -147,5 +147,13 @@ export default {
   100% {
     opacity: 1;
   }
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
 }
 </style>

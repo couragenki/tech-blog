@@ -12,6 +12,7 @@ export default {
 
 <style>
 body,
+p,
 ul {
   margin: 0;
   padding: 0;
