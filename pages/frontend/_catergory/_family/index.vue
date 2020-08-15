@@ -13,10 +13,6 @@ export default {
   components: {
     DefaultTemplate,
   },
-  beforeCreate(){
-    console.error('testtest')
-    console.log(this.$route)
-  },
   watchQuery: true,
   async asyncData({ $content, route, params }) {
     const { catergory, family } = params;

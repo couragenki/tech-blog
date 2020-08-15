@@ -1,8 +1,10 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
     <nuxt-link to="/">Home</nuxt-link>
-    <h2>Nuxt.js Blog</h2>
-
+    <h2>フロントエンド INDEX</h2>
+    <p>
+      フロントエンドに関する記事をまとめています
+    </p>
     <input id="search" v-model="q" placeholder="Search..." />
 
     <ul>

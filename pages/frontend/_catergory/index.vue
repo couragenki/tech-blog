@@ -1,8 +1,7 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link to="/">Home</nuxt-link>
-    カテゴリーページ
-    <h2>Nuxt.js Blog</h2>
+    <nuxt-link to="/frontend">frontendへ戻る</nuxt-link>
+    <h2>frontend/直下</h2>
 
     <input id="search" v-model="q" placeholder="Search..." />
 
@@ -11,6 +10,8 @@
         <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
       </li>
     </ul>
+
+    <nuxt-content :document="frontend" />
   </DefaultTemplate>
 </template>
 
