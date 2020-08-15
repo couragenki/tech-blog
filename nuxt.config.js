@@ -30,4 +30,9 @@ export default {
       silent: true
     }
   },
+  styleResources: {
+    scss: [
+      './assets/styles/_variables.scss'
+    ]
+  },
 }
