@@ -1,26 +1,18 @@
 <template>
-  <div>
-    <Header />
-    <Navigation />
+  <DefaultTemplate>
     <h2>TOP PAGE</h2>
-    <!-- static -->
-    <img src="/img/sample.jpg" />
-    <!-- assets -->
-    <img src="~/assets/img/sample.jpg" />
-    <Footer />
-  </div>
+      <!-- static -->
+      <img src="/img/sample.jpg" />
+      <!-- assets -->
+      <img src="~/assets/img/sample.jpg" />
+  </DefaultTemplate>
 </template>
 
 <script lang="ts">
-import Header from "@/components/Organisms/header.vue";
-import Navigation from "@/components/Organisms/navigation.vue";
-import Footer from "@/components/Organisms/footer.vue";
-
+import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
 export default {
   components: {
-    Header,
-    Navigation,
-    Footer,
+    DefaultTemplate,
   },
 };
 </script>

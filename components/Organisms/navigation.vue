@@ -80,13 +80,14 @@ export default {
   width: 100%;
   background: #ffdb99;
   &__list {
-    width: 100%;
+    width: auto;
     max-width: 1024px;
     margin: 0 auto;
     list-style: none;
+    padding: 0 16px;
     &__item {
       position: relative;
-      padding: 16px;
+      padding: 16px 16px 16px 0;
       display: inline-block;
       a {
         font-size: 0.8em;

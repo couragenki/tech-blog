@@ -21,9 +21,16 @@ export default {
     margin: 0 auto;
     font-size: 32px;
     padding: 16px 0;
-    &__text {
-      padding-left: 16px;
-    }
+  }
+}
+@media (max-width: 768px) {
+  .header__title__text {
+    padding: 0 16px;
+  }
+}
+@media (max-width: 320px) {
+  .header__title__text {
+    padding: 0 16px;
   }
 }
 </style>
