@@ -1,8 +1,8 @@
 <template>
-  <div v-cloak>
+  <div>
     <Header />
     <Navigation />
-    <Container>
+    <Container :isPostsPage="isPostsPage" >
       <slot />
     </Container>
     <Footer />
@@ -22,10 +22,15 @@ export default {
     Container,
     Footer,
   },
+  props:{
+    isPostsPage: {
+      type: Boolean,
+      default: () => { return false }
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
-
 @media (max-width: 768px) {
   .navigation {
     display: none;

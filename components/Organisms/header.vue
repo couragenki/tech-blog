@@ -1,7 +1,9 @@
 <template>
   <header class="header">
     <div class="header__title">
-      <p class="header__title__text">ブログタイトル</p>
+      <n-link to="/">
+        <p class="header__title__text">ブログタイトル</p>
+      </n-link>
     </div>
   </header>
 </template>
@@ -21,6 +23,13 @@ export default {
     margin: 0 auto;
     font-size: 32px;
     padding: 16px 0;
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+    &__text:hover{
+      color: darkgray;
+    }
   }
 }
 @media (max-width: 768px) {

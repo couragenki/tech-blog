@@ -6,10 +6,13 @@
         <div class="hide">
           <ul>
             <li>
-              <n-link to="frontend/react">React.js</n-link>
+              <n-link to="frontend">フロントエンド</n-link>
             </li>
             <li>
-              <n-link to="frontend/vue">Vue.js</n-link>
+              <n-link to="frontend/react">> React.js</n-link>
+            </li>
+            <li>
+              <n-link to="frontend/vue">> Vue.js</n-link>
             </li>
           </ul>
         </div>
@@ -19,10 +22,13 @@
         <div class="hide">
           <ul>
             <li>
-              <n-link to="php">php</n-link>
+              <n-link to="backend">バックエンド</n-link>
             </li>
             <li>
-              <n-link to="python">python</n-link>
+              <n-link to="php">> php</n-link>
+            </li>
+            <li>
+              <n-link to="python">> python</n-link>
             </li>
           </ul>
         </div>
@@ -32,10 +38,13 @@
         <div class="hide">
           <ul>
             <li>
-              <n-link to="books/business">ビジネス書</n-link>
+              <n-link to="books">本・読書</n-link>
             </li>
             <li>
-              <n-link to="books/novel">小説</n-link>
+              <n-link to="books/business">> ビジネス書</n-link>
+            </li>
+            <li>
+              <n-link to="books/novel">> 小説</n-link>
             </li>
           </ul>
         </div>
@@ -45,10 +54,13 @@
         <div class="hide">
           <ul>
             <li>
-              <n-link to="marketing/web">Webマーケ</n-link>
+              <n-link to="marketing">マーケティング</n-link>
             </li>
             <li>
-              <n-link to="marketing/sns">SNSマーケ</n-link>
+              <n-link to="marketing/web">> Webマーケ</n-link>
+            </li>
+            <li>
+              <n-link to="marketing/sns">> SNSマーケ</n-link>
             </li>
           </ul>
         </div>
@@ -58,10 +70,13 @@
         <div class="hide">
           <ul>
             <li>
-              <n-link to="others/notes">雑記</n-link>
+              <n-link to="others">その他</n-link>
             </li>
             <li>
-              <n-link to="others/word">名言</n-link>
+              <n-link to="others/notes">> 雑記</n-link>
+            </li>
+            <li>
+              <n-link to="others/word">> 名言</n-link>
             </li>
           </ul>
         </div>
@@ -106,10 +121,11 @@ export default {
         left: 0;
         height: auto;
         color: #ffffff;
-        background-color: #384878;
+        background-color: cornflowerblue;
         display: none;
         animation: fadeIn 1s ease 0s 1 normal;
         -webkit-animation: fadeIn 1s ease 0s 1 normal;
+        z-index: 999;
         ul {
           width: 120px;
           padding: 1em;
@@ -120,6 +136,10 @@ export default {
             a {
               color: #fff;
             }
+          }
+          li:hover {
+            color: darkgray;
+            opacity: 0.7;
           }
         }
       }

@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <div class="container">
+    <div class="container" :class="{ PostStyle: isPostsPage }">
       <slot />
     </div>
   </div>
@@ -9,9 +9,16 @@
 <script>
 export default {
   name: "Container",
+  props:{
+    isPostsPage: {
+      type: Boolean,
+      default: () => { return false }
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
+@import "@/assets/styles/_poststyle.scss";
 .wrapper {
   width: auto;
   padding: 0 16px;
