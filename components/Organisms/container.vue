@@ -34,6 +34,7 @@ export default {
     max-width: 1200px;
     display: flex;
     margin: 0 auto;
+    padding: 40px 0 80px;
     .content {
       width:  calc(100% - 300px);
       min-height: 400px;
@@ -45,8 +46,10 @@ export default {
   .wrapper {
     .container {
       display: block;
+      padding: 20px 0 30px;
       .content {
         width: 100%;
+        padding-bottom: 30px;
       }
     }
   }
