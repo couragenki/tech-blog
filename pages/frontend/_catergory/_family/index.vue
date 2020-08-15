@@ -1,10 +1,10 @@
 <template>
   <div>
-    <nuxt-link to="/tech">tech</nuxt-link>
+    <nuxt-link to="/frontend">frontend</nuxt-link>
     <h2>{{ catergory }}/{{ family }}</h2>
 
     <ul>
-      <li v-for="article in tech" :key="article.slug">
+      <li v-for="article in frontend" :key="article.slug">
         <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
       </li>
     </ul>
@@ -17,12 +17,12 @@ export default {
   async asyncData({ $content, route, params }) {
     const { catergory, family } = params;
 
-    const tech = await $content("tech", catergory, family)
+    const frontend = await $content("frontend", catergory, family)
       .sortBy("date", "desc")
       .fetch();
 
     return {
-      tech,
+      frontend,
       catergory,
       family,
     };
