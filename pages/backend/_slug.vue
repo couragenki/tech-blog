@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <DefaultTemplate :isPostsPage="true">
     <nuxt-link to="/backend">backend</nuxt-link>
     <h2>{{ article.title }}</h2>
     <p>{{ article.description }}</p>
@@ -15,11 +15,15 @@
       v-if="next"
       :to="{ name: 'articles-slug', params: { slug: next.slug } }"
     >{{ next.title }} &gt;</nuxt-link>
-  </div>
+  </DefaultTemplate>
 </template>
 
 <script>
+import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
 export default {
+  components: {
+    DefaultTemplate,
+  },
   async asyncData({ $content, params, error }) {
     let article;
 

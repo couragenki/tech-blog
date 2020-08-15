@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <DefaultTemplate :isPostsPage="true">
     <nuxt-link to="/">Home</nuxt-link>
     <h2>Nuxt.js Blog</h2>
 
@@ -10,11 +10,15 @@
         <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
       </li>
     </ul>
-  </div>
+  </DefaultTemplate>
 </template>
 
 <script>
+import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
 export default {
+  components: {
+    DefaultTemplate,
+  },
   watchQuery: true,
   async asyncData({ $content, route }) {
     const q = route.query.q;
