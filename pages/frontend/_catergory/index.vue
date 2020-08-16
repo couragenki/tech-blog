@@ -1,17 +1,16 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
     <nuxt-link to="/frontend">frontendへ戻る</nuxt-link>
-    <h2>frontend/直下</h2>
+    <h2>カテゴリーINDEX</h2>
+    <nuxt-content :document="article" />
 
     <input id="search" v-model="q" placeholder="Search..." />
-
     <ul>
       <li v-for="article in frontend" :key="article.slug">
         <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
       </li>
     </ul>
 
-    <nuxt-content :document="frontend" />
   </DefaultTemplate>
 </template>
 
@@ -25,8 +24,9 @@ export default {
     console.log(this.$route.path)
   },
   watchQuery: true,
-  async asyncData({ $content, route }) {
+  async asyncData({ $content, route, params }) {
     const q = route.query.q;
+    const { catergory, family, slug } = params;
 
     let query = $content('frontend', { deep: true }).sortBy("date", "desc");
 
@@ -37,9 +37,21 @@ export default {
 
     const frontend = await query.fetch();
 
+
+
+    let article;
+
+    try {
+      article = await $content('frontend', catergory).fetch();
+    } catch (e) {
+      error({ message: "frontend-family-data not found" });
+    }
+    console.log(article)
+
     return {
       q,
       frontend,
+      article
     };
   },
   watch: {
