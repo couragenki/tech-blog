@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link tag="div" class="blogcard" to="/">
+  <nuxt-link tag="div" class="blogcard" :to="link">
     <div class="blogcard__category">{{blogCcategory}}</div>
     <div class="blogcard__image" v-if="blogImage"></div>
     <div class="blogcard__shape" v-else></div>
@@ -16,6 +16,10 @@
 export default {
   name: "BlogCrad",
   props: {
+    link: {
+      type: String,
+      default: () => { return '/frontend' }
+    },
     blogCcategory: {
       type: String,
       default: () => { return 'カテゴリー' }
