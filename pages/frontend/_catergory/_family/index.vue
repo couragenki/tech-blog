@@ -1,8 +1,8 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
     <nuxt-link to="/frontend">frontend</nuxt-link>
-    ファミリーページ
-    <h2>{{ catergory }}/{{ family }}</h2>
+    <p>ファミリーページINDEX</p>
+    <h2>{{ family }}に関する記事一覧</h2>
     <nuxt-content :document="frontend" />
   </DefaultTemplate>
 </template>
@@ -15,9 +15,8 @@ export default {
   },
   watchQuery: true,
   async asyncData({ $content, route, params }) {
-    const { catergory, family } = params;
+    const { catergory, family, slug } = params;
     let path = route.path
-
     const frontend = await $content('frontend', catergory, family).fetch();
     return {
       frontend,
@@ -27,3 +26,4 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped></style>

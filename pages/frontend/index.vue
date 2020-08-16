@@ -5,7 +5,7 @@
     <p>
       フロントエンドに関する記事をまとめています
     </p>
-    <input id="search" v-model="q" placeholder="Search..." />
+    <input id="search" v-model="q" placeholder="URL検索..." />
 
     <ul>
       <li v-for="article in frontend" :key="article.slug">

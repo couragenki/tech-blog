@@ -106,7 +106,7 @@ export default {
       display: inline-block;
       a {
         font-size: 0.8em;
-        font-weight: bold;
+        font-weight: 700;
         color: #716666;
         text-decoration-line: none;
       }

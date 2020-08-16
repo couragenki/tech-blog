@@ -1,17 +1,24 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link to="/frontend">frontendへ戻る</nuxt-link>
-    <h2>frontend/直下</h2>
+    <nuxt-link to="/frontend"><< フロントエンドの一覧ページへ戻る</nuxt-link>
+    <h2>カテゴリーINDEX</h2>
+    <div v-if="catergory == 'vue'">
+      Vue.jsに関するページ
+    </div>
+    <div v-if="catergory == 'nuxt'">
+      Nust.jsに関するページ
+    </div>
+    <div v-if="catergory == 'gatsby'">
+      gatsby.jsに関するページ
+    </div>
 
     <input id="search" v-model="q" placeholder="Search..." />
-
     <ul>
       <li v-for="article in frontend" :key="article.slug">
         <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
       </li>
     </ul>
 
-    <nuxt-content :document="frontend" />
   </DefaultTemplate>
 </template>
 
@@ -25,8 +32,9 @@ export default {
     console.log(this.$route.path)
   },
   watchQuery: true,
-  async asyncData({ $content, route }) {
+  async asyncData({ $content, route, params }) {
     const q = route.query.q;
+    const { catergory, family, slug } = params;
 
     let query = $content('frontend', { deep: true }).sortBy("date", "desc");
 
@@ -40,6 +48,7 @@ export default {
     return {
       q,
       frontend,
+      catergory
     };
   },
   watch: {

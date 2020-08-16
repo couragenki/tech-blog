@@ -1,6 +1,6 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link to="/frontend">frontend</nuxt-link>
+    <nuxt-link :to="'/frontend/' + catergory">{{catergory}}に戻る</nuxt-link>
     ファミリースラッグ
     <h2>{{ article.title }}</h2>
     <nuxt-content :document="article" />
@@ -15,7 +15,6 @@ export default {
   },
   async asyncData({ $content, params, route, error }) {
     const { catergory, family, slug } = params;
-
     let article;
 
     try {
@@ -26,6 +25,7 @@ export default {
 
     return {
       article,
+      catergory
     };
   },
 };

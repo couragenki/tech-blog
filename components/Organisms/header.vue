@@ -28,7 +28,7 @@ export default {
       text-decoration: none;
     }
     &__text:hover{
-      color: darkgray;
+      opacity: 0.7;
     }
   }
 }
