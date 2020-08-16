@@ -2,8 +2,12 @@
   <DefaultTemplate :isPostsPage="true">
     <nuxt-link to="/frontend">frontend</nuxt-link>
     <p>ファミリーページINDEX</p>
-    <h2>{{ catergory }}/{{ family }}</h2>
-    <nuxt-content :document="frontend" />
+    <h2>{{ family }}に関する記事一覧</h2>
+    <ul>
+      <li v-for="article in frontend" :key="article.slug">
+        <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
+      </li>
+    </ul>
   </DefaultTemplate>
 </template>
 

@@ -1,8 +1,16 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link to="/frontend">frontendへ戻る</nuxt-link>
+    <nuxt-link to="/frontend"><< フロントエンドの一覧ページへ戻る</nuxt-link>
     <h2>カテゴリーINDEX</h2>
-    <nuxt-content :document="article" />
+    <div v-if="catergory == 'vue'">
+      Vue.jsに関するページ
+    </div>
+    <div v-if="catergory == 'nuxt'">
+      Nust.jsに関するページ
+    </div>
+    <div v-if="catergory == 'gatsby'">
+      gatsby.jsに関するページ
+    </div>
 
     <input id="search" v-model="q" placeholder="Search..." />
     <ul>
@@ -37,21 +45,10 @@ export default {
 
     const frontend = await query.fetch();
 
-
-
-    let article;
-
-    try {
-      article = await $content('frontend', catergory).fetch();
-    } catch (e) {
-      error({ message: "frontend-family-data not found" });
-    }
-    console.log(article)
-
     return {
       q,
       frontend,
-      article
+      catergory
     };
   },
   watch: {
