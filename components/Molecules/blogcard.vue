@@ -18,7 +18,7 @@ export default {
   props: {
     link: {
       type: String,
-      default: () => { return '/frontend' }
+      default: () => { return 'frontend' }
     },
     blogCcategory: {
       type: String,
