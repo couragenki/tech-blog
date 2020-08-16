@@ -60,6 +60,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-@import "@/assets/styles/_poststyle.scss";
-</style>
+<style lang="scss" scoped></style>

@@ -1,7 +1,7 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
     <nuxt-link to="/frontend">frontend</nuxt-link>
-    ファミリーページ
+    <p>ファミリーページINDEX</p>
     <h2>{{ catergory }}/{{ family }}</h2>
     <nuxt-content :document="frontend" />
   </DefaultTemplate>
@@ -27,3 +27,4 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped></style>

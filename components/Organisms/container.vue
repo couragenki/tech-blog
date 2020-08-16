@@ -25,7 +25,6 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "@/assets/styles/_poststyle.scss";
 .wrapper {
   width: auto;
   padding: 0 16px;
@@ -38,6 +37,7 @@ export default {
     .content {
       width:  calc(100% - 300px);
       min-height: 400px;
+      margin-right: 24px;
     }
   }
 
