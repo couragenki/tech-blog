@@ -3,11 +3,7 @@
     <nuxt-link to="/frontend">frontend</nuxt-link>
     <p>ファミリーページINDEX</p>
     <h2>{{ family }}に関する記事一覧</h2>
-    <ul>
-      <li v-for="article in frontend" :key="article.slug">
-        <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
-      </li>
-    </ul>
+    <nuxt-content :document="frontend" />
   </DefaultTemplate>
 </template>
 
@@ -19,9 +15,8 @@ export default {
   },
   watchQuery: true,
   async asyncData({ $content, route, params }) {
-    const { catergory, family } = params;
+    const { catergory, family, slug } = params;
     let path = route.path
-
     const frontend = await $content('frontend', catergory, family).fetch();
     return {
       frontend,
