@@ -2,13 +2,16 @@
   <DefaultTemplate>
     <h2>TOP PAGE</h2>
     <h3>新着記事</h3>
-    <BlogCrad />
+    <di8v>
+       <BlogCrad />
+    </di8v>
   </DefaultTemplate>
 </template>
 
-<script lang="ts">
+<script>
 import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
 import BlogCrad from "@/components/Molecules/blogcard.vue";
+
 export default {
   components: {
     DefaultTemplate,
