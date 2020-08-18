@@ -17,7 +17,7 @@
           </ul>
         </div>
       </li>
-      <!-- <li class="navigation__list__item">
+      <li class="navigation__list__item">
         <n-link to="/backend">バックエンド</n-link>
         <div class="hide">
           <ul>
@@ -80,7 +80,7 @@
             </li>
           </ul>
         </div>
-      </li> -->
+      </li>
     </ul>
   </nav>
 </template>

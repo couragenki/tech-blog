@@ -6,7 +6,7 @@
       Vue.jsに関するページ
     </div>
     <div v-if="catergory == 'nuxt'">
-      Nust.jsに関するページ
+      Nuxt.jsに関するページ
     </div>
     <div v-if="catergory == 'gatsby'">
       gatsby.jsに関するページ
