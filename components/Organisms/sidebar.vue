@@ -13,13 +13,12 @@ export default {
 <style lang="scss" scoped>
 .sidebar {
   width: 300px;
-  height: 1000px;
+  height: auto;
   background: skyblue;
 }
 @media (max-width: 768px) {
   .sidebar {
     width: 100%;
-    height: 500px;
   }
 }
 @media (max-width: 320px) {

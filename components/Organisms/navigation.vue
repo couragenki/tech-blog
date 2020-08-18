@@ -87,9 +87,10 @@
 
 <script>
 export default {
-  name: "Header",
+  name: "Navigation",
 };
 </script>
+
 <style lang="scss" scoped>
 .navigation {
   width: 100%;

@@ -1,7 +1,7 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link :to="'/frontend/' + catergory">{{catergory}}に戻る</nuxt-link>
-    ファミリースラッグ
+    <nuxt-link :to="'/frontend/' + catergory + '/' + family">⇦{{catergory}}/{{family}}の記事一覧へ戻る</nuxt-link>
+    <p>ファミリースラッグ</p>
     <h2>{{ article.title }}</h2>
     <nuxt-content :document="article" />
   </DefaultTemplate>
@@ -25,7 +25,8 @@ export default {
 
     return {
       article,
-      catergory
+      catergory,
+      family
     };
   },
 };

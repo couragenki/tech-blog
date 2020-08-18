@@ -1,13 +1,9 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link to="/marketing">marketing</nuxt-link>
-    <h2>{{ catergory }}/{{ family }}</h2>
-
-    <ul>
-      <li v-for="article in marketing" :key="article.slug">
-        <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
-      </li>
-    </ul>
+    <nuxt-link :to="'/marketing/' + catergory">⇦{{catergory}}の記事一覧へ戻る</nuxt-link>
+    <p>ファミリーページINDEX</p>
+    <h2>{{ family }}に関する記事一覧</h2>
+    <nuxt-content :document="marketing" />
   </DefaultTemplate>
 </template>
 
@@ -17,14 +13,10 @@ export default {
   components: {
     DefaultTemplate,
   },
-  watchQuery: true,
   async asyncData({ $content, route, params }) {
-    const { catergory, family } = params;
-
-    const marketing = await $content("marketing", catergory, family)
-      .sortBy("date", "desc")
-      .fetch();
-
+    const { catergory, family, slug } = params;
+    let path = route.path
+    const marketing = await $content('marketing', catergory, family).fetch();
     return {
       marketing,
       catergory,
@@ -33,3 +25,5 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped>
+</style>

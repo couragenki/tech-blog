@@ -2,21 +2,9 @@
   <DefaultTemplate :isPostsPage="true">
     カテゴリースラッグ
     {{this.$route.path}}
-    <nuxt-link to="/frontend">frontend</nuxt-link>
+    <nuxt-link to="/frontend">⇦フロントエンドの記事一覧へ戻る</nuxt-link>
     <h2>{{ article.title }}</h2>
     <p>{{ article.description }}</p>
-
-    <!-- <nuxt-content :document="article" /> -->
-
-    <nuxt-link
-      v-if="prev"
-      :to="{ name: 'articles-slug', params: { slug: prev.slug } }"
-    >&lt; {{ prev.title }}</nuxt-link>&nbsp;|
-    <br />
-    <nuxt-link
-      v-if="next"
-      :to="{ name: 'articles-slug', params: { slug: next.slug } }"
-    >{{ next.title }} &gt;</nuxt-link>
   </DefaultTemplate>
 </template>
 
@@ -39,16 +27,8 @@ export default {
       error({ message: "frontend-data not found" });
     }
 
-    const [prev, next] = await $content("frontend")
-      .only(["title", "slug"])
-      .sortBy("date", "desc")
-      .surround(params.slug)
-      .fetch();
-
     return {
       article,
-      prev,
-      next,
     };
   },
 };

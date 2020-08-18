@@ -1,17 +1,21 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link to="/">⇦ホームへ戻る</nuxt-link>
-    <h2>バックエンド INDEX</h2>
-    <p>
-      バックエンドに関する記事をまとめています
-    </p>
-    <input id="search" v-model="q" placeholder="URL検索..." />
+    <nuxt-link to="/backend">⇦バックエンドの一覧ページへ戻る</nuxt-link>
+    <h2>カテゴリーINDEX</h2>
+    <div v-if="catergory == 'php'">
+      phpに関するページ
+    </div>
+    <div v-if="catergory == 'python'">
+      pythonに関するページ
+    </div>
 
+    <input id="search" v-model="q" placeholder="タイトル検索..." />
     <ul>
       <li v-for="article in backend" :key="article.slug">
         <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
       </li>
     </ul>
+
   </DefaultTemplate>
 </template>
 
@@ -25,14 +29,14 @@ export default {
     console.log(this.$route.path)
   },
   watchQuery: true,
-  async asyncData({ $content, route }) {
+  async asyncData({ $content, route, params }) {
     const q = route.query.q;
+    const { catergory, family, slug } = params;
 
-    let query = $content("backend", { deep: true }).sortBy("date", "desc");
+    let query = $content('backend', catergory, { deep: true }).sortBy("date", "desc");
 
     if (q) {
-      query = query.search(q);
-      // タイトル検索 query = query.search('title', q)
+      query = query.search('title', q)
     }
 
     const backend = await query.fetch();
@@ -40,6 +44,7 @@ export default {
     return {
       q,
       backend,
+      catergory
     };
   },
   watch: {

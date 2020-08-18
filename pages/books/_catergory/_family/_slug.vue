@@ -1,6 +1,7 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link to="/books">books</nuxt-link>
+    <nuxt-link :to="'/books/' + catergory + '/' + family">⇦{{catergory}}/{{family}}の記事一覧へ戻る</nuxt-link>
+    <p>ファミリースラッグ</p>
     <h2>{{ article.title }}</h2>
     <nuxt-content :document="article" />
   </DefaultTemplate>
@@ -12,19 +13,20 @@ export default {
   components: {
     DefaultTemplate,
   },
-  async asyncData({ $content, params, error }) {
+  async asyncData({ $content, params, route, error }) {
     const { catergory, family, slug } = params;
-
     let article;
 
     try {
-      article = await $content("books", catergory, family, slug).fetch();
+      article = await $content('books', catergory, family, slug).fetch();
     } catch (e) {
-      error({ message: "family-data not found" });
+      error({ message: "books-family-data not found" });
     }
 
     return {
       article,
+      catergory,
+      family
     };
   },
 };

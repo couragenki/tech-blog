@@ -1,9 +1,11 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link to="/">Home</nuxt-link>
-    <h2>Nuxt.js Blog</h2>
-
-    <input id="search" v-model="q" placeholder="Search..." />
+    <nuxt-link to="/">⇦ホームへ戻る</nuxt-link>
+    <h2>その他 INDEX</h2>
+    <p>
+      その他に関する記事をまとめています
+    </p>
+    <input id="search" v-model="q" placeholder="URL検索..." />
 
     <ul>
       <li v-for="article in others" :key="article.slug">
@@ -18,6 +20,9 @@ import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
 export default {
   components: {
     DefaultTemplate,
+  },
+  created(){
+    console.log(this.$route.path)
   },
   watchQuery: true,
   async asyncData({ $content, route }) {

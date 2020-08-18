@@ -1,18 +1,18 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link to="/frontend"><< フロントエンドの一覧ページへ戻る</nuxt-link>
+    <nuxt-link to="/frontend">⇦フロントエンドの一覧ページへ戻る</nuxt-link>
     <h2>カテゴリーINDEX</h2>
     <div v-if="catergory == 'vue'">
       Vue.jsに関するページ
     </div>
     <div v-if="catergory == 'nuxt'">
-      Nust.jsに関するページ
+      Nuxt.jsに関するページ
     </div>
     <div v-if="catergory == 'gatsby'">
       gatsby.jsに関するページ
     </div>
 
-    <input id="search" v-model="q" placeholder="Search..." />
+    <input id="search" v-model="q" placeholder="タイトル検索..." />
     <ul>
       <li v-for="article in frontend" :key="article.slug">
         <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
@@ -36,11 +36,10 @@ export default {
     const q = route.query.q;
     const { catergory, family, slug } = params;
 
-    let query = $content('frontend', { deep: true }).sortBy("date", "desc");
+    let query = $content('frontend', catergory, { deep: true }).sortBy("date", "desc");
 
     if (q) {
-      query = query.search(q);
-      // タイトル検索 query = query.search('title', q)
+      query = query.search('title', q)
     }
 
     const frontend = await query.fetch();
