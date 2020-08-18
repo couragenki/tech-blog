@@ -2,9 +2,9 @@
   <DefaultTemplate>
     <h2>TOP PAGE</h2>
     <h3>新着記事</h3>
-    <di8v>
+    <div>
        <BlogCrad />
-    </di8v>
+    </div>
   </DefaultTemplate>
 </template>
 
