@@ -28,7 +28,7 @@ export default {
   async asyncData({ $content, route }) {
     const q = route.query.q;
 
-    let query = $content("/frontend", { deep: true }).sortBy("date", "desc");
+    let query = $content("frontend", { deep: true }).sortBy("date", "desc");
 
     if (q) {
       query = query.search(q);
