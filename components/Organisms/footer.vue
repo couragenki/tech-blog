@@ -11,8 +11,8 @@
           <li>このサイトについて</li>
           <li>自己紹介</li>
           <li><n-link to="/frontend">フロントエンド</n-link></li>
-          <li><n-link to="/backend">バックエンド</n-link></li>
-          <li><n-link to="/marketing">マーケティング</n-link></li>
+          <!-- <li><n-link to="/backend">バックエンド</n-link></li>
+          <li><n-link to="/marketing">マーケティング</n-link></li> -->
         </ul>
       </div>
       <div class="footer__container__clum">

@@ -1,6 +1,6 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link to="/">Home</nuxt-link>
+    <nuxt-link to="/">⇦ホームへ戻る</nuxt-link>
     <h2>フロントエンド INDEX</h2>
     <p>
       フロントエンドに関する記事をまとめています

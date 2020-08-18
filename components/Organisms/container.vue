@@ -56,4 +56,9 @@ export default {
 }
 @media (max-width: 320px) {
 }
+.PostStyle {
+  img {
+    width: 100%;
+  }
+}
 </style>

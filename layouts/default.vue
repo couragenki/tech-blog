@@ -12,6 +12,9 @@ export default {
 *{
   font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
 }
+img {
+  max-width: 100%;
+}
 body,
 p,ul,ol,h1,h2,h3,h4,h5,h6 {
   margin: 0;
