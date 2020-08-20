@@ -1,9 +1,6 @@
 <template>
   <DefaultTemplate>
     <h2>TOP PAGE</h2>
-    <div>
-      <NewPosts />
-    </div>
   </DefaultTemplate>
 </template>
 

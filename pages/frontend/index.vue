@@ -5,9 +5,14 @@
     <p>フロントエンドに関する記事をまとめています</p>
     <input id="search" v-model="q" placeholder="URL検索..." />
 
-    <ul>
-      <li v-for="article in frontend" :key="article.slug">
-        <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
+    <ul class="posts">
+      <li class="post" v-for="article in frontend" :key="article.slug">
+        <BlogCrad
+          :link="article.path"
+          :blogTitle="article.title"
+          blogCategory="フロントエンド"
+          :blogTags="article.tags"
+        />
       </li>
     </ul>
   </DefaultTemplate>
@@ -15,9 +20,11 @@
 
 <script>
 import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
+import BlogCrad from "@/components/Molecules/blogcard.vue";
 export default {
   components: {
     DefaultTemplate,
+    BlogCrad,
   },
   watchQuery: true,
   async asyncData({ $content, route }) {
@@ -31,6 +38,7 @@ export default {
     }
 
     const frontend = await query.fetch();
+    console.error(frontend);
 
     return {
       q,
@@ -46,3 +54,16 @@ export default {
   },
 };
 </script>
+<style scoped lang="scss">
+.posts {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  .post {
+    width: fit-content;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+}
+</style>
