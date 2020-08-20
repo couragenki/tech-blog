@@ -2,9 +2,7 @@
   <footer class="footer">
     <div class="footer__container">
       <div class="footer__container__clum">
-        <div class="profile">
-          <img src="/common/profile-icon.png">
-        </div>
+        <Introduction />
       </div>
       <div class="footer__container__clum">
         <ul>
@@ -34,8 +32,12 @@
 </template>
 
 <script>
+import Introduction from "@/components/Molecules/introduction.vue";
 export default {
   name: "Footer",
+  components:{
+    Introduction
+  }
 };
 </script>
 <style lang="scss" scoped>
@@ -68,7 +70,10 @@ export default {
 }
 @media (max-width: 768px) {
   .footer {
+    width: 100%;
     &__container {
+      width: calc(100% - 16px);
+      padding: 0 8px;
       display: block;
       &__clum {
         width: 100%;
