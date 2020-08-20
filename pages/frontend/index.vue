@@ -30,11 +30,14 @@ export default {
   async asyncData({ $content, route }) {
     const q = route.query.q;
 
-    let query = $content("frontend", { deep: true }).sortBy("date", "desc");
+    let query = $content("frontend", { deep: true }).sortBy("date");
 
     if (q) {
-      query = query.search(q);
-      // タイトル検索 query = query.search('title', q)
+      // query = query.search(q);
+      // タイトル検索
+      console.log(query)
+      query = query.search('title', q)
+      console.log(query)
     }
 
     const frontend = await query.fetch();
@@ -62,7 +65,7 @@ export default {
   flex-wrap: wrap;
   .post {
     width: fit-content;
-    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 20px;
   }
 }
