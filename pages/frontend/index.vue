@@ -7,7 +7,12 @@
 
     <ul class="posts">
       <li class="post" v-for="article in frontend" :key="article.slug">
-        <BlogCrad :link="article.path" :blogTitle="article.title" :blogTags="article.tags" />
+        <BlogCrad
+          :link="article.path"
+          :blogTitle="article.title"
+          blogCategory="フロントエンド"
+          :blogTags="article.tags"
+        />
       </li>
     </ul>
   </DefaultTemplate>
@@ -59,18 +64,6 @@ export default {
     width: fit-content;
     margin-left: 20px;
     margin-bottom: 20px;
-  }
-}
-@media (max-width: 768px) {
-}
-@media (max-width: 320px) {
-  .posts {
-    display: block;
-    .post {
-      width: 100%;
-      margin-left: 0px;
-      margin-bottom: 20px;
-    }
   }
 }
 </style>

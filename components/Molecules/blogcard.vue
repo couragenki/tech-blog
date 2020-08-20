@@ -49,15 +49,15 @@ export default {
 </script>
 <style scoped lang="scss">
 .blogcard {
+  width: 240px;
+  height: 240px;
+  position: relative;
   background: lightgrey;
   &__category {
     position: absolute;
     background: green;
     display: inline;
   }
-  width: 240px;
-  height: 240px;
-  position: relative;
   &__shape {
     width: 100%;
     height: 160px;
@@ -71,5 +71,9 @@ export default {
 }
 .blogcard:hover {
   opacity: 0.7;
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 376px) {
 }
 </style>

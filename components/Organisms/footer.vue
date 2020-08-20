@@ -14,18 +14,13 @@
           <li>
             <n-link to="/frontend">フロントエンド</n-link>
           </li>
-          <!-- <li><n-link to="/backend">バックエンド</n-link></li>
-          <li><n-link to="/marketing">マーケティング</n-link></li>-->
-        </ul>
-      </div>
-      <div class="footer__container__clum">
-        <ul>
-          <n-link to="/policy">
-            <li>プライバシーポリシー</li>
-          </n-link>
+          <li>
+            <n-link to="/policy">プライバシーポリシー</n-link>
+          </li>
           <li>お問い合わせ</li>
         </ul>
       </div>
+      <div class="footer__container__clum"></div>
       <div class="footer__container__clum">
         <Introduction />
       </div>

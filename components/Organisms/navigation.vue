@@ -108,13 +108,13 @@ export default {
       a {
         font-size: 0.8em;
         font-weight: 700;
-        color: #716666;
+        color: #3c3c3c;
         text-decoration-line: none;
       }
       &::after {
         content: "▼";
         font-size: 0.6em;
-        color: #716666;
+        color: #3c3c3c;
       }
       .hide {
         position: absolute;
