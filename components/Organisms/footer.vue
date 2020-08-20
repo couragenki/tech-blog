@@ -3,7 +3,7 @@
     <div class="footer__container">
       <div class="footer__container__clum">
         <div class="profile">
-          <img src="/img/profile-icon.png">
+          <img src="/common/profile-icon.png">
         </div>
       </div>
       <div class="footer__container__clum">
