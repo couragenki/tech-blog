@@ -2,15 +2,20 @@
   <footer class="footer">
     <div class="footer__container">
       <div class="footer__container__clum">
-        <Introduction />
+        <div class="ad">
+          <img src="/img/banner.png" />
+        </div>
       </div>
+
       <div class="footer__container__clum">
         <ul>
           <li>このサイトについて</li>
           <li>自己紹介</li>
-          <li><n-link to="/frontend">フロントエンド</n-link></li>
+          <li>
+            <n-link to="/frontend">フロントエンド</n-link>
+          </li>
           <!-- <li><n-link to="/backend">バックエンド</n-link></li>
-          <li><n-link to="/marketing">マーケティング</n-link></li> -->
+          <li><n-link to="/marketing">マーケティング</n-link></li>-->
         </ul>
       </div>
       <div class="footer__container__clum">
@@ -22,9 +27,7 @@
         </ul>
       </div>
       <div class="footer__container__clum">
-        <div class="ad">
-          <img src="/img/banner.png">
-        </div>
+        <Introduction />
       </div>
     </div>
     <p class="footer__copywrite">©2020 ○○○○○○ブログ</p>
@@ -35,9 +38,9 @@
 import Introduction from "@/components/Molecules/introduction.vue";
 export default {
   name: "Footer",
-  components:{
-    Introduction
-  }
+  components: {
+    Introduction,
+  },
 };
 </script>
 <style lang="scss" scoped>

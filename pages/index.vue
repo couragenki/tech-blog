@@ -1,9 +1,8 @@
 <template>
   <DefaultTemplate>
     <h2>TOP PAGE</h2>
-    <h3>新着記事</h3>
     <div>
-       <BlogCrad />
+      <NewPosts />
     </div>
   </DefaultTemplate>
 </template>
@@ -11,11 +10,13 @@
 <script>
 import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
 import BlogCrad from "@/components/Molecules/blogcard.vue";
+import NewPosts from "@/components/Organisms/newposts.vue";
 
 export default {
   components: {
     DefaultTemplate,
     BlogCrad,
+    NewPosts,
   },
 };
 </script>

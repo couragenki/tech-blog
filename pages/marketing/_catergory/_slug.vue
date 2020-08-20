@@ -14,15 +14,11 @@ export default {
   components: {
     DefaultTemplate,
   },
-  created(){
-    console.log(this.$route.path)
-  },
   async asyncData({ $content, params, route, error }) {
     let article;
-    let path = route.path
 
     try {
-      article = await $content('marketing', params.slug).fetch();
+      article = await $content("marketing", params.slug).fetch();
     } catch (e) {
       error({ message: "marketing-data not found" });
     }

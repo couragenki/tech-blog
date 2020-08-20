@@ -2,9 +2,7 @@
   <DefaultTemplate :isPostsPage="true">
     <nuxt-link to="/">⇦ホームへ戻る</nuxt-link>
     <h2>その他 INDEX</h2>
-    <p>
-      その他に関する記事をまとめています
-    </p>
+    <p>その他に関する記事をまとめています</p>
     <input id="search" v-model="q" placeholder="URL検索..." />
 
     <ul>
@@ -20,9 +18,6 @@ import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
 export default {
   components: {
     DefaultTemplate,
-  },
-  created(){
-    console.log(this.$route.path)
   },
   watchQuery: true,
   async asyncData({ $content, route }) {

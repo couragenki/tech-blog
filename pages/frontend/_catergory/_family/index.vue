@@ -15,8 +15,7 @@ export default {
   },
   async asyncData({ $content, route, params }) {
     const { catergory, family, slug } = params;
-    let path = route.path
-    const frontend = await $content('frontend', catergory, family).fetch();
+    const frontend = await $content("frontend", catergory, family).fetch();
     return {
       frontend,
       catergory,

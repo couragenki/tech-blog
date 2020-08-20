@@ -17,18 +17,18 @@ export default {
   components: {
     DefaultTemplate,
   },
-  created(){
-    console.log(this.$route.path)
-  },
   watchQuery: true,
   async asyncData({ $content, route, params }) {
     const q = route.query.q;
     const { catergory, family, slug } = params;
 
-    let query = $content('marketing', catergory, { deep: true }).sortBy("date", "desc");
+    let query = $content("marketing", catergory, { deep: true }).sortBy(
+      "date",
+      "desc"
+    );
 
     if (q) {
-      query = query.search('title', q)
+      query = query.search("title", q);
     }
 
     const marketing = await query.fetch();
@@ -36,7 +36,7 @@ export default {
     return {
       q,
       marketing,
-      catergory
+      catergory,
     };
   },
   watch: {
