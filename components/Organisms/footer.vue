@@ -29,6 +29,9 @@
                 <n-link to="/technology/backend">バックエンド</n-link>
               </li>
               <li>
+                <n-link to="/technology/infra">インフラ</n-link>
+              </li>
+              <li>
                 <n-link to="/technology/git">Git</n-link>
               </li>
             </ul>
