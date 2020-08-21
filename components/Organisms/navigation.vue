@@ -34,17 +34,17 @@
               <n-link to="/marketing/sns">> SNSマーケ</n-link>
             </li>
             <li>
-              <n-link to="/marketing/web">> ブログ</n-link>
+              <n-link to="/marketing/blog">> ブログ</n-link>
             </li>
           </ul>
         </div>
       </li>
       <li class="navigation__list__item">
-        <n-link to="/notes">備忘録</n-link>
+        <n-link to="/notes">ノート</n-link>
         <div class="hide">
           <ul>
             <li>
-              <n-link to="/notes">備忘録</n-link>
+              <n-link to="/notes">ノート</n-link>
             </li>
             <li>
               <n-link to="/notes/books">> 読書</n-link>
