@@ -1,6 +1,6 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link :to="'/backend/' + catergory + '/' + family">⇦{{catergory}}/{{family}}の記事一覧へ戻る</nuxt-link>
+    <nuxt-link :to="'/technology/' + catergory + '/' + family">⇦{{catergory}}/{{family}}の記事一覧へ戻る</nuxt-link>
     <p>ファミリースラッグ</p>
     <h2>{{ article.title }}</h2>
     <nuxt-content :document="article" />
@@ -18,9 +18,9 @@ export default {
     let article;
 
     try {
-      article = await $content('backend', catergory, family, slug).fetch();
+      article = await $content('technology', catergory, family, slug).fetch();
     } catch (e) {
-      error({ message: "backend-family-data not found" });
+      error({ message: "technology-family-data not found" });
     }
 
     return {

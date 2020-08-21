@@ -1,9 +1,9 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link :to="'/backend/' + catergory">⇦{{catergory}}の記事一覧へ戻る</nuxt-link>
+    <nuxt-link :to="'/technology/' + catergory">⇦{{catergory}}の記事一覧へ戻る</nuxt-link>
     <p>ファミリーページINDEX</p>
     <h2>{{ family }}に関する記事一覧</h2>
-    <nuxt-content :document="backend" />
+    <nuxt-content :document="technology" />
   </DefaultTemplate>
 </template>
 
@@ -15,10 +15,9 @@ export default {
   },
   async asyncData({ $content, route, params }) {
     const { catergory, family, slug } = params;
-    let path = route.path
-    const backend = await $content('backend', catergory, family).fetch();
+    const technology = await $content("technology", catergory, family).fetch();
     return {
-      backend,
+      technology,
       catergory,
       family,
     };

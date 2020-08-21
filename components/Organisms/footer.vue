@@ -12,7 +12,7 @@
           <li>このサイトについて</li>
           <li>自己紹介</li>
           <li>
-            <n-link to="/frontend">フロントエンド</n-link>
+            <n-link to="/technology">フロントエンド</n-link>
           </li>
           <li>
             <n-link to="/policy">プライバシーポリシー</n-link>

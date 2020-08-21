@@ -1,6 +1,6 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link to="/frontend">⇦フロントエンドの一覧ページへ戻る</nuxt-link>
+    <nuxt-link to="/technology">⇦フロントエンドの一覧ページへ戻る</nuxt-link>
     <h2>カテゴリーINDEX</h2>
     <div v-if="catergory == 'vue'">Vue.jsに関するページ</div>
     <div v-if="catergory == 'nuxt'">Nuxt.jsに関するページ</div>
@@ -8,7 +8,7 @@
 
     <input id="search" v-model="q" placeholder="タイトル検索..." />
     <ul>
-      <li v-for="article in frontend" :key="article.slug">
+      <li v-for="article in technology" :key="article.slug">
         <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
       </li>
     </ul>
@@ -26,7 +26,7 @@ export default {
     const q = route.query.q;
     const { catergory, family, slug } = params;
 
-    let query = $content("frontend", catergory, { deep: true }).sortBy(
+    let query = $content("technology", catergory, { deep: true }).sortBy(
       "date",
       "desc"
     );
@@ -35,11 +35,11 @@ export default {
       query = query.search("title", q);
     }
 
-    const frontend = await query.fetch();
+    const technology = await query.fetch();
 
     return {
       q,
-      frontend,
+      technology,
       catergory,
     };
   },

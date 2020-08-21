@@ -1,16 +1,19 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
     <nuxt-link to="/">⇦ホームへ戻る</nuxt-link>
-    <h2>フロントエンド INDEX</h2>
-    <p>フロントエンドに関する記事をまとめています</p>
+    <h2>
+      テクノロジー INDEX</h2>
+    <p>
+      テクノロジーに関する記事をまとめています</p>
     <input id="search" v-model="q" placeholder="URL検索..." />
 
     <ul class="posts">
-      <li class="post" v-for="article in frontend" :key="article.slug">
+      <li class="post" v-for="article in technology" :key="article.slug">
         <BlogCrad
           :link="article.path"
           :blogTitle="article.title"
-          blogCategory="フロントエンド"
+          blogCategory="
+          テクノロジー"
           :blogTags="article.tags"
         />
       </li>
@@ -30,7 +33,7 @@ export default {
   async asyncData({ $content, route }) {
     const q = route.query.q;
 
-    let query = $content("frontend", { deep: true }).sortBy("date");
+    let query = $content("technology", { deep: true }).sortBy("date");
 
     if (q) {
       // query = query.search(q);
@@ -40,12 +43,12 @@ export default {
       console.log(query)
     }
 
-    const frontend = await query.fetch();
-    console.error(frontend);
+    const technology = await query.fetch();
+    console.error(technology);
 
     return {
       q,
-      frontend,
+      technology,
     };
   },
   watch: {

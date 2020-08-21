@@ -49,11 +49,20 @@ export default {
   height: auto;
   background: #ebf8fd;
   &__title {
-      font-size: 24px;
-      font-weight: 700;
-      margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .pickup {
+    &__post{
+      margin-bottom: 20px;
+      &__rank{
+        font-weight: 700;
+        margin: 0;
+      }
     }
   }
+}
 
 @media (max-width: 768px) {
   .sidebar {

@@ -2,7 +2,7 @@
   <DefaultTemplate :isPostsPage="true">
     カテゴリースラッグ
     {{this.$route.path}}
-    <nuxt-link to="/backend">⇦バックエンドの記事一覧へ戻る</nuxt-link>
+    <nuxt-link to="/technology">⇦フロントエンドの記事一覧へ戻る</nuxt-link>
     <h2>{{ article.title }}</h2>
     <p>{{ article.description }}</p>
   </DefaultTemplate>
@@ -14,17 +14,13 @@ export default {
   components: {
     DefaultTemplate,
   },
-  created(){
-    console.log(this.$route.path)
-  },
   async asyncData({ $content, params, route, error }) {
     let article;
-    let path = route.path
 
     try {
-      article = await $content('backend', params.slug).fetch();
+      article = await $content("technology", params.slug).fetch();
     } catch (e) {
-      error({ message: "backend-data not found" });
+      error({ message: "technology-data not found" });
     }
 
     return {

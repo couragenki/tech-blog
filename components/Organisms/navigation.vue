@@ -2,33 +2,20 @@
   <nav class="navigation">
     <ul class="navigation__list">
       <li class="navigation__list__item">
-        <n-link to="/frontend">フロントエンド</n-link>
+        <n-link to="/technology">テクノロジー</n-link>
         <div class="hide">
           <ul>
             <li>
-              <n-link to="/frontend">フロントエンド</n-link>
+              <n-link to="/technology">テクノロジー</n-link>
             </li>
             <li>
-              <n-link to="/frontend/vue">> Vue.js</n-link>
+              <n-link to="/technology/frontend">> フロントエンド</n-link>
             </li>
             <li>
-              <n-link to="/frontend/nuxt">> Nuxt.js</n-link>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="navigation__list__item">
-        <n-link to="/backend">バックエンド</n-link>
-        <div class="hide">
-          <ul>
-            <li>
-              <n-link to="/backend">バックエンド</n-link>
+              <n-link to="/technology/backend">> バックエンド</n-link>
             </li>
             <li>
-              <n-link to="/backend/php">> php</n-link>
-            </li>
-            <li>
-              <n-link to="/backend/python">> python</n-link>
+              <n-link to="/technology/git">> Git</n-link>
             </li>
           </ul>
         </div>
