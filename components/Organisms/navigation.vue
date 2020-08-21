@@ -21,22 +21,6 @@
         </div>
       </li>
       <li class="navigation__list__item">
-        <n-link to="/books">本・読書</n-link>
-        <div class="hide">
-          <ul>
-            <li>
-              <n-link to="/books">本・読書</n-link>
-            </li>
-            <li>
-              <n-link to="/books/business">> ビジネス書</n-link>
-            </li>
-            <li>
-              <n-link to="/books/novel">> 小説</n-link>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="navigation__list__item">
         <n-link to="/marketing">マーケティング</n-link>
         <div class="hide">
           <ul>
@@ -49,21 +33,24 @@
             <li>
               <n-link to="/marketing/sns">> SNSマーケ</n-link>
             </li>
+            <li>
+              <n-link to="/marketing/web">> ブログ</n-link>
+            </li>
           </ul>
         </div>
       </li>
       <li class="navigation__list__item">
-        <n-link to="/others">その他</n-link>
+        <n-link to="/notes">備忘録</n-link>
         <div class="hide">
           <ul>
             <li>
-              <n-link to="/others">その他</n-link>
+              <n-link to="/notes">備忘録</n-link>
             </li>
             <li>
-              <n-link to="/others/notes">> 雑記</n-link>
+              <n-link to="/notes/books">> 読書</n-link>
             </li>
             <li>
-              <n-link to="/others/word">> 名言</n-link>
+              <n-link to="/notes/camera">> カメラ</n-link>
             </li>
           </ul>
         </div>

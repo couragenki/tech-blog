@@ -1,14 +1,15 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link to="/books">⇦読書の一覧ページへ戻る</nuxt-link>
-    <h2>カテゴリーINDEX</h2>
-    <input id="search" v-model="q" placeholder="タイトル検索..." />
+    <nuxt-link to="/">⇦ホームへ戻る</nuxt-link>
+    <h2>その他 INDEX</h2>
+    <p>その他に関する記事をまとめています</p>
+    <input id="search" v-model="q" placeholder="URL検索..." />
+
     <ul>
-      <li v-for="article in books" :key="article.slug">
+      <li v-for="article in notes" :key="article.slug">
         <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
       </li>
     </ul>
-
   </DefaultTemplate>
 </template>
 
@@ -18,26 +19,22 @@ export default {
   components: {
     DefaultTemplate,
   },
-  created(){
-    console.log(this.$route.path)
-  },
   watchQuery: true,
-  async asyncData({ $content, route, params }) {
+  async asyncData({ $content, route }) {
     const q = route.query.q;
-    const { catergory, family, slug } = params;
 
-    let query = $content('books', catergory, { deep: true }).sortBy("date", "desc");
+    let query = $content("notes", { deep: true }).sortBy("date", "desc");
 
     if (q) {
-      query = query.search('title', q)
+      query = query.search(q);
+      // タイトル検索 query = query.search('title', q)
     }
 
-    const books = await query.fetch();
+    const notes = await query.fetch();
 
     return {
       q,
-      books,
-      catergory
+      notes,
     };
   },
   watch: {

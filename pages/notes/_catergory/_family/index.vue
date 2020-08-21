@@ -1,9 +1,9 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link :to="'/books/' + catergory">⇦{{catergory}}の記事一覧へ戻る</nuxt-link>
+    <nuxt-link :to="'/notes/' + catergory">⇦{{catergory}}の記事一覧へ戻る</nuxt-link>
     <p>ファミリーページINDEX</p>
     <h2>{{ family }}に関する記事一覧</h2>
-    <nuxt-content :document="books" />
+    <nuxt-content :document="notes" />
   </DefaultTemplate>
 </template>
 
@@ -15,10 +15,9 @@ export default {
   },
   async asyncData({ $content, route, params }) {
     const { catergory, family, slug } = params;
-    let path = route.path
-    const books = await $content('books', catergory, family).fetch();
+    const notes = await $content("notes", catergory, family).fetch();
     return {
-      books,
+      notes,
       catergory,
       family,
     };
