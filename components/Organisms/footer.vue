@@ -12,15 +12,46 @@
           <li>このサイトについて</li>
           <li>自己紹介</li>
           <li>
-            <n-link to="/frontend">フロントエンド</n-link>
-          </li>
-          <li>
             <n-link to="/policy">プライバシーポリシー</n-link>
           </li>
           <li>お問い合わせ</li>
         </ul>
       </div>
-      <div class="footer__container__clum"></div>
+      <div class="footer__container__clum">
+        <ul>
+          <li>
+            <n-link to="/technology">テクノロジー</n-link>
+            <ul>
+              <li>
+                <n-link to="/technology/frontend">フロントエンド</n-link>
+              </li>
+              <li>
+                <n-link to="/technology/backend">バックエンド</n-link>
+              </li>
+              <li>
+                <n-link to="/technology/infra">インフラ</n-link>
+              </li>
+              <li>
+                <n-link to="/technology/git">Git</n-link>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <n-link to="/marketing">マーケティング</n-link>
+            <ul>
+              <li>
+                <n-link to="/marketing/web">WEBマーケ</n-link>
+              </li>
+              <li>
+                <n-link to="/marketing/sns">SNS</n-link>
+              </li>
+              <li>
+                <n-link to="/marketing/blog">ブログ</n-link>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
       <div class="footer__container__clum">
         <Introduction />
       </div>

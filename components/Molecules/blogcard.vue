@@ -23,7 +23,7 @@ export default {
     link: {
       type: String,
       default: () => {
-        return "frontend";
+        return "/technology";
       },
     },
     blogCategory: {
@@ -69,6 +69,7 @@ export default {
     position: absolute;
     background: green;
     display: inline;
+    padding: 0 8px;
   }
   &__shape {
     width: 100%;

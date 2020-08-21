@@ -1,0 +1,75 @@
+<template>
+  <DefaultTemplate :isPostsPage="true">
+    <nuxt-link to="/">⇦ホームへ戻る</nuxt-link>
+    <h2>
+      テクノロジー INDEX</h2>
+    <p>
+      テクノロジーに関する記事をまとめています</p>
+    <input id="search" v-model="q" placeholder="URL検索..." />
+
+    <ul class="posts">
+      <li class="post" v-for="article in technology" :key="article.slug">
+        <BlogCrad
+          :link="article.path"
+          :blogTitle="article.title"
+          blogCategory="
+          テクノロジー"
+          :blogTags="article.tags"
+        />
+      </li>
+    </ul>
+  </DefaultTemplate>
+</template>
+
+<script>
+import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
+import BlogCrad from "@/components/Molecules/blogcard.vue";
+export default {
+  components: {
+    DefaultTemplate,
+    BlogCrad,
+  },
+  watchQuery: true,
+  async asyncData({ $content, route }) {
+    const q = route.query.q;
+
+    let query = $content("technology", { deep: true }).sortBy("date");
+
+    if (q) {
+      // query = query.search(q);
+      // タイトル検索
+      console.log(query)
+      query = query.search('title', q)
+      console.log(query)
+    }
+
+    const technology = await query.fetch();
+    console.error(technology);
+
+    return {
+      q,
+      technology,
+    };
+  },
+  watch: {
+    q() {
+      this.$router
+        .replace({ query: this.q ? { q: this.q } : undefined })
+        .catch(() => {});
+    },
+  },
+};
+</script>
+<style scoped lang="scss">
+.posts {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  .post {
+    width: fit-content;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+</style>

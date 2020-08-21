@@ -2,49 +2,20 @@
   <nav class="navigation">
     <ul class="navigation__list">
       <li class="navigation__list__item">
-        <n-link to="/frontend">フロントエンド</n-link>
+        <n-link to="/technology">テクノロジー</n-link>
         <div class="hide">
           <ul>
             <li>
-              <n-link to="/frontend">フロントエンド</n-link>
+              <n-link to="/technology">テクノロジー</n-link>
             </li>
             <li>
-              <n-link to="/frontend/vue">> Vue.js</n-link>
+              <n-link to="/technology/frontend">> フロントエンド</n-link>
             </li>
             <li>
-              <n-link to="/frontend/nuxt">> Nuxt.js</n-link>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="navigation__list__item">
-        <n-link to="/backend">バックエンド</n-link>
-        <div class="hide">
-          <ul>
-            <li>
-              <n-link to="/backend">バックエンド</n-link>
+              <n-link to="/technology/backend">> バックエンド</n-link>
             </li>
             <li>
-              <n-link to="/backend/php">> php</n-link>
-            </li>
-            <li>
-              <n-link to="/backend/python">> python</n-link>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="navigation__list__item">
-        <n-link to="/books">本・読書</n-link>
-        <div class="hide">
-          <ul>
-            <li>
-              <n-link to="/books">本・読書</n-link>
-            </li>
-            <li>
-              <n-link to="/books/business">> ビジネス書</n-link>
-            </li>
-            <li>
-              <n-link to="/books/novel">> 小説</n-link>
+              <n-link to="/technology/git">> Git</n-link>
             </li>
           </ul>
         </div>
@@ -62,21 +33,24 @@
             <li>
               <n-link to="/marketing/sns">> SNSマーケ</n-link>
             </li>
+            <li>
+              <n-link to="/marketing/blog">> ブログ</n-link>
+            </li>
           </ul>
         </div>
       </li>
       <li class="navigation__list__item">
-        <n-link to="/others">その他</n-link>
+        <n-link to="/notes">ノート</n-link>
         <div class="hide">
           <ul>
             <li>
-              <n-link to="/others">その他</n-link>
+              <n-link to="/notes">ノート</n-link>
             </li>
             <li>
-              <n-link to="/others/notes">> 雑記</n-link>
+              <n-link to="/notes/books">> 読書</n-link>
             </li>
             <li>
-              <n-link to="/others/word">> 名言</n-link>
+              <n-link to="/notes/camera">> カメラ</n-link>
             </li>
           </ul>
         </div>
