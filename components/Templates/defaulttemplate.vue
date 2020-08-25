@@ -2,7 +2,7 @@
   <div>
     <Header />
     <Navigation />
-    <Container :isPostsPage="isPostsPage" >
+    <Container :isPostsPage="isPostsPage" :isSidebar="isSidebar" >
       <slot />
     </Container>
     <Footer />
@@ -26,6 +26,10 @@ export default {
     isPostsPage: {
       type: Boolean,
       default: () => { return false }
+    },
+    isSidebar: {
+      type: Boolean,
+      default: () => { return true }
     },
   },
 };

@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <div class="container">
+    <div class="container" v-if="isSidebar">
       <div class="content" :class="{ PostStyle: isPostsPage }">
         <slot />
       </div>
@@ -21,6 +21,10 @@ export default {
       type: Boolean,
       default: () => { return false }
     },
+    isSidebar: {
+      type: Boolean,
+      default: () => { return true }
+    },
   },
 };
 </script>
@@ -28,6 +32,7 @@ export default {
 .wrapper {
   width: auto;
   padding: 0 16px;
+  min-height: 400px;
   .container {
     width: 100%;
     max-width: 1200px;
@@ -36,7 +41,6 @@ export default {
     padding: 40px 0 80px;
     .content {
       width:  calc(100% - 300px);
-      min-height: 400px;
       margin-right: 24px;
     }
   }

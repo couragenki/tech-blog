@@ -77,7 +77,7 @@ export default {
     padding: 0 16px;
     &__item {
       position: relative;
-      padding: 16px 16px 16px 0;
+      padding: 8px 16px 8px 0;
       display: inline-block;
       a {
         font-size: 0.8em;

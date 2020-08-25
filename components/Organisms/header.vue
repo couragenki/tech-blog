@@ -21,11 +21,14 @@ export default {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    font-size: 32px;
-    padding: 16px 0;
+    font-size: 24px;
+    padding: 8px 0;
     a {
       color: #000;
       text-decoration: none;
+    }
+    &__text {
+      margin: 0;
     }
     &__text:hover{
       opacity: 0.7;

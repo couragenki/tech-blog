@@ -1,13 +1,12 @@
 <template>
-  <DefaultTemplate>
+  <DefaultTemplate :isSidebar="false">
     <h2>TOP PAGE</h2>
     <ul class="posts">
       <li class="post" v-for="article in technology" :key="article.slug">
         <BlogCrad
           :link="article.path"
           :blogTitle="article.title"
-          blogCategory="
-          テクノロジー"
+          :blogCategory="article.dir"
           :blogTags="article.tags"
         />
       </li>
