@@ -7,19 +7,18 @@
     <div v-if="catergory == 'gatsby'">gatsby.jsに関するページ</div>
 
     <input id="search" v-model="q" placeholder="タイトル検索..." />
-    <ul>
-      <li v-for="article in technology" :key="article.slug">
-        <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
-      </li>
-    </ul>
+
+    <PostCards :data="technology" />
   </DefaultTemplate>
 </template>
 
 <script>
 import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
+import PostCards from "@/components/Organisms/postcards.vue";
 export default {
   components: {
     DefaultTemplate,
+    PostCards
   },
   watchQuery: true,
   async asyncData({ $content, route, params }) {

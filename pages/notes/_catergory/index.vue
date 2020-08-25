@@ -9,14 +9,18 @@
       </li>
     </ul>
 
+    <PostCards :data="notes" />
+
   </DefaultTemplate>
 </template>
 
 <script>
 import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
+import PostCards from "@/components/Organisms/postcards.vue";
 export default {
   components: {
     DefaultTemplate,
+    PostCards,
   },
   created(){
     console.log(this.$route.path)

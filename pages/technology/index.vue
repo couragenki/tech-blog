@@ -7,27 +7,17 @@
       テクノロジーに関する記事をまとめています</p>
     <input id="search" v-model="q" placeholder="URL検索..." />
 
-    <ul class="posts">
-      <li class="post" v-for="article in technology" :key="article.slug">
-        <BlogCrad
-          :link="article.path"
-          :blogTitle="article.title"
-          blogCategory="
-          テクノロジー"
-          :blogTags="article.tags"
-        />
-      </li>
-    </ul>
+    <PostCards :data="technology"/>
   </DefaultTemplate>
 </template>
 
 <script>
 import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
-import BlogCrad from "@/components/Molecules/blogcard.vue";
+import PostCards from "@/components/Organisms/postcards.vue";
 export default {
   components: {
     DefaultTemplate,
-    BlogCrad,
+    PostCards,
   },
   watchQuery: true,
   async asyncData({ $content, route }) {
@@ -61,15 +51,4 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-.posts {
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  .post {
-    width: fit-content;
-    margin-right: 20px;
-    margin-bottom: 20px;
-  }
-}
 </style>

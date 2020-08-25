@@ -1,18 +1,16 @@
 <template>
-  <nuxt-link tag="div" class="blogcard" :to="link">
-    <div class="blogcard__category">{{blogCategory}}</div>
-    <div class="blogcard__image" v-if="blogImage">
-      <p class="title">{{blogTitle}}</p>
-    </div>
-    <div class="blogcard__shape" v-else>
-      <p class="title">{{blogTitle}}</p>
-    </div>
-    <div class="blogcard__text">
-      {{blogText}}
-    </div>
-    <div class="blogcard__tags">
-      <span v-for="(tag, index) in blogTags" :key="index">#{{tag}}&nbsp;</span>
-    </div>
+  <nuxt-link tag="div" class="card" :to="link">
+    <div class="card-img-top" v-if="blogImage">
+      <div class="card-category">{{blogCategory}}</div>
+        <div class="card-title">{{blogTitle}}</div>
+      </div>
+      <div class="card-img-top shape" v-else>
+        <div class="card-category">{{blogCategory}}</div>
+        <div class="card-title">{{blogTitle}}</div>
+      </div>
+      <div class="card-body">
+        <p>{{blogText}}</p>
+      </div>
   </nuxt-link>
 </template>
 
@@ -60,49 +58,36 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-.blogcard {
-  width: 268px;
-  height: 268px;
-  position: relative;
-  background: lightgrey;
-  &__category {
-    position: absolute;
-    background: green;
-    display: inline;
-    padding: 0 8px;
-  }
-  &__shape {
-    width: 100%;
-    height: 160px;
-    background: gray;
-  }
-  &__text {
-    margin: 0;
-    padding: 8px;
-  }
-  &__tags {
-    width: auto;
-    padding: 8px;
-    position: absolute;
-    bottom: 0;
-    font-size: 12px;
+@import "~~/node_modules/bootstrap/scss/bootstrap.scss";
+.card {
+  .card-category {
+    width: fit-content;
+    background: limegreen;
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden;
+  }
+  .card-img-top {
+    min-height: 10rem;
+    .card-title {
+      padding: 3rem 8px 0 8px;
+    }
+  }
+  .card-body {
+    min-height: 8rem;
+    padding: 8px;
+    max-height: 5rem;
+    p {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+    }
+  }
+  .shape {
+    background: lightgrey;
   }
 }
-.blogcard:hover {
+.blogcard:hover{
   opacity: 0.7;
-}
-.title {
-  font-size: 20px;
-  font-weight: 700;
-  padding-top: 48px;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-@media (max-width: 768px) {
-}
-@media (max-width: 376px) {
 }
 </style>

@@ -5,19 +5,17 @@
     <p>その他に関する記事をまとめています</p>
     <input id="search" v-model="q" placeholder="URL検索..." />
 
-    <ul>
-      <li v-for="article in notes" :key="article.slug">
-        <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
-      </li>
-    </ul>
+    <PostCards :data="notes" />
   </DefaultTemplate>
 </template>
 
 <script>
 import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
+import PostCards from "@/components/Organisms/postcards.vue";
 export default {
   components: {
     DefaultTemplate,
+    PostCards
   },
   watchQuery: true,
   async asyncData({ $content, route }) {
