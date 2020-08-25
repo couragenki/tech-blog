@@ -6,6 +6,11 @@
       </div>
       <SideBar />
     </div>
+    <div class="container" v-else>
+      <div class="content" :class="{ PostStyle: isPostsPage, full: !isSidebar }">
+        <slot />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -42,6 +47,9 @@ export default {
     .content {
       width:  calc(100% - 300px);
       margin-right: 24px;
+    }
+    .full {
+      width: 100%;
     }
   }
 
