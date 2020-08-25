@@ -64,7 +64,7 @@ export default {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 912px) {
   .sidebar {
     width: 100%;
     padding-left: 0;

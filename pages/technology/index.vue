@@ -7,17 +7,16 @@
       テクノロジーに関する記事をまとめています</p>
     <input id="search" v-model="q" placeholder="URL検索..." />
 
-    <ul class="posts">
-      <li class="post" v-for="article in technology" :key="article.slug">
-        <BlogCrad
-          :link="article.path"
-          :blogTitle="article.title"
-          blogCategory="
-          テクノロジー"
-          :blogTags="article.tags"
-        />
-      </li>
-    </ul>
+    <div class="posts">
+      <BlogCrad
+        v-for="article in technology" :key="article.slug"
+        :link="article.path"
+        :blogTitle="article.title"
+        :blogCategory="article.dir"
+        :blogText="article.description"
+        :blogTags="article.tags"
+      />
+    </div>
   </DefaultTemplate>
 </template>
 
@@ -61,15 +60,25 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+@import "~~/node_modules/bootstrap/scss/bootstrap.scss";
 .posts {
   padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  .post {
-    width: fit-content;
-    margin-right: 20px;
-    margin-bottom: 20px;
+  .card {
+    width: 16rem;
+    margin-right: 1.6rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 596px) {
+  .posts {
+    .card {
+      width: 100%;
+      margin: 1rem 0;
+    }
   }
 }
 </style>
