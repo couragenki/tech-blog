@@ -60,6 +60,7 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+@import "~~/node_modules/bootstrap/scss/bootstrap.scss";
 .blogcard {
   width: 268px;
   height: 268px;

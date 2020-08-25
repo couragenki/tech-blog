@@ -9,6 +9,7 @@
   "dependencies": {
     "@nuxt/content": "^1.6.0",
     "@nuxt/typescript-runtime": "latest",
+    "bootstrap-vue": "^2.16.0",
     "csvtojson": "^2.0.10",
     "nuxt": "^2.14.1"
   },
