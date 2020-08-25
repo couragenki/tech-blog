@@ -117,7 +117,7 @@ export default {
     }
   }
 
-  .intoro-mask::after{
+  .intoro-mask::before{
     content:"";
     position: absolute;
     bottom: 0;
@@ -179,7 +179,7 @@ export default {
           text-align: center;
         }
         p {
-          font-size: 1.8em;
+          font-size: 1.5em;
           text-align: center;
         }
       }
