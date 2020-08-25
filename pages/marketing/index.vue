@@ -7,19 +7,17 @@
     </p>
     <input id="search" v-model="q" placeholder="URL検索..." />
 
-    <ul>
-      <li v-for="article in marketing" :key="article.slug">
-        <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
-      </li>
-    </ul>
+    <PostCards :data="marketing" />
   </DefaultTemplate>
 </template>
 
 <script>
 import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
+import PostCards from "@/components/Organisms/postcards.vue";
 export default {
   components: {
     DefaultTemplate,
+    PostCards
   },
   created(){
     console.log(this.$route.path)
