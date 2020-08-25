@@ -2,7 +2,7 @@
 title: 参加してみた勉強会を種類別にまとめる
 created_at: 2017-10-25
 updated_at: null
-image: /images/post-sample.jpg
+image:
 description: いくつかエンジニア向け勉強会に参加してみていくつか種類分けしてみたいと思います。目的によって参加するイベントは変わってくると思います。
 tags:
   - event
