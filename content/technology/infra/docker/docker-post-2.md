@@ -3,7 +3,7 @@ title: dockerを最新バージョンにしたらエラーが出た話 by Window
 created_at: 2017-10-19
 updated_at: null
 type: tech
-image: /images/post-sample.jpg
+image:
 description: dockerのバージョンアップの際にエラーが出たのでそちらの解決について記事にしました。
 tags:
   - Docker
