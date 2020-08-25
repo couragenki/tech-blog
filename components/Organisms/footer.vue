@@ -8,8 +8,8 @@
       </div>
 
       <div class="footer__container__clum">
+        <p class="footer__intoro">このサイトについて</p>
         <ul>
-          <li>このサイトについて</li>
           <li>自己紹介</li>
           <li>
             <n-link to="/policy">プライバシーポリシー</n-link>
@@ -18,10 +18,11 @@
         </ul>
       </div>
       <div class="footer__container__clum">
+        <p class="footer__intoro">記事を探す</p>
         <ul>
           <li>
             <n-link to="/technology">テクノロジー</n-link>
-            <ul>
+            <ul class="footer__links">
               <li>
                 <n-link to="/technology/frontend">フロントエンド</n-link>
               </li>
@@ -38,7 +39,7 @@
           </li>
           <li>
             <n-link to="/marketing">マーケティング</n-link>
-            <ul>
+            <ul class="footer__links">
               <li>
                 <n-link to="/marketing/web">WEBマーケ</n-link>
               </li>
@@ -75,6 +76,10 @@ export default {
   background: #ffdb99;
   padding-top: 32px;
   padding-bottom: 32px;
+  &__intoro {
+    font-weight: 700;
+    font-size: 1.2em;
+  }
   &__container {
     width: 100%;
     height: 100%;
@@ -91,6 +96,13 @@ export default {
       .ad img {
         width: 100%;
       }
+    }
+  }
+  ul {
+    margin-bottom: 10px;
+    a {
+      color: #000;
+      text-decoration: none;
     }
   }
   &__copywrite {

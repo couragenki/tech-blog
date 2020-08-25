@@ -32,7 +32,6 @@ tags:
 
 ![img_5.png](https://qiita-image-store.s3.amazonaws.com/0/199085/961842c0-2f99-756d-439d-b87b97af3e08.png)
 
-
 ### 4.設定をします
 
 ![img_6.png](https://qiita-image-store.s3.amazonaws.com/0/199085/81685ae9-cabc-509a-a454-6b5a34dd9dc0.png)
