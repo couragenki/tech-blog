@@ -26,8 +26,6 @@ export default {
   async asyncData({ $content, route, params }) {
     const { catergory, family, slug } = params;
     const tech = await $content("tech", catergory, family).fetch();
-    console.log(typeof tech)
-    console.log(tech)
     return {
       tech,
       catergory,

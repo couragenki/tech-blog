@@ -5,6 +5,13 @@
     <input id="search" v-model="q" placeholder="タイトル検索..." />
     <PostCards :data="notes" />
 
+    <!-- TODO:ここ消すとgenerateで子ページが反映できない。 -->
+    <ul>
+      <li v-for="article in notes" :key="article.slug">
+        <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
+      </li>
+    </ul>
+
   </DefaultTemplate>
 </template>
 
