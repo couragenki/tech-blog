@@ -168,42 +168,49 @@ export default {
   }
 }
 @media (max-width: 768px) {
-.toppage-intoro {
-  .intoro-mask {
+  .toppage-intoro {
+    .intoro-mask {
+      .top-container {
+        position: relative;
+        .top-text {
+          position: absolute;
+          h1 {
+            font-size: 2.5rem;
+            text-align: center;
+          }
+          p {
+            font-size: 1.5em;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .toppage-profile {
     .top-container {
-      position: relative;
-      .top-text {
-        position: absolute;
-        h1 {
-          font-size: 2.5rem;
+      display: block;
+      .top-profile {
+        width: 100%;
+        margin-right: 0;
+        .top-profile-container {
           text-align: center;
+          img{
+            width: 50%;
+          }
         }
-        p {
-          font-size: 1.5em;
-          text-align: center;
-        }
+      }
+      .top-intoro {
+        width: 100%;
+        min-height: 180px;
       }
     }
   }
 }
-.toppage-profile {
-  .top-container {
-    display: block;
-    .top-profile {
-      width: 100%;
-      margin-right: 0;
-      .top-profile-container {
-        text-align: center;
-        img{
-          width: 50%;
-        }
-      }
-    }
-    .top-intoro {
-      width: 100%;
-      min-height: 180px;
+@media (max-width: 768px) {
+  .toppage-intoro {
+    .intoro-mask::before {
+      content: none;
     }
   }
-}
 }
 </style>

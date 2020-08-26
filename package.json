@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "nuxt-ts",
+    "dev": "nuxt-ts --max_old_space_size=2048 --optimize_for_size",
     "build": "nuxt-ts build",
     "generate": "nuxt-ts generate",
     "start": "nuxt-ts start",

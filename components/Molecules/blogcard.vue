@@ -9,7 +9,10 @@
         <div class="card-title">{{blogTitle}}</div>
       </div>
       <div class="card-body">
-        <p>{{blogText}}</p>
+        <p class="card-text">{{blogText}}</p>
+        <ul class="card-tag" v-for="(item, index) in blogTags" :key="index">
+          <li>#{{item}}&nbsp;</li>
+        </ul>
       </div>
   </nuxt-link>
 </template>
@@ -74,13 +77,26 @@ export default {
     }
   }
   .card-body {
+    position: relative;
     min-height: 8rem;
     padding: 8px;
     max-height: 5rem;
-    p {
+    .card-text {
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 3;
+      overflow: hidden;
+    }
+    .card-tag {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: inline-block;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      li {
+        font-size: 0.8em;
+      }
     }
   }
   .shape {
