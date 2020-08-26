@@ -2,7 +2,15 @@
   <div>
     <Header />
     <Navigation />
-    <div>{{　post.title || '投稿タイトル'　}}</div>
+
+    <div v-if="post.image" class="post-heroimg" :style="{ backgroundImage: 'url(' + 　post.image + ')'}">
+      <h1 class="post-title">{{　post.title || '投稿タイトル'　}}</h1>
+    </div>
+
+    <div class="hero-bg" v-else>
+      <h1 class="post-title">{{　post.title || '投稿タイトル'　}}</h1>
+    </div>
+
     <Container :isPostsPage="isPostsPage" :isSidebar="isSidebar" >
       <PostContent :post="post" :catergory="catergory" :family="family" />
     </Container>
@@ -46,19 +54,37 @@ export default {
       type: String,
       default: () => { return null }
     },
-    heroImg: {
-      type: String,
-      default: () => { return '' }
-    }
   },
 };
 </script>
 <style lang="scss" scoped>
-@media (max-width: 768px) {
-  .navigation {
-    display: none;
-  }
+.post-heroimg {
+  background-size: cover;
+  position: relative;
+  min-height: 250px;
 }
-@media (max-width: 320px) {
+.hero-bg {
+  position: relative;
+  min-height: 250px;
+  background: #75a6ff;
+}
+.post-title {
+  width: 96%;
+  max-width: 1200px;
+  height: 100px;
+  height: fit-content;
+  text-align: center;
+  background: #ffffff7a;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+}
+@media (max-width: 768px) {
+}
+@media (min-width: 320px) {
 }
 </style>

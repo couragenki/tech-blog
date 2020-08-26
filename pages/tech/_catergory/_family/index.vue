@@ -14,9 +14,9 @@ export default {
   },
   async asyncData({ $content, route, params }) {
     const { catergory, family, slug } = params;
-    const tech = await $content("tech", catergory, family).fetch();
+    const article = await $content("tech", catergory, family).fetch();
     return {
-      tech,
+      article,
       catergory,
       family,
     };

@@ -1,7 +1,7 @@
 <template>
-  <nuxt-link tag="div" class="card" :to="link">
-    <div class="card-img-top" v-if="blogImage" :style="{ backgroundImage: 'url(' + blogImage + ')'}">
-      <div class="card-category">{{blogCategory}}</div>
+    <nuxt-link tag="div" class="card" :to="link">
+      <div class="card-img-top" v-if="blogImage" :style="{ backgroundImage: 'url(' + blogImage + ')'}">
+        <div class="card-category">{{blogCategory}}</div>
         <div class="card-title">{{blogTitle}}</div>
       </div>
       <div class="card-img-top shape" v-else>
@@ -14,7 +14,7 @@
           <li>#{{item}}&nbsp;</li>
         </ul>
       </div>
-  </nuxt-link>
+    </nuxt-link>
 </template>
 
 <script>
