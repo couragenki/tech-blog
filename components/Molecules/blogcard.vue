@@ -1,6 +1,6 @@
 <template>
   <nuxt-link tag="div" class="card" :to="link">
-    <div class="card-img-top" v-if="blogImage">
+    <div class="card-img-top" v-if="blogImage" :style="{ backgroundImage: 'url(' + blogImage + ')'}">
       <div class="card-category">{{blogCategory}}</div>
         <div class="card-title">{{blogTitle}}</div>
       </div>
@@ -36,7 +36,7 @@ export default {
     blogImage: {
       type: String,
       default: () => {
-        return "";
+        return "/img/sample1.jpg";
       },
     },
     blogTitle: {
@@ -103,7 +103,7 @@ export default {
     background: lightgrey;
   }
 }
-.blogcard:hover{
+.card:hover{
   opacity: 0.7;
 }
 </style>
