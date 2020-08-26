@@ -22,9 +22,6 @@ export default {
       error({ message: "frontend-data not found" });
     }
 
-    console.log("article");
-    console.log(article);
-
     return {
       article,
     };

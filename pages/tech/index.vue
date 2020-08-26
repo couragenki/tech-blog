@@ -28,15 +28,10 @@ export default {
     let query = $content("tech", { deep: true }).sortBy("date");
 
     if (q) {
-      // query = query.search(q);
-      // タイトル検索
-      console.log(query)
       query = query.search('title', q)
-      console.log(query)
     }
 
     const tech = await query.fetch();
-    console.error(tech);
 
     return {
       q,

@@ -60,16 +60,13 @@ export default {
     const q = route.query.q;
 
     // 前投稿から投稿日が新しい順12件に取得する
-    let query = $content("", { deep: true }).sortBy("date").limit(12);
+    let query = $content("", { deep: true }).sortBy("date", "desc").limit(12);
 
     if (q) {
-      console.log(query)
       query = query.search('title', q)
-      console.log(query)
     }
 
     const tech = await query.fetch();
-    console.error(tech);
 
     return {
       q,
@@ -156,7 +153,7 @@ export default {
       width: 40%;
       margin-right: 10%;
       .top-profile-container {
-        background: #fbbf678a;
+        background: #76d4ff75;
         text-align: center;
         img {
           width: 50%;

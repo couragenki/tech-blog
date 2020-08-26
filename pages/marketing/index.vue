@@ -19,9 +19,6 @@ export default {
     DefaultTemplate,
     PostCards
   },
-  created(){
-    console.log(this.$route.path)
-  },
   watchQuery: true,
   async asyncData({ $content, route }) {
     const q = route.query.q;

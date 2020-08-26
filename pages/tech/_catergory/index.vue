@@ -27,10 +27,7 @@ export default {
     const q = route.query.q;
     const { catergory, family, slug } = params;
 
-    let query = $content("tech", catergory, { deep: true }).sortBy(
-      "date",
-      "desc"
-    );
+    let query = $content("tech", catergory, { deep: true }).sortBy("date", "desc");
 
     if (q) {
       query = query.search("title", q);
