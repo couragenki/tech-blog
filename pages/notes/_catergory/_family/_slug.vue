@@ -1,20 +1,16 @@
 <template>
-  <DefaultTemplate :isPostsPage="true">
-    <PostContent
-      :post="article"
-      :catergory="catergory"
-      :family="family"
-    />
-  </DefaultTemplate>
+  <PostTemplate
+    :isPostsPage="true"
+    :post="article"
+    :catergory="catergory"
+    :family="family" />
 </template>
 
 <script>
-import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
-import PostContent from "@/components/Organisms/postcontent.vue";
+import PostTemplate from "@/components/Templates/posttemplate.vue";
 export default {
   components: {
-    DefaultTemplate,
-    PostContent
+    PostTemplate
   },
   async asyncData({ $content, params, route, error }) {
     const { catergory, family, slug } = params;

@@ -3,12 +3,6 @@
     <nuxt-link to="/tech">⇦技術の一覧ページへ戻る</nuxt-link>
     <h2>カテゴリーINDEX</h2>
     <input id="search" v-model="q" placeholder="タイトル検索..." />
-    <ul>
-      <li v-for="article in tech" :key="article.slug">
-        <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
-      </li>
-    </ul>
-
     <PostCards :data="tech" />
 
   </DefaultTemplate>
