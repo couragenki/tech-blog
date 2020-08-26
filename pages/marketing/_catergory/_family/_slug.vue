@@ -1,17 +1,20 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link :to="'/marketing/' + catergory + '/' + family">⇦{{catergory}}/{{family}}の記事一覧へ戻る</nuxt-link>
-    <p>ファミリースラッグ</p>
-    <h2>{{ article.title }}</h2>
-    <nuxt-content :document="article" />
+    <PostContent
+      :post="article"
+      :catergory="catergory"
+      :family="family"
+    />
   </DefaultTemplate>
 </template>
 
 <script>
 import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
+import PostContent from "@/components/Organisms/postcontent.vue";
 export default {
   components: {
     DefaultTemplate,
+    PostContent,
   },
   async asyncData({ $content, params, route, error }) {
     const { catergory, family, slug } = params;
