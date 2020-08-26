@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="toppage-intoro">
-       <Header />
-      <Navigation />
+      <!-- <Header />
+      <Navigation /> -->
       <div class="intoro-mask">
         <div class="top-container">
           <div class="top-text">
