@@ -1,6 +1,6 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link to="/">⇦ホームへ戻る</nuxt-link>
+    <BackButton link="/" text="ホームへ戻る"/>
     <h2>
       テクノロジー INDEX</h2>
     <p>
@@ -14,10 +14,12 @@
 <script>
 import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
 import PostCards from "@/components/Organisms/postcards.vue";
+import BackButton from "@/components/Atoms/backbutton.vue";
 export default {
   components: {
     DefaultTemplate,
     PostCards,
+    BackButton
   },
   watchQuery: true,
   async asyncData({ $content, route }) {
