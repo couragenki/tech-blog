@@ -1,22 +1,35 @@
 <template>
   <PostTemplate
+    v-if="tech.title"
     :isPostsPage="true"
-    :post="article"
+    :post="tech"
     :catergory="catergory"
     :family="family" />
+  <DefaultTemplate v-else isPostsPage="true">
+    <nuxt-link :to="'/tech/' + catergory">⇦{{catergory}}の記事一覧へ戻る</nuxt-link>
+      <p>ファミリーページINDEX</p>
+      <h2>{{ family }}に関する記事一覧</h2>
+      <PostCards :data="tech" />
+  </DefaultTemplate>
 </template>
 
 <script>
+import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
 import PostTemplate from "@/components/Templates/posttemplate.vue";
+import PostCards from "@/components/Organisms/postcards.vue";
 export default {
   components: {
-    PostTemplate
+    DefaultTemplate,
+    PostTemplate,
+    PostCards
   },
   async asyncData({ $content, route, params }) {
     const { catergory, family, slug } = params;
-    const article = await $content("tech", catergory, family).fetch();
+    const tech = await $content("tech", catergory, family).fetch();
+    console.log(typeof tech)
+    console.log(tech)
     return {
-      article,
+      tech,
       catergory,
       family,
     };

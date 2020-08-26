@@ -2,7 +2,7 @@
   <header class="header">
     <div class="header__title">
       <n-link to="/">
-        <p class="header__title__text">ブログタイトル</p>
+        <p class="header__title__text">カラゲンキ</p>
       </n-link>
     </div>
   </header>

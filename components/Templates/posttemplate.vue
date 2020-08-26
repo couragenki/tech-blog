@@ -74,7 +74,9 @@ export default {
   height: 100px;
   height: fit-content;
   text-align: center;
-  background: #ffffff7a;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background: #ffffffb3;
   position: absolute;
   top: 0;
   right: 0;

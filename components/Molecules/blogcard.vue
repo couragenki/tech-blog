@@ -2,11 +2,15 @@
     <nuxt-link tag="div" class="card" :to="link">
       <div class="card-img-top" v-if="blogImage" :style="{ backgroundImage: 'url(' + blogImage + ')'}">
         <div class="card-category">{{blogCategory}}</div>
-        <div class="card-title">{{blogTitle}}</div>
+        <div class="card-title">
+          <p class="card-title-text">{{blogTitle}}</p>
+        </div>
       </div>
       <div class="card-img-top shape" v-else>
         <div class="card-category">{{blogCategory}}</div>
-        <div class="card-title">{{blogTitle}}</div>
+        <div class="card-title">
+          <p class="card-title-text">{{blogTitle}}</p>
+        </div>
       </div>
       <div class="card-body">
         <p class="card-text">{{blogText}}</p>
@@ -71,9 +75,15 @@ export default {
     white-space: nowrap;
   }
   .card-img-top {
-    min-height: 10rem;
+    min-height: 9rem;
     .card-title {
-      padding: 3rem 8px 0 8px;
+      padding: 2rem 8px 2rem 8px;
+      .card-title-text {
+        font-weight: 700;
+        font-size: 1.2em;
+        padding: 8px;
+        background: #ffffffb3;
+      }
     }
   }
   .card-body {
