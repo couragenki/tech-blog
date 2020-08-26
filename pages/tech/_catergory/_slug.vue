@@ -2,7 +2,7 @@
   <DefaultTemplate :isPostsPage="true">
     カテゴリースラッグ
     {{this.$route.path}}
-    <BackButton link="/tech/frontend" text="フロントエンドの記事一覧へ戻る" />
+    <nuxt-link to="/tech">⇦技術の記事一覧へ戻る</nuxt-link>
     <h2>{{ article.title }}</h2>
     <p>{{ article.description }}</p>
   </DefaultTemplate>
@@ -10,11 +10,9 @@
 
 <script>
 import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
-import BackButton from "@/components/Atoms/backbutton.vue";
 export default {
   components: {
     DefaultTemplate,
-    BackButton
   },
   async asyncData({ $content, params, route, error }) {
     let article;

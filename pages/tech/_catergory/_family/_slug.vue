@@ -1,8 +1,6 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <BackButton
-    :link="'/tech/' + catergory + '/' + family"
-    :text="catergory + '/' + family + 'の記事一覧へ戻る'" />
+    <nuxt-link :to="'/tech/' + catergory + '/' + family">⇦{{catergory}}/{{family}}の記事一覧へ戻る</nuxt-link>
     <p>ファミリースラッグ</p>
     <h2>{{ article.title }}</h2>
     <nuxt-content :document="article" />
@@ -11,11 +9,9 @@
 
 <script>
 import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
-import BackButton from "@/components/Atoms/backbutton.vue";
 export default {
   components: {
     DefaultTemplate,
-    BackButton
   },
   async asyncData({ $content, params, route, error }) {
     const { catergory, family, slug } = params;

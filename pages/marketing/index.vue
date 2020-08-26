@@ -2,9 +2,7 @@
   <DefaultTemplate :isPostsPage="true">
     <nuxt-link to="/">⇦ホームへ戻る</nuxt-link>
     <h2>マーケティング INDEX</h2>
-    <p>
-      マーケティングに関する記事をまとめています
-    </p>
+    <p>マーケティングに関する記事をまとめています</p>
     <input id="search" v-model="q" placeholder="URL検索..." />
 
     <PostCards :data="marketing" />

@@ -3,7 +3,14 @@
     <nuxt-link to="/marketing">⇦マーケティングの一覧ページへ戻る</nuxt-link>
     <h2>カテゴリーINDEX</h2>
     <input id="search" v-model="q" placeholder="タイトル検索..." />
+    <ul>
+      <li v-for="article in marketing" :key="article.slug">
+        <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
+      </li>
+    </ul>
+
     <PostCards :data="marketing" />
+
   </DefaultTemplate>
 </template>
 
@@ -13,20 +20,17 @@ import PostCards from "@/components/Organisms/postcards.vue";
 export default {
   components: {
     DefaultTemplate,
-    PostCards
+    PostCards,
   },
   watchQuery: true,
   async asyncData({ $content, route, params }) {
     const q = route.query.q;
     const { catergory, family, slug } = params;
 
-    let query = $content("marketing", catergory, { deep: true }).sortBy(
-      "date",
-      "desc"
-    );
+    let query = $content('marketing', catergory, { deep: true }).sortBy("date", "desc");
 
     if (q) {
-      query = query.search("title", q);
+      query = query.search('title', q)
     }
 
     const marketing = await query.fetch();
@@ -34,7 +38,7 @@ export default {
     return {
       q,
       marketing,
-      catergory,
+      catergory
     };
   },
   watch: {
