@@ -2,7 +2,7 @@
 title: MacにSourcetreeをダウンロードするまで
 created_at: 2017-10-19
 updated_at: null
-image:
+image: /img/sample2.jpg
 description: MacにGitのGUIツールであるSourcetreeを導入していきます
 type: tech
 tags:

@@ -1,18 +1,16 @@
 <template>
-  <DefaultTemplate :isPostsPage="true">
-    カテゴリースラッグ
-    {{this.$route.path}}
-    <nuxt-link to="/marketing">⇦マーケティングの記事一覧へ戻る</nuxt-link>
-    <h2>{{ article.title }}</h2>
-    <p>{{ article.description }}</p>
-  </DefaultTemplate>
+  <PostTemplate
+    :isPostsPage="true"
+    :post="article"
+    :catergory="catergory"
+    :family="family" />
 </template>
 
 <script>
-import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
+import PostTemplate from "@/components/Templates/posttemplate.vue";
 export default {
   components: {
-    DefaultTemplate,
+    PostTemplate
   },
   async asyncData({ $content, params, route, error }) {
     let article;

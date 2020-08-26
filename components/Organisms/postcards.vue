@@ -7,6 +7,7 @@
         :blogCategory="article.type"
         :blogText="article.description"
         :blogTags="article.tags"
+        :blogImage="article.image || null"
       />
     </div>
 </template>

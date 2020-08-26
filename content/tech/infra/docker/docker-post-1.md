@@ -3,7 +3,7 @@ title: 新人フロントエンジニアがdockerに挑戦した話
 created_at: 2017-10-14
 updated_at: null
 type: tech
-image:
+image: /img/sample2.jpg
 description: 新人フロントエンジニアがdockerに挑戦した話です。環境構築周りを触っていきます。
 tags:
   - Docker

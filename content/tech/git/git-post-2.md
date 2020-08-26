@@ -2,7 +2,7 @@
 title: Sourcetreeの Invalid username or passwordの対策
 created_at: 2018-12-02
 updated_at: null
-image:
+image: /img/sample2.jpg /img/sample2.jpg
 description: Sourcetreeのエラーシューティングを記事にしました。エラーの発生から解決までを記事にしています。
 type: tech
 tags:

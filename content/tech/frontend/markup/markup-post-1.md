@@ -2,7 +2,7 @@
 title: snapwidgetでInstagramの画像をギャラリー風に表示する
 created_at: 2019-04-18
 updated_at: null
-image:
+image: /img/sample2.jpg
 type: tech
 description: インスタグラムの投稿一覧を自分のサイトに埋め込むための手法を解説しています。
 tags:
