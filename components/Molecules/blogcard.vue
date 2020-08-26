@@ -24,7 +24,7 @@ export default {
     link: {
       type: String,
       default: () => {
-        return "/technology";
+        return "/tech";
       },
     },
     blogCategory: {

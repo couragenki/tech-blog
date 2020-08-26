@@ -30,7 +30,7 @@
     </div>
     <Container :isSidebar="false">
       <h2>新着記事</h2>
-      <PostCards :data="technology" />
+      <PostCards :data="tech" />
     </Container>
     <Footer />
   </div>
@@ -68,12 +68,12 @@ export default {
       console.log(query)
     }
 
-    const technology = await query.fetch();
-    console.error(technology);
+    const tech = await query.fetch();
+    console.error(tech);
 
     return {
       q,
-      technology,
+      tech,
     };
   },
 };

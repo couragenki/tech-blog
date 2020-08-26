@@ -21,19 +21,19 @@
         <p class="footer__intoro">記事を探す</p>
         <ul>
           <li>
-            <n-link to="/technology">テクノロジー</n-link>
+            <n-link to="/tech">テック</n-link>
             <ul class="footer__links">
               <li>
-                <n-link to="/technology/frontend">フロントエンド</n-link>
+                <n-link to="/tech/frontend">フロントエンド</n-link>
               </li>
               <li>
-                <n-link to="/technology/backend">バックエンド</n-link>
+                <n-link to="/tech/backend">バックエンド</n-link>
               </li>
               <li>
-                <n-link to="/technology/infra">インフラ</n-link>
+                <n-link to="/tech/infra">インフラ</n-link>
               </li>
               <li>
-                <n-link to="/technology/git">Git</n-link>
+                <n-link to="/tech/git">Git</n-link>
               </li>
             </ul>
           </li>
