@@ -4,7 +4,7 @@
         v-for="article in data" :key="article.slug"
         :link="article.path"
         :blogTitle="article.title"
-        :blogCategory="article.dir"
+        :blogCategory="article.type"
         :blogText="article.description"
         :blogTags="article.tags"
       />

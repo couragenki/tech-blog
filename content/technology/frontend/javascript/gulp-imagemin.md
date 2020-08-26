@@ -1,7 +1,7 @@
 ---
 title: 【コピペですぐに使える】画像圧縮機能
 created_at: 2019-02-19
-type: tech
+type: technology
 image:
 description: gulpとimageminを使用して画像の圧縮を行う方法を解説しています。コピペでOKです！
 tags:

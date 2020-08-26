@@ -4,6 +4,7 @@ created_at: 2017-10-19
 updated_at: null
 image:
 description: MacにGitのGUIツールであるSourcetreeを導入していきます
+type: technology
 tags:
   - event
 ---

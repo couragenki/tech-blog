@@ -2,6 +2,7 @@
 title: エンジニア向け勉強会 参加してみた気づき
 created_at: 2017-10-25
 updated_at: null
+type: technology
 image:
 description: はじめてエンジニア向けのイベントに参加してきたのでどんな学びがあったのかや感想を記事にしていきます。
 tags:

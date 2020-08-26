@@ -1,6 +1,7 @@
 ---
 title: Vueについて１
 description: Learn how to use @nuxt/content.
+type: technology
 tags:
   - test1
   - test2

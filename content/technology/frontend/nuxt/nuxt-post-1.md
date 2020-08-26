@@ -2,6 +2,7 @@
 title: Nuxt+TypeScriptでの環境構築手順
 created_at: 2019-06-13
 description: Nuxt.jsとTypeScriptを用いた開発環境構築の手順をキャッチアップしたので記事にしています。記載のコマンド通りに実行していただければ再現できると思います。
+type: technology
 tags:
   - Next.js
   - TypeScript

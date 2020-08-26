@@ -2,6 +2,7 @@
 title: pythonを触ってみた。
 created_at: 2017-03-03
 image:
+type: technology
 description: チャットボットを作りたくてpythonを触ってみた。
 tags:
   - Python

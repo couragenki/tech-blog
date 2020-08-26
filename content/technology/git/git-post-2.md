@@ -4,6 +4,7 @@ created_at: 2018-12-02
 updated_at: null
 image:
 description: Sourcetreeのエラーシューティングを記事にしました。エラーの発生から解決までを記事にしています。
+type: technology
 tags:
   - Git
 ---
