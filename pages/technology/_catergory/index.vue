@@ -1,6 +1,6 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link to="/technology">⇦フロントエンドの一覧ページへ戻る</nuxt-link>
+    <BackButton link="/technology" text="技術記事一覧ページへ戻る" />
     <h2>カテゴリーINDEX</h2>
     <div v-if="catergory == 'vue'">Vue.jsに関するページ</div>
     <div v-if="catergory == 'nuxt'">Nuxt.jsに関するページ</div>
@@ -15,10 +15,12 @@
 <script>
 import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
 import PostCards from "@/components/Organisms/postcards.vue";
+import BackButton from "@/components/Atoms/backbutton.vue";
 export default {
   components: {
     DefaultTemplate,
-    PostCards
+    PostCards,
+    BackButton
   },
   watchQuery: true,
   async asyncData({ $content, route, params }) {
