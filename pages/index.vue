@@ -18,7 +18,7 @@
       <div class="top-container">
         <div class="top-profile">
           <div class="top-profile-container">
-            <img src="/common/profile-icon.png">
+            <img width="512" src="/common/profile-icon.jpg">
           </div>
         </div>
         <div class="top-intoro">
@@ -157,8 +157,10 @@ export default {
       margin-right: 10%;
       .top-profile-container {
         background: #fbbf678a;
-        img{
-          width: 100%;
+        text-align: center;
+        img {
+          width: 50%;
+          border-radius: 50%;
         }
       }
     }

@@ -1,7 +1,7 @@
 <template>
   <div class="intoro">
     <div class="intoro__icon">
-      <img class="intoro__icon__img" src="/common/profile-icon.png" />
+      <img class="intoro__icon__img" width="512" src="/common/profile-icon.jpg" />
     </div>
     <div class="intoro__sectiontext">---ひとこと---</div>
     <p class="intoro__sentence">
