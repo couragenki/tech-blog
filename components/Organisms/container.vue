@@ -34,6 +34,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.PostStyle {
+  /deep/ img {
+    max-width: 100%;
+  }
+}
 .wrapper {
   width: auto;
   padding: 0 16px;
@@ -67,10 +72,5 @@ export default {
   }
 }
 @media (max-width: 320px) {
-}
-.PostStyle {
-  img {
-    width: 100%;
-  }
 }
 </style>
