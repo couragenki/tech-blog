@@ -1,6 +1,6 @@
 <template>
   <DefaultTemplate>
-    <h2>新着記事</h2>
+    <h2 style="margin-top:0">新着記事</h2>
     <PostCards :data="tech" />
 
     <h2>カテゴリー</h2>

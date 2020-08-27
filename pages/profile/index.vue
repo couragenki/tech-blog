@@ -20,7 +20,12 @@
           </div>
         </div>
         <div class="top-intoro">
-          <p>フロントエンドエンジニアのブログです</p>
+          <h2>自己紹介</h2>
+          <p>
+            長崎出身の25歳です。
+            <br />22歳の時に生まれて初めてパソコンを購入しプログラミングを始めました。
+            <br />次日々から次に分からないこと、学ばなくてはならないことが出てくるのでこちらのブログを立ち上げアウトプットの場にしています。
+          </p>
         </div>
       </div>
     </div>
@@ -147,11 +152,12 @@ export default {
     background: #ffffff60;
     .top-profile {
       width: 40%;
-      margin-right: 10%;
+      margin-right: 5%;
       .top-profile-container {
         background: #76d4ff75;
         text-align: center;
         img {
+          padding: 10px;
           width: 50%;
           border-radius: 50%;
         }

@@ -2,12 +2,6 @@
   <footer class="footer">
     <div class="footer__container">
       <div class="footer__container__clum">
-        <div class="ad">
-          <img src="/img/banner.png" />
-        </div>
-      </div>
-
-      <div class="footer__container__clum">
         <p class="footer__intoro">このサイトについて</p>
         <ul>
           <li>
@@ -20,7 +14,7 @@
         </ul>
       </div>
       <div class="footer__container__clum">
-        <p class="footer__intoro">記事を探す</p>
+        <p class="footer__intoro">カテゴリー</p>
         <ul>
           <li>
             <n-link to="/tech">テック</n-link>
@@ -54,6 +48,26 @@
             </ul>
           </li>
         </ul>
+      </div>
+      <div class="footer__container__clum">
+        <!-- <div class="ad">
+          <img src="/img/banner.png" />
+        </div>-->
+        <!-- <a
+          class="twitter-timeline"
+          href="https://twitter.com/couragenki?ref_src=twsrc%5Etfw"
+        >Tweets by couragenki</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+        <p class="footer__intoro">タグ</p>
+        <p>
+          <n-link to="/tech/frontend/javascript/">#JavaScript</n-link>&nbsp;
+          <n-link to="/tech/frontend/vue/">#Vue.js</n-link>&nbsp;
+          <n-link to="/tech/frontend/gatsby/">#gatsby.js</n-link>&nbsp;
+          <n-link to="/tech/frontend/markup/">#markup</n-link>&nbsp;
+          <n-link to="/tech/backend/python/">#python</n-link>&nbsp;
+          <n-link to="/tech/infra/docker/">#docker</n-link>&nbsp;
+          <n-link to="/tech/git">#Git</n-link>&nbsp;
+        </p>
       </div>
       <div class="footer__container__clum">
         <Introduction />
@@ -103,14 +117,19 @@ export default {
   ul {
     margin-bottom: 10px;
     a {
-      color: #000;
-      text-decoration: none;
+      // color: #000;
+      // text-decoration: none;
     }
   }
   &__copywrite {
     text-align: center;
   }
 }
+.twitter-timeline {
+  max-height: 400px;
+  overflow: hidden;
+}
+
 @media (max-width: 768px) {
   .footer {
     width: 100%;

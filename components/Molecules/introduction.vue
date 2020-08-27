@@ -3,25 +3,33 @@
     <div class="intoro__icon">
       <img class="intoro__icon__img" width="512" src="/common/profile-icon.jpg" />
     </div>
-    <div class="intoro__sectiontext">---ひとこと---</div>
+    <!-- <div class="intoro__sectiontext">---ひとこと---</div>
     <p class="intoro__sentence">
-      ニワトリです。
-      <br />名前はまだない。
-    </p>
+      長崎出身の25歳です。
+      <br />負けん気だけで生きてきました。
+    </p>-->
     <div class="intoro__sectiontext">---SNS---</div>
     <div class="intoro__sns">
       <ul class="intoro__sns__list">
         <li class="intoro__sns__list__icon">
-          <img src="/common/twitter.svg" />
+          <a href="https://twitter.com/couragenki" target="_blank">
+            <img src="/common/twitter.svg" />
+          </a>
         </li>
         <li class="intoro__sns__list__icon">
-          <img src="/common/github.svg" />
+          <a href="https://github.com/GenkiMatsubara" target="_blank">
+            <img src="/common/github.svg" />
+          </a>
         </li>
         <li class="intoro__sns__list__icon">
-          <img src="/common/qiita.png" />
+          <a href="https://qiita.com/GenkiMatsubara" target="_blank">
+            <img src="/common/qiita.png" />
+          </a>
         </li>
         <li class="intoro__sns__list__icon">
-          <img src="/common/instagram.svg" />
+          <a href="https://www.instagram.com/genki.matsubara/" target="_blank">
+            <img src="/common/instagram.svg" />
+          </a>
         </li>
       </ul>
     </div>
