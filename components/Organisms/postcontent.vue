@@ -35,6 +35,8 @@ export default {
   },
   methods: {
     setDate(date) {
+      if (!date) return "不明";
+
       const y = date.substring(0, 4);
       const m = date.substring(5, 7);
       const d = date.substring(8, 10);
