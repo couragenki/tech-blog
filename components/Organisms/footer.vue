@@ -10,11 +10,13 @@
       <div class="footer__container__clum">
         <p class="footer__intoro">このサイトについて</p>
         <ul>
-          <li>自己紹介</li>
+          <li>
+            <n-link to="/profile">自己紹介</n-link>
+          </li>
           <li>
             <n-link to="/policy">プライバシーポリシー</n-link>
           </li>
-          <li>お問い合わせ</li>
+          <!-- <li>お問い合わせ</li> -->
         </ul>
       </div>
       <div class="footer__container__clum">
@@ -57,7 +59,7 @@
         <Introduction />
       </div>
     </div>
-    <p class="footer__copywrite">©2020 ○○○○○○ブログ</p>
+    <p class="footer__copywrite">©2020 couragenki All Rights Reserved.</p>
   </footer>
 </template>
 

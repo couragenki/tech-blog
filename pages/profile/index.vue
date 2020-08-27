@@ -1,8 +1,35 @@
 <template>
-  <DefaultTemplate>
-    <h2>新着記事</h2>
-    <PostCards :data="tech" />
-  </DefaultTemplate>
+  <div>
+    <div class="toppage-intoro">
+      <!-- <Header />
+      <Navigation />-->
+      <div class="intoro-mask">
+        <div class="top-container">
+          <div class="top-text">
+            <h1>GENKI MATSUBARA</h1>
+            <p>フロントエンドエンジニアの技術ブログです。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="toppage-profile">
+      <div class="top-container">
+        <div class="top-profile">
+          <div class="top-profile-container">
+            <img width="512" src="/common/profile-icon.jpg" />
+          </div>
+        </div>
+        <div class="top-intoro">
+          <p>フロントエンドエンジニアのブログです</p>
+        </div>
+      </div>
+    </div>
+    <!-- <Container :isSidebar="false">
+      <h2>新着記事</h2>
+      <PostCards :data="tech" />
+    </Container>-->
+    <Footer />
+  </div>
 </template>
 
 <script>

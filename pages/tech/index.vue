@@ -1,8 +1,9 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
     <nuxt-link to="/">⇦ホームへ戻る</nuxt-link>
-    <h2>技術 INDEX</h2>
+    <h1>Techページ</h1>
     <p>技術に関する記事をまとめています</p>
+    <h2></h2>
     <input id="search" v-model="q" placeholder="URL検索..." />
 
     <PostCards :data="tech" />
@@ -15,7 +16,7 @@ import PostCards from "@/components/Organisms/postcards.vue";
 export default {
   components: {
     DefaultTemplate,
-    PostCards
+    PostCards,
   },
   watchQuery: true,
   async asyncData({ $content, route }) {

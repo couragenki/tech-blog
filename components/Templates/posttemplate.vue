@@ -3,15 +3,19 @@
     <Header />
     <Navigation />
 
-    <div v-if="post.image" class="post-heroimg" :style="{ backgroundImage: 'url(' + 　post.image + ')'}">
-      <h1 class="post-title">{{　post.title || '投稿タイトル'　}}</h1>
+    <div
+      v-if="post.image"
+      class="post-heroimg"
+      :style="{ backgroundImage: 'url(' + 　post.image + ')'}"
+    >
+      <h1 class="post-title">{{ post.title || '投稿タイトル' }}</h1>
     </div>
 
     <div class="hero-bg" v-else>
-      <h1 class="post-title">{{　post.title || '投稿タイトル'　}}</h1>
+      <h1 class="post-title">{{ post.title || '投稿タイトル' }}</h1>
     </div>
 
-    <Container :isPostsPage="isPostsPage" :isSidebar="isSidebar" >
+    <Container :isPostsPage="isPostsPage" :isSidebar="isSidebar">
       <PostContent :post="post" :catergory="catergory" :family="family" />
     </Container>
     <Footer />
@@ -33,26 +37,36 @@ export default {
     Footer,
     PostContent,
   },
-  props:{
+  props: {
     isPostsPage: {
       type: Boolean,
-      default: () => { return false }
+      default: () => {
+        return false;
+      },
     },
     isSidebar: {
       type: Boolean,
-      default: () => { return true }
+      default: () => {
+        return true;
+      },
     },
     post: {
       type: Object,
-      default: () => { return {} }
+      default: () => {
+        return {};
+      },
     },
     catergory: {
       type: String,
-      default: () => { return null }
+      default: () => {
+        return null;
+      },
     },
     family: {
       type: String,
-      default: () => { return null }
+      default: () => {
+        return null;
+      },
     },
   },
 };
@@ -83,7 +97,6 @@ export default {
   bottom: 0;
   left: 0;
   margin: auto;
-
 }
 @media (max-width: 768px) {
 }
