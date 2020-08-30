@@ -40,9 +40,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 @media (max-width: 768px) {
-  .navigation {
-    display: none;
-  }
 }
 @media (max-width: 320px) {
 }
