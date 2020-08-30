@@ -2,7 +2,7 @@
   <div>
     <Header />
     <Navigation />
-    <Container :isPostsPage="isPostsPage" :isSidebar="isSidebar" >
+    <Container :isPostsPage="isPostsPage" :isSidebar="isSidebar">
       <slot />
     </Container>
     <Footer />
@@ -22,14 +22,18 @@ export default {
     Container,
     Footer,
   },
-  props:{
+  props: {
     isPostsPage: {
       type: Boolean,
-      default: () => { return false }
+      default: () => {
+        return false;
+      },
     },
     isSidebar: {
       type: Boolean,
-      default: () => { return true }
+      default: () => {
+        return true;
+      },
     },
   },
 };

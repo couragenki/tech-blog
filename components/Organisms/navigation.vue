@@ -1,6 +1,6 @@
 <template>
   <nav class="navigation">
-    <ul class="navigation__list">
+    <ul class="pc navigation__list">
       <li class="navigation__list__item">
         <n-link to="/tech">テック</n-link>
         <div class="hide">
@@ -23,42 +23,30 @@
           </ul>
         </div>
       </li>
-      <!-- <li class="navigation__list__item">
-        <n-link to="/marketing">マーケティング</n-link>
-        <div class="hide">
-          <ul>
-            <li>
-              <n-link to="/marketing">マーケティング</n-link>
-            </li>
-            <li>
-              <n-link to="/marketing/web">> Webマーケ</n-link>
-            </li>
-            <li>
-              <n-link to="/marketing/sns">> SNSマーケ</n-link>
-            </li>
-            <li>
-              <n-link to="/marketing/blog">> ブログ</n-link>
-            </li>
-          </ul>
-        </div>
-      </li>-->
-      <!-- <li class="navigation__list__item">
-        <n-link to="/notes">ノート</n-link>
-        <div class="hide">
-          <ul>
-            <li>
-              <n-link to="/notes">ノート</n-link>
-            </li>
-            <li>
-              <n-link to="/notes/books">> 読書</n-link>
-            </li>
-            <li>
-              <n-link to="/notes/camera">> カメラ</n-link>
-            </li>
-          </ul>
-        </div>
-      </li>-->
     </ul>
+    <div class="mobile">
+      <input id="acd-check1" class="acd-check" type="checkbox" />
+      <label class="acd-label" for="acd-check1">▼テック</label>
+      <div class="acd-content">
+        <ul>
+          <li>
+            <n-link to="/tech">テック</n-link>
+          </li>
+          <li>
+            <n-link to="/tech/frontend">> フロントエンド</n-link>
+          </li>
+          <li>
+            <n-link to="/tech/backend">> バックエンド</n-link>
+          </li>
+          <li>
+            <n-link to="/tech/infra">> インフラ</n-link>
+          </li>
+          <li>
+            <n-link to="/tech/git">> Git</n-link>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 </template>
 
@@ -130,6 +118,39 @@ export default {
     }
   }
 }
+
+.acd-check {
+  display: none;
+}
+.acd-label {
+  background: orange;
+  color: #333;
+  display: block;
+  margin-bottom: 1px;
+  padding: 10px;
+}
+.acd-content {
+  border: 1px solid #333;
+  height: 0;
+  opacity: 0;
+  padding: 0 10px;
+  transition: 0.5s;
+  visibility: hidden;
+}
+.acd-check:checked + .acd-label + .acd-content {
+  height: auto;
+  opacity: 1;
+  padding: 10px;
+  visibility: visible;
+}
+
+.pc {
+  display: block;
+}
+.mobile {
+  display: none;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -149,8 +170,11 @@ export default {
 }
 
 @media (max-width: 768px) {
-  .navigation {
+  .pc {
     display: none;
+  }
+  .mobile {
+    display: block;
   }
 }
 @media (max-width: 320px) {
