@@ -1,13 +1,14 @@
 ---
 title: 【読書ブログ】影響力を数値化 ヒットを生み出す「共感マーケティング」のすすめ
 description: 共感マーケティングについて学習した内容をブログにしましｔ、
-type: notes
+type: marketing
 created_at: 2019-05-05
 updated_at: null
+date: 2019-05-05
 image: /img/sample2.jpg
 tags:
   - books
-  - test2
+  - SNS
 ---
 
 ## この本から学べること

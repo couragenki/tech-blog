@@ -123,18 +123,18 @@ export default {
   display: none;
 }
 .acd-label {
-  background: orange;
   color: #333;
   display: block;
   margin-bottom: 1px;
   padding: 10px;
 }
 .acd-content {
+  background: #ffc36b;
   border: 1px solid #333;
   height: 0;
   opacity: 0;
   padding: 0 10px;
-  transition: 0.5s;
+  transition: 0.8s;
   visibility: hidden;
 }
 .acd-check:checked + .acd-label + .acd-content {
@@ -174,6 +174,7 @@ export default {
     display: none;
   }
   .mobile {
+    background: orange;
     display: block;
   }
 }
