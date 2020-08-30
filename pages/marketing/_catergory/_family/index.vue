@@ -4,12 +4,13 @@
     :isPostsPage="true"
     :post="marketing"
     :catergory="catergory"
-    :family="family" />
-  <DefaultTemplate v-else isPostsPage="true">
+    :family="family"
+  />
+  <DefaultTemplate v-else :isPostsPage="true">
     <nuxt-link :to="'/marketing/' + catergory">⇦{{catergory}}の記事一覧へ戻る</nuxt-link>
-      <p>ファミリーページINDEX</p>
-      <h2>{{ family }}に関する記事一覧</h2>
-      <PostCards :data="marketing" />
+    <p>ファミリーページINDEX</p>
+    <h2>{{ family }}に関する記事一覧</h2>
+    <PostCards :data="marketing" />
   </DefaultTemplate>
 </template>
 
@@ -21,7 +22,7 @@ export default {
   components: {
     DefaultTemplate,
     PostTemplate,
-    PostCards
+    PostCards,
   },
   async asyncData({ $content, route, params }) {
     const { catergory, family, slug } = params;
