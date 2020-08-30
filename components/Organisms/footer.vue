@@ -36,9 +36,9 @@
           <li>
             <n-link to="/marketing">マーケティング</n-link>
             <ul class="footer__links">
-              <li>
+              <!-- <li>
                 <n-link to="/marketing/web">WEBマーケ</n-link>
-              </li>
+              </li>-->
               <li>
                 <n-link to="/marketing/sns">SNS</n-link>
               </li>
