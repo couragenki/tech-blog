@@ -65,10 +65,10 @@
         <p>
           <n-link to="/tech/frontend/javascript/">#JavaScript</n-link>&nbsp;
           <n-link to="/tech/frontend/vue/">#Vue.js</n-link>&nbsp;
-          <n-link to="/tech/frontend/gatsby/">#gatsby.js</n-link>&nbsp;
-          <n-link to="/tech/frontend/markup/">#markup</n-link>&nbsp;
-          <n-link to="/tech/backend/python/">#python</n-link>&nbsp;
-          <n-link to="/tech/infra/docker/">#docker</n-link>&nbsp;
+          <n-link to="/tech/frontend/gatsby/">#Gatsby.js</n-link>&nbsp;
+          <n-link to="/tech/frontend/markup/">#Markup</n-link>&nbsp;
+          <n-link to="/tech/backend/python/">#Python</n-link>&nbsp;
+          <n-link to="/tech/infra/docker/">#Docker</n-link>&nbsp;
           <n-link to="/tech/git">#Git</n-link>&nbsp;
         </p>
       </div>

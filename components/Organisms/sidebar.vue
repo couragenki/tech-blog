@@ -1,32 +1,58 @@
 <template>
   <div class="sidebar">
+    <div class="about">
+      <p class="about__title">Welcom to Couragenki!!</p>
+      <p>Courage(勇気)とGenki(元気)を届けるWEBブログです。</p>
+    </div>
     <div class="intoro">
-      <div class="sidebar__title">自己紹介</div>
+      <div class="intoro__title">Profile</div>
       <Introduction />
     </div>
-    <div class="pickup">
-      <div class="sidebar__title">注目されている記事</div>
-      <div class="pickup__post">
-        <div class="pickup__post__rank">第1位</div>
-        <BlogCrad />
-      </div>
-      <div class="pickup__post">
-        <div class="pickup__post__rank">第2位</div>
-        <BlogCrad />
-      </div>
-      <div class="pickup__post">
-        <div class="pickup__post__rank">第3位</div>
-        <BlogCrad />
-      </div>
-      <div class="pickup__post">
-        <div class="pickup__post__rank">第4位</div>
-        <BlogCrad />
-      </div>
-      <div class="pickup__post">
-        <div class="pickup__post__rank">第5位</div>
-        <BlogCrad />
-      </div>
+    <div class="category">
+      <p class="category__title">カテゴリー</p>
+        <ul>
+          <li>
+            <n-link to="/tech">テック</n-link>
+            <ul class="category__links">
+              <li>
+                <n-link to="/tech/frontend">フロントエンド</n-link>
+              </li>
+              <li>
+                <n-link to="/tech/backend">バックエンド</n-link>
+              </li>
+              <li>
+                <n-link to="/tech/infra">インフラ</n-link>
+              </li>
+              <li>
+                <n-link to="/tech/git">Git</n-link>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <n-link to="/marketing">マーケティング</n-link>
+            <ul class="category__links">
+              <li>
+                <n-link to="/marketing/sns">SNS</n-link>
+              </li>
+              <li>
+                <n-link to="/marketing/blog">ブログ</n-link>
+              </li>
+            </ul>
+          </li>
+        </ul>
     </div>
+    <!-- <div class="tag">
+      <p class="tag__title">ジャンル</p>
+        <p>
+          <n-link to="/tech/frontend/javascript/">#JavaScript</n-link>&nbsp;
+          <n-link to="/tech/frontend/vue/">#Vue.js</n-link>&nbsp;
+          <n-link to="/tech/frontend/gatsby/">#Gatsby.js</n-link>&nbsp;
+          <n-link to="/tech/frontend/markup/">#Markup</n-link>&nbsp;
+          <n-link to="/tech/backend/python/">#Python</n-link>&nbsp;
+          <n-link to="/tech/infra/docker/">#Docker</n-link>&nbsp;
+          <n-link to="/tech/git">#Git</n-link>&nbsp;
+        </p>
+    </div> -->
   </div>
 </template>
 
@@ -47,19 +73,24 @@ export default {
   width: 268px;
   padding: 0 16px;
   height: auto;
-  background: #ebf8fd;
+  background: gainsboro;
+  border-radius: 8px;
   &__title {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 16px;
   }
-  .pickup {
-    &__post{
-      margin-bottom: 20px;
-      &__rank{
-        font-weight: 700;
-        margin: 0;
-      }
+  .about, .intoro, .category, .tag {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background: white;
+    padding: 4px;
+    border-radius: 8px;
+    &__title{
+      font-weight: 700;
+    }
+    ul {
+      padding-left: 1.5rem;
     }
   }
 }
