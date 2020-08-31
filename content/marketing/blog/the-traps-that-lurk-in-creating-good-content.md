@@ -5,6 +5,7 @@ type: marketing
 created_at: 2019-01-16
 updated_at: null
 date: 2019-01-16
+image: /img/marketing.jpg
 tags:
   - blog
 ---

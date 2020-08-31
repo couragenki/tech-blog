@@ -5,6 +5,7 @@ type: marketing
 created_at: 2019-05-05
 updated_at: null
 date: 2019-05-05
+image: /img/marketing.jpg
 tags:
   - SNS
 ---

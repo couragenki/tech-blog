@@ -5,6 +5,7 @@ type: tech
 created_at: 2020-08-18
 updated_at: null
 date: 2020-08-18
+image: /img/tech.jpg
 tags:
   - test1
   - test2

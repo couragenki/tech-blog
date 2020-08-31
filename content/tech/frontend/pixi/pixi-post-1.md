@@ -3,6 +3,7 @@ title: Pixi.jsの高解像度端末の対応
 created_at: 2019-06-11
 updated_at: null
 date: 2019-06-11
+image: /img/tech.jpg
 description: Pixi.jsでRetina端末のような高解像度端末にて画像をぼやけることなくはっきり表示するための対応を解説しています。
 type: tech
 tags:
