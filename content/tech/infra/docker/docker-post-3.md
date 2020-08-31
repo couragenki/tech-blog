@@ -2,6 +2,7 @@
 title: docker-toolboxをmacにインストールするのに色々迷った話
 created_at: 2017-12-09
 updated_at: null
+date: 2017-12-09
 type: tech
 image: /img/sample2.jpg
 description: Macにdocker-toolboxをインストールする手順を解説していきます。

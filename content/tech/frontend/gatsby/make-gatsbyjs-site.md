@@ -2,6 +2,7 @@
 title: Gatby.js＋NetlifyでLightHouse満点のサイトを1日で作った話
 created_at: 2019-11-06
 updated_at: null
+date: 2019-11-06
 image: /img/sample2.jpg
 type: tech
 description: Gatby.jsとNetlifyでお手軽にブログを作成して公開するまでの手順を記事にしました。

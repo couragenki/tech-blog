@@ -2,6 +2,7 @@
 title: pythonを触ってみた
 created_at: 2017-12-20
 updated_at: null
+date: 2017-12-20
 type: tech
 image: /img/sample2.jpg
 description: pythonをはじめて触ってみました。フロントエンドの駆け出しエンジニアですが頑張ってキャッチアップしていこうと思います。

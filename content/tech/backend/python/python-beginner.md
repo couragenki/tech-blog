@@ -1,6 +1,8 @@
 ---
 title: pythonでチャットボットを作ってみる
 created_at: 2017-03-03
+updated_at: null
+date: 2017-03-03
 image: /img/sample2.jpg
 type: tech
 description: チャットボットを作りたくてpythonを触ってみた。

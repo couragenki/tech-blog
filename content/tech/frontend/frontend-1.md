@@ -2,6 +2,9 @@
 title: フロントエンドについて１
 description: Learn how to use @nuxt/content.
 type: tech
+created_at: 2020-08-18
+updated_at: null
+date: 2020-08-18
 tags:
   - test1
   - test2
