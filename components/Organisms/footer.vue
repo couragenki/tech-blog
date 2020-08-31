@@ -5,6 +5,9 @@
         <p class="footer__intoro">このサイトについて</p>
         <ul>
           <li>
+            <n-link to="/">トップ</n-link>
+          </li>
+          <li>
             <n-link to="/profile">自己紹介</n-link>
           </li>
           <li>

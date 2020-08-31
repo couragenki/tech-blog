@@ -1,7 +1,7 @@
 <template>
   <DefaultTemplate>
     <h2 style="margin-top:0">新着記事</h2>
-    <PostCards :data="tech" />
+    <PostCards :data="data" />
 
     <h2>カテゴリー</h2>
     <p>WEB技術、マーケティングなどのアウトプットブログです</p>
@@ -44,17 +44,20 @@ export default {
     const q = route.query.q;
 
     // 前投稿から投稿日が新しい順12件に取得する
-    let query = $content("", { deep: true }).sortBy("date", "desc").limit(12);
+    let query = $content("", { deep: true }).sortBy("date", "desc");
 
     if (q) {
       query = query.search("title", q);
     }
 
     const tech = await query.fetch();
+    const data = tech.sort(function(a,b){
+      return new Date(b.date) - new Date(a.date);
+    })
 
     return {
       q,
-      tech,
+      data,
     };
   },
 };

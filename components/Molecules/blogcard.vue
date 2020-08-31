@@ -13,6 +13,7 @@
         </div>
       </div>
       <div class="card-body">
+        <p class="card-date">{{setDate(blogDate)}}</p>
         <p class="card-text">{{blogText}}</p>
         <ul class="card-tag" v-for="(item, index) in blogTags" :key="index">
           <li>#{{item}}&nbsp;</li>
@@ -49,6 +50,12 @@ export default {
         return "記事タイトル";
       },
     },
+    blogDate: {
+      type: String,
+      default: () => {
+        return null;
+      },
+    },
     blogText:{
       type: String,
       default: () => {
@@ -60,6 +67,17 @@ export default {
       default: () => {
         return ["tag1", "tag2"];
       },
+    },
+  },
+  methods: {
+    setDate(date) {
+      if (!date) return "不明";
+
+      const y = date.substring(0, 4);
+      const m = date.substring(5, 7);
+      const d = date.substring(8, 10);
+
+      return y + "年" + m + "月" + d + "日";
     },
   },
 };
@@ -91,11 +109,18 @@ export default {
     min-height: 8rem;
     padding: 8px;
     max-height: 5rem;
+    .card-date {
+      margin: 0;
+      font-size: 0.6em;
+      margin-bottom: 0.6em;
+    }
     .card-text {
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 3;
       overflow: hidden;
+      font-size: 0.8em;
+      margin-bottom: 0.8em;
     }
     .card-tag {
       margin: 0;

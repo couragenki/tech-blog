@@ -6,6 +6,7 @@
         :blogTitle="article.title"
         :blogCategory="article.type"
         :blogText="article.description"
+        :blogDate="article.date || '2020'"
         :blogTags="article.tags"
         :blogImage="article.image || null"
       />
