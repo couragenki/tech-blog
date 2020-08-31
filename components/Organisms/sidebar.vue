@@ -64,7 +64,19 @@ export default {
   components: {
     BlogCrad,
     Introduction
-  }
+  },
+  async asyncData({ $content, route }) {
+    let query = $content("", { deep: true }).sortBy("date", "desc");
+
+    const tech = await query.fetch();
+    // const data = tech.sort(function(a,b){
+    //   return new Date(b.date) - new Date(a.date);
+    // })
+
+    return {
+      tech,
+    };
+  },
 };
 </script>
 <style lang="scss" scoped>

@@ -2,11 +2,8 @@
   <DefaultTemplate :isPostsPage="true">
     <nuxt-link to="/">⇦ホームへ戻る</nuxt-link>
     <h1>Techページ</h1>
-    <p>技術に関する記事をまとめています</p>
-    <h2></h2>
-    <input id="search" v-model="q" placeholder="URL検索..." />
-
-    <PostCards :data="tech" />
+    <p>技術やプログラミングに関する記事をまとめています。</p>
+    <PostCards :data="data" />
   </DefaultTemplate>
 </template>
 
@@ -18,30 +15,16 @@ export default {
     DefaultTemplate,
     PostCards,
   },
-  watchQuery: true,
-  async asyncData({ $content, route }) {
-    const q = route.query.q;
-
+  async asyncData({ $content }) {
     let query = $content("tech", { deep: true }).sortBy("date", "desc");
-
-    if (q) {
-      query = query.search(q);
-      // タイトル検索 query = query.search('title', q)
-    }
-
     const tech = await query.fetch();
+    const data = tech.sort(function(a,b){
+      return new Date(b.date) - new Date(a.date);
+    })
 
     return {
-      q,
-      tech,
+      data,
     };
-  },
-  watch: {
-    q() {
-      this.$router
-        .replace({ query: this.q ? { q: this.q } : undefined })
-        .catch(() => {});
-    },
   },
 };
 </script>

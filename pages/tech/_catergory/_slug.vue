@@ -10,7 +10,7 @@ export default {
   components: {
     PostTemplate
   },
-  async asyncData({ $content, params, route, error }) {
+  async asyncData({ $content, params, error }) {
     let article;
 
     try {

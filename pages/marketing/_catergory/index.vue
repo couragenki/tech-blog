@@ -1,11 +1,11 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
     <nuxt-link to="/marketing">⇦マーケティングの一覧ページへ戻る</nuxt-link>
-    <h2>カテゴリーINDEX</h2>
-    <input id="search" v-model="q" placeholder="タイトル検索..." />
+    <h2>{{catergory}}に関する記事</h2>
     <PostCards :data="marketing" />
 
     <!-- TODO:ここ消すとgenerateで子ページが反映できない。 -->
+    <h2>{{catergory}}に関する記事一覧</h2>
     <ul>
       <li v-for="article in marketing" :key="article.slug">
         <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
@@ -22,31 +22,15 @@ export default {
     DefaultTemplate,
     PostCards,
   },
-  watchQuery: true,
-  async asyncData({ $content, route, params }) {
-    const q = route.query.q;
+  async asyncData({ $content, params }) {
     const { catergory, family, slug } = params;
-
     let query = $content('marketing', catergory, { deep: true }).sortBy("date", "desc");
-
-    if (q) {
-      query = query.search('title', q)
-    }
-
     const marketing = await query.fetch();
 
     return {
-      q,
       marketing,
       catergory
     };
-  },
-  watch: {
-    q() {
-      this.$router
-        .replace({ query: this.q ? { q: this.q } : undefined })
-        .catch(() => {});
-    },
   },
 };
 </script>

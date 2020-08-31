@@ -40,25 +40,14 @@ export default {
     Footer,
   },
   watchQuery: true,
-  async asyncData({ $content, route }) {
-    const q = route.query.q;
-
-    // 前投稿から投稿日が新しい順12件に取得する
+  async asyncData({ $content }) {
     let query = $content("", { deep: true }).sortBy("date", "desc");
-
-    if (q) {
-      query = query.search("title", q);
-    }
-
     const tech = await query.fetch();
     const data = tech.sort(function(a,b){
       return new Date(b.date) - new Date(a.date);
     })
 
-    return {
-      q,
-      data,
-    };
+    return { data }
   },
 };
 </script>
