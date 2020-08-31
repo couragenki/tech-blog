@@ -91,10 +91,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 .footer {
-  width: 100%;
+  width: auto;
   background: #ffdb99;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
   &__intoro {
     font-weight: 700;
     font-size: 1.2em;
@@ -120,8 +119,7 @@ export default {
   ul {
     margin-bottom: 10px;
     a {
-      // color: #000;
-      // text-decoration: none;
+      font-size: 0.8em;
     }
   }
   &__copywrite {
