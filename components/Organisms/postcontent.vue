@@ -1,8 +1,8 @@
 <template>
   <div>
     <nuxt-link
-      :to="'/' + post.type + '/' + catergory + '/' + family"
-    >⇦{{catergory}}/{{family}}の記事一覧へ戻る</nuxt-link>
+      :to="'/' + post.type + '/' + catergory"
+    >⇦ {{catergory}}の記事一覧へ戻る</nuxt-link>
     <p>執筆日:{{setDate(post.created_at)}}</p>
     <h1>{{ post.title }}</h1>
     <nuxt-content :document="post" />

@@ -11,7 +11,7 @@
       <h1 class="post-title">{{ post.title || '投稿タイトル' }}</h1>
     </div>
 
-    <div class="hero-bg" v-else>
+    <div class="hero-bg" :class="{green: post.type == 'tech', red: post.type == 'marketing', yellow: post.type == 'notes'}" v-else>
       <h1 class="post-title">{{ post.title || '投稿タイトル' }}</h1>
     </div>
 
@@ -80,7 +80,15 @@ export default {
 .hero-bg {
   position: relative;
   min-height: 250px;
-  background: #75a6ff;
+}
+.red {
+  background: #e80000;
+}
+.green {
+  background: #37e437;
+}
+.yellow {
+  background: rgb(255, 255, 69);
 }
 .post-title {
   width: 96%;

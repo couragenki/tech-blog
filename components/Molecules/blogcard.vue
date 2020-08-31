@@ -1,13 +1,13 @@
 <template>
     <nuxt-link tag="div" class="card" :to="link">
       <div class="card-img-top" v-if="blogImage" :style="{ backgroundImage: 'url(' + blogImage + ')'}">
-        <div class="card-category">{{blogCategory}}</div>
+        <div class="card-category" :class="{green: blogCategory == 'tech', red: blogCategory == 'marketing', yellow: blogCategory == 'notes'}">{{blogCategory}}</div>
         <div class="card-title">
           <p class="card-title-text">{{blogTitle}}</p>
         </div>
       </div>
       <div class="card-img-top shape" v-else>
-        <div class="card-category">{{blogCategory}}</div>
+        <div class="card-category" :class="{green: blogCategory == 'tech', red: blogCategory == 'marketing', yellow: blogCategory == 'notes'}">{{blogCategory}}</div>
         <div class="card-title">
           <p class="card-title-text">{{blogTitle}}</p>
         </div>
@@ -87,10 +87,11 @@ export default {
 .card {
   .card-category {
     width: fit-content;
-    background: limegreen;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    padding: 2px 4px;
+    border-radius: 4px;
   }
   .card-img-top {
     min-height: 9rem;
@@ -140,5 +141,14 @@ export default {
 }
 .card:hover{
   opacity: 0.7;
+}
+.red {
+  background: #e80000;
+}
+.green {
+  background: #37e437;
+}
+.yellow {
+  background: rgb(255, 255, 69);
 }
 </style>
