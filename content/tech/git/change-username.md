@@ -3,7 +3,7 @@ title: githubのアカウント名とユーザー名を変更した時の設定�
 created_at: 2020-06-13
 updated_at: null
 date: 2020-06-13
-image: /img/sample2.jpg
+image: /img/tech.jpg
 description: Githubでユーザー名を変更した際の設定のやり方を記事にしました。
 type: tech
 tags:

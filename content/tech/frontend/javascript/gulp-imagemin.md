@@ -4,7 +4,7 @@ created_at: 2019-02-19
 updated_at: null
 date: 2019-02-19
 type: tech
-image: /img/sample2.jpg
+image: /img/tech.jpg
 description: gulpとimageminを使用して画像の圧縮を行う方法を解説しています。コピペでOKです！
 tags:
   - Javascript

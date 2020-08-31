@@ -95,6 +95,7 @@ export default {
   }
   .card-img-top {
     min-height: 9rem;
+    background-size: cover;
     .card-title {
       padding: 2rem 8px 2rem 8px;
       .card-title-text {

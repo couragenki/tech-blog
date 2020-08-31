@@ -4,7 +4,7 @@ created_at: 2017-12-09
 updated_at: null
 date: 2017-12-09
 type: tech
-image: /img/sample2.jpg
+image: /img/tech.jpg
 description: Macにdocker-toolboxをインストールする手順を解説していきます。
 tags:
   - Docker

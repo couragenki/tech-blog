@@ -4,7 +4,7 @@ created_at: 2017-10-19
 updated_at: null
 date: 2017-10-19
 type: tech
-image: /img/sample2.jpg
+image: /img/tech.jpg
 description: dockerのバージョンアップの際にエラーが出たのでそちらの解決について記事にしました。
 tags:
   - Docker

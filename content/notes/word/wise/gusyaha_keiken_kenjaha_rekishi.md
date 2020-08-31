@@ -5,7 +5,7 @@ type: notes
 created_at: 2019-01-01
 updated_at: 2019-01-02
 date: 2019-01-02
-image: /img/sample2.jpg
+image: /img/notes.jpg
 tags:
   - wise
 ---

@@ -4,7 +4,7 @@ created_at: 2017-10-25
 updated_at: null
 date: 2017-10-25
 type: tech
-image: /img/sample2.jpg
+image: /img/tech.jpg
 description: はじめてエンジニア向けのイベントに参加してきたのでどんな学びがあったのかや感想を記事にしていきます。
 tags:
   - event

@@ -4,7 +4,7 @@ created_at: 2019-12-11
 updated_at: null
 date: 2019-12-11
 type: tech
-image: /img/sample2.jpg
+image: /img/tech.jpg
 description: 好きな画像をテキストでモザイクアートに変換するアプリを開発しました。
 tags:
   - Javascript
