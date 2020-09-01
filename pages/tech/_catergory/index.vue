@@ -3,14 +3,6 @@
     <nuxt-link to="/tech">⇦技術の一覧ページへ戻る</nuxt-link>
     <h2>{{catergory}}に関する記事</h2>
     <PostCards :data="tech" />
-
-    <!-- TODO:ここ消すとgenerateで子ページが反映できない。 -->
-    <h2>{{catergory}}に関する記事一覧</h2>
-    <ul>
-      <li v-for="article in tech" :key="article.slug">
-        <nuxt-link :to="article.path">{{ article.title }}</nuxt-link>
-      </li>
-    </ul>
   </DefaultTemplate>
 </template>
 

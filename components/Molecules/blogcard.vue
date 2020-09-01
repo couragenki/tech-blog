@@ -1,5 +1,5 @@
 <template>
-    <nuxt-link tag="div" class="card" :to="link">
+    <nuxt-link class="card" :to="link">
       <div class="card-img-top" v-if="blogImage" :style="{ backgroundImage: 'url(' + blogImage + ')'}">
         <div class="card-category" :class="{green: blogCategory == 'tech', red: blogCategory == 'marketing', yellow: blogCategory == 'notes'}">{{blogCategory}}</div>
         <div class="card-title">
@@ -91,7 +91,17 @@ export default {
     text-overflow: ellipsis;
     white-space: nowrap;
     padding: 2px 4px;
-    border-radius: 4px;
+    border-radius: 3px;
+    color: black;
+    text-shadow    :
+       1px  1px 1px white,
+      -1px  1px 1px white,
+       1px -1px 1px white,
+      -1px -1px 1px white,
+       1px  0px 1px white,
+       0px  1px 1px white,
+      -1px  0px 1px white,
+       0px -1px 1px white;
   }
   .card-img-top {
     min-height: 9rem;
@@ -102,7 +112,8 @@ export default {
         font-weight: 700;
         font-size: 1.2em;
         padding: 8px;
-        background: #ffffffb3;
+        color: black;
+        background: #ffffffcc;
       }
     }
   }
@@ -115,6 +126,7 @@ export default {
       margin: 0;
       font-size: 0.6em;
       margin-bottom: 0.6em;
+      color: black;
     }
     .card-text {
       display: -webkit-box;
@@ -123,6 +135,7 @@ export default {
       overflow: hidden;
       font-size: 0.8em;
       margin-bottom: 0.8em;
+      color: black;
     }
     .card-tag {
       margin: 0;
@@ -132,6 +145,7 @@ export default {
       -webkit-box-orient: vertical;
       overflow: hidden;
       li {
+        color: black;
         font-size: 0.8em;
       }
     }
@@ -141,6 +155,7 @@ export default {
   }
 }
 .card:hover{
+  text-decoration: none;
   opacity: 0.7;
 }
 .red {
