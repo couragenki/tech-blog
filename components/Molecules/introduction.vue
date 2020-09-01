@@ -1,5 +1,6 @@
 <template>
   <div class="intoro">
+    <div class="intoro__title">Profile</div>
     <div class="intoro__icon">
       <img class="intoro__icon__img" width="512" src="/common/profile-icon.jpg" />
     </div>
@@ -45,7 +46,7 @@ export default {
 .intoro {
   margin-bottom: 32px;
   &__title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 16px;
   }

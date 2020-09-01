@@ -19,16 +19,20 @@ import SideBar from "@/components/Organisms/sidebar.vue";
 export default {
   name: "Container",
   components: {
-    SideBar
+    SideBar,
   },
-  props:{
+  props: {
     isPostsPage: {
       type: Boolean,
-      default: () => { return false }
+      default: () => {
+        return false;
+      },
     },
     isSidebar: {
       type: Boolean,
-      default: () => { return true }
+      default: () => {
+        return true;
+      },
     },
   },
 };
@@ -50,14 +54,13 @@ export default {
     margin: 0 auto;
     padding: 40px 0 80px;
     .content {
-      width:  calc(100% - 300px);
+      width: calc(100% - 240px);
       margin-right: 24px;
     }
     .full {
       width: 100%;
     }
   }
-
 }
 @media (max-width: 914px) {
   .wrapper {

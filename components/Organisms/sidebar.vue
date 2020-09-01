@@ -5,41 +5,40 @@
       <p>Courage(勇気)とGenki(元気)を届けるWEBブログです。</p>
     </div>
     <div class="intoro">
-      <div class="intoro__title">Profile</div>
       <Introduction />
     </div>
     <div class="category">
       <p class="category__title">カテゴリー</p>
-        <ul>
-          <li>
-            <n-link to="/tech">テック</n-link>
-            <ul class="category__links">
-              <li>
-                <n-link to="/tech/frontend">フロントエンド</n-link>
-              </li>
-              <li>
-                <n-link to="/tech/backend">バックエンド</n-link>
-              </li>
-              <li>
-                <n-link to="/tech/infra">インフラ</n-link>
-              </li>
-              <li>
-                <n-link to="/tech/git">Git</n-link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <n-link to="/marketing">マーケティング</n-link>
-            <ul class="category__links">
-              <li>
-                <n-link to="/marketing/sns">SNS</n-link>
-              </li>
-              <li>
-                <n-link to="/marketing/blog">ブログ</n-link>
-              </li>
-            </ul>
-          </li>
-        </ul>
+      <ul>
+        <li>
+          <n-link to="/tech">テック</n-link>
+          <ul class="category__links">
+            <li>
+              <n-link to="/tech/frontend">フロントエンド</n-link>
+            </li>
+            <li>
+              <n-link to="/tech/backend">バックエンド</n-link>
+            </li>
+            <li>
+              <n-link to="/tech/infra">インフラ</n-link>
+            </li>
+            <li>
+              <n-link to="/tech/git">Git</n-link>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <n-link to="/marketing">マーケティング</n-link>
+          <ul class="category__links">
+            <li>
+              <n-link to="/marketing/sns">SNS</n-link>
+            </li>
+            <li>
+              <n-link to="/marketing/blog">ブログ</n-link>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
     <!-- <div class="tag">
       <p class="tag__title">ジャンル</p>
@@ -52,7 +51,7 @@
           <n-link to="/tech/infra/docker/">#Docker</n-link>&nbsp;
           <n-link to="/tech/git">#Git</n-link>&nbsp;
         </p>
-    </div> -->
+    </div>-->
   </div>
 </template>
 
@@ -63,7 +62,7 @@ export default {
   name: "Sidebar",
   components: {
     BlogCrad,
-    Introduction
+    Introduction,
   },
   async asyncData({ $content, route }) {
     let query = $content("", { deep: true }).sortBy("date", "desc");
@@ -80,9 +79,8 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-
 .sidebar {
-  width: 268px;
+  width: 208px;
   padding: 0 16px;
   height: auto;
   background: gainsboro;
@@ -92,13 +90,16 @@ export default {
     font-weight: 700;
     margin-bottom: 16px;
   }
-  .about, .intoro, .category, .tag {
+  .about,
+  .intoro,
+  .category,
+  .tag {
     margin-top: 16px;
     margin-bottom: 16px;
     background: white;
     padding: 4px;
     border-radius: 8px;
-    &__title{
+    &__title {
       font-weight: 700;
     }
     ul {
