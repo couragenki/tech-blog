@@ -37,16 +37,9 @@ export default {
     return {
     title: metaTitle,
     meta: [
-      {
-        hid: "description",
-        name: "description",
-        content: metaDescription,
-      },
-      {
-        hid: "og:description",
-        name: "og:description",
-        content: metaDescription,
-      },
+      { hid: 'og:title', property: 'og:title', content: metaTitle + ' | couragenki' },
+      { hid: "description", name: "description", content: metaDescription },
+      { hid: "og:description", name: "og:description", content: metaDescription },
       { hid: 'og:image', property: 'og:image', content: metaImg },
     ],
     }

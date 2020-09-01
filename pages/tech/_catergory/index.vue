@@ -17,12 +17,9 @@ export default {
   head: {
     title: "テック",
     meta: [
-      {
-        hid: "description",
-        name: "description",
-        content:
-          "WEB技術に関するページです。フロントエンド、バックエンドなど様々な記事を見つけることが可能です。",
-      },
+      { hid: "description", name: "description", content: "WEB技術に関するページです。フロントエンド、バックエンドなど様々な記事を見つけることが可能です。"},
+      { hid: 'og:title', property: 'og:title', content: 'テック | couragenki' },
+      { hid: "og:description", name: "og:description", content: "WEB技術に関するページです。フロントエンド、バックエンドなど様々な記事を見つけることが可能です。"},
     ],
   },
   async asyncData({ $content, params }) {
