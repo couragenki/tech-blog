@@ -1,16 +1,17 @@
 <template>
   <div class="posts">
-      <BlogCrad
-        v-for="article in data" :key="article.slug"
-        :link="article.path"
-        :blogTitle="article.title"
-        :blogCategory="article.type"
-        :blogText="article.description"
-        :blogDate="article.date || '2020'"
-        :blogTags="article.tags"
-        :blogImage="article.image || null"
-      />
-    </div>
+    <BlogCrad
+      v-for="article in data"
+      :key="article.slug"
+      :link="article.path"
+      :blogTitle="article.title"
+      :blogCategory="article.type"
+      :blogText="article.description"
+      :blogDate="article.date || '2020'"
+      :blogTags="article.tags"
+      :blogImage="article.image || null"
+    />
+  </div>
 </template>
 
 <script>
@@ -20,13 +21,16 @@ export default {
   components: {
     BlogCrad,
   },
-  props:{
+  props: {
     data: {
       default: () => {
         return {};
       },
     },
-  }
+  },
+  methods: {
+    setData(data) {},
+  },
 };
 </script>
 <style lang="scss" scoped>
