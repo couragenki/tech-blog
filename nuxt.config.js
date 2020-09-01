@@ -14,11 +14,17 @@ export default {
     }
   },
   head: {
-    title: 'genki-blog',
+    title: 'couragenki',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Meta description' }
+      { hid: 'description', name: 'description', content: 'Courage(勇気)とGenki(元気)を届けるWEBブログです。WEB技術やマーケティングなどを記事にしていきます' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'couragenki' },
+      { hid: 'og:type', property: 'og:type', content: 'blog' },
+      { hid: 'og:url', property: 'og:url', content: 'https://couragenki.com' },
+      { hid: 'og:title', property: 'og:title', content: 'couragenki' },
+      { hid: 'og:description', property: 'og:description', content: 'Courage(勇気)とGenki(元気)を届けるWEBブログです。WEB技術やマーケティングなどを記事にしていきます' },
+      { hid: 'og:image', property: 'og:image', content: 'https://couragenki.com/img/sample2.jpg' },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }

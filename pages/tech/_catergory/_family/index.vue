@@ -23,6 +23,17 @@ export default {
     PostTemplate,
     PostCards,
   },
+  head: {
+    titleTemplate: "テック | couragenki",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "WEB技術に関するページです。フロントエンド、バックエンドなど様々な記事を見つけることが可能です。",
+      },
+    ],
+  },
   async asyncData({ $content, params }) {
     const { catergory, family, slug } = params;
     const tech = await $content("tech", catergory, family).fetch();

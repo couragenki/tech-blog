@@ -14,13 +14,28 @@ export default {
     DefaultTemplate,
     PostCards,
   },
+  head: {
+    titleTemplate: "テック | couragenki",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "WEB技術に関するページです。フロントエンド、バックエンドなど様々な記事を見つけることが可能です。",
+      },
+    ],
+  },
   async asyncData({ $content, params }) {
     const { catergory, family, slug } = params;
-    let query = $content('tech', catergory, { deep: true }).sortBy("date", "desc");
+    let query = $content("tech", catergory, { deep: true }).sortBy(
+      "date",
+      "desc"
+    );
     const tech = await query.fetch();
+
     return {
       tech,
-      catergory
+      catergory,
     };
   },
 };
