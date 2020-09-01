@@ -15,7 +15,7 @@ export default {
     PostCards,
   },
   head: {
-    titleTemplate: "テック | couragenki",
+    title: "テック",
     meta: [
       {
         hid: "description",

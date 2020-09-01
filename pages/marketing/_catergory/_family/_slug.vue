@@ -8,17 +8,6 @@ export default {
   components: {
     PostTemplate,
   },
-  head: {
-    titleTemplate: "マーケティング | couragenki",
-    meta: [
-      {
-        hid: "description",
-        name: "description",
-        content:
-          "マーケティングに関するページです。SNSやブログに関する記事を見つけることができます。",
-      },
-    ],
-  },
   async asyncData({ $content, params, route, error }) {
     const { catergory, family, slug } = params;
     let article;

@@ -6,7 +6,7 @@
     :catergory="catergory"
     :family="family"
   />
-  <DefaultTemplate v-else :isPostsPage="true">
+  <DefaultTemplate v-else v-on="setMeta(family)" :isPostsPage="true">
     <nuxt-link :to="'/marketing/' + catergory">⇦{{catergory}}の記事一覧へ戻る</nuxt-link>
     <h2>{{ family }}に関する記事一覧</h2>
     <PostCards :data="marketing" />
@@ -23,16 +23,40 @@ export default {
     PostTemplate,
     PostCards,
   },
-  head: {
-    titleTemplate: "マーケティング | couragenki",
+  data() {
+    return {
+      pageMetaTitle: '',
+      pageMetaDescription: '',
+      pageMetaImg: '',
+    };
+  },
+  head() {
+    const metaTitle = this.pageMetaTitle;
+    const metaDescription = this.pageMetaDescription;
+    const metaImg = this.pageMetaImg;
+    return {
+    title: metaTitle,
     meta: [
       {
         hid: "description",
         name: "description",
-        content:
-          "マーケティングに関するページです。SNSやブログに関する記事を見つけることができます。",
+        content: metaDescription,
       },
+      {
+        hid: "og:description",
+        name: "og:description",
+        content: metaDescription,
+      },
+      { hid: 'og:image', property: 'og:image', content: metaImg },
     ],
+    }
+  },
+  methods:{
+    setMeta(family){
+      this.pageMetaTitle = family
+      this.pageMetaDescription = family + 'に関する記事一覧を表示しています。'
+      this.pageMetaImg = 'https://couragenki.com/img/sample2.jpg'
+    }
   },
   async asyncData({ $content, params }) {
     const { catergory, family, slug } = params;

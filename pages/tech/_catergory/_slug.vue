@@ -8,16 +8,11 @@ export default {
   components: {
     PostTemplate,
   },
-  head: {
-    titleTemplate: "テック | couragenki",
-    meta: [
-      {
-        hid: "description",
-        name: "description",
-        content:
-          "WEB技術に関するページです。フロントエンド、バックエンドなど様々な記事を見つけることが可能です。",
-      },
-    ],
+  data() {
+    return {
+      pageTitle: '',
+      pageDescription: '',
+    };
   },
   async asyncData({ $content, params, error }) {
     let article;

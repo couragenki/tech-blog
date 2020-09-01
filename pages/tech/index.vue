@@ -15,8 +15,14 @@ export default {
     DefaultTemplate,
     PostCards,
   },
+  data() {
+    return {
+      pageTitle: '',
+      pageDescription: '',
+    };
+  },
   head: {
-    titleTemplate: "テック | couragenki",
+    title: "テック",
     meta: [
       {
         hid: "description",
