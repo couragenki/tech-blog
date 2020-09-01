@@ -1,13 +1,12 @@
 <template>
   <div>
     <div class="toppage-intoro">
-      <!-- <Header />
-      <Navigation />-->
+      <Header />
+      <Navigation />
       <div class="intoro-mask">
         <div class="top-container">
           <div class="top-text">
             <h1>GENKI MATSUBARA</h1>
-            <p>フロントエンドエンジニアの技術ブログです。</p>
           </div>
         </div>
       </div>
@@ -26,6 +25,30 @@
             <br />22歳の時に生まれて初めてパソコンを購入しプログラミングを始めました。
             <br />次日々から次に分からないこと、学ばなくてはならないことが出てくるのでこちらのブログを立ち上げアウトプットの場にしています。
           </p>
+          <div class="sns">
+            <ul class="sns__list">
+              <li class="sns__list__icon">
+                <a href="https://twitter.com/couragenki" target="_blank">
+                  <img src="/common/twitter.svg" />
+                </a>
+              </li>
+              <li class="sns__list__icon">
+                <a href="https://github.com/GenkiMatsubara" target="_blank">
+                  <img src="/common/github.svg" />
+                </a>
+              </li>
+              <li class="sns__list__icon">
+                <a href="https://qiita.com/GenkiMatsubara" target="_blank">
+                  <img src="/common/qiita.png" />
+                </a>
+              </li>
+              <li class="sns__list__icon">
+                <a href="https://www.instagram.com/genki.matsubara/" target="_blank">
+                  <img src="/common/instagram.svg" />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -165,6 +188,21 @@ export default {
     }
     .top-intoro {
       width: 50%;
+    }
+  }
+}
+.sns {
+  &__list {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    &__icon {
+      width: 10%;
+      margin-left: 2%;
+      margin-right: 2%;
+      img {
+        width: 100%;
+      }
     }
   }
 }
