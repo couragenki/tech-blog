@@ -1,14 +1,18 @@
 <template>
-  <PostTemplate
-    :isPostsPage="true"
-    :post="article" />
+  <PostTemplate :isPostsPage="true" :post="article" />
 </template>
 
 <script>
 import PostTemplate from "@/components/Templates/posttemplate.vue";
 export default {
   components: {
-    PostTemplate
+    PostTemplate,
+  },
+  data() {
+    return {
+      pageTitle: '',
+      pageDescription: '',
+    };
   },
   async asyncData({ $content, params, error }) {
     let article;

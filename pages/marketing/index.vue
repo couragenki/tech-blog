@@ -13,13 +13,24 @@ import PostCards from "@/components/Organisms/postcards.vue";
 export default {
   components: {
     DefaultTemplate,
-    PostCards
+    PostCards,
+  },
+  head: {
+    titleTemplate: "マーケティング | couragenki",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "マーケティングに関するページです。SNSやブログに関する記事を見つけることができます。",
+      },
+    ],
   },
   async asyncData({ $content }) {
     let query = $content("marketing", { deep: true }).sortBy("date", "desc");
     const marketing = await query.fetch();
 
-    return { marketing }
+    return { marketing };
   },
 };
 </script>

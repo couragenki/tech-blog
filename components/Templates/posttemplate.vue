@@ -16,7 +16,7 @@
     </div>
 
     <Container :isPostsPage="isPostsPage" :isSidebar="isSidebar">
-      <PostContent :post="post" :catergory="catergory" :family="family" />
+      <PostContent v-on="setMeta(post)" :post="post" :catergory="catergory" :family="family" />
     </Container>
     <Footer />
   </div>
@@ -68,6 +68,41 @@ export default {
         return null;
       },
     },
+  },
+  data() {
+    return {
+      pageMetaTitle: '',
+      pageMetaDescription: '',
+      pageMetaImg: ''
+    };
+  },
+  head() {
+    const metaTitle = this.pageMetaTitle;
+    const metaDescription = this.pageMetaDescription;
+    const metaImg = this.pageMetaImg;
+    return {
+    title: metaTitle,
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content: metaDescription,
+      },
+      {
+        hid: "og:description",
+        name: "og:description",
+        content: metaDescription,
+      },
+      { hid: 'og:image', property: 'og:image', content: metaImg },
+    ],
+    }
+  },
+  methods:{
+    setMeta(post){
+      this.pageMetaTitle = post.title
+      this.pageMetaDescription = post.description
+      this.pageMetaImg = post.image
+    }
   },
 };
 </script>

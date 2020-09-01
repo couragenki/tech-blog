@@ -14,14 +14,28 @@ export default {
     DefaultTemplate,
     PostCards,
   },
+  head: {
+    titleTemplate: "マーケティング | couragenki",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "マーケティングに関するページです。SNSやブログに関する記事を見つけることができます。",
+      },
+    ],
+  },
   async asyncData({ $content, params }) {
     const { catergory, family, slug } = params;
-    let query = $content('marketing', catergory, { deep: true }).sortBy("date", "desc");
+    let query = $content("marketing", catergory, { deep: true }).sortBy(
+      "date",
+      "desc"
+    );
     const marketing = await query.fetch();
 
     return {
       marketing,
-      catergory
+      catergory,
     };
   },
 };

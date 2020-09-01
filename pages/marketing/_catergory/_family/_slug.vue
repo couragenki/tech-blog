@@ -1,23 +1,19 @@
 <template>
-  <PostTemplate
-    :isPostsPage="true"
-    :post="article"
-    :catergory="catergory"
-    :family="family" />
+  <PostTemplate :isPostsPage="true" :post="article" :catergory="catergory" :family="family" />
 </template>
 
 <script>
 import PostTemplate from "@/components/Templates/posttemplate.vue";
 export default {
   components: {
-    PostTemplate
+    PostTemplate,
   },
   async asyncData({ $content, params, route, error }) {
     const { catergory, family, slug } = params;
     let article;
 
     try {
-      article = await $content('marketing', catergory, family, slug).fetch();
+      article = await $content("marketing", catergory, family, slug).fetch();
     } catch (e) {
       error({ message: "marketing-family-data not found" });
     }
@@ -25,7 +21,7 @@ export default {
     return {
       article,
       catergory,
-      family
+      family,
     };
   },
 };

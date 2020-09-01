@@ -15,12 +15,29 @@ export default {
     DefaultTemplate,
     PostCards,
   },
+  data() {
+    return {
+      pageTitle: '',
+      pageDescription: '',
+    };
+  },
+  head: {
+    title: "テック",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "WEB技術に関するページです。フロントエンド、バックエンドなど様々な記事を見つけることが可能です。",
+      },
+    ],
+  },
   async asyncData({ $content }) {
     let query = $content("tech", { deep: true }).sortBy("date", "desc");
     const tech = await query.fetch();
-    const data = tech.sort(function(a,b){
+    const data = tech.sort(function (a, b) {
       return new Date(b.date) - new Date(a.date);
-    })
+    });
 
     return {
       data,
