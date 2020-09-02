@@ -6,13 +6,8 @@
     :catergory="catergory"
     :family="family"
   />
-<<<<<<< HEAD
-  <DefaultTemplate v-else v-on="setMeta(family)" :isPostsPage="true">
-    <nuxt-link :to="'/tech/' + catergory">⇦{{catergory}}の記事一覧へ戻る</nuxt-link>
-=======
   <DefaultTemplate v-else :isPostsPage="true">
     <BackButton :link="'/tech/' + catergory" :text="catergory + 'の記事一覧へ戻る'" />
->>>>>>> feautre/set-meta
     <h2>{{ family }}に関する記事一覧</h2>
     <PostCards :data="tech" />
   </DefaultTemplate>
@@ -32,9 +27,9 @@ export default {
   },
   data() {
     return {
-      pageMetaTitle: '',
-      pageMetaDescription: '',
-      pageMetaImg: '',
+      pageMetaTitle: "",
+      pageMetaDescription: "",
+      pageMetaImg: "",
     };
   },
   head() {
@@ -42,28 +37,28 @@ export default {
     const metaDescription = this.pageMetaDescription;
     const metaImg = this.pageMetaImg;
     return {
-    title: metaTitle,
-    meta: [
-      {
-        hid: "description",
-        name: "description",
-        content: metaDescription,
-      },
-      {
-        hid: "og:description",
-        name: "og:description",
-        content: metaDescription,
-      },
-      { hid: 'og:image', property: 'og:image', content: metaImg },
-    ],
-    }
+      title: metaTitle,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: metaDescription,
+        },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content: metaDescription,
+        },
+        { hid: "og:image", property: "og:image", content: metaImg },
+      ],
+    };
   },
-  methods:{
-    setMeta(family){
-      this.pageMetaTitle = family
-      this.pageMetaDescription = family + 'に関する記事一覧を表示しています。'
-      this.pageMetaImg = 'https://couragenki.com/img/sample2.jpg'
-    }
+  methods: {
+    setMeta(family) {
+      this.pageMetaTitle = family;
+      this.pageMetaDescription = family + "に関する記事一覧を表示しています。";
+      this.pageMetaImg = "https://couragenki.com/img/sample2.jpg";
+    },
   },
   async asyncData({ $content, params }) {
     const { catergory, family, slug } = params;
