@@ -62,7 +62,7 @@
         >Tweets by couragenki</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
         <p class="footer__intoro">タグ</p>
-        <p>
+        <p class="footer__tags">
           <n-link to="/tech/frontend/javascript/">#JavaScript</n-link>&nbsp;
           <n-link to="/tech/frontend/vue/">#Vue.js</n-link>&nbsp;
           <n-link to="/tech/frontend/gatsby/">#Gatsby.js</n-link>&nbsp;
@@ -119,8 +119,20 @@ export default {
   ul {
     margin-bottom: 10px;
     a {
-      font-size: 0.8em;
+      color: #3f51b5;
+      font-size: 0.9em;
+      text-decoration: none;
     }
+    li {
+      ul {
+        padding-left: 0.5em;
+      }
+    }
+  }
+  &__tags a {
+    color: #3f51b5;
+    font-size: 0.9em;
+    text-decoration: none;
   }
   &__copywrite {
     text-align: center;

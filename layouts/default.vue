@@ -31,7 +31,7 @@ ul {
   list-style: none;
 }
 a {
-  color: #1c7fce;
+  color: #3f51b5;
   text-decoration: underline;
 }
 </style>

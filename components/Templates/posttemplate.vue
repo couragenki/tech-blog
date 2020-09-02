@@ -11,7 +11,11 @@
       <h1 class="post-title">{{ post.title || '投稿タイトル' }}</h1>
     </div>
 
-    <div class="hero-bg" :class="{green: post.type == 'tech', red: post.type == 'marketing', yellow: post.type == 'notes'}" v-else>
+    <div
+      class="hero-bg"
+      :class="{green: post.type == 'tech', red: post.type == 'marketing', yellow: post.type == 'notes'}"
+      v-else
+    >
       <h1 class="post-title">{{ post.title || '投稿タイトル' }}</h1>
     </div>
 
@@ -92,6 +96,7 @@ export default {
 }
 .post-title {
   width: 96%;
+  font-size: 3em;
   max-width: 1200px;
   height: 100px;
   height: fit-content;

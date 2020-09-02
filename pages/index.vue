@@ -1,6 +1,6 @@
 <template>
   <DefaultTemplate>
-    <h2 style="margin-top:0">新着記事</h2>
+    <h2 style="margin-top:0">記事一覧</h2>
     <PostCards :data="data" />
 
     <h2>カテゴリー</h2>
@@ -43,11 +43,11 @@ export default {
   async asyncData({ $content }) {
     let query = $content("", { deep: true }).sortBy("date", "desc");
     const tech = await query.fetch();
-    const data = tech.sort(function(a,b){
+    const data = tech.sort(function (a, b) {
       return new Date(b.date) - new Date(a.date);
-    })
+    });
 
-    return { data }
+    return { data };
   },
 };
 </script>

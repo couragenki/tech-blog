@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link tag="div" class="backbutton" :to="link">
+  <nuxt-link class="backbutton" :to="link">
     <p class="backbutton__text">{{text}}</p>
   </nuxt-link>
 </template>
@@ -14,7 +14,7 @@ export default {
         return "/tech";
       },
     },
-    text:{
+    text: {
       type: String,
       default: () => {
         return "ボタン文言";
@@ -25,13 +25,21 @@ export default {
 </script>
 <style scoped lang="scss">
 .backbutton {
-  width: 16rem;
+  // width: 16rem;
+  font-size: 1.2em;
   color: white;
-  background: #68d0ff;
+  background: #05b1ff;
+  text-decoration: none;
   display: inline-block;
-  padding: 0.3em 0.5em;
+  padding: 0.5em;
+  &__text {
+    margin: 0;
+    padding-left: 0.5em;
+  }
   &__text::before {
     content: "⬅︎";
+    position: relative;
+    left: -0.5em;
   }
 }
 </style>

@@ -81,7 +81,7 @@ export default {
 <style lang="scss" scoped>
 .sidebar {
   width: 208px;
-  padding: 0 16px;
+  padding: 16px;
   height: auto;
   background: gainsboro;
   border-radius: 8px;
@@ -106,6 +106,18 @@ export default {
       padding-left: 1.5rem;
     }
   }
+  .category {
+    a {
+      color: #3f51b5;
+      font-size: 0.9em;
+      text-decoration: none;
+    }
+    li {
+      ul {
+        padding-left: 0.5em;
+      }
+    }
+  }
 }
 
 @media (max-width: 912px) {
@@ -113,6 +125,14 @@ export default {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    .about,
+    .intoro,
+    .category,
+    .tag {
+      width: 90%;
+      margin: 32px auto;
+      padding: 4px;
+    }
   }
 }
 @media (max-width: 320px) {
