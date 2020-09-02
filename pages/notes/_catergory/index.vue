@@ -18,7 +18,7 @@ export default {
   },
   async asyncData({ $content, params }) {
     const { catergory, family, slug } = params;
-    let query = $content("notes", catergory, { deep: true }).sortBy(
+    let query = $content("notes" + "/" + catergory, { deep: true }).sortBy(
       "date",
       "desc"
     );

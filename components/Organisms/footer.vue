@@ -145,7 +145,7 @@ export default {
 
 @media (max-width: 768px) {
   .footer {
-    width: 100%;
+    width: auto;
     &__container {
       width: calc(100% - 16px);
       padding: 0 8px;
