@@ -2,6 +2,7 @@
   <div class="sidebar">
     <div class="about">
       <p class="about__title">Welcom to Couragenki!!</p>
+      <p>WEB開発全般とマーケティングの学んだ内容をアウトプットしていきます。</p>
       <p>Courage(勇気)とGenki(元気)を届けるWEBブログです。</p>
     </div>
     <div class="intoro">

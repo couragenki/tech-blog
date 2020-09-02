@@ -130,7 +130,7 @@ export default {
       margin: 0;
       font-size: 1em;
       font-weight: 700;
-      margin-bottom: 0.6em;
+      margin-bottom: 0.3em;
       color: black;
     }
     .card-text {
@@ -139,7 +139,7 @@ export default {
       -webkit-line-clamp: 3;
       overflow: hidden;
       font-size: 0.8em;
-      margin-bottom: 0.8em;
+      margin-bottom: 0.3em;
       color: black;
     }
     .card-tag {

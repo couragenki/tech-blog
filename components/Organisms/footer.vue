@@ -96,7 +96,7 @@ export default {
   padding: 32px 16px;
   &__intoro {
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
   &__container {
     width: 100%;
@@ -105,8 +105,8 @@ export default {
     margin: 0 auto;
     display: flex;
     &__clum {
-      width: 20%;
-      margin-right: 5%;
+      width: 23%;
+      margin-right: 2%;
       height: 100%;
       .profile img {
         width: 100%;
@@ -120,7 +120,7 @@ export default {
     margin-bottom: 10px;
     a {
       color: #3f51b5;
-      font-size: 0.9em;
+      font-size: 1.2em;
       text-decoration: none;
     }
     li {
@@ -131,7 +131,7 @@ export default {
   }
   &__tags a {
     color: #3f51b5;
-    font-size: 0.9em;
+    font-size: 1.2em;
     text-decoration: none;
   }
   &__copywrite {
