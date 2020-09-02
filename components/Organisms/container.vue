@@ -105,11 +105,6 @@ export default {
   /deep/ li {
     margin-bottom: 0.5em;
   }
-  /deep/ a,
-  /deep/ img,
-  /deep/ p img {
-    width: 100%;
-  }
 }
 @media (max-width: 768px) {
   .nuxt-content {
@@ -143,11 +138,6 @@ export default {
     }
     /deep/ li {
       margin-bottom: 0.5em;
-    }
-    /deep/ a,
-    /deep/ img,
-    /deep/ p img {
-      width: 100%;
     }
   }
 }
