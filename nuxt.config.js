@@ -29,7 +29,7 @@ export default {
       { hid: 'og:url', property: 'og:url', content: 'https://couragenki.com' },
       { hid: 'og:title', property: 'og:title', content: 'couragenki' },
       { hid: 'og:description', property: 'og:description', content: 'Courage(勇気)とGenki(元気)を届けるWEBブログです。WEB技術やマーケティングなどを記事にしていきます' },
-      { hid: 'og:image', property: 'og:image', content: 'https://couragenki.com/img/sample2.jpg' },
+      { hid: 'og:image', property: 'og:image', content: 'https://couragenki.com/common/og.jpg' },
       { hid: 'twitter:card', neme: 'twitter:card', content: "summary_large_image" },
     ],
     link: [
