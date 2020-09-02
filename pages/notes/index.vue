@@ -1,6 +1,6 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link to="/">⇦ホームへ戻る</nuxt-link>
+    <BackButton link="/" text="ホームへ戻る" />
     <h2>その他 INDEX</h2>
     <p>その他に関する記事をまとめています</p>
 
@@ -11,17 +11,19 @@
 <script>
 import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
 import PostCards from "@/components/Organisms/postcards.vue";
+import BackButton from "@/components/Atoms/backbutton.vue";
 export default {
   components: {
     DefaultTemplate,
-    PostCards
+    PostCards,
+    BackButton,
   },
   watchQuery: true,
   async asyncData({ $content }) {
     let query = $content("notes", { deep: true }).sortBy("date", "desc");
     const notes = await query.fetch();
 
-    return { notes }
+    return { notes };
   },
 };
 </script>

@@ -7,7 +7,7 @@
     :family="family"
   />
   <DefaultTemplate v-else :isPostsPage="true">
-    <nuxt-link :to="'/tech/' + catergory">⇦{{catergory}}の記事一覧へ戻る</nuxt-link>
+    <BackButton :link="'/tech/' + catergory" :text="catergory + 'の記事一覧へ戻る'" />
     <h2>{{ family }}に関する記事一覧</h2>
     <PostCards :data="tech" />
   </DefaultTemplate>
@@ -17,11 +17,13 @@
 import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
 import PostTemplate from "@/components/Templates/posttemplate.vue";
 import PostCards from "@/components/Organisms/postcards.vue";
+import BackButton from "@/components/Atoms/backbutton.vue";
 export default {
   components: {
     DefaultTemplate,
     PostTemplate,
     PostCards,
+    BackButton,
   },
   head: {
     titleTemplate: "テック | couragenki",
