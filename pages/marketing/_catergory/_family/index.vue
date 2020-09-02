@@ -58,7 +58,7 @@ export default {
     setMeta(family) {
       this.pageMetaTitle = family;
       this.pageMetaDescription = family + "に関する記事一覧を表示しています。";
-      this.pageMetaImg = "https://couragenki.com/img/sample2.jpg";
+      this.pageMetaImg = "https://couragenki.com/common/og.jpg";
     },
   },
   async asyncData({ $content, params }) {
