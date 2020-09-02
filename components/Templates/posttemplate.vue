@@ -80,6 +80,7 @@ export default {
   background-size: cover;
   position: relative;
   min-height: 250px;
+  padding: 1em 0;
 }
 .hero-bg {
   position: relative;
@@ -98,11 +99,8 @@ export default {
   width: 96%;
   font-size: 3em;
   max-width: 1200px;
-  height: 100px;
   height: fit-content;
   text-align: center;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
   background: #ffffffb3;
   position: absolute;
   top: 0;
