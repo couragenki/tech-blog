@@ -178,11 +178,19 @@ export default {
       margin-right: 5%;
       .top-profile-container {
         background: #76d4ff75;
+        height: 100%;
         text-align: center;
+        position: relative;
         img {
           padding: 10px;
           width: 50%;
           border-radius: 50%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
         }
       }
     }
