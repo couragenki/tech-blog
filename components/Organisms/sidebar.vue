@@ -80,7 +80,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .sidebar {
-  width: 208px;
+  width: 268px;
   padding: 16px;
   height: auto;
   background: gainsboro;
