@@ -45,7 +45,7 @@ export default {
       const marketing = await $content("marketing", { deep: true }).only(['path']).fetch()
       const posts = Object.assign(tech, marketing);
 
-      return posts
+      return posts.map(article => article.path)
     }
   },
   loaders: {
