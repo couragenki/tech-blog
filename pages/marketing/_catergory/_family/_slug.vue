@@ -13,7 +13,9 @@ export default {
     let article;
 
     try {
-      article = await $content("marketing", catergory, family, slug).fetch();
+      article = await $content(
+        "marketing" + "/" + catergory + "/" + family + "/" + slug
+      ).fetch();
     } catch (e) {
       error({ message: "marketing-family-data not found" });
     }
