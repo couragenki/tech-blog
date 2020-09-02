@@ -14,22 +14,22 @@
       <ul class="intoro__sns__list">
         <li class="intoro__sns__list__icon">
           <a href="https://twitter.com/couragenki" target="_blank">
-            <img src="/common/twitter.svg" />
+            <img alt="twitterアイコン" src="/common/twitter.svg" />
           </a>
         </li>
         <li class="intoro__sns__list__icon">
           <a href="https://github.com/GenkiMatsubara" target="_blank">
-            <img src="/common/github.svg" />
+            <img alt="Githubアイコン" src="/common/github.svg" />
           </a>
         </li>
         <li class="intoro__sns__list__icon">
           <a href="https://qiita.com/GenkiMatsubara" target="_blank">
-            <img src="/common/qiita.png" />
+            <img alt="Qiitaアイコン" src="/common/qiita.png" />
           </a>
         </li>
         <li class="intoro__sns__list__icon">
           <a href="https://www.instagram.com/genki.matsubara/" target="_blank">
-            <img src="/common/instagram.svg" />
+            <img alt="instagramアイコン" src="/common/instagram.svg" />
           </a>
         </li>
       </ul>
