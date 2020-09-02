@@ -2,6 +2,7 @@ export default {
   modules: [
     '@nuxt/content'
   ],
+  plugins: [{ src: '~plugins/ga.js', mode: 'client' }],
   buildModules: [
     ['@nuxt/typescript-build', {
       typeCheck: true,
@@ -15,7 +16,7 @@ export default {
   },
   head: {
     title: process.env.npm_package_name || 'couragenki',
-    titleTemplate:  '%s | couragenki',
+    titleTemplate: '%s | couragenki',
     htmlAttrs: {
       lang: 'ja'
     },
