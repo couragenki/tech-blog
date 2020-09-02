@@ -2,7 +2,10 @@
   <nav class="navigation">
     <ul class="pc navigation__list">
       <li class="navigation__list__item">
-        <n-link to="/tech">テック</n-link>
+        <n-link to="/">TOP</n-link>
+      </li>
+      <li class="navigation__list__item">
+        <n-link to="/tech">テック ▼</n-link>
         <div class="hide">
           <ul>
             <li>
@@ -25,8 +28,11 @@
       </li>
     </ul>
     <div class="mobile">
+      <hr />
+      <n-link to="/" tag="label" class="acd-label">TOP</n-link>
+      <hr />
       <input id="acd-check1" class="acd-check" type="checkbox" />
-      <label class="acd-label" for="acd-check1">▼テック</label>
+      <label class="acd-label" for="acd-check1">テック ▼</label>
       <div class="acd-content">
         <ul>
           <li>
@@ -46,6 +52,7 @@
           </li>
         </ul>
       </div>
+      <hr />
     </div>
   </nav>
 </template>
@@ -71,17 +78,18 @@ export default {
       padding: 8px 16px 8px 0;
       display: inline-block;
       a {
-        font-size: 0.8em;
+        font-size: 1.5em;
         font-weight: 700;
         color: #3c3c3c;
         text-decoration-line: none;
       }
-      &::after {
-        content: "▼";
-        font-size: 0.6em;
-        color: #3c3c3c;
-      }
+      // &::after {
+      //   content: "▼";
+      //   font-size: 0.6em;
+      //   color: #3c3c3c;
+      // }
       .hide {
+        width: fit-content;
         position: absolute;
         top: 0;
         left: 0;
@@ -89,11 +97,12 @@ export default {
         color: #ffffff;
         background-color: cornflowerblue;
         display: none;
+        border-radius: 1em;
         animation: fadeIn 1s ease 0s 1 normal;
         -webkit-animation: fadeIn 1s ease 0s 1 normal;
         z-index: 999;
         ul {
-          width: 120px;
+          width: 18em;
           padding: 1em;
           list-style: none;
           text-align: left;
@@ -123,25 +132,30 @@ export default {
   display: none;
 }
 .acd-label {
+  font-size: 1.5em;
   color: #333;
   display: block;
   margin-bottom: 1px;
-  padding: 10px;
+  padding: 16px;
 }
 .acd-content {
   background: #ffc36b;
   border: 1px solid #333;
   height: 0;
   opacity: 0;
-  padding: 0 10px;
+  padding: 0 16px;
   transition: 0.8s;
   visibility: hidden;
 }
 .acd-check:checked + .acd-label + .acd-content {
   height: auto;
   opacity: 1;
-  padding: 10px;
+  padding: 16px;
   visibility: visible;
+  li {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
 }
 
 .pc {
@@ -150,7 +164,9 @@ export default {
 .mobile {
   display: none;
 }
-
+hr {
+  margin: 0;
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
