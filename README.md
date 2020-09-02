@@ -1,6 +1,12 @@
 ## WEBに関する技術ブログを運営するリポジトリです
 <img src="https://couragenki.com/common/og.jpg" width="500">
 
+***couragenki(カラゲンキ)***
+
+Courage(勇気)とGenki(元気)を届けるWEBブログです。
+
+WEB開発やWEBマーケティングなど学んだ内容をアウトプットしていきます。
+
 URL: https://couragenki.com/
 
 ## 使用技術
@@ -23,4 +29,5 @@ URL: https://couragenki.com/
 
 ## 運用方法
 `/content`の該当するディレクトリに記事を追加する。
+
 masterブランチに変更をマージすると自動で本番環境へ反映されます。
