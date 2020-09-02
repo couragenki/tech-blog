@@ -81,7 +81,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .sidebar {
-  width: 268px;
+  width: 330px;
   padding: 16px;
   height: auto;
   background: gainsboro;
@@ -123,7 +123,7 @@ export default {
 
 @media (max-width: 912px) {
   .sidebar {
-    width: 100%;
+    width: auto;
     padding-left: 0;
     padding-right: 0;
     .about,
