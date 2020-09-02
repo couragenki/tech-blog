@@ -27,9 +27,7 @@ export default {
   },
   async asyncData({ $content, params }) {
     const { catergory, family, slug } = params;
-    const notes = await $content(
-      "notes" + "/" + catergory + "/" + family
-    ).fetch();
+    const notes = await $content("notes", catergory, family).fetch();
     return {
       notes,
       catergory,

@@ -62,9 +62,7 @@ export default {
   },
   async asyncData({ $content, params }) {
     const { catergory, family, slug } = params;
-    const tech = await $content(
-      "tech" + "/" + catergory + "/" + family
-    ).fetch();
+    const tech = await $content("tech", catergory, family).fetch();
     return {
       tech,
       catergory,

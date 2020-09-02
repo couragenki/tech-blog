@@ -23,7 +23,7 @@ export default {
     let article;
 
     try {
-      article = await $content("marketing" + "/" + params.slug).fetch();
+      article = await $content("marketing", params.slug).fetch();
     } catch (e) {
       error({ message: "marketing-data not found" });
     }

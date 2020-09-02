@@ -10,15 +10,15 @@ export default {
   },
   data() {
     return {
-      pageTitle: "",
-      pageDescription: "",
+      pageTitle: '',
+      pageDescription: '',
     };
   },
   async asyncData({ $content, params, error }) {
     let article;
 
     try {
-      article = await $content("tech" + "/" + params.slug).fetch();
+      article = await $content("tech", params.slug).fetch();
     } catch (e) {
       error({ message: "tech-data not found" });
     }

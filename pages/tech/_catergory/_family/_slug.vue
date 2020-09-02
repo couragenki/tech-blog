@@ -13,9 +13,7 @@ export default {
     let article;
 
     try {
-      article = await $content(
-        "tech" + "/" + catergory + "/" + family + "/" + slug
-      ).fetch();
+      article = await $content("tech", catergory, family, slug).fetch();
     } catch (e) {
       error({ message: "tech-family-data not found" });
     }

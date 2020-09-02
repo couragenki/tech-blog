@@ -19,28 +19,14 @@ export default {
   head: {
     titleTemplate: "マーケティング | couragenki",
     meta: [
-      {
-        hid: "description",
-        name: "description",
-        content:
-          "マーケティングに関するページです。SNSやブログに関する記事を見つけることができます。",
-      },
-      {
-        hid: "og:title",
-        property: "og:title",
-        content: "マーケティング | couragenki",
-      },
-      {
-        hid: "og:description",
-        name: "og:description",
-        content:
-          "マーケティングに関するページです。SNSやブログに関する記事を見つけることができます。",
-      },
+      { hid: "description", name: "description", content: "マーケティングに関するページです。SNSやブログに関する記事を見つけることができます。"},
+      { hid: 'og:title', property: 'og:title', content: 'マーケティング | couragenki' },
+      { hid: "og:description", name: "og:description", content: "マーケティングに関するページです。SNSやブログに関する記事を見つけることができます。"},
     ],
   },
   async asyncData({ $content, params }) {
     const { catergory, family, slug } = params;
-    let query = $content("marketing" + "/" + catergory, { deep: true }).sortBy(
+    let query = $content("marketing", catergory, { deep: true }).sortBy(
       "date",
       "desc"
     );
