@@ -136,7 +136,7 @@ PCのみの機能だったcanvasを画像にして保存する機能をスマホ
 
 開発者の僕は使えてもこれでははじめて使うユーザーの方が使いにくい。
 
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/4656b746-93cd-9daa-d5e7-00f8c0e773db.png" width=50%>
+<img alt="文中の解説画像" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/4656b746-93cd-9daa-d5e7-00f8c0e773db.png" width=50%>
 
 **…こりゃひでぇ＼(^o^)／**
 
@@ -144,7 +144,7 @@ PCのみの機能だったcanvasを画像にして保存する機能をスマホ
 
 ↓こちらは元画像になった先日東京タワーまで散歩した時に撮影した写真
 
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/8cdd7d56-4669-7db6-d771-289ca8d092e2.jpeg" width=50%>
+<img alt="文中の解説画像" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/8cdd7d56-4669-7db6-d771-289ca8d092e2.jpeg" width=50%>
 
 ~~これなんだか元画像の方が良い気がする~~
 
@@ -176,7 +176,7 @@ PCのみの機能だったcanvasを画像にして保存する機能をスマホ
 
 カラーだと表現の限界がある場合があったのでいっそのことモノクロにすることで英字新聞みたいにしてエモさを表現できないかと思い実装してみました。
 
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/18b79824-bcb9-17d8-de60-af5f4a30f9cd.png" width=50%>
+<img alt="文中の解説画像" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/18b79824-bcb9-17d8-de60-af5f4a30f9cd.png" width=50%>
 
 #### 【ブラッシュアップ3】 アプリのUIを調整する
 
