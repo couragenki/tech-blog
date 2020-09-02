@@ -38,11 +38,6 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.PostStyle {
-  /deep/ img {
-    max-width: 100%;
-  }
-}
 .wrapper {
   width: auto;
   padding: 0 16px;
@@ -74,6 +69,86 @@ export default {
     }
   }
 }
-@media (max-width: 320px) {
+
+.PostStyle {
+  /deep/ img {
+    max-width: 100%;
+  }
+  /deep/ h1 {
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  /deep/ h2 {
+    font-size: 1.6em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  /deep/ h3 {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  /deep/ P {
+    line-height: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  /deep/ ul {
+    padding-left: 1em;
+    list-style: square;
+    padding-left: 1.5em;
+  }
+  /deep/ ol {
+    padding-left: 1.5em;
+  }
+  /deep/ li {
+    margin-bottom: 0.5em;
+  }
+  /deep/ a,
+  /deep/ img,
+  /deep/ p img {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .nuxt-content {
+    /deep/ h1 {
+      font-size: 2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    /deep/ h2 {
+      font-size: 1.6rem;
+      margin-top: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+    /deep/ h3 {
+      font-size: 1.4rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    /deep/ P {
+      line-height: 1.2em;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    /deep/ ul {
+      padding-left: 1em;
+      list-style: square;
+      padding-left: 1.5em;
+    }
+    /deep/ ol {
+      padding-left: 1.5em;
+    }
+    /deep/ li {
+      margin-bottom: 0.5em;
+    }
+    /deep/ a,
+    /deep/ img,
+    /deep/ p img {
+      width: 100%;
+    }
+  }
 }
 </style>
