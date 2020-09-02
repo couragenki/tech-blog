@@ -6,8 +6,13 @@
     :catergory="catergory"
     :family="family"
   />
+<<<<<<< HEAD
   <DefaultTemplate v-else v-on="setMeta(family)" :isPostsPage="true">
     <nuxt-link :to="'/marketing/' + catergory">⇦{{catergory}}の記事一覧へ戻る</nuxt-link>
+=======
+  <DefaultTemplate v-else :isPostsPage="true">
+    <BackButton :link="'/marketing/' + catergory" :text="catergory + 'の記事一覧へ戻る'" />
+>>>>>>> feautre/set-meta
     <h2>{{ family }}に関する記事一覧</h2>
     <PostCards :data="marketing" />
   </DefaultTemplate>
@@ -17,11 +22,13 @@
 import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
 import PostTemplate from "@/components/Templates/posttemplate.vue";
 import PostCards from "@/components/Organisms/postcards.vue";
+import BackButton from "@/components/Atoms/backbutton.vue";
 export default {
   components: {
     DefaultTemplate,
     PostTemplate,
     PostCards,
+    BackButton,
   },
   data() {
     return {

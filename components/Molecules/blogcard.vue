@@ -1,25 +1,35 @@
 <template>
-    <nuxt-link class="card" :to="link">
-      <div class="card-img-top" v-if="blogImage" :style="{ backgroundImage: 'url(' + blogImage + ')'}">
-        <div class="card-category" :class="{green: blogCategory == 'tech', red: blogCategory == 'marketing', yellow: blogCategory == 'notes'}">{{blogCategory}}</div>
-        <div class="card-title">
-          <p class="card-title-text">{{blogTitle}}</p>
-        </div>
+  <nuxt-link class="card" :to="link">
+    <div
+      class="card-img-top"
+      v-if="blogImage"
+      :style="{ backgroundImage: 'url(' + blogImage + ')'}"
+    >
+      <div
+        class="card-category"
+        :class="{green: blogCategory == 'tech', red: blogCategory == 'marketing', yellow: blogCategory == 'notes'}"
+      >{{blogCategory}}</div>
+      <div class="card-title">
+        <p class="card-title-text">{{blogTitle}}</p>
       </div>
-      <div class="card-img-top shape" v-else>
-        <div class="card-category" :class="{green: blogCategory == 'tech', red: blogCategory == 'marketing', yellow: blogCategory == 'notes'}">{{blogCategory}}</div>
-        <div class="card-title">
-          <p class="card-title-text">{{blogTitle}}</p>
-        </div>
+    </div>
+    <div class="card-img-top shape" v-else>
+      <div
+        class="card-category"
+        :class="{green: blogCategory == 'tech', red: blogCategory == 'marketing', yellow: blogCategory == 'notes'}"
+      >{{blogCategory}}</div>
+      <div class="card-title">
+        <p class="card-title-text">{{blogTitle}}</p>
       </div>
-      <div class="card-body">
-        <p class="card-date">{{setDate(blogDate)}}</p>
-        <p class="card-text">{{blogText}}</p>
-        <ul class="card-tag" v-for="(item, index) in blogTags" :key="index">
-          <li>#{{item}}&nbsp;</li>
-        </ul>
-      </div>
-    </nuxt-link>
+    </div>
+    <div class="card-body">
+      <p class="card-date">{{setDate(blogDate)}}</p>
+      <p class="card-text">{{blogText}}</p>
+      <ul class="card-tag" v-for="(item, index) in blogTags" :key="index">
+        <li>#{{item}}&nbsp;</li>
+      </ul>
+    </div>
+  </nuxt-link>
 </template>
 
 <script>
@@ -56,7 +66,7 @@ export default {
         return null;
       },
     },
-    blogText:{
+    blogText: {
       type: String,
       default: () => {
         return "記事紹介文";
@@ -93,15 +103,9 @@ export default {
     padding: 2px 4px;
     border-radius: 3px;
     color: black;
-    text-shadow    :
-       1px  1px 1px white,
-      -1px  1px 1px white,
-       1px -1px 1px white,
-      -1px -1px 1px white,
-       1px  0px 1px white,
-       0px  1px 1px white,
-      -1px  0px 1px white,
-       0px -1px 1px white;
+    text-shadow: 1px 1px 1px white, -1px 1px 1px white, 1px -1px 1px white,
+      -1px -1px 1px white, 1px 0px 1px white, 0px 1px 1px white,
+      -1px 0px 1px white, 0px -1px 1px white;
   }
   .card-img-top {
     min-height: 9rem;
@@ -124,7 +128,8 @@ export default {
     max-height: 5rem;
     .card-date {
       margin: 0;
-      font-size: 0.6em;
+      font-size: 1em;
+      font-weight: 700;
       margin-bottom: 0.6em;
       color: black;
     }
@@ -154,7 +159,7 @@ export default {
     background: lightgrey;
   }
 }
-.card:hover{
+.card:hover {
   text-decoration: none;
   opacity: 0.7;
 }

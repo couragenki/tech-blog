@@ -1,6 +1,6 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link to="/">⇦ホームへ戻る</nuxt-link>
+    <BackButton link="/" text="ホームへ戻る" />
     <h1>Techページ</h1>
     <p>技術やプログラミングに関する記事をまとめています。</p>
     <PostCards :data="data" />
@@ -10,10 +10,12 @@
 <script>
 import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
 import PostCards from "@/components/Organisms/postcards.vue";
+import BackButton from "@/components/Atoms/backbutton.vue";
 export default {
   components: {
     DefaultTemplate,
     PostCards,
+    BackButton,
   },
   data() {
     return {

@@ -28,12 +28,12 @@ export default {
       text-decoration: none;
     }
     &__text {
-      font-size: 2rem;
+      font-size: 3rem;
       font-weight: 700;
       font-family: monospace;
       margin: 0;
     }
-    &__text:hover{
+    &__text:hover {
       opacity: 0.7;
     }
   }

@@ -23,7 +23,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+hr {
   margin: 0;
   padding: 0;
 }
@@ -31,7 +32,7 @@ ul {
   list-style: none;
 }
 a {
-  color: #1c7fce;
+  color: #3f51b5;
   text-decoration: underline;
 }
 </style>

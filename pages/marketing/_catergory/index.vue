@@ -1,6 +1,6 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <nuxt-link to="/marketing">⇦マーケティングの一覧ページへ戻る</nuxt-link>
+    <BackButton link="/marketing" text="マーケティングの一覧ページへ戻る" />
     <h2>{{catergory}}に関する記事</h2>
     <PostCards :data="marketing" />
   </DefaultTemplate>
@@ -9,10 +9,12 @@
 <script>
 import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
 import PostCards from "@/components/Organisms/postcards.vue";
+import BackButton from "@/components/Atoms/backbutton.vue";
 export default {
   components: {
     DefaultTemplate,
     PostCards,
+    BackButton,
   },
   head: {
     titleTemplate: "マーケティング | couragenki",

@@ -1,18 +1,19 @@
 <template>
   <div>
-    <nuxt-link
-      :to="'/' + post.type + '/' + catergory"
-    >⇦ {{catergory}}の記事一覧へ戻る</nuxt-link>
-    <p>執筆日:{{setDate(post.created_at)}}</p>
-    <h1>{{ post.title }}</h1>
+    <!-- <nuxt-link :to="'/' + post.type + '/' + catergory">⇦ {{catergory}}</nuxt-link> -->
+    <p>{{setDate(post.created_at)}}</p>
     <nuxt-content :document="post" />
+    <BackButton :link="'/' + post.type + '/' + catergory" :text="catergory + 'の記事一覧へ戻る'" />
   </div>
 </template>
 
 <script>
+import BackButton from "@/components/Atoms/backbutton.vue";
 export default {
   name: "PostContent",
-  components: {},
+  components: {
+    BackButton,
+  },
   props: {
     catergory: {
       type: String,
