@@ -5,6 +5,9 @@
         <n-link to="/">TOP</n-link>
       </li>
       <li class="navigation__list__item">
+        <n-link to="/profile">自己紹介</n-link>
+      </li>
+      <li class="navigation__list__item">
         <n-link to="/tech">テック ▼</n-link>
         <div class="hide">
           <ul>
@@ -30,6 +33,8 @@
     <div class="mobile">
       <hr />
       <n-link to="/" tag="label" class="acd-label">TOP</n-link>
+      <hr />
+      <n-link to="/profile" tag="label" class="acd-label">自己紹介</n-link>
       <hr />
       <input id="acd-check1" class="acd-check" type="checkbox" />
       <label class="acd-label" for="acd-check1">テック ▼</label>
