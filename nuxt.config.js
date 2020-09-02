@@ -1,6 +1,7 @@
 export default {
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/sitemap',
   ],
   plugins: [{ src: '~plugins/ga.js', mode: 'client' }],
   buildModules: [
@@ -35,6 +36,17 @@ export default {
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
     ]
+  },
+  sitemap: {
+    hostname: 'https://couragenki.com',
+    routes: async () => {
+      const { $content } = require('@nuxt/content')
+      const tech = await $content("tech", { deep: true }).only(['path']).fetch()
+      const marketing = await $content("marketing", { deep: true }).only(['path']).fetch()
+      const posts = Object.assign(tech, marketing);
+
+      return posts
+    }
   },
   loaders: {
     ts: {
