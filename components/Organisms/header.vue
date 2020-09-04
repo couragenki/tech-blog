@@ -16,7 +16,7 @@ export default {
 <style lang="scss" scoped>
 .header {
   // width: 100%;
-  background: #ffcd70;
+  background: #ff9903;
   &__title {
     // width: 100%;
     max-width: 1200px;

@@ -71,7 +71,7 @@ export default {
 <style lang="scss" scoped>
 .navigation {
   width: 100%;
-  background: #ffdb99;
+  background: #ffb835;
   &__list {
     width: auto;
     max-width: 1200px;
@@ -100,7 +100,7 @@ export default {
         left: 0;
         height: auto;
         color: #ffffff;
-        background-color: cornflowerblue;
+        background-color: #ffb835;
         display: none;
         border-radius: 1em;
         animation: fadeIn 1s ease 0s 1 normal;

@@ -92,7 +92,7 @@ export default {
 <style lang="scss" scoped>
 .footer {
   width: auto;
-  background: #ffdb99;
+  background: #ff9903;
   padding: 32px 16px;
   &__intoro {
     font-weight: 700;
