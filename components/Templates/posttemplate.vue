@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <Navigation />
+    <!-- <Navigation /> -->
 
     <div
       v-if="post.image"
@@ -75,9 +75,9 @@ export default {
   },
   data() {
     return {
-      pageMetaTitle: '',
-      pageMetaDescription: '',
-      pageMetaImg: ''
+      pageMetaTitle: "",
+      pageMetaDescription: "",
+      pageMetaImg: "",
     };
   },
   head() {
@@ -85,29 +85,33 @@ export default {
     const metaDescription = this.pageMetaDescription;
     const metaImg = this.pageMetaImg;
     return {
-    title: metaTitle,
-    meta: [
-      { hid: 'og:title', property: 'og:title', content: metaTitle + ' | couragenki' },
-      {
-        hid: "description",
-        name: "description",
-        content: metaDescription,
-      },
-      {
-        hid: "og:description",
-        name: "og:description",
-        content: metaDescription,
-      },
-      { hid: 'og:image', property: 'og:image', content: metaImg },
-    ],
-    }
+      title: metaTitle,
+      meta: [
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: metaTitle + " | couragenki",
+        },
+        {
+          hid: "description",
+          name: "description",
+          content: metaDescription,
+        },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content: metaDescription,
+        },
+        { hid: "og:image", property: "og:image", content: metaImg },
+      ],
+    };
   },
-  methods:{
-    setMeta(post){
-      this.pageMetaTitle = post.title
-      this.pageMetaDescription = post.description
-      this.pageMetaImg = post.image
-    }
+  methods: {
+    setMeta(post) {
+      this.pageMetaTitle = post.title;
+      this.pageMetaDescription = post.description;
+      this.pageMetaImg = post.image;
+    },
   },
 };
 </script>
