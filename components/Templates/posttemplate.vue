@@ -1,14 +1,16 @@
 <template>
   <div>
     <Header />
-    <Navigation />
+    <!-- <Navigation /> -->
 
-    <div
+    <!-- <div
       v-if="post.image"
       class="post-heroimg"
       :style="{ backgroundImage: 'url(' + 　post.image + ')'}"
-    >
-      <h1 class="post-title">{{ post.title || '投稿タイトル' }}</h1>
+    >-->
+    <div v-if="post.image" class="post__img">
+      <img :src="post.image" />
+      <!-- <h1 class="post-title">{{ post.title || '投稿タイトル' }}</h1> -->
     </div>
 
     <div
@@ -16,7 +18,7 @@
       :class="{green: post.type == 'tech', red: post.type == 'marketing', yellow: post.type == 'notes'}"
       v-else
     >
-      <h1 class="post-title">{{ post.title || '投稿タイトル' }}</h1>
+      <!-- <h1 class="post-title">{{ post.title || '投稿タイトル' }}</h1> -->
     </div>
 
     <Container :isPostsPage="isPostsPage" :isSidebar="isSidebar">
@@ -75,9 +77,9 @@ export default {
   },
   data() {
     return {
-      pageMetaTitle: '',
-      pageMetaDescription: '',
-      pageMetaImg: ''
+      pageMetaTitle: "",
+      pageMetaDescription: "",
+      pageMetaImg: "",
     };
   },
   head() {
@@ -85,29 +87,33 @@ export default {
     const metaDescription = this.pageMetaDescription;
     const metaImg = this.pageMetaImg;
     return {
-    title: metaTitle,
-    meta: [
-      { hid: 'og:title', property: 'og:title', content: metaTitle + ' | couragenki' },
-      {
-        hid: "description",
-        name: "description",
-        content: metaDescription,
-      },
-      {
-        hid: "og:description",
-        name: "og:description",
-        content: metaDescription,
-      },
-      { hid: 'og:image', property: 'og:image', content: metaImg },
-    ],
-    }
+      title: metaTitle,
+      meta: [
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: metaTitle + " | couragenki",
+        },
+        {
+          hid: "description",
+          name: "description",
+          content: metaDescription,
+        },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content: metaDescription,
+        },
+        { hid: "og:image", property: "og:image", content: metaImg },
+      ],
+    };
   },
-  methods:{
-    setMeta(post){
-      this.pageMetaTitle = post.title
-      this.pageMetaDescription = post.description
-      this.pageMetaImg = post.image
-    }
+  methods: {
+    setMeta(post) {
+      this.pageMetaTitle = post.title;
+      this.pageMetaDescription = post.description;
+      this.pageMetaImg = post.image;
+    },
   },
 };
 </script>
@@ -115,8 +121,16 @@ export default {
 .post-heroimg {
   background-size: cover;
   position: relative;
-  min-height: 250px;
+  min-height: 450px;
   padding: 1em 0;
+}
+.post__img {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  img {
+    width: 100%;
+  }
 }
 .hero-bg {
   position: relative;

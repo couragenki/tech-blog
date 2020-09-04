@@ -1,6 +1,6 @@
 <template>
   <DefaultTemplate>
-    <h2 style="margin-top:0">記事一覧</h2>
+    <h2>記事一覧</h2>
     <PostCards :data="data" />
 
     <h2>カテゴリー</h2>
@@ -25,7 +25,6 @@ import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
 import BlogCrad from "@/components/Molecules/blogcard.vue";
 import PostCards from "@/components/Organisms/postcards.vue";
 import Header from "@/components/Organisms/header.vue";
-import Navigation from "@/components/Organisms/navigation.vue";
 import Container from "@/components/Organisms/container.vue";
 import Footer from "@/components/Organisms/footer.vue";
 
@@ -35,7 +34,6 @@ export default {
     BlogCrad,
     PostCards,
     Header,
-    Navigation,
     Container,
     Footer,
   },
