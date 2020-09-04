@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <Navigation />
+    <!-- <Navigation /> -->
     <Container :isPostsPage="isPostsPage" :isSidebar="isSidebar">
       <slot />
     </Container>

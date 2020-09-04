@@ -39,6 +39,7 @@ export default {
   padding: 0;
   list-style: none;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   .card {
     width: 16rem;

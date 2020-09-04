@@ -3,9 +3,9 @@
     <div class="header__wrapper">
       <!-- ロゴ -->
       <div class="header__title">
-        <n-link to="/">
-          <p class="header__title__text">couragenki</p>
-        </n-link>
+        <p class="header__title__text">
+          <n-link to="/">couragenki</n-link>
+        </p>
       </div>
       <!-- カテゴリー -->
       <ul class="header__category">

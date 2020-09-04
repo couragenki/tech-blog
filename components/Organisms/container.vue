@@ -4,7 +4,7 @@
       <div class="content" :class="{ PostStyle: isPostsPage }">
         <slot />
       </div>
-      <SideBar />
+      <!-- <SideBar /> -->
     </div>
     <div class="container" v-else>
       <div class="content" :class="{ PostStyle: isPostsPage, full: !isSidebar }">
@@ -46,11 +46,12 @@ export default {
     width: 100%;
     max-width: 1200px;
     display: flex;
+    justify-content: space-between;
     margin: 0 auto;
     padding: 40px 0 80px;
     .content {
-      width: calc(100% - 240px);
-      margin-right: 24px;
+      // width: calc(100% - 240px);
+      // margin-right: 24px;
     }
     .full {
       width: 100%;
