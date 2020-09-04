@@ -1,7 +1,8 @@
 <template>
   <div>
     <!-- <nuxt-link :to="'/' + post.type + '/' + catergory">⇦ {{catergory}}</nuxt-link> -->
-    <p>{{setDate(post.created_at)}}</p>
+    <h1 class="post__title">{{post.title}}</h1>
+    <p class="post__date">{{setDate(post.created_at)}}</p>
     <nuxt-content :document="post" />
     <BackButton :link="'/' + post.type + '/' + catergory" :text="catergory + 'の記事一覧へ戻る'" />
   </div>
@@ -47,7 +48,19 @@ export default {
   },
 };
 </script>
+
 <style lang="scss" scoped>
+.post {
+  &__title {
+    font-size: 4em;
+    font-weight: 700;
+  }
+  &__date {
+    font-weight: 700;
+    text-align: right;
+  }
+}
+
 @media (max-width: 768px) {
 }
 @media (max-width: 320px) {

@@ -3,12 +3,14 @@
     <Header />
     <!-- <Navigation /> -->
 
-    <div
+    <!-- <div
       v-if="post.image"
       class="post-heroimg"
       :style="{ backgroundImage: 'url(' + 　post.image + ')'}"
-    >
-      <h1 class="post-title">{{ post.title || '投稿タイトル' }}</h1>
+    >-->
+    <div v-if="post.image" class="post__img">
+      <img :src="post.image" />
+      <!-- <h1 class="post-title">{{ post.title || '投稿タイトル' }}</h1> -->
     </div>
 
     <div
@@ -16,7 +18,7 @@
       :class="{green: post.type == 'tech', red: post.type == 'marketing', yellow: post.type == 'notes'}"
       v-else
     >
-      <h1 class="post-title">{{ post.title || '投稿タイトル' }}</h1>
+      <!-- <h1 class="post-title">{{ post.title || '投稿タイトル' }}</h1> -->
     </div>
 
     <Container :isPostsPage="isPostsPage" :isSidebar="isSidebar">
@@ -119,8 +121,16 @@ export default {
 .post-heroimg {
   background-size: cover;
   position: relative;
-  min-height: 250px;
+  min-height: 450px;
   padding: 1em 0;
+}
+.post__img {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  img {
+    width: 100%;
+  }
 }
 .hero-bg {
   position: relative;

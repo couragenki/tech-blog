@@ -50,6 +50,7 @@ export default {
     margin: 0 auto;
     padding: 40px 0 80px;
     .content {
+      width: 100%;
       // width: calc(100% - 240px);
       // margin-right: 24px;
     }

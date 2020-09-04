@@ -2,7 +2,7 @@
   <div>
     <div class="toppage-intoro">
       <Header />
-      <Navigation />
+      <!-- <Navigation /> -->
       <div class="intoro-mask">
         <div class="top-container">
           <div class="top-text">
@@ -247,8 +247,11 @@ export default {
         }
       }
       .top-intoro {
-        width: 100%;
+        width: auto;
         min-height: 180px;
+        padding-top: 70px;
+        padding-left: 16px;
+        padding-right: 16px;
       }
     }
   }
