@@ -34,7 +34,7 @@
       </div>
 
       <div class="photopage__intoro">
-        <h1 class="photopage__intoro__title">Go out!</h1>
+        <h1 class="photopage__intoro__title">Go Out!</h1>
         <p class="photopage__intoro__text">
           外に行こう。まだ知らない街に行こう。<br />
           新しい発見と思い出を求めて。
@@ -56,16 +56,16 @@
             </div>
           </div>
         </div>
-        <div class="over" :style="{ backgroundImage: 'url(/photos/2.jpg)'}">
+        <n-link tag="div" to="/goout/2019-may-fukushima" class="over" :style="{ backgroundImage: 'url(/photos/2.jpg)'}">
           <div class="photopage__photoblock__location">
             <h3 class="photopage__photoblock__location__title">福島</h3>
             <p class="photopage__photoblock__location__text">2019<br />歴史豊かな街並みと温かみ</p>
           </div>
-        </div>
+        </n-link>
         <div class="list">
           <div class="item red">
             <div class="photopage__photoblock__location">
-              <h2 class="photopage__photoblock__location__title">東京のお出かけ</h2>
+              <h2 class="photopage__photoblock__location__title">日帰りお出かけ</h2>
               <p class="photopage__photoblock__location__text">Oceans from above</p>
             </div>
           </div>
@@ -91,7 +91,7 @@
         <a href="https://www.instagram.com/genki.matsubara/" target="_blank">
           <div class="photopage__end__link">instagramの写真を見に行く</div>
         </a>
-        <p class="photopage__end__messege">写真はiPhoneXとEOS kiss10で撮影。<br />またどこかで👋</p>
+        <p class="photopage__end__messege">写真はiPhoneXとEOS kiss10で撮影<br />またどこかで👋</p>
 
         <p class="photopage__end__sign">
           Genki
@@ -172,7 +172,8 @@ export default {
         width: 50%;
         height: 480px;
         background-position: center;
-        background-size: cover;
+        transition: all 0.5s;
+        background-size: 100% auto;
       }
       .bule {
         background-color: #4F8CFF;
@@ -186,7 +187,12 @@ export default {
       width: 100%;
       height: 480px;
       background-position: center;
-      background-size: cover;
+      transition: all 0.5s;
+      background-size: 100% auto;
+    }
+    .item:hover, .over:hover {
+      transition: all 0.5s;
+      background-size: 110% auto;
     }
     &__location {
       display: table-cell;

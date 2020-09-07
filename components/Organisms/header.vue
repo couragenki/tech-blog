@@ -76,7 +76,7 @@ export default {
     justify-content: center;
     padding: 0;
     li {
-      margin: 0.5em 0.7em;
+      margin: 0.5em 0 0.5em 0.7em;
       font-style: italic;
       a {
         text-decoration: none;

@@ -2,9 +2,10 @@
   <div>
     <Header />
     <!-- <Navigation /> -->
-    <Container :isPostsPage="isPostsPage" :isSidebar="isSidebar">
+    <Container v-if="isContainer" :isPostsPage="isPostsPage" :isSidebar="isSidebar">
       <slot />
     </Container>
+    <slot v-else />
     <Footer />
   </div>
 </template>
@@ -30,6 +31,12 @@ export default {
       },
     },
     isSidebar: {
+      type: Boolean,
+      default: () => {
+        return true;
+      },
+    },
+    isContainer: {
       type: Boolean,
       default: () => {
         return true;
