@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="17px" viewBox="0 0 23 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>menu</title>
+    <g id="Blog-Post" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header---Desktop-HD" transform="translate(-617.000000, -60.000000)" fill="black" fill-rule="nonzero">
+            <g id="Left-side" transform="translate(-1.000000, 0.000000)">
+                <g id="menu" transform="translate(618.000000, 60.000000)">
+                    <path d="M0.867924528,3 L22.1320755,3 C22.6111698,3 23,2.328 23,1.5 C23,0.672 22.6111698,0 22.1320755,0 L0.867924528,0 C0.388830189,0 0,0.672 0,1.5 C0,2.328 0.388830189,3 0.867924528,3 Z" id="Shape"></path>
+                    <path d="M0.867924528,10 L22.1320755,10 C22.6111698,10 23,9.328 23,8.5 C23,7.672 22.6111698,7 22.1320755,7 L0.867924528,7 C0.388830189,7 0,7.672 0,8.5 C0,9.328 0.388830189,10 0.867924528,10 Z" id="Shape"></path>
+                    <path d="M0.867924528,17 L22.1320755,17 C22.6111698,17 23,16.328 23,15.5 C23,14.672 22.6111698,14 22.1320755,14 L0.867924528,14 C0.388830189,14 0,14.672 0,15.5 C0,16.328 0.388830189,17 0.867924528,17 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

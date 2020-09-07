@@ -1,6 +1,6 @@
 <template>
   <DefaultTemplate>
-    <h2>記事一覧</h2>
+    <h2>WEB系の記事一覧</h2>
     <PostCards :data="data" />
 
     <h2>カテゴリー</h2>

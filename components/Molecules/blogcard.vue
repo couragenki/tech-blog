@@ -97,10 +97,13 @@ export default {
 .card {
   .card-category {
     width: fit-content;
+    height: 2rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     padding: 2px 4px;
+    margin-left: -8px;
+    margin-bottom: 1rem;
     border-radius: 3px;
     color: black;
     text-shadow: 1px 1px 1px white, -1px 1px 1px white, 1px -1px 1px white,
@@ -108,10 +111,14 @@ export default {
       -1px 0px 1px white, 0px -1px 1px white;
   }
   .card-img-top {
-    min-height: 9rem;
-    background-size: cover;
+    height: auto;
+    max-height: 14rem;
+    transition: all 0.5s;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 0 8px 8px;
     .card-title {
-      padding: 2rem 8px 2rem 8px;
+      margin: 0;
       .card-title-text {
         font-weight: 700;
         font-size: 1.2em;
@@ -120,6 +127,10 @@ export default {
         background: #ffffffcc;
       }
     }
+  }
+  .card-img-top:hover {
+    transition: all 0.5s;
+    background-size: 110% 110%;
   }
   .card-body {
     position: relative;
