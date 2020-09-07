@@ -112,9 +112,10 @@ export default {
   }
   .card-img-top {
     height: auto;
+    min-height: 9rem;
     max-height: 14rem;
     transition: all 0.5s;
-    background-size: 100% 100%;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     padding: 0 8px 8px;
     .card-title {
@@ -130,7 +131,7 @@ export default {
   }
   .card-img-top:hover {
     transition: all 0.5s;
-    background-size: 110% 110%;
+    background-size: 110% auto;
   }
   .card-body {
     position: relative;

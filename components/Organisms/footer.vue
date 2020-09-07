@@ -271,7 +271,7 @@ export default {
       &__clum {
         width: 100%;
         margin-right: 0;
-        &__a {
+        &__a, &__b {
           width: 100%;
           padding-right: 0;
           border: none;
