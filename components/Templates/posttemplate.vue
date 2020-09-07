@@ -1,16 +1,8 @@
 <template>
   <div>
     <Header />
-    <!-- <Navigation /> -->
-
-    <!-- <div
-      v-if="post.image"
-      class="post-heroimg"
-      :style="{ backgroundImage: 'url(' + 　post.image + ')'}"
-    >-->
     <div v-if="post.image" class="post__img">
-      <img :src="post.image" />
-      <!-- <h1 class="post-title">{{ post.title || '投稿タイトル' }}</h1> -->
+      <img :src="post.image" :alt="post.title" />
     </div>
 
     <div
@@ -18,7 +10,6 @@
       :class="{green: post.type == 'tech', red: post.type == 'marketing', yellow: post.type == 'notes'}"
       v-else
     >
-      <!-- <h1 class="post-title">{{ post.title || '投稿タイトル' }}</h1> -->
     </div>
 
     <Container :isPostsPage="isPostsPage" :isSidebar="isSidebar">
