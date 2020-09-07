@@ -13,13 +13,16 @@
           <n-link to="/">HOME</n-link>
         </li>
         <li>
+          <n-link to="/profile">PROFILE</n-link>
+        </li>
+        <li>
           <n-link to="/tech">TECH</n-link>
         </li>
         <li>
           <n-link to="/marketing">MARKETING</n-link>
         </li>
         <li>
-          <n-link to="/profile">PROFILE</n-link>
+          <n-link to="/photos">PHOTOS</n-link>
         </li>
       </ul>
     </div>
@@ -36,7 +39,7 @@ export default {
   width: 100%;
   background: #ff9903;
   &__wrapper {
-    max-width: 1168px;
+    max-width: 1208px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;

@@ -112,7 +112,7 @@ export default {
     height: 100%;
     background: #ffffff60;
     .top-container {
-      max-width: 1200px;
+      max-width: 1240px;
       width: 100%;
       height: 100%;
       margin: 0 auto;
@@ -161,7 +161,7 @@ export default {
   background-size: cover;
   position: relative;
   .top-container {
-    max-width: 1200px;
+    max-width: 1240px;
     display: flex;
     margin: 0 auto;
     position: absolute;

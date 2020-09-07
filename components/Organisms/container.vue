@@ -44,7 +44,7 @@ export default {
   min-height: 400px;
   .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1240px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;

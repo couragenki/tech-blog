@@ -116,7 +116,7 @@ export default {
   padding: 1em 0;
 }
 .post__img {
-  max-width: 1200px;
+  max-width: 1240px;
   width: 100%;
   margin: 0 auto;
   img {
@@ -139,7 +139,7 @@ export default {
 .post-title {
   width: 96%;
   font-size: 3em;
-  max-width: 1200px;
+  max-width: 1240px;
   height: fit-content;
   text-align: center;
   background: #ffffffb3;
