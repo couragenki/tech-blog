@@ -42,53 +42,53 @@
         <div class="list">
           <div class="item bule">
             <div class="photopage__photoblock__location">
-              <p class="photopage__photoblock__location__title">ひとり旅</p>
+              <h2 class="photopage__photoblock__location__title">ひとり旅</h2>
               <p class="photopage__photoblock__location__text">少ない荷物とたくさんの楽しみと</p>
             </div>
           </div>
           <div class="item" :style="{ backgroundImage: 'url(/photos/1.jpg)'}">
             <div class="photopage__photoblock__location">
-              <p class="photopage__photoblock__location__title">日光</p>
+              <h3 class="photopage__photoblock__location__title">日光</h3>
               <p class="photopage__photoblock__location__text">徳川が眠る古都を求めて</p>
             </div>
           </div>
         </div>
         <div class="over" :style="{ backgroundImage: 'url(/photos/2.jpg)'}">
           <div class="photopage__photoblock__location">
-            <p class="photopage__photoblock__location__title">福島</p>
+            <h3 class="photopage__photoblock__location__title">福島</h3>
             <p class="photopage__photoblock__location__text">歴史豊かな街並みと温かみ</p>
           </div>
         </div>
         <div class="list">
           <div class="item red">
             <div class="photopage__photoblock__location">
-              <p class="photopage__photoblock__location__title">ふらりお出かけ</p>
+              <h2 class="photopage__photoblock__location__title">東京のお出かけ</h2>
               <p class="photopage__photoblock__location__text">Oceans from above</p>
             </div>
           </div>
           <div class="item" :style="{ backgroundImage: 'url(/photos/3.jpg)'}">
             <div class="photopage__photoblock__location">
-              <p class="photopage__photoblock__location__title">浅草</p>
+              <h3 class="photopage__photoblock__location__title">浅草</h3>
               <p class="photopage__photoblock__location__text">歴史情緒溢れる江戸っ子の町</p>
             </div>
           </div>
         </div>
         <div class="over" :style="{ backgroundImage: 'url(/photos/4.jpg)'}">
           <div class="photopage__photoblock__location">
-            <p class="photopage__photoblock__location__title">お台場</p>
+            <h3 class="photopage__photoblock__location__title">お台場</h3>
             <p class="photopage__photoblock__location__text">海風とアトラクションを感じに</p>
           </div>
         </div>
       </div>
 
       <div class="photopage__end">
-        <p class="photopage__end__words">
+        <h2 class="photopage__end__words">
           次はどこに出かける？
-        </p>
+        </h2>
         <a  href="https://www.instagram.com/genki.matsubara/" target="_blank">
           <div class="photopage__end__link">instagramの写真を見に行く</div>
         </a>
-        <p class="photopage__end__messege">またね！</p>
+        <p class="photopage__end__messege">写真はiPhoneXとEOS kiss10で撮影。<br />またどこかで👋</p>
 
         <p class="photopage__end__sign">
           Genki
@@ -205,6 +205,7 @@ export default {
   &__end {
     text-align: center;
     &__words {
+      font-weight: normal;
       margin-bottom: 28px;
       font-family: SFNS-Regular;
       font-size: 30px;
