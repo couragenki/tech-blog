@@ -3,7 +3,9 @@
     <div class="photopage">
       <div class="photopage__header">
         <div class="photopage__header__airplane">
-          <img alt="飛行機アイコン" src="/common/airplane.svg" />
+          <a href="https://www.instagram.com/genki.matsubara/" target="_blank">
+            <img alt="飛行機アイコン" src="/common/airplane.svg" />
+          </a>
         </div>
         <nav class="photopage__header__sns">
           <ul class="photopage__header__sns__list">
@@ -32,6 +34,7 @@
       </div>
 
       <div class="photopage__intoro">
+        <h1 class="photopage__intoro__title">Go out!</h1>
         <p class="photopage__intoro__text">
           外に行こう。まだ知らない街に行こう。<br />
           新しい発見と思い出を求めて。
@@ -49,14 +52,14 @@
           <div class="item" :style="{ backgroundImage: 'url(/photos/1.jpg)'}">
             <div class="photopage__photoblock__location">
               <h3 class="photopage__photoblock__location__title">日光</h3>
-              <p class="photopage__photoblock__location__text">徳川が眠る古都を求めて</p>
+              <p class="photopage__photoblock__location__text">2018<br />徳川が眠る古都を求めて</p>
             </div>
           </div>
         </div>
         <div class="over" :style="{ backgroundImage: 'url(/photos/2.jpg)'}">
           <div class="photopage__photoblock__location">
             <h3 class="photopage__photoblock__location__title">福島</h3>
-            <p class="photopage__photoblock__location__text">歴史豊かな街並みと温かみ</p>
+            <p class="photopage__photoblock__location__text">2019<br />歴史豊かな街並みと温かみ</p>
           </div>
         </div>
         <div class="list">
@@ -85,7 +88,7 @@
         <h2 class="photopage__end__words">
           次はどこに出かける？
         </h2>
-        <a  href="https://www.instagram.com/genki.matsubara/" target="_blank">
+        <a href="https://www.instagram.com/genki.matsubara/" target="_blank">
           <div class="photopage__end__link">instagramの写真を見に行く</div>
         </a>
         <p class="photopage__end__messege">写真はiPhoneXとEOS kiss10で撮影。<br />またどこかで👋</p>
@@ -149,6 +152,10 @@ export default {
   }
   // イントロテキスト
   &__intoro {
+    &__title {
+      font-size: 5em;
+      text-align: center;
+    }
     &__text {
       text-align: center;
       line-height: 2.5em;

@@ -22,7 +22,7 @@
           <n-link to="/marketing">MARKETING</n-link>
         </li>
         <li>
-          <n-link to="/photos">PHOTOS</n-link>
+          <n-link to="/goout">GoOut</n-link>
         </li>
       </ul>
     </div>
