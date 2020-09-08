@@ -42,12 +42,24 @@ export default {
   justify-content: space-between;
   flex-wrap: wrap;
   .card {
-    width: 16rem;
-    margin-right: 1.6rem;
+    width: 24%;
     margin-bottom: 2rem;
   }
 }
-
+@media (max-width: 1187px) {
+  .posts {
+    .card {
+      width: 32%;
+    }
+  }
+}
+@media (max-width: 860px) {
+  .posts {
+    .card {
+      width: 48%;
+    }
+  }
+}
 @media (max-width: 596px) {
   .posts {
     .card {

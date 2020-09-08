@@ -36,8 +36,8 @@
       <div class="photopage__intoro">
         <h1 class="photopage__intoro__title">Go Out!</h1>
         <p class="photopage__intoro__text">
-          外に行こう。まだ知らない街に行こう。<br />
-          新しい発見と思い出を求めて。
+          外に行こう。まだ知らない街に行こう。
+          <br />新しい発見と思い出を求めて。
         </p>
       </div>
 
@@ -51,15 +51,26 @@
           </div>
           <div class="item" :style="{ backgroundImage: 'url(/photos/1.jpg)'}">
             <div class="photopage__photoblock__location">
-              <h3 class="photopage__photoblock__location__title">日光</h3>
-              <p class="photopage__photoblock__location__text">2018<br />徳川が眠る古都を求めて</p>
+              <h3 class="photopage__photoblock__location__title">日光 ※記事準備中</h3>
+              <p class="photopage__photoblock__location__text">
+                2018
+                <br />徳川が眠る古都を求めて
+              </p>
             </div>
           </div>
         </div>
-        <n-link tag="div" to="/goout/2019-may-fukushima" class="over" :style="{ backgroundImage: 'url(/photos/2.jpg)'}">
+        <n-link
+          tag="div"
+          to="/goout/2019-may-fukushima"
+          class="over"
+          :style="{ backgroundImage: 'url(/photos/2019-may-fukushima/main.jpeg)'}"
+        >
           <div class="photopage__photoblock__location">
             <h3 class="photopage__photoblock__location__title">福島</h3>
-            <p class="photopage__photoblock__location__text">2019<br />歴史豊かな街並みと温かみ</p>
+            <p class="photopage__photoblock__location__text">
+              2019
+              <br />歴史豊かな街並みと温かみ
+            </p>
           </div>
         </n-link>
         <div class="list">
@@ -71,43 +82,39 @@
           </div>
           <div class="item" :style="{ backgroundImage: 'url(/photos/3.jpg)'}">
             <div class="photopage__photoblock__location">
-              <h3 class="photopage__photoblock__location__title">浅草</h3>
+              <h3 class="photopage__photoblock__location__title">浅草 ※記事準備中</h3>
               <p class="photopage__photoblock__location__text">歴史情緒溢れる江戸っ子の町</p>
             </div>
           </div>
         </div>
         <div class="over" :style="{ backgroundImage: 'url(/photos/4.jpg)'}">
           <div class="photopage__photoblock__location">
-            <h3 class="photopage__photoblock__location__title">お台場</h3>
+            <h3 class="photopage__photoblock__location__title">お台場 ※記事準備中</h3>
             <p class="photopage__photoblock__location__text">海風とアトラクションを感じに</p>
           </div>
         </div>
       </div>
 
       <div class="photopage__end">
-        <h2 class="photopage__end__words">
-          次はどこに出かける？
-        </h2>
+        <h2 class="photopage__end__words">次はどこに出かける？</h2>
         <a href="https://www.instagram.com/genki.matsubara/" target="_blank">
           <div class="photopage__end__link">instagramの写真を見に行く</div>
         </a>
-        <p class="photopage__end__messege">写真はiPhoneXとEOS kiss10で撮影<br />またどこかで👋</p>
-
-        <p class="photopage__end__sign">
-          Genki
+        <p class="photopage__end__messege">
+          写真はiPhoneXとEOS kiss10で撮影
+          <br />またどこかで👋
         </p>
+
+        <p class="photopage__end__sign">Genki</p>
 
         <div class="photopage__end__icon">
           <div class="photopage__end__icon__wrapper">
-            <img class="photopage__end__icon__img" src="/common/profile-icon.jpg">
+            <img class="photopage__end__icon__img" src="/common/profile-icon.jpg" />
           </div>
         </div>
 
-        <p class="photopage__end__name">
-          Genki Matsubara
-        </p>
+        <p class="photopage__end__name">Genki Matsubara</p>
       </div>
-
     </div>
   </DefaultTemplate>
 </template>
@@ -117,6 +124,28 @@ import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
 export default {
   components: {
     DefaultTemplate,
+  },
+  head: {
+    titleTemplate: "Go Out! | couragenki",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "写真家になりたかった僕が趣味の写真と旅行を楽しんでいるだけのページです。",
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "Go Out! | couragenki",
+      },
+      {
+        hid: "og:description",
+        name: "og:description",
+        content:
+          "写真家になりたかった僕が趣味の写真と旅行を楽しんでいるだけのページです。",
+      },
+    ],
   },
 };
 </script>
@@ -176,10 +205,10 @@ export default {
         background-size: 100% auto;
       }
       .bule {
-        background-color: #4F8CFF;
+        background-color: #4f8cff;
       }
       .red {
-        background-color: #FF4F4F;
+        background-color: #ff4f4f;
       }
     }
     .over {
@@ -188,11 +217,12 @@ export default {
       height: 480px;
       background-position: center;
       transition: all 0.5s;
-      background-size: 100% auto;
-    }
-    .item:hover, .over:hover {
-      transition: all 0.5s;
       background-size: 110% auto;
+    }
+    .item:hover,
+    .over:hover {
+      transition: all 0.5s;
+      background-size: 120% auto;
     }
     &__location {
       display: table-cell;
@@ -202,14 +232,14 @@ export default {
         display: inline-block;
         font-family: YuGo-Bold;
         font-size: 30px;
-        color: #FFFFFF;
+        color: #ffffff;
         text-align: center;
-        border-bottom: 2px #FFF solid;
+        border-bottom: 2px #fff solid;
       }
       &__text {
         font-family: YuGo-Bold;
         font-size: 18px;
-        color: #FFFFFF;
+        color: #ffffff;
         text-align: center;
       }
     }
@@ -234,7 +264,7 @@ export default {
       color: black;
       margin-bottom: 26px;
       padding: 11px 17px;
-      border: 2px solid #E8E8E8;
+      border: 2px solid #e8e8e8;
       border-radius: 100px;
       font-family: SFNS-Regular;
       font-size: 15px;
@@ -245,7 +275,7 @@ export default {
       margin-bottom: 68px; //84-26
     }
     &__sign {
-      color: #D8D8D8;
+      color: #d8d8d8;
       font-size: 5em;
       font-family: cursive;
     }
@@ -254,7 +284,7 @@ export default {
       &__wrapper {
         width: 68px;
         height: 68px;
-        border: 1px solid #D8D8D8;
+        border: 1px solid #d8d8d8;
         display: inline-block;
         border-radius: 50%;
         box-shadow: 0px 0px 6px #00000036;
@@ -264,7 +294,6 @@ export default {
         width: 60px;
         height: 60px;
         border: 4px solid white;
-
       }
     }
     &__name {

@@ -115,7 +115,8 @@ export default {
     min-height: 9rem;
     max-height: 14rem;
     transition: all 0.5s;
-    background-size: 100% auto;
+    background-size: 100% 100%;
+    background-position: center;
     background-repeat: no-repeat;
     padding: 0 8px 8px;
     .card-title {
@@ -128,10 +129,6 @@ export default {
         background: #ffffffcc;
       }
     }
-  }
-  .card-img-top:hover {
-    transition: all 0.5s;
-    background-size: 110% auto;
   }
   .card-body {
     position: relative;
@@ -174,6 +171,10 @@ export default {
 .card:hover {
   text-decoration: none;
   opacity: 0.7;
+  .card-img-top {
+    transition: all 0.5s;
+    background-size: 120% 120%;
+  }
 }
 .red {
   background: #e80000;

@@ -41,6 +41,26 @@ export default {
   components: {
     DefaultTemplate,
   },
+  head: {
+    titleTemplate: "ポリシー | couragenki",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content: "利用規約について記載しているページになります。",
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "ポリシー | couragenki",
+      },
+      {
+        hid: "og:description",
+        name: "og:description",
+        content: "利用規約について記載しているページになります。",
+      },
+    ],
+  },
 };
 </script>
 
