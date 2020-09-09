@@ -155,6 +155,11 @@ export default {
     titleTemplate: "2019年5月福島旅行 | couragenki",
     meta: [
       {
+        hid: "og:image",
+        property: "og:image",
+        content: "https://couragenki.com/photos/2019-may-fukushima/main.jpeg",
+      },
+      {
         hid: "description",
         name: "description",
         content: "福島・会津若松への旅を写真と共に振り返る。",
