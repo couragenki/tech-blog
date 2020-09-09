@@ -38,12 +38,12 @@ export default {
 .posts {
   padding: 0;
   list-style: none;
-  display: flex;
-  justify-content: space-between;
+  display: inline-flex;
+  justify-content:flex-start;
   flex-wrap: wrap;
   .card {
     width: 24%;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
   }
 }
 @media (max-width: 1187px) {

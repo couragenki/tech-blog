@@ -152,7 +152,7 @@ export default {
 
 <style lang="scss" scoped>
 .photopage {
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
   // ヘッダー
   &__header {

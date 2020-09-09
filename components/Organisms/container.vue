@@ -73,6 +73,11 @@ export default {
 }
 
 .PostStyle {
+  /deep/ * {
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体",
+      "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ",
+      "Meiryo", "verdana", sans-serif;
+  }
   /deep/ img {
     max-width: 100%;
   }

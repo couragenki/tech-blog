@@ -148,6 +148,7 @@ export default {
       -webkit-line-clamp: 3;
       overflow: hidden;
       font-size: 0.8em;
+      margin-top: 0;
       margin-bottom: 0.3em;
       color: black;
     }

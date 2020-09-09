@@ -65,7 +65,7 @@ export default {
   width: 100%;
   background: #ff9903;
   &__wrapper {
-    max-width: 1208px;
+    max-width: 1240px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
