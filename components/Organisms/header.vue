@@ -107,7 +107,7 @@ export default {
       a {
         text-decoration: none;
         color: black;
-        font-size: 1.5em;
+        font-size: 1.2em;
         font-weight: 700;
         font-family: "Helvetica Neue", Helvetica, Arial, YuGothic, "Yu Gothic",
           游ゴシック体, "游ゴシック", "ヒラギノ角ゴ ProN W3",
@@ -124,7 +124,7 @@ export default {
       ul {
         width: 100%;
         position: absolute;
-        top: 6.8em;
+        top: 3.8em;
         right: 0;
         margin: 0;
         background :#efefef;

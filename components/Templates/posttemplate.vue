@@ -1,8 +1,7 @@
 <template>
   <div>
     <Header />
-    <div v-if="post.image" class="post__img">
-      <img :src="post.image" :alt="post.title" />
+    <div v-if="post.image" class="post__img" :style="{ backgroundImage: 'url(' + post.image + ')'}">
     </div>
 
     <div
@@ -116,12 +115,13 @@ export default {
   padding: 1em 0;
 }
 .post__img {
-  max-width: 1240px;
+  // max-width: 1240px;
   width: 100%;
   margin: 0 auto;
-  img {
-    width: 100%;
-  }
+  min-height: 400px;
+  background: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .hero-bg {
   position: relative;
