@@ -17,12 +17,6 @@ export default {
     PostCards,
     BackButton,
   },
-  data() {
-    return {
-      pageTitle: '',
-      pageDescription: '',
-    };
-  },
   head: {
     title: "テック",
     meta: [

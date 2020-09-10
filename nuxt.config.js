@@ -3,7 +3,10 @@ export default {
     '@nuxt/content',
     '@nuxtjs/sitemap',
   ],
-  plugins: [{ src: '~plugins/ga.js', mode: 'client' }],
+  plugins: [
+    { src: '~plugins/ga.js', mode: 'client' },
+    { src: '~/plugins/vue-scrollto' },
+  ],
   buildModules: [
     ['@nuxt/typescript-build', {
       typeCheck: true,

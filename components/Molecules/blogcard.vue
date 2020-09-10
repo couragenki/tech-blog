@@ -7,19 +7,19 @@
     >
       <div
         class="card-category"
-        :class="{green: blogCategory == 'tech', red: blogCategory == 'marketing', yellow: blogCategory == 'notes'}"
+        :class="{green: blogCategory == 'tech', red: blogCategory == 'marketing'}"
       >{{blogCategory}}</div>
       <div class="card-title">
-        <p class="card-title-text">{{blogTitle}}</p>
+        <p class="card-title-text" :class="{green: blogCategory == 'tech', red: blogCategory == 'marketing'}">{{blogTitle}}</p>
       </div>
     </div>
     <div class="card-img-top shape" v-else>
       <div
         class="card-category"
-        :class="{green: blogCategory == 'tech', red: blogCategory == 'marketing', yellow: blogCategory == 'notes'}"
+        :class="{green: blogCategory == 'tech', red: blogCategory == 'marketing'}"
       >{{blogCategory}}</div>
       <div class="card-title">
-        <p class="card-title-text">{{blogTitle}}</p>
+        <p class="card-title-text" :class="{green: blogCategory == 'tech', red: blogCategory == 'marketing'}">{{blogTitle}}</p>
       </div>
     </div>
     <div class="card-body">
@@ -122,12 +122,27 @@ export default {
     .card-title {
       margin: 0;
       .card-title-text {
+        min-height: 4em;
         font-weight: 700;
-        font-size: 1.2em;
+        font-size: 1em;
+        vertical-align: middle;
         padding: 8px;
         color: black;
         background: #ffffffcc;
+        border: #9e9e9e solid 2px;
       }
+      .red {
+          border: #e80000 solid 2px;
+        }
+        .green {
+          border: #37e437 solid 2px;
+        }
+    }
+    .red {
+      background: #e80000;
+    }
+    .green {
+      background: #37e437;
     }
   }
   .card-body {
@@ -176,14 +191,5 @@ export default {
     transition: all 0.5s;
     background-size: 120% 120%;
   }
-}
-.red {
-  background: #e80000;
-}
-.green {
-  background: #37e437;
-}
-.yellow {
-  background: rgb(255, 255, 69);
 }
 </style>
