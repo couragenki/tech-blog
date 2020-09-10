@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header id="pageTop" class="header">
     <div class="header__wrapper">
       <!-- ロゴ -->
       <div class="header__title">
@@ -120,7 +120,7 @@ export default {
   &__mobile {
     display: none;
     .menu {
-      padding-top: 0.5em;
+      padding-top: 0.3em;
       ul {
         width: 100%;
         position: absolute;
@@ -156,7 +156,7 @@ export default {
     label {
       display: block;
       margin: 0 0 4px 0;
-      padding : 15px;
+      padding : 8px;
       line-height: 1;
       color :#fff;
       cursor :pointer;
@@ -188,8 +188,18 @@ export default {
 
 @media screen and (max-width: 768px) {
   .header {
+    &__wrapper {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+    }
     &__category {
       display: none !important;
+    }
+    &__title {
+      height: 2em;
+      &__text {
+        font-size: 2em;
+      }
     }
     &__mobile {
       display: block;
