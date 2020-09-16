@@ -318,7 +318,14 @@ export default {
         display: block;
         .item {
           width: 100%;
+          background-size: cover;
         }
+      }
+      &__location {
+        background-size: cover;
+      }
+      .over {
+        background-size: cover;
       }
     }
   }
