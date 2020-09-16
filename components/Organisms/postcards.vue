@@ -14,8 +14,9 @@
         :blogImage="article.image || null"
       />
     </div>
-    <div class="sort__button">
+    <div class="sort__buttons">
       <button
+        class="sort__buttons__button"
         v-for="(item, index) in setPostData.length" :key="index"
         v-on:click="changeData(index)"
         :class="{dateActive: showIndex == index}"
@@ -90,9 +91,18 @@ export default {
 }
 .dateActive {
     background: blue;
+    color: white;
   }
-.sort__button {
+.sort__buttons {
   text-align: center;
+  &__button {
+    width: 30px;
+    height: 30px;
+    border-radius: 25%;
+    margin-left: 2px;
+    margin-right: 2px;
+    border: none;
+  }
 }
 @media (max-width: 1178px) {
   .posts {

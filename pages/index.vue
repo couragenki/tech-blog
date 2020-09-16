@@ -29,6 +29,9 @@ import Container from "@/components/Organisms/container.vue";
 import Footer from "@/components/Organisms/footer.vue";
 
 export default {
+  head: {
+    title: "トップページ",
+  },
   components: {
     DefaultTemplate,
     BlogCrad,
