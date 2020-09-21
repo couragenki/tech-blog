@@ -102,6 +102,7 @@ export default {
     margin-left: 2px;
     margin-right: 2px;
     border: none;
+    text-align: center;
   }
 }
 @media (max-width: 1178px) {
