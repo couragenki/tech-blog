@@ -4,13 +4,13 @@
       <!-- ロゴ -->
       <div class="header__title">
         <p class="header__title__text">
-          <n-link to="/">couragenki</n-link>
+          <n-link :to="$i18n.path('')">couragenki</n-link>
         </p>
       </div>
       <!-- カテゴリー -->
       <ul class="header__category">
         <li>
-          <n-link to="/">HOME</n-link>
+          <n-link :to="$i18n.path('')">HOME</n-link>
         </li>
         <li>
           <n-link to="/profile">PROFILE</n-link>
@@ -35,7 +35,7 @@
           <input type="checkbox" id="type1" class="accordion" />
           <ul id="links1">
             <li>
-              <n-link to="/">HOME</n-link>
+              <n-link :to="$i18n.path('')">HOME</n-link>
             </li>
             <li>
               <n-link to="/profile">PROFILE</n-link>

@@ -2,7 +2,7 @@
   <nav class="navigation">
     <ul class="pc navigation__list">
       <li class="navigation__list__item">
-        <n-link to="/">TOP</n-link>
+        <n-link :to="$i18n.path('')">TOP</n-link>
       </li>
       <li class="navigation__list__item">
         <n-link to="/profile">自己紹介</n-link>
@@ -32,7 +32,7 @@
     </ul>
     <div class="mobile">
       <hr />
-      <n-link to="/" tag="label" class="acd-label">TOP</n-link>
+      <n-link :to="$i18n.path('')" tag="label" class="acd-label">TOP</n-link>
       <hr />
       <n-link to="/profile" tag="label" class="acd-label">自己紹介</n-link>
       <hr />

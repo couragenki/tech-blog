@@ -3,16 +3,20 @@
         "home": "Home",
         "about": "About",
         "en": "English",
-        "ja": "Japanese"
+        "ja": "Japanese",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "infra": "Infrastructure",
+        "profile": "Profile",
+        "policy": "Privacy Policy",
+        "blog": "Blog"
     },
     "home": {
         "title": "Hello world!",
         "introduction": "This page is set in English"
     },
     "common": {
-        "category": "category",
-        "frontend": "frontend",
-        "beckend": "beckend"
+        "category": "category"
     },
     "toppage": {
         "title": "List of articles about web development",
@@ -21,5 +25,12 @@
         "techtext1": "This is an article about programming done with JavaScript,PHP.",
         "techtext2": "Mainly a blog about JavaScript",
         "techtext3": "A blog about the back-end language"
+    },
+    "footer": {
+        "text1": "Please contact us via DM on social media.",
+        "text2": "A 25-year-old from Nagasaki Prefecture in Japan. After graduating from high school, he joined Toshiba and taught himself programming and became a web-based engineer. I love to take pictures and go out with my camera.",
+        "text3": "Click",
+        "text4": " here ",
+        "text5": "for a profile"
     }
 }

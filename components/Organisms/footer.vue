@@ -14,27 +14,35 @@
           </div>
           <p class="profile__name">GENKI MATSUBARA</p>
           <p class="footer__text">
-            長崎出身の25歳。高卒で東芝に入社しその後独学でプログラミングを学習しWEB系のエンジニアに転身。写真を撮るのが好きでカメラを持って出かけています。プロフィールは
-            <n-link to="/profile">こちら</n-link>から。
+            {{ $t("footer.text2") }}
+          </p>
+          <p class="footer__text">
+            {{ $t("footer.text3") }}
+            <n-link to="/profile">{{ $t("footer.text4") }}</n-link
+            >{{ $t("footer.text5") }}
           </p>
         </div>
         <hr class="footer__line" />
         <p class="footer__intoro">MESSEGE</p>
         <div class="footer__button"></div>
-        <p class="footer__text">ご連絡はSNSのDMにてお願い致します。</p>
+        <p class="footer__text">{{ $t("footer.text1") }}</p>
         <hr class="footer__line" />
         <p class="footer__intoro">FOLLOW ME</p>
         <div class="footer__button twitter">
-          <a href="https://twitter.com/couragenki" target="_blank">TWITTER</a>
+          <a href="https://twitter.com/couragenki" target="_blank">Twitter</a>
         </div>
         <div class="footer__button github">
-          <a href="https://github.com/GenkiMatsubara" target="_blank">GIT HUB</a>
+          <a href="https://github.com/GenkiMatsubara" target="_blank"
+            >Git Hub</a
+          >
         </div>
         <div class="footer__button qiita">
-          <a href="https://qiita.com/GenkiMatsubara" target="_blank">QIITA</a>
+          <a href="https://qiita.com/GenkiMatsubara" target="_blank">Qiita</a>
         </div>
         <div class="footer__button instagram">
-          <a href="https://www.instagram.com/genki.matsubara/" target="_blank">INSTAGRAM</a>
+          <a href="https://www.instagram.com/genki.matsubara/" target="_blank"
+            >Instagram</a
+          >
         </div>
       </div>
       <div class="footer__container__clum__b">
@@ -42,40 +50,42 @@
         <p class="footer__subintoro">ABOUT</p>
         <ul>
           <li>
-            <n-link to="/">トップ</n-link>
+            <n-link :to="$i18n.path('')">{{ $t("links.home") }}</n-link>
           </li>
           <li>
-            <n-link to="/profile">自己紹介</n-link>
+            <n-link to="/profile">{{ $t("links.profile") }}</n-link>
           </li>
           <li>
-            <n-link to="/policy">プライバシーポリシー</n-link>
+            <n-link to="/policy">{{ $t("links.policy") }}</n-link>
           </li>
         </ul>
         <hr class="footer__line" />
         <n-link to="/tech" tag="div" class="footer__subintoro">TECH</n-link>
         <ul class="footer__links">
           <li>
-            <n-link to="/tech/frontend">フロントエンド</n-link>
+            <n-link to="/tech/frontend">{{ $t("links.frontend") }}</n-link>
           </li>
           <li>
-            <n-link to="/tech/backend">バックエンド</n-link>
+            <n-link to="/tech/backend">{{ $t("links.backend") }}</n-link>
           </li>
           <li>
-            <n-link to="/tech/infra">インフラ</n-link>
+            <n-link to="/tech/infra">{{ $t("links.infra") }}</n-link>
           </li>
           <li>
             <n-link to="/tech/git">Git</n-link>
           </li>
         </ul>
         <hr class="footer__line" />
-        <n-link to="/marketing" tag="div" class="footer__subintoro">MARKETING</n-link>
+        <n-link to="/marketing" tag="div" class="footer__subintoro"
+          >MARKETING</n-link
+        >
 
         <ul class="footer__links">
           <li>
             <n-link to="/marketing/sns">SNS</n-link>
           </li>
           <li>
-            <n-link to="/marketing/blog">ブログ</n-link>
+            <n-link to="/marketing/blog">{{ $t("links.blog") }}</n-link>
           </li>
         </ul>
         <hr class="footer__line" />

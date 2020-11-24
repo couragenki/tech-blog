@@ -1,18 +1,22 @@
 {
     "links": {
-        "home": "Home",
+        "home": "ホーム",
         "about": "About",
         "en": "英語",
-        "ja": "日本語"
+        "ja": "日本語",
+        "frontend": "フロントエンド",
+        "backend": "バックエンド",
+        "infra": "インフラ",
+        "profile": "プロフィール",
+        "policy": "プライバシーポリシー",
+        "blog": "ブログ"
     },
     "home": {
         "title": "やぁ、世界！",
         "introduction": "このページは日本語で設定されています"
     },
     "common": {
-        "category": "カテゴリー",
-        "frontend": "フロントエンド",
-        "beckend": "バックエンド"
+        "category": "カテゴリー"
     },
     "toppage": {
         "title": "ウェブ開発に関する記事一覧",
@@ -21,5 +25,12 @@
         "techtext1": "JavaScript,PHPと行ったプログラミングに関する記事です。",
         "techtext2": "おもにJavaScriptに関するブログです",
         "techtext3": "バックエンド言語に関するブログです"
+    },
+    "footer": {
+        "text1": "ご連絡はSNSのDMにてお願い致します。",
+        "text2": "長崎県出身の25歳。高卒で東芝に入社しその後独学でプログラミングを学習しWEB系のエンジニアに転身。写真を撮るのが好きでカメラを持って出かけています。",
+        "text3": "プロフィールは",
+        "text4": "こちら",
+        "text5": "から"
     }
 }
