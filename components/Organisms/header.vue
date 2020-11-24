@@ -28,10 +28,11 @@
 
       <div class="header__mobile">
         <div class="menu">
-        <label for="type1">
-          <img src="/common/menu.svg">
-        </label>
-        <input type="checkbox" id="type1" class="accordion">
+          <label for="type1">
+            <img src="/common/menu.svg" />
+          </label>
+
+          <input type="checkbox" id="type1" class="accordion" />
           <ul id="links1">
             <li>
               <n-link to="/">HOME</n-link>
@@ -127,7 +128,7 @@ export default {
         top: 3.8em;
         right: 0;
         margin: 0;
-        background :#efefef;
+        background: #efefef;
         list-style: none;
         z-index: 999;
       }
@@ -156,10 +157,10 @@ export default {
     label {
       display: block;
       margin: 0 0 4px 0;
-      padding : 8px;
+      padding: 8px;
       line-height: 1;
-      color :#fff;
-      cursor :pointer;
+      color: #fff;
+      cursor: pointer;
     }
     input {
       display: none;

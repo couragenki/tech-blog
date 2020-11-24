@@ -1,5 +1,9 @@
 <template>
   <DefaultTemplate>
+    <h1 class="title">
+      {{ $t("home.title") }}
+      <!-- 編集前：ColabApp -->
+    </h1>
     <h2>WEB系の記事一覧</h2>
     <PostCards :data="data" />
 
