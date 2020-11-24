@@ -1,12 +1,25 @@
 {
     "links": {
-        "home": "ほーむ",
-        "about": "あばうと",
-        "en": "えいご",
-        "ja": "にほんご"
+        "home": "Home",
+        "about": "About",
+        "en": "英語",
+        "ja": "日本語"
     },
     "home": {
         "title": "やぁ、世界！",
         "introduction": "このページは日本語で設定されています"
+    },
+    "common": {
+        "category": "カテゴリー",
+        "frontend": "フロントエンド",
+        "beckend": "バックエンド"
+    },
+    "toppage": {
+        "title": "ウェブ開発に関する記事一覧",
+        "subtext": "WEB技術、マーケティングなどのアウトプットブログです",
+        "techlink": "技術ブログ",
+        "techtext1": "JavaScript,PHPと行ったプログラミングに関する記事です。",
+        "techtext2": "おもにJavaScriptに関するブログです",
+        "techtext3": "バックエンド言語に関するブログです"
     }
 }

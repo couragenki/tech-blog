@@ -1,26 +1,38 @@
 <template>
   <DefaultTemplate>
+    <div class="links">
+      <n-link :to="$i18n.path('')">
+        {{ $t("links.home") }}
+      </n-link>
+      <n-link v-if="$i18n.locale === 'ja'" :to="`/en` + $route.fullPath">
+        {{ $t("links.en") }}
+      </n-link>
+      <n-link v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')">
+        {{ $t("links.ja") }}
+      </n-link>
+    </div>
     <h1 class="title">
-      {{ $t("home.title") }}
       <!-- 編集前：ColabApp -->
     </h1>
-    <h2>WEB系の記事一覧</h2>
+    <h2>{{ $t("toppage.title") }}</h2>
+
     <PostCards :data="data" />
 
-    <h2>カテゴリー</h2>
-    <p>WEB技術、マーケティングなどのアウトプットブログです</p>
+    <h2>{{ $t("common.category") }}</h2>
+
+    <p>{{ $t("toppage.subtext") }}</p>
     <h3>
-      <n-link to="tech">技術ブログ</n-link>
+      <n-link to="tech">{{ $t("toppage.techlink") }}</n-link>
     </h3>
-    <p>JavaScript,PHPと行ったプログラミングに関する記事です。</p>
+    <p>{{ $t("toppage.techtext1") }}</p>
     <h4>
-      <n-link to="tech/frontend">フロントエンド</n-link>
+      <n-link to="tech/frontend">{{ $t("common.frontend") }}</n-link>
     </h4>
-    <p>おもにJavaScriptに関するブログです</p>
+    <p>{{ $t("toppage.techtext2") }}</p>
     <h4>
-      <n-link to="tech/backend">バックエンド</n-link>
+      <n-link to="tech/backend">{{ $t("common.backend") }}</n-link>
     </h4>
-    <p>バックエンド言語に関するブログです</p>
+    <p>{{ $t("toppage.techtext3") }}</p>
   </DefaultTemplate>
 </template>
 
