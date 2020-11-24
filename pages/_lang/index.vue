@@ -1,16 +1,5 @@
 <template>
   <DefaultTemplate>
-    <div class="links">
-      <n-link :to="$i18n.path('')">
-        {{ $t("links.home") }}
-      </n-link>
-      <n-link v-if="$i18n.locale === 'ja'" :to="`/en` + $route.fullPath">
-        {{ $t("links.en") }}
-      </n-link>
-      <n-link v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')">
-        {{ $t("links.ja") }}
-      </n-link>
-    </div>
     <h1 class="title">
       <!-- 編集前：ColabApp -->
     </h1>
@@ -26,11 +15,11 @@
     </h3>
     <p>{{ $t("toppage.techtext1") }}</p>
     <h4>
-      <n-link to="tech/frontend">{{ $t("common.frontend") }}</n-link>
+      <n-link to="tech/frontend">{{ $t("links.frontend") }}</n-link>
     </h4>
     <p>{{ $t("toppage.techtext2") }}</p>
     <h4>
-      <n-link to="tech/backend">{{ $t("common.backend") }}</n-link>
+      <n-link to="tech/backend">{{ $t("links.backend") }}</n-link>
     </h4>
     <p>{{ $t("toppage.techtext3") }}</p>
   </DefaultTemplate>
