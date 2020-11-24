@@ -1,10 +1,10 @@
 ---
-title: Nuxt+TypeScriptでの環境構築手順
+title: This is a reminder of how to create a site using nuxt-content.
 created_at: 2020-06-13
 updated_at: null
 date: 2020-06-13
 image: /img/tech.jpg
-description: Nuxt.jsとTypeScriptを用いた開発環境構築の手順をキャッチアップしたので記事にしています。記載のコマンド通りに実行していただければ再現できると思います。
+description: I'm writing this article as I caught up with the process of building a development environment using Nuxt.js and TypeScript. If you follow the described commands, you should be able to reproduce it.
 type: tech
 tags:
   - Next.js

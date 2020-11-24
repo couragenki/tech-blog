@@ -1,10 +1,10 @@
 ---
-title: Pixi.jsの高解像度端末の対応
+title: Support for high-resolution devices in Pixi.js
 created_at: 2019-06-11
 updated_at: null
 date: 2019-06-11
 image: /img/tech.jpg
-description: Pixi.jsでRetina端末のような高解像度端末にて画像をぼやけることなくはっきり表示するための対応を解説しています。
+description: Pixi.js explains how to display images clearly on high-resolution devices such as Retina devices without blurring.
 type: tech
 tags:
   - JavaScript

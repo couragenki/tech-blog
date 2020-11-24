@@ -1,10 +1,10 @@
 ---
-title: Nuxt.js + TypeScriptのサイトにfaviconと画像を表示する
+title: Nuxt.js + TypeScript to display images with favicons on your site
 created_at: 2020-06-15
 updated_at: null
 date: 2020-06-15
 image: /img/tech.jpg
-description: Nuxt.jsとTypeScriptを用いた開発環境構築ができたので基本的な開発手順の準備を行っていきたいと思います。
+description: Now that we have built a development environment using Nuxt.js and TypeScript, I'd like to prepare the basic development procedures.
 type: tech
 tags:
   - Next.js

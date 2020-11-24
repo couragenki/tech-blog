@@ -1,10 +1,10 @@
 ---
-title: githubでリポジトリを作成する
+title: Creating a repository in github
 created_at: 2020-06-13
 updated_at: null
 date: 2020-06-13
 image: /img/tech.jpg
-description: Githubでリポジトリを作成する手順をキャプチャーを利用して解説しています。
+description: The procedure for creating a repository in Github is explained with the help of a capture.
 type: tech
 tags:
   - Git

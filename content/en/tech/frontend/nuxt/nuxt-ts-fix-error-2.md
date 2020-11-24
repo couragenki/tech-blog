@@ -1,10 +1,10 @@
 ---
-title: 【Nuxt.jsのエラー修正】パート2
+title: 【Fixing errors in Nuxt.js】 Part 2
 created_at: 2020-07-09
 updated_at: null
 date: 2020-07-09
 image: /img/tech.jpg
-description: Nuxt.js開発中に発生したエラーの解消までを記事にしました。
+description: This article covers the resolution of errors that occurred during Nuxt.js development.
 type: tech
 tags:
   - Next.js

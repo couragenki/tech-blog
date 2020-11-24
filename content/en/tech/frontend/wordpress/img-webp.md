@@ -1,6 +1,6 @@
 ---
-title: WordPresサイト内の画像全てをWebPに変換した
-description: Wordpressで運用しているサイトのjpg,png画像をプラグインを使用してWebPに変換して効果を紹介していきます。
+title: Converted all of the images in a WordPres site to WebP
+description: We will introduce the effect of converting jpg,png images of a Wordpress site to WebP using a plugin.
 type: tech
 created_at: 2020-03-02
 updated_at: null

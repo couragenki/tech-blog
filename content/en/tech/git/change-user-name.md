@@ -1,10 +1,10 @@
 ---
-title: githubのアカウント名とユーザー名を変更した時の設定変更
+title: Configuration changes when you change your github account name and user name
 created_at: 2020-06-13
 updated_at: null
 date: 2020-06-13
 image: /img/tech.jpg
-description: 普段あんまり発生しない作業ですがGithubのアカウント名とユーザー名を変更した際のエラー対応を手順つきで解説していきます。
+description: This article explains how to deal with errors when you change your Github account name and user name, a task that doesn't happen often, with instructions.
 type: tech
 tags:
   - Git

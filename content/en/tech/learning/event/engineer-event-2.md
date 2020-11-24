@@ -1,11 +1,11 @@
 ---
-title: 参加してみた勉強会を種類別にまとめる
+title: Summarize the engineering workshops I've attended by type
 created_at: 2017-10-25
 updated_at: null
 date: 2017-10-25
 type: tech
 image: /img/tech.jpg
-description: いくつかエンジニア向け勉強会に参加してみていくつか種類分けしてみたいと思います。目的によって参加するイベントは変わってくると思います。
+description: I would like to participate in several engineering workshops and classify them into several types. I think the events you attend will vary depending on your purpose.
 tags:
   - event
 ---

@@ -1,6 +1,6 @@
 ---
-title: 未経験のVue.jsをキャッチアップしてオリジナルのカードゲームを作ってみる
-description: フロントエンドのフレームワーク『Vue.js』をキャッチアップした手順を記事にしました。
+title: Catch up with inexperienced Vue.js and try to make an original card game
+description: I wrote an article on the steps of catching up with the front-end framework "Vue.js".
 type: tech
 created_at: 2019-02-18
 updated_at: null

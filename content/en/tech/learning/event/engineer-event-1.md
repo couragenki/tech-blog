@@ -1,11 +1,11 @@
 ---
-title: エンジニア向け勉強会 参加してみた気づき
+title: Study Group for Engineers Awareness from Participation
 created_at: 2017-10-25
 updated_at: null
 date: 2017-10-25
 type: tech
 image: /img/tech.jpg
-description: はじめてエンジニア向けのイベントに参加してきたのでどんな学びがあったのかや感想を記事にしていきます。
+description: This is my first time attending an event for engineers and I will write about what I learned and my impressions of the event.
 tags:
   - event
 ---

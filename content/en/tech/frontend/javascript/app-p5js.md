@@ -1,11 +1,11 @@
 ---
-title: 【3日で実装・公開】エモいアートな画像生成アプリ開発
+title: Emo Artistic Image Generation App Development
 created_at: 2019-12-11
 updated_at: null
 date: 2019-12-11
 type: tech
 image: /img/tech.jpg
-description: 好きな画像をテキストでモザイクアートに変換するアプリを開発しました。
+description: Developed an app to convert your favorite images into mosaic art with text.
 tags:
   - Javascript
   - p5.js

@@ -1,10 +1,10 @@
 ---
-title: Nuxt.js + TypeScriptでの開発事始め
+title: Beginning Development in Nuxt.js + TypeScript
 created_at: 2020-06-26
 updated_at: null
 date: 2020-06-26
 image: /img/tech.jpg
-description: Nuxt.jsとTypeScriptを用いた開発環境構築ができたので基本的な開発手順の準備を行っていきたいと思います。
+description: Now that we have built a development environment using Nuxt.js and TypeScript, I'd like to prepare the basic development procedures.
 type: tech
 tags:
   - Next.js

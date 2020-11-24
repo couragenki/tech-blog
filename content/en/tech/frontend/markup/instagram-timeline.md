@@ -1,11 +1,11 @@
 ---
-title: snapwidgetでInstagramの画像をギャラリー風に表示する
+title: View Instagram images in a gallery-like manner with snapwidget
 created_at: 2020-04-18
 updated_at: null
 date: 2020-04-18
 image: /img/tech.jpg
 type: tech
-description: インスタグラムの投稿一覧を自分のサイトに埋め込むための手法を解説しています。
+description: Describes a technique for embedding a list of Instagram posts into your site.
 tags:
   - instagram
   - HTML

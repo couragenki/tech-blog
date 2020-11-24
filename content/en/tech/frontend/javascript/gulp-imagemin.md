@@ -1,11 +1,11 @@
 ---
-title: 【コピペですぐに使える】画像圧縮機能
+title: Image Compression
 created_at: 2019-02-19
 updated_at: null
 date: 2019-02-19
 type: tech
 image: /img/tech.jpg
-description: gulpとimageminを使用して画像の圧縮を行う方法を解説しています。コピペでOKです！
+description: Explains how to compress images using gulp and imagemin. Just copy and paste!
 tags:
   - Javascript
   - Gulp

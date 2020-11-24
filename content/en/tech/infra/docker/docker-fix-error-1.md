@@ -1,11 +1,11 @@
 ---
-title: dockerを最新バージョンにしたらエラーが出た話 by Windows
+title: The story of the latest version of docker with an error by Windows
 created_at: 2017-10-19
 updated_at: null
 date: 2017-10-19
 type: tech
 image: /img/tech.jpg
-description: dockerのバージョンアップの際にエラーが出たのでそちらの解決について記事にしました。
+description: An error occurred during the docker upgrade, and I wrote about its resolution.
 tags:
   - Docker
 ---

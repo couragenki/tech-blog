@@ -1,11 +1,11 @@
 ---
-title: AWS 認定クラウドプラクティショナー試験-準備編
+title: AWS Certified Cloud Practitioner Exam - Preparation
 created_at: 2020-02-25
 updated_at: null
 date: 2020-02-25
 type: tech
 image: /img/tech.jpg
-description: AWS認定のもっとも初級、クラウドプラクティショナーを受験するAWS初心者の記録（準備編）です。受験までの流れと試験費用、どんな準備が必要かをメインで書きます。合格して合格記まで書きたい。
+description: This is a record of an AWS newbie taking the AWS certification, the most beginner level, Cloud Practitioner (Preparation). I will mainly describe the process of taking the exam, how much it costs and how to prepare for it. I want to pass the exam and write a record of my success.
 tags:
   - AWS
 ---

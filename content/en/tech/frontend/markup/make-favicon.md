@@ -1,11 +1,11 @@
 ---
-title: 5分でサクッとfaviconを作成する手順
+title: Steps to create a quick favicon in 5 minutes
 created_at: 2020-06-14
 updated_at: null
 date: 2020-06-14
 image: /img/tech.jpg
 type: tech
-description: 今回はFaviconをたったの5分で作成していきたいと思います。
+description: In this article, we will create a Favicon in just five minutes.
 tags:
   - HTML
 ---

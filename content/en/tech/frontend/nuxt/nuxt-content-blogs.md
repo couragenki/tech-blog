@@ -1,10 +1,10 @@
 ---
-title: nuxt-contentでブログを作成して公開するまでのメモ
+title: Notes on creating and publishing a blog with nuxt-content
 created_at: 2020-09-17
 updated_at: null
 date: 2020-09-17
 image: /img/tech.jpg
-description: nuxt-contentを使ってサイトを作成した備忘録です。便利機能を使ってお手軽にサイト作成することができるようになりました。
+description: This is a reminder of how to create a site using nuxt-content. You can now create a site easily using the useful functions.
 type: tech
 tags:
   - Next.js

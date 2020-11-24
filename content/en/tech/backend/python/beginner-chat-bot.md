@@ -1,11 +1,11 @@
 ---
-title: pythonでチャットボットを作ってみる
+title: Create a chatbot in python
 created_at: 2017-03-03
 updated_at: null
 date: 2017-03-03
 image: /img/tech.jpg
 type: tech
-description: チャットボットを作りたくてpythonを触ってみた。
+description: I wanted to make a chatbot and touched up python.
 tags:
   - Python
   - 初心者向け

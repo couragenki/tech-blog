@@ -1,11 +1,11 @@
 ---
-title: 新人フロントエンジニアがdockerに挑戦した話
+title: The story of a rookie front engineer who tried docker
 created_at: 2017-10-14
 updated_at: null
 date: 2017-10-14
 type: tech
 image: /img/tech.jpg
-description: 新人フロントエンジニアがdockerに挑戦した話です。環境構築周りを触っていきます。
+description: This is the story of a new front-end engineer who tried docker. We'll touch on the environment building around it.
 tags:
   - Docker
 ---

@@ -1,10 +1,10 @@
 ---
-title: MacにSourcetreeをダウンロードするまで
+title: Until you download Sourcetree to your Mac
 created_at: 2017-10-19
 updated_at: null
 date: 2017-10-19
 image: /img/tech.jpg
-description: MacにGitのGUIツールであるSourcetreeを導入していきます
+description: Introduce the Sourcetree, a Git GUI tool, to the Mac.
 type: tech
 tags:
   - event

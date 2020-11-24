@@ -1,11 +1,11 @@
 ---
-title: pythonを触ってみた
+title: Touching the python
 created_at: 2017-12-20
 updated_at: null
 date: 2017-12-20
 type: tech
 image: /img/tech.jpg
-description: pythonをはじめて触ってみました。フロントエンドの駆け出しエンジニアですが頑張ってキャッチアップしていこうと思います。
+description: This is my first experience with python. I'm a fledgling front-end engineer, but I'll do my best to catch up.
 tags:
   - Python
 ---
