@@ -9,7 +9,8 @@
         "infra": "Infrastructure",
         "profile": "Profile",
         "policy": "Privacy Policy",
-        "blog": "Blog"
+        "blog": "Blog",
+        "returnhome": "Return to Home"
     },
     "home": {
         "title": "Hello world!",
@@ -25,6 +26,10 @@
         "techtext1": "This is an article about programming done with JavaScript,PHP.",
         "techtext2": "Mainly a blog about JavaScript",
         "techtext3": "A blog about the back-end language"
+    },
+    "techpage": {
+        "title": "Pages about technology",
+        "text1": "It is a collection of articles about technology and programming."
     },
     "footer": {
         "text1": "Please contact us via DM on social media.",

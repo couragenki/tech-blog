@@ -1,8 +1,8 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <BackButton link="/" text="ホームへ戻る" />
-    <h1>Techページ</h1>
-    <p>技術やプログラミングに関する記事をまとめています。</p>
+    <BackButton :to="$i18n.path('')" :text="$t('links.returnhome')" />
+    <h1>{{ $t("techpage.title") }}</h1>
+    <p>{{ $t("techpage.text1") }}</p>
     <PostCards :data="data" />
   </DefaultTemplate>
 </template>

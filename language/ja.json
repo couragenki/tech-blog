@@ -9,7 +9,8 @@
         "infra": "インフラ",
         "profile": "プロフィール",
         "policy": "プライバシーポリシー",
-        "blog": "ブログ"
+        "blog": "ブログ",
+        "returnhome": "ホームへ戻る"
     },
     "home": {
         "title": "やぁ、世界！",
@@ -25,6 +26,10 @@
         "techtext1": "JavaScript,PHPと行ったプログラミングに関する記事です。",
         "techtext2": "おもにJavaScriptに関するブログです",
         "techtext3": "バックエンド言語に関するブログです"
+    },
+    "techpage": {
+        "title": "技術に関するページ",
+        "text1": "技術やプログラミングに関する記事をまとめています。"
     },
     "footer": {
         "text1": "ご連絡はSNSのDMにてお願い致します。",
