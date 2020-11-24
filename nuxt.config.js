@@ -69,6 +69,6 @@ export default {
     middleware: 'i18n'
   },
   generate: {
-    routes: ['/', '/about', '/en', '/en/about']
+    routes: ['/en']
   },
 }

@@ -18,7 +18,7 @@
           </p>
           <p class="footer__text">
             {{ $t("footer.text3") }}
-            <n-link to="/profile">{{ $t("footer.text4") }}</n-link
+            <n-link :to="$i18n.path('profile')">{{ $t("footer.text4") }}</n-link
             >{{ $t("footer.text5") }}
           </p>
         </div>
@@ -53,14 +53,12 @@
             <n-link :to="$i18n.path('')">{{ $t("links.home") }}</n-link>
           </li>
           <li>
-            <n-link :to="$i18n.path('/profile')">{{
+            <n-link :to="$i18n.path('profile')">{{
               $t("links.profile")
             }}</n-link>
           </li>
           <li>
-            <n-link :to="$i18n.path('/policy')">{{
-              $t("links.policy")
-            }}</n-link>
+            <n-link :to="$i18n.path('policy')">{{ $t("links.policy") }}</n-link>
           </li>
         </ul>
         <hr class="footer__line" />
@@ -69,27 +67,27 @@
         >
         <ul class="footer__links">
           <li>
-            <n-link :to="$i18n.path('/tech/frontend')">{{
+            <n-link :to="$i18n.path('tech/frontend')">{{
               $t("links.frontend")
             }}</n-link>
           </li>
           <li>
-            <n-link :to="$i18n.path('/tech/backend')">{{
+            <n-link :to="$i18n.path('tech/backend')">{{
               $t("links.backend")
             }}</n-link>
           </li>
           <li>
-            <n-link :to="$i18n.path('/tech/infra')">{{
+            <n-link :to="$i18n.path('tech/infra')">{{
               $t("links.infra")
             }}</n-link>
           </li>
           <li>
-            <n-link :to="$i18n.path('/tech/git')">Git</n-link>
+            <n-link :to="$i18n.path('tech/git')">Git</n-link>
           </li>
         </ul>
         <hr class="footer__line" />
         <n-link
-          :to="$i18n.path('/marketing')"
+          :to="$i18n.path('marketing')"
           tag="div"
           class="footer__subintoro"
           >MARKETING</n-link
@@ -97,10 +95,10 @@
 
         <ul class="footer__links">
           <li>
-            <n-link :to="$i18n.path('/marketing/sns')">SNS</n-link>
+            <n-link :to="$i18n.path('marketing/sns')">SNS</n-link>
           </li>
           <li>
-            <n-link :to="$i18n.path('/marketing/blog')">{{
+            <n-link :to="$i18n.path('marketing/blog')">{{
               $t("links.blog")
             }}</n-link>
           </li>
@@ -108,18 +106,18 @@
         <hr class="footer__line" />
         <p class="footer__subintoro">TAGS</p>
         <p class="footer__tags">
-          <n-link :to="$i18n.path('/tech/frontend/javascript/')"
+          <n-link :to="$i18n.path('tech/frontend/javascript/')"
             >#JavaScript</n-link
           >&nbsp;
-          <n-link :to="$i18n.path('/tech/frontend/vue/')">#Vue.js</n-link>&nbsp;
-          <n-link :to="$i18n.path('/tech/frontend/gatsby/')">#Gatsby.js</n-link
+          <n-link :to="$i18n.path('tech/frontend/vue/')">#Vue.js</n-link>&nbsp;
+          <n-link :to="$i18n.path('tech/frontend/gatsby/')">#Gatsby.js</n-link
           >&nbsp;
-          <n-link :to="$i18n.path('/tech/frontend/markup/')">#Markup</n-link
+          <n-link :to="$i18n.path('tech/frontend/markup/')">#Markup</n-link
           >&nbsp;
-          <n-link :to="$i18n.path('/tech/backend/python/')">#Python</n-link
+          <n-link :to="$i18n.path('tech/backend/python/')">#Python</n-link
           >&nbsp;
-          <n-link :to="$i18n.path('/tech/infra/docker/')">#Docker</n-link>&nbsp;
-          <n-link :to="$i18n.path('/tech/git')">#Git</n-link>&nbsp;
+          <n-link :to="$i18n.path('tech/infra/docker/')">#Docker</n-link>&nbsp;
+          <n-link :to="$i18n.path('tech/git')">#Git</n-link>&nbsp;
         </p>
         <hr class="footer__line" />
       </div>
