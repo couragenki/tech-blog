@@ -37,5 +37,18 @@
         "text3": "Click",
         "text4": " here ",
         "text5": "for a profile"
+    },
+    "policy": {
+        "title": "Privacy Policy",
+        "text1": "About the ads on this site",
+        "text2": "This site uses third-party advertising services (Google Adsense, A8.net, Amazon Associates, Value Commerce, iTunes, and affiliate programs).",
+        "text3": "These ad-serving companies may use 'cookies' (but not names, addresses, email addresses, or phone numbers) to display advertisements for products and services that may be of interest to you, and information about your access to the Site and other sites.",
+        "text4": "To learn more about this process and how to prevent such information from being used by ad-serving companies in regards to Google Adsense, please click here.",
+        "text5": "About the access analysis tools we use",
+        "text6": "This site uses Google Analytics, an access analysis tool by Google.",
+        "text7": "This Google Analytics uses cookies for the collection of traffic data.",
+        "text8": "This traffic data is collected anonymously and does not identify any individual.",
+        "text9": "You can refuse the collection of this feature by disabling cookies, so please check your browser's settings.",
+        "text10": "To learn more about this agreement, click here or here."
     }
 }
