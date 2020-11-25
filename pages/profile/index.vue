@@ -2,7 +2,6 @@
   <div>
     <div class="toppage-intoro">
       <Header />
-      <!-- <Navigation /> -->
       <div class="intoro-mask">
         <div class="top-container">
           <div class="top-text">
@@ -15,7 +14,11 @@
       <div class="top-container">
         <div class="top-profile">
           <div class="top-profile-container">
-            <img alt="プロフィール画像" width="512" src="/common/profile-icon.jpg" />
+            <img
+              alt="プロフィール画像"
+              width="512"
+              src="/common/profile-icon.jpg"
+            />
           </div>
         </div>
         <div class="top-intoro">
@@ -43,7 +46,10 @@
                 </a>
               </li>
               <li class="sns__list__icon">
-                <a href="https://www.instagram.com/genki.matsubara/" target="_blank">
+                <a
+                  href="https://www.instagram.com/genki.matsubara/"
+                  target="_blank"
+                >
                   <img alt="instagramアイコン" src="/common/instagram.svg" />
                 </a>
               </li>
@@ -52,10 +58,6 @@
         </div>
       </div>
     </div>
-    <!-- <Container :isSidebar="false">
-      <h2>新着記事</h2>
-      <PostCards :data="tech" />
-    </Container>-->
     <Footer />
   </div>
 </template>

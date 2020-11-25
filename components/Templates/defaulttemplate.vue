@@ -1,7 +1,6 @@
 <template>
   <div>
     <Header />
-    <!-- <Navigation /> -->
     <Container
       v-if="isContainer"
       :isPostsPage="isPostsPage"
