@@ -45,7 +45,7 @@ export default {
       const m = date.substring(5, 7);
       const d = date.substring(8, 10);
 
-      return y + "年" + m + "月" + d + "日";
+      return y + "/" + m + "/" + d + "/";
     },
   },
 };
