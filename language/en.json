@@ -1,9 +1,11 @@
 {
+    "base": {
+        "ja": "日本語",
+        "en": "English"
+    },
     "links": {
         "home": "Home",
         "about": "About",
-        "en": "English",
-        "ja": "Japanese",
         "frontend": "Frontend",
         "backend": "Backend",
         "infra": "Infrastructure",
@@ -17,7 +19,11 @@
         "introduction": "This page is set in English"
     },
     "common": {
-        "category": "category"
+        "en": "English",
+        "ja": "Japanese",
+        "category": "category",
+        "language": "Language",
+        "current": "Current Language"
     },
     "toppage": {
         "title": "List of articles about web development",

@@ -24,8 +24,10 @@
         <li>
           <n-link to="/goout">GoOut</n-link>
         </li>
+        <SetLanguage />
       </ul>
 
+      <!-- スマホメニュー -->
       <div class="header__mobile">
         <div class="menu">
           <label for="type1">
@@ -52,13 +54,18 @@
           </ul>
         </div>
       </div>
+      <!-- スマホメニュー -->
     </div>
   </header>
 </template>
 
 <script>
+import SetLanguage from "@/components/Molecules/setlanguage.vue";
 export default {
   name: "Header",
+  components: {
+    SetLanguage,
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -122,6 +129,7 @@ export default {
     display: none;
     .menu {
       padding-top: 0.3em;
+      display: flex;
       ul {
         width: 100%;
         position: absolute;
@@ -185,6 +193,11 @@ export default {
       }
     }
   }
+  .lang {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -204,6 +217,9 @@ export default {
     }
     &__mobile {
       display: block;
+    }
+    .lang {
+      display: none;
     }
   }
 }

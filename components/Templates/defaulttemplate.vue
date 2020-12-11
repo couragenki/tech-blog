@@ -6,7 +6,6 @@
       :isPostsPage="isPostsPage"
       :isSidebar="isSidebar"
     >
-      <SetLanguage />
       <slot />
     </Container>
     <slot v-else />
@@ -19,7 +18,6 @@ import Header from "@/components/Organisms/header.vue";
 import Navigation from "@/components/Organisms/navigation.vue";
 import Container from "@/components/Organisms/container.vue";
 import Footer from "@/components/Organisms/footer.vue";
-import SetLanguage from "@/components/Molecules/setlanguage.vue";
 
 export default {
   name: "DefaultTemplate",
@@ -28,7 +26,6 @@ export default {
     Navigation,
     Container,
     Footer,
-    SetLanguage,
   },
   props: {
     isPostsPage: {

@@ -154,7 +154,7 @@ export default {
   &__container {
     width: 100%;
     height: 100%;
-    max-width: 1024px;
+    max-width: 1240px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;

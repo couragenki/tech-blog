@@ -1,9 +1,11 @@
 {
+    "base": {
+        "ja": "日本語",
+        "en": "English"
+    },
     "links": {
         "home": "ホーム",
         "about": "About",
-        "en": "英語",
-        "ja": "日本語",
         "frontend": "フロントエンド",
         "backend": "バックエンド",
         "infra": "インフラ",
@@ -17,7 +19,11 @@
         "introduction": "このページは日本語で設定されています"
     },
     "common": {
-        "category": "カテゴリー"
+        "en": "英語",
+        "ja": "日本語",
+        "category": "カテゴリー",
+        "language": "言語",
+        "current": "現在の言語"
     },
     "toppage": {
         "title": "ウェブ開発に関する記事一覧",
