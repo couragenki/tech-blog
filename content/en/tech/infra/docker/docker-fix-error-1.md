@@ -10,55 +10,55 @@ tags:
   - Docker
 ---
 
-##　宣伝
+## Advertising
 
-アプリ作るまでのお話を書きました。
-読んでいただけると嬉しです☺️
-[【3日で実装・公開】エモいアートな画像生成アプリ開発 - Qiita](https://qiita.com/rantaro/items/fdb7bbd55a57c68db834)
+I wrote a story about how I made the app.
+I hope you enjoy reading it ☺️.
+[[Implemented and published in 3 days] Emo artistic image generation app development - Qiita](https://qiita.com/rantaro/items/fdb7bbd55a57c68db834)
 
-## 結論
+## Conclusion.
 
-dockerを最新バージョンにした際にWindowsだとShare Drives のチェックが外れるので
-エラーが出たら
+When you use the latest version of docker, Share Drives will be unchecked on Windows.
+If you get the error
 
-1. クジラマークを右クリック
-2. settings をクリック
-3. Share Drives でチェックを確認
+1. right click on the whale symbol
+2. click settings 3.
+Check the Share Drives checkbox.
 
-![docker_img.jpg](https://qiita-image-store.s3.amazonaws.com/0/199085/420bc634-31f4-3b07-66a1-a5af0f7d14da.jpeg)
+3. [docker_img.jpg](https://qiita-image-store.s3.amazonaws.com/0/199085/420bc634-31f4-3b07-66a1-a5af0f7d14da.jpeg)
 
-で自分は解決できました。
+I was able to solve the problem by
 
-## 経緯
+## How it happened
 
-dockerの最新バージョンをインストールしたところ
-いつものように　docker　を　upしたところ
-エラーが出てローカル環境が動かなくなった。
+I just installed the latest version of docker.
+When I uploaded docker as usual
+I got an error and my local environment stopped working.
 
-## エラー
+## Error
 
-### エラー内容
+## Error content
 
 >ERROR: Encountered errors while bringing up the project.
 
-macユーザーの先輩方は普通に最新にできていたのに
-唯一のWindowsユーザーの自分はエラーが起きました。
+I was the only Windows user to get the error.
+As the only Windows user, I got the error.
 
-[新人フロントエンジニアがdockerに挑戦してみた](https://qiita.com/ranmaru_genki/items/4425894a4c29e64e50ba)に書いた通りdockerに慣れてないので軽くパニックに…
+I'm not used to docker as I wrote in [A new front engineer tried docker](https://qiita.com/ranmaru_genki/items/4425894a4c29e64e50ba), so I panicked lightly...
 
-## 解決
+## Solution
 
-自分で変更された設定を追っていくとそもそも
-通信できていないことに気づき
+When I followed the settings that were changed by myself, I realized that
+I realized that the communication was not working.
 
-設定し直すことで解決しました。
+I solved it by reconfiguring the settings. 1.
 
-1. クジラマークを右クリック
-2. settings をクリック
-3. Share Drives でチェックを確認
-![docker_img.jpg](https://qiita-image-store.s3.amazonaws.com/0/199085/420bc634-31f4-3b07-66a1-a5af0f7d14da.jpeg)
+1. right click on the whale symbol
+2. click settings 3.
+Check the Share Drives checkbox.
+Click on ! [docker_img.jpg](https://qiita-image-store.s3.amazonaws.com/0/199085/420bc634-31f4-3b07-66a1-a5af0f7d14da.jpeg)
 
-## 補足
+## Addendum
 
-dockerに詳しい方なら「当たり前やん」で終わりそうな内容です。
-もしWindowsの方の少しでも助けになればと思い記事を書いた次第です。
+If you are familiar with docker, you may think that this is an obvious thing to do.
+If you are familiar with docker, you may think it's obvious, but I wrote this article to help Windows users.

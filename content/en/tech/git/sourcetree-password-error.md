@@ -10,37 +10,37 @@ tags:
   - Git
 ---
 
-## 困った内容
+## The trouble.
 
-新しい職場でSourcetreeのセッティングをしたがプルとフェッチができなかった
+I set up Sourcetree at my new job, but I couldn't pull and fetch.
 
-## 調べて試したこと
+## Things I've looked into and tried
 
-- Gitバージョンアップ
-- configの再設定設定
-- ユーザーネームとパスワードの設定
+- Git version upgrade
+- Re-configured config settings
+- Setting up username and password
 
-**どれもうまくいかず…**
+**None of these worked...**
 
-## 自分はこれで直った↓
+## This fixed it for me ↓
 
-### １、Sourcetreeメニューの環境設定
+### 1.Sourcetree menu preferences
 
 ![ソースツリー１.png](https://qiita-image-store.s3.amazonaws.com/0/199085/45a8452a-d557-7fcf-cd06-4b02e9e11ac3.png)
 
-### ２、高度な設定を選択
+### 2.Select advanced settings
 
 ![ソースツリー２.png](https://qiita-image-store.s3.amazonaws.com/0/199085/11c737cc-83fe-dd3e-128c-7a75bfebb66e.png)
 
-### ３、バックログのホスト名・ユーザ名を削除。
+### 3.Remove hostname and user name from backlog.
 
 ![スクリーンショット 2018-12-02 0.29.47（2）.png](https://qiita-image-store.s3.amazonaws.com/0/199085/05dc3364-4412-1e36-7476-d8e3e3dfae2f.png)
 
-### ４、その後Sourcetree再起動
+### 4.Then restart Sourcetree.
 
-### ５、再起動後にユーザ名とパスワード入力
+### 5.Enter your user name and password after rebooting.
 
-## まとめ
+## summary
 
-上記の実行で**無事リモートからプルできるようになりました！**
+You can now successfully pull from a remote location by executing the above!
 

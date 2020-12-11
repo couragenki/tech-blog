@@ -10,26 +10,26 @@ tags:
   - Next.js
 ---
 
-## 前回の続きです
+## Continued from last time.
 
-今回はfaviconを作成してサイトに追加していきます。
-箸休め的な記事です。
+In this article, we will create a favicon and add it to the site.
+This article is like a chopstick rest.
 
-[Nuxt.js + TypeScriptでの開発事始め](https://qiita.com/GenkiMatsubara/items/d223bf6023b9c6c3fe6a)
+[Beginning of development with Nuxt.js + TypeScript](https://qiita.com/GenkiMatsubara/items/d223bf6023b9c6c3fe6a)
 
 
-## Nuxt.jsのサイトにfaviconを適用させる
+## Applying favicon to a Nuxt.js site
 
-faviconの作り方に関してはこちらに記載しています。
-[5分でサクッとfaviconを作成する手順](https://qiita.com/GenkiMatsubara/items/8ec90f30956dfc0e57f8)
+How to make favicons can be found here.
+[How to create a favicon quickly in 5 minutes](https://qiita.com/GenkiMatsubara/items/8ec90f30956dfc0e57f8)
 
-faviconは静的で更新させることは滅多にないので`static`へ追加します。
+Since favicons are static and rarely updated, add them to `static`.
 
 <img width="408" alt="スクリーンショット 2020-06-14 0.51.31.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/54532b83-b60d-e4f1-1242-c31d7d5bc49f.png">
 
-次に`nuxt.config.js`に設定を追記する
-`static`ディレクトリ名はパスには含めいない。
-ファイル名をいじる際はこちらの`href`のアイコン名を変更する。
+Next, add the settings to `nuxt.config.js`.
+The `static` directory name is not included in the path.
+If you want to change the file name, change the icon name of `href` here.
 
 ``` nuxt.config.js
 head: {
@@ -39,26 +39,26 @@ head: {
 },
 ```
 
-上記の対応のうえ実際にfaviconを表示させるとこんな感じになります。
+This is what it looks like when you actually display the favicon after taking the above steps.
 
 <img width="191" alt="スクリーンショット 2020-06-14 1.22.17.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/f83beb43-9191-b1eb-096e-dfd7535fffc6.png">
 
-favionは2文字までならギリギリ読めますね。
-表示できたのでfaviconの設定は完了です！
+The favion is just barely readable up to two characters.
+Now that it's displayed, the favicon setup is complete!
 
-## 画像を追加して表示するまで
+## Add an image and display it.
 
-### 画像の追加
+## Adding an image
 
-今回追加する画像は静的なものとして使用したいので`static`に追加します。
+The image to be added this time is to be used as a static one, so add it to `static`.
 
 <img width="615" alt="スクリーンショット 2020-06-14 1.54.30.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/f528e1a5-e16a-aee7-6fe2-72dcaceb59a9.png">
 
 
-### 画像の呼び出し
+### Calling an image
 
-page側で画像を呼び出します。
-`static`の画像を呼び出す際は`/static`を記載せずに画像パスを記入すればOKです。
+Call images on the page side.
+When calling `static` images, just enter the image path without `/static`.
 
 ``` pages/index.vue
 <template>
@@ -71,45 +71,45 @@ page側で画像を呼び出します。
 
 <img width="538" alt="スクリーンショット 2020-06-14 1.41.05.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/95308184-eaed-da6d-e0d0-96e88fb9dee6.png">
 
-こうすることで画像を表示できました。
+This is how we were able to display the image.
 
-## Nuxt.jsにおいてのassetsとstaticの使い分けについて
+## On the use of assets and static in Nuxt.js
 
-vueを学んだ後にNuxt.jsを学び出して疑問に感じたこと。
-assetsとstatic、どちらに画像を追加すれば良いのだろうという点。
-公式ドキュメントに改めて目を通し学びました。
+After learning vue, I started learning Nuxt.js and had a question.
+Which should I add images to, assets or static?
+I took another look at the official documentation to learn more.
 
-[出典:Nuxt.js公式ドキュメント参照(アセットより)](https://ja.nuxtjs.org/guide/assets#static)
+[Source:Nuxt.js official documentation (from assets)](https://ja.nuxtjs.org/guide/assets#static)
 
-### assetsに配置するもの
+### What to place in assets
 
-assetsにはwebpackしたいアセットを置きます
+Put the assets you want to webpack in assets.
 
-- webpackしたい画像ファイル
-- cssファイル
+- Image files you want to webpack
+- css files
 
-他にも動的に生成する画像はsvgファイルも`assets`に配置する。
+Other dynamically generated images should be placed in `assets`, including svg files.
 
-よくあるA画像とB画像を合成してC画像を生成する、などを行う場合もassetsに置いたほうが良さそう。
+If you want to generate C image by combining A image and B image, you should put them in `assets`.
 
-画像の編集や生成は個人的に好きな処理なので別記事で紹介しようと思います。
+Editing and generating images is my personal favorite process, so I'll introduce it in another article.
 
-webpackのbuildに画像の容量圧縮のフローなどを追加しておくと手間が省けてヒューマンエラーで圧縮忘れなども起こらなくなるので安心です。
-画像の圧縮に関してはこちらに記事を書きました。
+If you add the image compression flow to webpack build, you can save time and avoid human error.
+I wrote an article about image compression here.
 
-[【非エンジニアでもコピペですぐに使える】画像の圧縮機能](https://qiita.com/GenkiMatsubara/items/cf2714382bfc6fb89081)
+[[Even non-engineers can use it right away by copying and pasting] image compression function](https://qiita.com/GenkiMatsubara/items/cf2714382bfc6fb89081)
 
-### assetsに配置するもの
+### Things to place in assets
 
-webpackしないアセットを配置する
+Place assets that are not webpacked
 
 - favicon
-- 静的な画像(変更や合成に使用したりしない画像)
+- Static images (images not used for modification or composition).
 
-### 実際にどちらも表示してみると
-実際に`assets`ディレクトリの画像と`statiｃ`ディレクトリの画像を表示するとこのような記述になります。
+### actually display both of them.
+If you actually display the images in the `assets` directory and the images in the `static` directory, you will see this description.
 
-下記のコードのように`assets`ディレクトリの画像を呼び出す際は`~/assets/`と記載し`static`のように省略することはできません。
+When calling images in the `assets` directory, as in the following code, you should write `~/assets/` and not omit it like `static`.
 
 ``` pages/index.vue
 <template>
@@ -123,16 +123,16 @@ webpackしないアセットを配置する
 </template>
 ```
 
-### 結論
+### Conclusion
 
-Q.画像はasseｔｓとstaticのどちらに配置すべきかわからない
+Q.I don't know whether images should be placed in assets or static.
 
-A.assetsはwebpackする画像を置き、staticにはwebpackしたくない画像を置く
+A.assets is for images you want to webpack, static is for images you don't want to webpack.
 
-## まとめ
+## Summary
 
-nuxt.jsで開発する中でasseｔｓとstaticの使い分けは重要だと思うので今回の学習を通して学ぶことができました。
+I think it's important to use both assets and static when developing with nuxt.js, so I was able to learn a lot through this lesson.
 
-今回自分が作成しようとしているのは静的なサイトですので画像を配置するのは`static`ディレクトリになっていきそうです。
+The site I'm going to create this time is a static site, so I'll be placing images in the `static` directory.
 
-完
+Finished

@@ -10,23 +10,23 @@ tags:
   - event
 ---
 
-## 経緯
+## Background.
 
-**2017年10月25日現在**
-現場で使用しているPCをMacに統一することになり
-今までwindowsユーザーだった自分がPCの乗換えをすることに。
+**as of October 25, 2017**.
+I've been a windows user until now.
+I've been a windows user until now, and I decided to change my PC.
 
-## 作業の流れ
+## Workflow.
 
-### 1.[公式サイト](https://ja.atlassian.com/software/sourcetree)にアクセス
+### 1. go to [official site](https://ja.atlassian.com/software/sourcetree)
 
 ![img_1.png](https://qiita-image-store.s3.amazonaws.com/0/199085/6e9897da-f051-05f8-4bea-a7361d790c86.png)
 
-### 2.Mac OS X 向けをダウンロード
+### 2.Download for Mac OS X
 
 ![img_2.png](https://qiita-image-store.s3.amazonaws.com/0/199085/fb9b9c56-ed75-e9db-d397-52f817f3d3d0.png)
 
-### 3.ダウンロードが完了したら開く
+### 3.Open it after the download is complete.
 
 ![img_3.png](https://qiita-image-store.s3.amazonaws.com/0/199085/63263b70-b6d7-66d6-9208-0b890cfc545b.png)
 
@@ -38,13 +38,13 @@ tags:
 
 ![img_6.png](https://qiita-image-store.s3.amazonaws.com/0/199085/81685ae9-cabc-509a-a454-6b5a34dd9dc0.png)
 
-ここからはSourcetreeの設定になります。
-設定は個人個人で違ってくると思うので今回はここまでとします。
+From here on, we will be setting up Sourcetree.
+The settings will be different for each individual, so that's all for now.
 
-ポップアップの通りに進めばあっという間でした！
+It didn't take long once I followed the pop-up!
 
-## まとめ
+## Summary
 
-今回はダウンロードのみでしたので簡単でした。
+This time it was easy because it was only a download.
 
-時間があればwindowsからMacへの引継ぎに関しても書きたいと思います。
+If I have time, I would like to write about the transfer from windows to Mac.

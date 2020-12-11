@@ -10,76 +10,77 @@ tags:
   - event
 ---
 
-## この記事について
+## About this article
 
-昨日は勉強家のメリットとデメリットについてまとめましたが
-本日は勉強会の種類についてまとめていこうと思います。
+Yesterday, I summarized the advantages and disadvantages of study groups.
+Today I would like to summarize the types of study groups.
 
-### この記事を書いた人
+### Who wrote this article?
 
-23歳エンジニア1年目のエンジニア。
+23-year-old engineer in his first year of engineering.
 
-土日ももっと学習したくなり、ここ２ヶ月週２回程のペースで勉強会に参加中。
+I want to learn more on weekends, so I've been attending study groups twice a week for the past two months.
 
-## 参加してみた勉強会
+## Study sessions I've attended
 
 - LT
-- 読書会
-- プレゼンテーション
-- カンファレンス
+- Reading session
+- Presentations
+- Conferences
 
 ## LT
 
-ライトニングトークと呼ばれ登壇者が関心のある事柄やこれまで経験された内容を5分ほどにまとめて話す形式。
+A lightning talk is a talk in which the speaker summarizes his or her interests and experiences in about five minutes.
 
-短い時間に要点のみを聞けるので短時間でその事柄について知ることができる。
+You can learn more about the topic in a short time because you can hear only the main points in a short time.
 
-私が参加したLTではとても要点がまとめられていて時間効率が良いように感じました。
+In the LT I attended, the main points were summarized very well, and I felt it was very time efficient.
 
-## 読書会
+## Reading session
 
-各参加者が技術書などを持ち寄ってその本から学んだことや内容などを紹介し合うものです。
+Each participant brings a technical book and introduces what they learned from the book and its contents to each other.
 
-IT以外でも小説やビジネス書など本に縛りが無いものもあるのでビブリオバトルに近いです。
+It's similar to a bibliobattle, since there are books other than IT books, such as novels, business books, etc., that are not restricted to books.
 
-私は読書が好きなのでいろいろな本に出会うことができたので楽しく過ごせました。
+I like to read, so I was able to encounter a variety of books and had a good time.
 
-幅広い知見を持ちたい方におすすめの勉強会です。
+I recommend this study group to those who want to have a wide range of knowledge.
 
-## プレゼンテーション
+## Presentation
 
-講演会のように登壇者がいて話す側と聞く側がはっきりします。
+Just like a lecture, there is a speaker, and the speaker and listener are clearly defined.
 
-しっかりと腰を据えて登壇者の考えや技術を学びたい方におすすめです。
+This is recommended for those who want to sit back and learn the ideas and techniques of the speakers.
 
-一般的にスライドに則って進行するので話の流れが掴みやすく講師の中には
+In general, the lecture proceeds according to the slides, so it is easy to grasp the flow of the talk.
 
-聞き手にも話を振りながら進めたりと講師の技量によるところも大きいと感じました。
+I felt that a lot depended on the skill of the lecturer.
 
-## カンファレンス
+## Conference
 
-私が参加したのはPHPカンファレンス2017でしたがとにかく人が多かったです。
+I attended the PHP Conference 2017, and there were a lot of people there.
 
-企業の出展ブースなどが多く各企業の代表やCTOなど一大イベントだけり力が入っていました。
+There were a lot of booths of companies, and representatives and CTOs of each company.
 
-実際に企業の方と話してみたい方やたくさんのエンジニアと話してみたい方にはオススメです。
+I would recommend this event to anyone who wants to actually talk to people from companies or talk to a lot of engineers.
 
-## 勉強会を見つけるには
+## How to find a study group
 
-私は[skill](https://play.google.com/store/apps/details?id=jp.co.ysinc.skill&hl=ja)や[connpss](https://connpass.com)でよく勉強会を探しています。
+I often search for study sessions on [skill](https://play.google.com/store/apps/details?id=jp.co.ysinc.skill&hl=ja) and [connpss](https://connpass.com).
 
-条件やカテゴリ毎で検索できる機能が便利です。ぜひ使ってみてください。
+You can search by criteria or by category. Please try it out.
 
-## 勉強会を選ぶ基準
+## Criteria for choosing a study session
 
-私は業務で使用する内容や興味のある企業の方の発表などをチェックしておいて日程が合えば行くようにしています。
+I check for presentations by companies that I am interested in or that I use in my work, and try to go if the schedule fits.
 
-## まとめ
+## Summary
 
-だらだら週末を過ごすよりは良いと思い、終業後や週末に勉強会に参加し始めて２ヶ月ほど立つのですが個人的に面白そうな勉強会に参加し知見を広げることができました。
+It's been about two months since I started attending study groups after work and on weekends, which I thought would be better than spending my weekends slacking off.
 
-また情報共有をしてくれるエンジニアもできたので今まで知らない分野の知識も着くようになりました。
+I have also been able to gain knowledge in fields I didn't know before because I have found engineers who share information with me.
 
-個人的に手を動かす時間を設けながら今後も興味がある分野などの勉強会には参加していこうと思います。
+I will continue to attend workshops in fields that interest me while setting aside time to work on my own projects.
 
-ここまでお読みいただきありがとうございました。
+Thank you very much for reading this article.
+ Translated with www.DeepL.com/Translator (free version)

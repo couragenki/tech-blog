@@ -13,71 +13,71 @@ tags:
   - Netlify
 ---
 
-## 経緯
+## Background
 
-1. Qiita以外に雑記ブログ的なものをやってみた気分になる
-1. 友人のエンジニアに勧められたGatsby.jsでブログを開設してみました。
-1. 言われるがままとりあえず触ってみる
+1. I feel like I'm trying to do something other than Qiita, like a miscellaneous blog.
+1. I set up a blog with Gatsby.js, which was recommended by a friend of mine who is an engineer.
+1. I'll just do as you say and touch it anyway.
 
-## ベース
+## Base
 
-今回はGatby.js＋Netlifyで行くことにしました。
+This time I decided to go with Gatby.js + Netlify.
 
 https://www.gatsbyjs.org/starters/netlify-templates/gatsby-starter-netlify-cms/
 
-いくつかGatsbyのスターターをクローンして試しましたが
-このスターターが一番そのままブログとして使用できそうでした。
+I cloned and tried several Gatsby starters.
+This starter seemed to be the most suitable for use as a blog.
 
-## Gatby.js＋Netlify選定理由
+## Reasons for selecting Gatby.js + Netlify
 
-- Gatsbyは静的サイトジェネレーターなので高速
-- Reactはあまり触ったことがなかったのでこの機会に触ってみたい
-- NetlifyはGitHubと連携するので楽に草が生やせる←
+- Gatsby is a static site generator, so it's fast.
+- I've never touched React before, so I want to take this opportunity to try it out.
+- Netlify is connected to GitHub, so it's easy to grow grass.
 
-## 準備するもの
+## Things to prepare
 
-- Githubアカウント
-- ブログに使用するドメイン
+- Github account
+- Domain name to use for the blog
 
-レンタルサーバー無しでOKです
+No need to rent a server.
 
-## 手順
+## Procedure
 
-こちらの記事をそのままやってみる
+I'm going to do this article as is.
 
 https://qiita.com/ferretdayo/items/f5d97165b8c6d6077a44
 
-環境構築から公開まで簡単でした。
+It was easy to build the environment and publish.
 
-## いいと感じたこと
+## What I liked about it
 
-- 構築が簡単
-- 表示速度が早く初期でも解析のスコアがかなり高水準
-- お問い合わせフォームを用意してあるので設定すれば簡単に導入できる
+- Easy to build
+- Fast display speed, and the analysis score is quite high even in the initial stage.
+- The contact form is provided, so it is easy to set up and implement.
 
-## 困ったこと
+## What I had trouble with
 
-- Reactに慣れていないため修正するときにいろいろと試しながら進めた
-- WordPressのように記事にリンクを貼るだけでプレビューを表示できない
-- インスタグラムの埋め込みで画像が表示できない
+- I'm not familiar with React, so I had to try a lot of things when modifying it.
+- Can't show a preview just by putting a link in the post like WordPress
+- Can't display images when embedding Instagram.
 
- **別件：書くことがない（というよりネタはあるけどちゃんとした記事を書かなきゃと思い手が止まる）**
-アウトプット癖を作るには継続しかないなと実感
+ **Another thing: I don't have anything to write about (or rather, I have something to write about, but my hand stops thinking I need to write a proper article)**.
+I realized that the only way to create an output habit is to keep going.
 
-## 修正したこと
+## Things I fixed
 
-- GoogleAnalyticsを導入
-- 画像軽量化ツールを使って画像を圧縮して軽量化
-- アクセシビリティはデフォルトでは満点ではないので個別に修正しました
-その際にスコアの出やすいデザインに変更などの対応
-- パフォーマンス重視のため画像を最小限にしているのがいけてないので修正していきたい
+- Introduced GoogleAnalytics
+- Compressed and lightened images using an image lightening tool
+- Accessibility is not a perfect score by default, so I modified it individually
+Changed the design to make it easier to score at that time, etc.
+- Minimizing images to focus on performance is not good, so I want to fix it.
 
-## 完成
+## Completed
 
-こちらで公開中
+Now available here.
 
 https://www.eezyanaika.com
 
-パフォーマンスは最高でした！
+The performance was great!
 
 ![スクリーンショット 2019-11-06 13.50.13.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/bb0de9fc-7536-25a1-30b0-cc4af115877b.png)

@@ -11,19 +11,19 @@ tags:
   - nuxt-content
 ---
 
-## 今回やること
-nuxt-contentの機能が便利だったのでブログを作成してみる。
+## Things to do this time
+Try to create a blog because the function of nuxt-content was useful.
 
-nuxtのバージョンは`2.14.1`以降のものがおすすめです。
-generateでの手間を省けます。
-今までは`processmd`とか設定を書かないと行けなかったんですが手間が省けて便利です。
+It is recommended to use `2.14.1` or later version of nuxt.
+It saves you a lot of time in generating.
+I used to have to write `processmd` and other settings, but this is useful to save time.
 
-## nuxt-contentで情報を取得して表示する
+## Get and display information with nuxt-content.
 
-表示するデータを取得して記事マークダウンの日付が新しい順にソートする。
-`deep: true`にしてあげると`tech`ディレクトリ以下の階層の情報を全て取得している。
+Get the data to be displayed and sort it in order of the date of the article markdown.
+If you set it to `deep: true`, all the information in the hierarchy below the `tech` directory is retrieved.
 
-Githubのソースコードのexampleを参考にしながら進めました。
+I proceeded by referring to the example in the Github source code.
 https://github.com/nuxt/content/tree/dev/example
 
 ``` pages/tech/index.vue
@@ -40,8 +40,8 @@ async asyncData({ $content }) {
   },
 ```
 
-## bootstrapを使用する
-nuxt-contentは関係ないですがブログカードなどのbootstrapのUIを使いたかったので追加する。
+## Use bootstrap
+Nuxt-content is not relevant, but I wanted to use bootstrap UI such as blog cards, so I'll add it.
 https://www.npmjs.com/package/bootstrap-vue
 
 `npm i bootstrap-vue`
@@ -57,30 +57,30 @@ https://www.npmjs.com/package/bootstrap-vue
 </style>
 ```
 
-使用するコンポーネントでbootstrapをインポートすることで利用できるようになりました。
+You can now use it by importing bootstrap in the component you want to use.
 
 
-## メタ情報を追加していく
-configにデフォルトのメタ設定を追加していく
+## Add meta information.
+Adding the default meta settings to config.
 
 ``` nuxt.config.js
 head: {
-    title: process.env.npm_package_name || 'ページタイトル',
-    titleTemplate: '%s | ページタイトル',
+    title: process.env.npm_package_name || 'page title',
+    titleTemplate: '%s | page title',
     htmlAttrs: {
       lang: 'ja'
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || 'デフォルトのディスクリプションを設定するよ' },
-      { hid: 'og:site_name', property: 'og:site_name', content: 'ページタイトル' },
-      { hid: 'og:type', property: 'og:type', content: 'blog' },
-      { hid: 'og:url', property: 'og:url', content: 'https://サイトのURL' },
-      { hid: 'og:title', property: 'og:title', content: 'couragenki' },
-      { hid: 'og:description', property: 'og:description', content: 'デフォルトのディスクリプションを設定するよ' },
-      { hid: 'og:image', property: 'og:image', content: 'https://サイトのUR/og.jpg' },
-      { hid: 'twitter:card', neme: 'twitter:card', content: "summary_large_image" },
+      { charset: 'utf-8' }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || 'I'll set the default description' }
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Page Title' }
+      { hid: 'og:type', property: 'og:type', content: 'blog' }
+      { hid: 'og:url', property: 'og:url', content: 'https://URL' },
+      { hid: 'og:title', property: 'og:title', content: 'couragenki' }
+      { hid: 'og:description', property: 'og:description', content: 'I'll set the default description' }
+      { hid: 'og:image', property: 'og:image', content: 'https://URL/og.jpg' }
+      { hid: 'twitter:card', neme: 'twitter:card', content: "summary_large_image" }
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
@@ -88,8 +88,8 @@ head: {
   },
 ```
 
-マークダウンの情報を取得して動的に変更するように設定する。
-ページで`nuxt-content`で取得→テンプレートにデータを渡す、という流れです。
+Configure it to get the markdown information and change it dynamically.
+Get it in the page with `nuxt-content` -> pass the data to the template.
 
 ``` components/Templates/posttemplate.vue
   head() {
@@ -115,41 +115,41 @@ head: {
   },
 ```
 
-静的なページの場合は直で設定を書いてしまう。
+For static pages, I would write the settings directly.
 
 ``` pages/policy/index.vue
 head: {
-    titleTemplate: "ポリシー |サイトタイトル",
+    titleTemplate: "policy |site title",
     meta: [
       {
         hid: "description",
         name: "description",
-        content: "利用規約について記載しているページになります。",
+        content: "This page describes the terms of use." ,
       },
       {
         hid: "og:title",
         property: "og:title",
-        content: "ポリシー | サイトタイトル",
+        content: "policy | site title",
       },
       {
         hid: "og:description",
         name: "og:description",
-        content: "利用規約について記載しているページになります。",
+        content: "This page describes the terms of use." ,
       },
     ],
   },
-```
+```.
 
-## Nuxt.jsで作成したサイトにGoogle Analyticsを追加する
+## Add Google Analytics to a site created with Nuxt.js.
 
-公式のドキュメントが参考になりました。
+I found the official documentation to be helpful.
 https://ja.nuxtjs.org/faq/ga/
 
-1. `plugins`を追加する
-2. `google analytics`からトラッキングIDを取得する
-3. 本番に反映して確認する
+1. add `plugins`.
+2. get the tracking ID from `google analytics`.
+3. reflect it in production and check it
 
-### 1.pluginsを追加する
+### 1.Add plugins
 
 ``` nuxt.config.js
 plugins: [{ src: '~plugins/ga.js', mode: 'client' }],
@@ -161,7 +161,7 @@ plugins: [{ src: '~plugins/ga.js', mode: 'client' }],
 export default ({ app }) => {
   if (process.env.NODE_ENV !== 'production')
     return /*
-     ** Google アナリティクスのスクリプトをインクルード
+     ** Include the Google Analytics script
      */
       ; (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r
@@ -182,7 +182,7 @@ export default ({ app }) => {
         'https://www.google-analytics.com/analytics.js',
         'ga'
       )
-  /* Google アナリティクスのトラッキングIDを取得してここに書く */
+  /*  Get your Google Analytics tracking ID and write it here. */
   ga('create', 'UA-○○○○○○○○○-○', 'auto')
   app.router.afterEach((to, from) => {
     ga('set', 'page', to.fullPath)
@@ -191,21 +191,21 @@ export default ({ app }) => {
 }
 ```
 
-### 2.google analyticsからトラッキングIDを取得する
-Googleのアカウントがあれば無料で取得できます。
+### 2. Get a tracking ID from google analytics.
+You can get it for free if you have a Google account.
 ![91992353-00469580-ed6f-11ea-8bd1-c8e8febdf431.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/e1e5a18e-37da-5a03-66cb-e041180a7c92.png)
 
 google analytics
 https://analytics.google.com/
 
-### 3.本番に反映して確認する
-設定を反映した後にアナリティクスを確認するとユーザーが増えたことを確認できました。
-こちらでアナリティクスの設定は完了になります。
+### 3. Reflect and check the settings in production
+After reflecting the settings, check the analytics and you will see that the number of users has increased.
+The analytics settings are now complete.
 ![91992250-e016d680-ed6e-11ea-8227-4a8633d66bb2.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/63cf820c-4dce-3c6b-77ac-202960e06613.png)
 
-## サイトマップを追加する(nuxt-content版)
-nuxtjs/sitemapを使用します。
-今回はnuxt-contentで
+## Add a sitemap (nuxt-content version)
+We will use nuxtjs/sitemap.
+This time, use nuxt-content.
 https://www.npmjs.com/package/@nuxtjs/sitemap
 
 `npm install @nuxtjs/sitemap`
@@ -214,9 +214,9 @@ https://www.npmjs.com/package/@nuxtjs/sitemap
 "@nuxtjs/sitemap": "^2.4.0"
 ```
 
-サイトマップの指定の仕方はnuxtでのサイトマップの追加と基本的に同じです。
-`nuxt-content`でそれぞれパスを取得しています。
-(一括で取得してしまっても良いかもしれないです)
+The way to specify a sitemap is basically the same as adding a sitemap with nuxt.
+You get the path with `nuxt-content` respectively.
+(You may want to get them all at once.)
 
 ``` nuxt.config.js
 
@@ -234,31 +234,31 @@ sitemap: {
   },
 ```
 
-ここまで追加できたら本番に反映する。
-その後にGoogleサーチコンソールのサイトマップにこちらを追加する。
+Once you have added this much, reflect it in the production.
+After that, add this to the sitemap in Google Search Console.
 
 `https://サイトのURL/sitemap.xml`
 
-サイトマップを追加すると新しく記事を追加した際にクローリングされるまでの期間が短くなりSEO的に有利になるので今回のブログで追加しました。
+I added a sitemap to this blog because adding a sitemap shortens the time it takes for a new article to be crawled, which is advantageous for SEO.
 
-## 今回の成果物
+## The results of this project
 
-【公開したサイト】
+[Published on.]
 https://couragenki.com/
 ![og.jpg](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/90da7c0e-e7bb-70c9-a3b3-4a348da341b8.jpeg)
 
-netlifyが便利なのでgithubを連携して公開しています。
-2週間ほどで開発してユーザーのフィードバックが欲しいので公開してしまう。
+netlify is useful, so I link github to it and publish it.
+I develop it in about two weeks and publish it because I want user feedback.
 
-以前公開していたサイトより初期表示速度が改善できました。
-公開して１ヶ月ほどですがリニューアル前のワードプレスのサイトより直帰率が約２０％ほど下がりました。
+I was able to improve the initial display speed of the site compared to my previous site.
+It's been open to the public for about a month, but the bounce rate has dropped by about 20% compared to the WordPress site before the renewal.
 
-カスタマイズしたい箇所がまだたくさんあるので今後も開発を続けていこうと思います。
+There are still many parts that I want to customize, so I will continue to develop the site.
 
 
-## 感想
-- nuxt-contentは手間が省けて便利！
-- UIを考えるのが大変でした…早く慣れたい
+## Impressions
+- nuxt-content saves me a lot of work!
+- It was hard to figure out the UI... can't wait to get used to it.
 
-フィードバックやアドバイス等あればコメントいただけると幸いです。
-最後まで読んでいただきありがとうございました。
+If you have any feedback or advice, I would appreciate your comments.
+Thank you for reading to the end.

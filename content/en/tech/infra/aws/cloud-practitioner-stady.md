@@ -10,168 +10,123 @@ tags:
   - AWS
 ---
 
-## この記事は？
+## What's this article about?
 
+This is a record (preparation) of an AWS beginner who is going to take the most beginner level of AWS certification, Cloud Practitioner.
 
-AWS認定のもっとも初級、クラウドプラクティショナーを受験するAWS初心者の記録（準備編）です。
+I will mainly write about the process of taking the exam, the exam fee, and what kind of preparation is required.
 
+I want to pass the exam and even write about my success.
 
-受験までの流れと試験費用、どんな準備が必要かをメインで書きます。
 
+## Intended audience for this article
 
-合格して合格記まで書きたい。
+What is AWS certification? What is AWS certification?
 
+People who are thinking of taking the AWS certification
 
+(In other words, people who are at the same level as I am now, who are about to learn)
 
 
-## この記事の想定読者
+## Why take the exam?
 
+I decided to take the exam because I was excited to start something in the new year.
 
-AWS認定ってなに？という方
+I decided to take the exam because I wanted to start something in the new year.
 
+I tried to take the exam on the shortest possible date, but the weekends were already booked in the Tokyo area, so I decided to take it in February.
 
-AWS認定受けてみようかなと思っている方
+The study period is about three weeks.
 
+Even if I fail the exam, I'll still have the knowledge I've gained from studying, so I'm entering for now.
 
-（つまりこれから学習する今の僕と同じレベル感の方）
 
+## What is an AWS Certified Cloud Practitioner?
 
-## なぜ受験？
+This is the most basic of the 11 AWS certifications.
 
+It is a certification equivalent to six months of practical experience.
 
-新年のなにか初めたいテンションで受験を決めました。
+AWS Certified Cloud Practitioner Official Site
 
+Required Skills
 
-どんな試験なのかざっくり調べたら先に受験日を決めて動き出しました。
+A level of knowledge and skills in the AWS Cloud that allows you to effectively explain your overall understanding.
 
 
-最短の日付で受けようとしましたが東京近辺は土日はすでに埋まっていたので2月に受験します。
+## About the exam
 
+Exam duration is 90 minutes, 65 questions
 
-学習期間は約3週間です。
+Four-choice mark-sheet-based exam
 
+Pass with a score of 700 or higher out of 1000 points
 
-最悪試験に落ちても勉強して得た知識は残るのでとりあえずエントリー。
+The exam fee is 1100 yen, and the mock exam is 2000 yen.
 
+The pass rate and past questions are not published and are not available on the internet, so it is better to take a mock exam.
 
+By the way, if you pass the AWS Certified Cloud Practitioner exam, you will be able to take a mock exam for the next rank of AWS certification for free.
 
 
-## AWS認定クラウドプラクティショナーとは？
+## Preparation to do before the exam day
 
+You can take the exam by selecting a test center from the AWS certification website.
 
-全11種あるAWSの資格の中でもっとも基礎になる資格。
+You can take the exam at any time on weekdays, as they are generally filled from weekends.
 
+Prior knowledge of AWS
 
-実務経験レベルで半年相当の資格になります。
+I have used AWS for about 3 months (EC2 only).
 
+Able to build a simple environment and deploy to a development environment.
 
-AWS認定クラウドプラクティショナー 公式サイト
 
+## Study for the exam
 
-求められるスキル
+Official videos and documentation
 
+There is a lot of documentation on this.
 
-AWS クラウドの知識とスキルを身に付け、全体的な理解を効果的に説明できるレベル。
-## 
-## 試験について
+I can basically understand most of it by reading the documentation.
 
+The official sample questions are all in English, but the actual exam is in Japanese.
 
-試験時間は90分、65問
+The translated sample foundation questions can be found by googling.
 
 
-4択のマークシート方式での試験
+## Books
 
+Buy some books for learning.
 
-1000点満点で700点以上で合格
+I bought the following books.
 
+> AWS Certification Exam Textbook AWS Certified Cloud Practitioner 
 
-受験料は1100円、模試は2000円。
+I chose this textbook because it had the latest publication date among the textbooks in the bookstore.
 
+I chose this textbook because it was the most up-to-date among the textbooks in the bookstore.
 
-合格率や過去問は公開されておらず、ネットにも転がっていないので模試は受けた方が安心。
 
+## Impressions while studying
 
-ちなみにAWS認定クラウドプラクティショナーの試験に合格すると次のランクのAWS認定の模試が無料で受験できるようになる。
+There are a lot of things that I need to memorize.
 
+In the early stages of learning, there are many cases where I know what to do in this case, but I can't remember the name of this AWS function.
 
-## 試験当日までにやる準備
+This problem can be solved gradually by repeating the process and actually moving your hands.
 
+It gives you a chance to touch functions you have never used before.
 
-試験はAWS認定のサイトから試験会場を選んで受験する。
+In practice, I have been doing only deployments, so when there is a problem with a function I don't know, it becomes an opportunity to study it.
 
+I felt it was a good way to learn a wide range of knowledge.
 
-基本的に土日から埋まっていくので平日であれば割といつでも受験できる。
 
+## Lastly
 
-AWSの事前知識
+So, I'm going to take the exam next month in February.
 
+I know 3 weeks is a short time to study, but I don't think I'll be able to continue learning if I do it for too long😅.
 
-以前実務で3ヶ月ほど使用（EC2のみ）
-
-
-簡単な環境構築、開発環境へのデプロイができるレベル。
-
-
-## 試験対策勉強
-
-
-公式の動画とドキュメント
-
-
-これがまたドキュメントが豊富。
-
-
-基本的にドキュメントを読めばだいたいはわかる。
-
-
-公式のサンプルの基礎問題は全て英語ですが実際の試験では日本語です。
-
-
-翻訳されたサンプルの基礎問題はググると出てきました。
-
-
-## 書籍
-
-
-学習用の本も購入。
-
-
-自分は下記の本を購入しました。
-> AWS認定資格試験テキスト　AWS認定 クラウドプラクティショナー 
-このテキストを選んだ理由は書店に並んだテキストのうち出版日がもっとも新しかったため選定。
-
-
-過去問などが残らない方式でテストが行われるので最新の傾向を掴みたかったので新しめの参考書にしました。
-
-
-## 学習していて所感
-
-
-暗記しなくてはいけないことが多い
-
-
-学習序盤はこの場合どう対応するかは分かるけどこのAWSの機能名が思い出せない、というケースが多い。
-
-
-この問題は数を重ねたり実際に手を動かしたりしてみることで少しずつ解消される。
-
-
-使ったことがない機能を触るきっかけになる
-
-
-実務ではデプロイばかりやっていたので知らない機能の問題が出ると勉強するきっかけになる。
-
-
-知識を広く学ぶことができるのでいいと感じた。
-
-
-## 最後に
-
-
-ということで来月2月に試験行ってきます。
-
-
-学習期間3週間だと短い気もするけど長々とやると学習が続きそうにない😅
-
-
-合格記も書けるように頑張ります。
+I'll try my best to write about my success. Translated with www.DeepL.com/Translator (free version)

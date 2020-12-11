@@ -11,59 +11,59 @@ tags:
   - 初心者向け
 ---
 
-## pythonを触ってみる
+## Try to touch python
 
-最初に不安だった・思っていたこと
+What I was worried about/thought about at first
 
-- pythonってすごい難しそうだ。
-- 難しい処理とか出てきて挫折しそう。
-- 環境構築苦手だし大丈夫かな…
-- AIを触ってみたい・作りたい！
+- python seems to be very difficult.
+- I think I'm going to get frustrated with the difficult process.
+- I'm not good at building environments, so I don't know if I can handle it.
+- I want to touch and create AI!
 
-*まあとりあえずやってみよう的なノリで始めました！*
+*I started with the idea that I'd give it a try anyway!*
 
-# 今回やったこと
+## What we did this time
 
-- docker-toolbox での環境構築。
-- 実際にpythoｎの処理を学ぶ。
-- AIアプリを触ってみた。
-- まとめ
+- Building the environment with docker-toolbox.
+- Learn the actual python process.
+- I touched the AI application.
+- summary
 
-## 1.dockeｒtoolbox での環境構築
+## 1.Building the environment with dockertoolbox
 
 こちらに関しては先出しした[docker-toolbox をmacにインストールするのに色々迷った話](https://qiita.com/ranmaru_genki/items/bbffb904ed223e1bffb5)に書かせて頂きました。
 初めてでしたので本の中で紹介されていたdocker-toolboxを使用しました。
 次回はdockerで環境構築がしてみたいです。
 
-## 2.実際にpythonの処理を学ぶ
+## 2.Learn actual python processing
 
-事前に[プロゲート](https://prog-8.com/)にて一通りpythoｎについて学習していました。
-わかりやすいのでプロゲートにはいつもお世話になってます(^o^)
-今回は環境構築から自分の手でやったので処理が流れた時は嬉しかったですね。
+I had learned a lot about python beforehand at [progate](https://prog-8.com/).
+I'm always indebted to Pro Gate because it's easy to understand (^o^).
+This time, I was happy when the process flowed because I did it by myself from the environment construction.
 
-この段階ではPHPやJavascriptでも学んだif文やfor文など復習しながら
-python独特の文法にも慣れていきました。
+At this stage, we reviewed the if and for statements that we learned in PHP and Javascript.
+We also got used to the unique grammar of python.
 
-基礎固めにも役立ったのでやって良かったです！
+I'm glad I did, because it helped me lay the groundwork!
 
-### 3.AIアプリを触ってみた
+### 3.I touched the AI application.
 
-一通り処理を学んだら用意されているAIアプリを触ってみます。
-ある程度処理を学んでからさわると自分で拡張させてみたいことや
-改善してみたいことに気づけたので現在処理を付け足したりしています。
+Once you have learned the process, you can try out the AI application provided.
+After learning the process to a certain extent, I realized that I wanted to extend and improve it.
+I'm currently working on adding more processing to it.
 
-<img alt="AIアプリ.png" src="https://qiita-image-store.s3.amazonaws.com/0/199085/61455778-e37d-3e3a-66c3-9a32d277a8c0.png">
+<img alt="AI application" src="https://qiita-image-store.s3.amazonaws.com/0/199085/61455778-e37d-3e3a-66c3-9a32d277a8c0.png">
 
-個人的に返答のパターンなどを豊富にしたりしました。
+I personally enriched the patterns of my responses and so on.
 
-## まとめ
+## summary
 
-pythonが巷で話題だったので今回触ってみました。
-新しい言語を独学で学ぶのは不安もありましたが今回は本に沿って進めていき、プロゲートなどを併用したので一人でも進めることができました。
+Python has been the talk of the town, so I decided to give it a try.
+I was worried about learning a new language on my own, but this time I followed the book and used progates, so I was able to proceed on my own.
 
-また環境構築からバック、フロントを踏まえてアプリを一通りさわれたのもいい経験になったのかなと思います。
+I think it was also a good experience for me to be able to build the environment, back-end and front-end applications.
 
-これからも興味のある言語は触ってみるフットワークの軽さを大事にしていきたいです。
+I would like to continue to keep my footwork light and try out languages that interest me.
 
-色々と穴の多い記事になってしまいましたが暖かい目でみていただけると幸いです。
-ここまでお読みいただきありがとうございました。
+There are many holes in this article, but I would appreciate it if you could look at it with warm eyes.
+Thank you for reading this far.

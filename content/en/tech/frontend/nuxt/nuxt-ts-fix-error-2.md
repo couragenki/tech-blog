@@ -11,17 +11,17 @@ tags:
   - TypeScript
 ---
 
-## 今回発生した挙動
+## The behavior that occurred this time.
 
-nuxt で作成したサイトを`npm run generate`してホスティングした際に遷移がうまくいかない。
+When hosting a site created with nuxt using `npm run generate`, the transition does not work.
 
-n-linkで遷移しようとしてもURLは変更できるもののページはリロードされないと表示されない状況。
+The URL can be changed but the page will not be displayed until it is reloaded when trying to transition with n-link.
 
-## 原因
+## Cause
 
-レンダリングでエラーが発生している。
+There is an error in rendering.
 
-エラー分は下記になります。
+The error is shown below.
 
 ![picture_pc_33ddf4c62d958e654c6dc8b4761909a6.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/c39006c9-cc1e-e269-ddf6-67f42204824a.png)
 
@@ -32,14 +32,14 @@ server-rendered content. This is likely caused by incorrect HTML markup,
 Bailing hydration and performing full client-side render.
 ```
 
-## 修正する
+## Fix.
 
-- ブロックレベルの要素を`<p>`の中に入れ子になっている場合は修正
-- tableタグに`<tbody>`を追加する
-- `<no-ssr/>`を追加する 対象のGithubのissue
+- Fix block level elements if they are nested inside `<p>`.
+- Add `<tbody>` to table tags
+- Add `<no-ssr/>` to the target Github issue
 
-今回の自分の環境ではpタグの中にブロック要素を追加してしまっていたので修正したところ解決しました。
+In my environment this time, I had added a block element inside a p tag, so I fixed it and it solved the problem.
 
-## 今回の学び
+## What I learned this time
 
-レンダーエラーが具体的にどのような挙動に影響するのかを学べた。
+I was able to learn how render errors affect specific behavior.

@@ -10,75 +10,70 @@ tags:
   - Docker
 ---
 
-## 経緯
+## How it happened
 
-今携わってる案件でvagrantからdockerへの乗り換えがあり
-担当された先輩が全てやってくれたおかげで
-dockerが使えるようになりましたが
-結局dockerの導入がわからずじまいで…
+I'm currently working on a project that involves switching from vagrant to docker.
+I'm working on a project where I'm switching from vagrant to docker.
+I was able to use docker, but I didn't know how to install it.
+Thanks to my senior who took care of everything, I can now use docker, but I still don't know how to install docker...
 
-## 今回の目標
+## Goal for this time
 
-独りで土日の間でdockerを落としてきて苦手なコマンド周りを触ってみる
+I'm going to drop docker on my own on weekends and try to use the commands I'm not good at.
 
-## やってみたこと
+## What I've tried
 
-いきなり触っても分からなくなるのが目に見えてたので
-他の方の記事を参考にさせて頂きました
+I knew I wouldn't be able to figure it out if I tried it right away.
+I used other people's articles as a reference.
 
-Mac OS X へのDockerのインストール方法
+How to install Docker on Mac OS X
 
 https://qiita.com/hshimo/items/e24b1fbfbf775ec7c941
 
-(初心者向け)Dockerの使い方
+How to use Docker (for beginners)
 
 https://qiita.com/butada/items/3e6cd338cb703eef64b4
 
-### まずはdockerをダウンロード
+### Download docker first
 
-まぁまずは問題なし！見慣れたクジラさんをドラッグ&ドロップ。
+Well, first of all, no problem! Drag and drop the familiar Mr. Whale.
 
 https://docs.docker.com/
 
 <img width="918" alt="docker.png" src="https://qiita-image-store.s3.amazonaws.com/0/199085/4bc899cf-ab7e-a7ed-bdfa-89b41d471889.png">
 
-### 落としてきたdockerを起動
+### Launch the docker you dropped.
+- Run the docker you dropped on your PC.
+- Enter your password to make changes to your PC.
+- The familiar whale symbol is added to the bar.
 
-- PCに落としてきたdockerを起動
-- PCに変更を加えるとかでパスワード入力
-- バーに見慣れたクジラマークが追加されて
-- docker running が出ました！
+- docker running is now available! <img width="342" alt="docker2.png" src="https://qiita-image-store.s3.amazonaws.com/0/199085/8944c97b-4b78-9ecc-4073-eea7f1381951.png">
 
-<img width="342" alt="docker2.png" src="https://qiita-image-store.s3.amazonaws.com/0/199085/8944c97b-4b78-9ecc-4073-eea7f1381951.png">
-　
-正直ここまで来れるか不安だったので一安心:relaxed:
+To be honest, I wasn't sure if I'd make it this far, so I'm relieved:relaxed:
 
-### えっ？ID作った覚えないけど？
+### What, I don't remember making an ID?
 
-<img width="492" alt="docker3.png" src="https://qiita-image-store.s3.amazonaws.com/0/199085/cafa8e67-e226-fc8d-ad05-3772430339a9.png">
+ <img width="492" alt="docker3.png" src="https://qiita-image-store.s3.amazonaws.com/0/199085/cafa8e67-e226-fc8d-ad05-3772430339a9.png">
+It says below to create an account, yes.
 
-下にアカウント作れって書いてありますね、はい。
-というわけで作成
+So, create one. <img width="1217" alt="docker4.png" src="https://qiita-image-store.s3.amazonaws.com/0/199085/165014f4-26bf-fe8f-6216-7e84bf340ec0.png">
 
-<img width="1217" alt="docker4.png" src="https://qiita-image-store.s3.amazonaws.com/0/199085/165014f4-26bf-fe8f-6216-7e84bf340ec0.png">
+### Create an account
+It took me a while to figure out my username, but I was able to create an account and log in.
+I received an email when the account was properly created. <img width="535" alt="docker5.png" src="https://qiita-image-store.s3.amazonaws.com/0/199085/9467fb0b-9a20-7268-273f-140243719ad5.png
 
-### アカウント作成
+I've successfully logged in with the account I created!
 
-ユーザーネームで少し手間取りましたがアカウントを無事作成できログインできました。
-アカウントがちゃんとできるとメールが届きました。
-<img width="535" alt="docker5.png" src="https://qiita-image-store.s3.amazonaws.com/0/199085/9467fb0b-9a20-7268-273f-140243719ad5.png">
+## Now let's touch it up!
 
-作成したアカウン無事でログインできました！
+I thought I'd write more about it, but it's a long story, so I'll write more next time.
 
-## さあ触ってみよう！
+I heard a lecture about docoker at the PHP Conference 2017 that I attended the other day.
+I heard a lecture about docoker at the PHP Conference 2017 that I attended the other day, and it got me interested.
+(It's my secret that I didn't understand half of it.
 
-と思いましたが長くなったので今度続きを書こうと思います。
+This time, I tried to touch docker!
 
-先日参加したPHPカンファレンス２０１７で
-docoker関連の講話を聞き興味が湧いたので
-（半分くらいちんぷんかんだったのは自分だけの秘密）
-
-今回dockerを触ってみました！
-
-諸先輩方に教わりつつ参考記事を読みながら
-今後も勉強して行こうと思います。
+I'm going to continue to learn from my seniors and read articles for reference.
+I'm going to continue to study docker.
+ Translated with www.DeepL.com/Translator (free version)

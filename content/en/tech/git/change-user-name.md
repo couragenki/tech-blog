@@ -10,95 +10,95 @@ tags:
   - Git
 ---
 
-この度githubのアカウント名とユーザー名を変更したのでローカルの設定も合わせて変更する
-修正前`rantaro`
-修正後`GenkiMatsubara`
+I've changed my github account name and user name, so I'll change my local settings as well.
+Before modification `rantaro`.
+After modification `GenkiMatsubara`.
 
-## 今回変更するもの
+## Things to change this time
 
-1. ユーザー名
-2. ssh設定
+1. user name
+2. ssh settings
 
-## ユーザー名の変更
+## Change user name.
 
-### まずは現在のユーザー名を確認する
+## First, check your current user name.
 
-ユーザー名確認するコマンドはこちら
+Here is the command to check your user name
 
-`git config user.name`
+`git config user.name`.
 
-メールアドレスの確認はこちらですが今回は変更していないので特に使用しない。
+Here's the command to check the email address, but since we're not changing it this time, we won't use it specifically.
 
-`git config user.email`
+`git config user.email`.
 
-今回だと以前まで使用していた名前が出てきました。
+This time, the name I used before came up.
 
-`rantaro`
+`rantaro`.
 
-### こちらのユーザー名の設定を変更する
+### Change the user name setting here.
 
-リポジトリ単位での修正ならこちら
+If you want to modify it on a per-repository basis, you can do so here
 
-`git config user.name "ユーザー名"`
+`git config user.name "username"`
 
-グローバルで変更しても問題なければこちら
+If you don't mind changing it globally, here is
 
-`git config --global user.name "ユーザー名"`
+`git config --global user.name "username"`
 
-上記を実行後に`git config user.name`で確認すると変更できました。
+After executing the above, I was able to change it by checking `git config user.name`.
 
-`genki.matsubara`
+`genki.matsubara`.
 
-## ssh設定の変更
+## Change ssh configuration
 
-アカウント名とユーザー名を変更しているのでssh-keyの設定を行わないとプッシュできない
+Since we've changed the account name and user name, we can't push without configuring the ssh-key.
 
-```
+````
 remote: Invalid username or password.
 ```
 
-***.ssh***を確認すると
+If you check ***.ssh***, you will see
 
-`RantaroTech-GitHub`
+`RantaroTech-GitHub`.
 
-`RantaroTech-GitHub.pub`
+`RantaroTech-GitHub.pub`.
 
-ssh-keyが古いままだったのでこちらを作り直します。
+The ssh-key is still outdated, so we'll recreate it.
 
-### ssh-keyを作りなおす
+### Re-create the ssh-key
 
-再設定についてはこちらの記事を参考に進めます。
+For more information about reconfiguration, please refer to this article.
 
 https://qiita.com/shizuma/items/2b2f873a0034839e47ce
 
-鍵の作り直しを行う
+Rebuild the lock.
 
 `ssh-keygen -t rsa`
 
-鍵を作成
+Create a key
 
 ```
 id_rsa
 id_rsa.pub
 ```
 
-作成した鍵をクリップボードにコピー
+Copy the created key to the clipboard.
 
 `pbcopy < ~/.ssh/id_rsa.pub`
 
 ![スクリーンショット 2020-06-13 17.47.26.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/2cbe1708-0b02-019f-aa19-349845ed1a66.png)
 
-keyの欄にコピーしたkeyを記載する。
+Write the copied key in the "key" field.
 
-titleは書かなくても大丈夫です。
+You do not need to write the title.
 
 ![スクリーンショット 2020-06-13 17.47.34.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/b900a2d5-76bc-724b-7fe9-7e96fa3cd058.png)
 
-記載したら `Add SSH key` で設定を保存する
+Save the configuration by `Add SSH key` after describing it.
 
-### githubとの接続確認
+### Check the connection to github.
 
-`ssh -T git@github.com`で接続確認する
+Use `ssh -T git@github.com` to check the connection.
 
 ```
 genki:genki-blog matsubaragenki$ ssh -T git@github.com
@@ -106,7 +106,7 @@ Enter passphrase for key '/Users/matsubaragenki/.ssh/id_rsa':
 Hi GenkiMatsubara! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-接続確認できたので作成したリポジトリにプッシュしてみる
+Now that the connection is confirmed, try to push to the repository you created.
 
 ```
 $git push
@@ -123,7 +123,7 @@ To https://github.com/GenkiMatsubara/genki-blog.git
 $ 
 ```
 
-プッシュできました。
+I was able to push.
 
-今まで使用していたssh-keyにgithubのユーザー名が含まれていたけど前回作成したのがもう2年くらい前なのでどうやって作成したか覚えていない…
+The ssh-key I've been using contains my github username, but I don't remember how I created it since the last time I used it was about two years ago...
 

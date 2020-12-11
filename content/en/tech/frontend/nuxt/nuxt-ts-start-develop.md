@@ -11,24 +11,24 @@ tags:
   - TypeScript
 ---
 
-## 前回のおさらい
+## Review of previous article
 
-この記事は[前回の環境構築](https://qiita.com/GenkiMatsubara/items/d8a809c383c4fef9ecda)の続きです
+This article is a continuation of [Previous Environment Setup](https://qiita.com/GenkiMatsubara/items/d8a809c383c4fef9ecda).
 
-今回のゴールは静的サイト製作なのでpageの追加から行なっていきます。
+The goal of this article is to create a static site, so we'll start by adding pages.
 
-![スクリーンショット 2020-06-13 18.5<img width="546" alt="スクリーンショット 2020-06-13 23.13.43.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/db8a4bb2-c4c3-ad77-6448-1b63972d02a3.png">
+! [screenshot 2020-06-13 18.5<img width="546" alt="screenshot 2020-06-13 23.13.43.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/db8a4bb2-c4c3-ad77-6448-1b63972d02a3.png">
 8.17.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/6c4c4388-5990-b63c-9682-5d5ea8f6d5e4.png)
 
-こんな感じで前回環境構築したのでその続きになります。
+This is a continuation of the last time we built an environment like this.
 
-今回からはNuxt.jsの公式サイトを参考に進めていきます。
+From this point on, we will refer to the official Nuxt.js website.
 
 https://ja.nuxtjs.org/
 
-## app.htmlを追加する
+## Add app.html
 
-IEの環境によって動作しないケースを踏まえた記載にします。
+The description should be based on cases where it does not work depending on the IE environment.
 
 ``` app.html
 <!DOCTYPE html>
@@ -43,13 +43,13 @@ IEの環境によって動作しないケースを踏まえた記載にします
 </html>
 ```
 
-[公式サイト『アプリテンプレート』参照](https://ja.nuxtjs.org/guide/views/#%E3%82%A2%E3%83%97%E3%83%AA%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88)
+[See "Application Templates" on the official website](https://ja.nuxtjs.org/guide/views/#%E3%82%A2%E3%83%97%E3%83%AA%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E) 3%83%88)
 
-## レイアウトを作成しデフォルトとエラーページを追加する
+## Create a layout and add a default and error page
 
-デフォルトとエラーページを作成します
+Create the default and error pages.
 
-### デフォルト(default.vue)を追加する
+### Add defaults (default.vue).
 
 ``` default.vue
 <template>
@@ -65,13 +65,13 @@ export default {
 </script>
 ```
 
-カスタムのテンプレートを使用する場合は[こちらの公式が用意した動画](https://youtu.be/YOKnSTp7d38)のように使用するページでテンプレートを指定する。
+If you want to use a custom template, specify the template in the page you want to use as shown in [the video prepared by the official here](https://youtu.be/YOKnSTp7d38).
 
-### エラーページ用のエラーレイアウト(error.vue)を作成する
+### Create an error layout (error.vue) for the error page.
 
-エラーが発生した時にお知らせしてくれる用のレイアウトです。
-エラーコードが分かる用に `{{ error.statusCode }}` でエラーコードを表示しています。
-またTOPに戻るための導線も追加しました。
+This is a layout to notify you when an error occurs.
+It shows the error code with `{{ error.statusCode }}`.
+I also added a line to go back to the top.
 
 ``` error.vue
 <template>
@@ -90,19 +90,19 @@ export default {
 </script>
 ```
 
-こちらのエラー用のレイアウトを追加した段階でまだ存在しないパスに遷移しようとするとこのようにエラーコードを表示できるようになりました。
+If you try to go to a path that doesn't exist yet after adding this layout for errors, you can now see the error code like this.
 
 <img width="424" alt="スクリーンショット 2020-06-13 23.45.09.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/5335c657-28b6-9869-e7d2-881fe8ada638.png">
 
-エラー表示は開発初期に追加しておくと楽です。
+It is easier to add error messages early in the development process.
 
-## ページを追加する
+## Add a page
 
-次にページを追加します。とりあえずトップページに該当する`pages/index.vue`を追加します。
+The next step is to add pages. For now, we'll add `pages/index.vue`, which corresponds to the top page.
 
-デフォルトでtypescript、sassが使えるのが便利ですね。
+It's convenient to use typescript and sass by default.
 
-基本的にsccはscoped cssで進めていきます。
+Basically, scc will proceed with scoped css.
 
 ``` pages/index.vue
 <template>
@@ -116,13 +116,13 @@ export default {
 </style>
 ```
 
-こちらのファイルを追加すして`npm run dev`すると追加したページが適用されます。
+Add this file and `npm run dev` to apply the added page.
 
 <img width="546" alt="スクリーンショット 2020-06-13 23.13.43.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/25ae41fe-aad9-2c6c-ea02-79e986fe9812.png">
 
-ここまで完了するとあとはガンガン開発していけると思います。
+Once this is complete, we can start developing.
 
-nuxt.config.jsにheadを追加する
+Add a head to nuxt.config.js
 
 ``` nuxt.config.js
 head: {
@@ -133,13 +133,13 @@ head: {
 }
 ```
 
-エラーと同様にutf-8の設定とviewportを早い段階で入れておきます。
-（稀にある文字化けバグを踏まないため）
+As with the errors, set utf-8 and add the viewport early on.
+(To avoid stepping on the rare garbled bug.)
 
-## 感想
+## Impressions
 
-基礎の基礎ですが公式ドキュメントや公式が用意してくれている動画を見ながら進めていると知らなかったメソッドなどに気づくことができるので学びがありました。
+This is the basics of the basics, but I learned a lot from watching the official documentation and the videos provided by the official developers, as I noticed methods I didn't know about.
 
-今回の差分を[僕のGithub](https://github.com/GenkiMatsubara/genki-blog/commit/c09c14e06eacff910473700ad3ddbaae6e1e63bb)にプッシュ済みです。
+I've already pushed the diff to [my Github](https://github.com/GenkiMatsubara/genki-blog/commit/c09c14e06eacff910473700ad3ddbaae6e1e63bb).
 
-続く
+To be continued

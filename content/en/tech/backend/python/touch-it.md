@@ -10,74 +10,74 @@ tags:
   - Python
 ---
 
-## この記事を書いた人
+## The author of this article.
 
-23歳エンジニア1年目のエンジニア。
+23 years old, first year engineer.
 
-pythonに興味を持ち本を購入して学習中。
+Interested in python and learning it by buying books.
 
-今回購入して参考にした書籍：[～短期集中講座～ 土日でわかる Pythonプログラミング教室](http://www.sbcr.jp/products/4797388978.html?sku=4797388978#supportDl)
+The book I bought and referred to this time: [～short intensive course～ Python programming class that you can learn on weekends](http://www.sbcr.jp/products/4797388978.html?sku=4797388978#supportDl)
 
-## 最初に不安だった・思っていたこと
+## What I was worried about/thought about at first
 
-- pythonってすごい難しそうだ。
-- 難しい処理とか出てきて挫折しそう。
-- 環境構築苦手だし大丈夫かな…
-- AIを触ってみたい・作りたい！
+- I think python is very difficult.
+- I think I'm going to get frustrated by the difficult processing.
+- I'm not good at building environments...
+- I want to touch and create AI!
 
-*まあとりあえずやってみよう的なノリで始めました！*
+*Well, I just started with the idea of trying it anyway! *
 
-## 今回やったこと
+## What we did this time
 
-- docker-toolbox での環境構築。
-- 実際にpythoｎの処理を学ぶ。
-- AIアプリを触ってみた。
-- まとめ
+- Build an environment with docker-toolbox.
+- Learn actual python processing.
+- Touching up an AI application.
+- Summary
 
-### 1.dockeｒtoolbox での環境構築
+### 1.Building the environment with dockertoolbox
 
-こちらに関しては先出しした[docker-toolbox をmacにインストールするのに色々迷った話](https://qiita.com/ranmaru_genki/items/bbffb904ed223e1bffb5)に書かせて頂きました。
+I wrote about this in [The story of how I got lost installing docker-toolbox on my mac](https://qiita.com/ranmaru_genki/items/bbffb904ed223e1bffb5).
 
-初めてでしたので本の中で紹介されていたdocker-toolboxを使用しました。
+Since it was my first time, I used docker-toolbox which was introduced in the book.
 
-次回はdockerで環境構築がしてみたいです。
+Next time, I would like to build an environment with docker.
 
-### 2.実際にpythonの処理を学ぶ
+### 2.Learn actual python processing
 
-事前に[プロゲート](https://prog-8.com/)にて一通りpythoｎについて学習していました。
+I had learned a lot about python from [Progate](https://prog-8.com/) in advance.
 
-わかりやすいのでプロゲートにはいつもお世話になってます(^o^)
+I'm always grateful to Progate for their easy-to-understand explanations (^o^).
 
-今回は環境構築から自分の手でやったので処理が流れた時は嬉しかったですね。
+This time, I was happy when the process flowed because I did everything from building the environment by myself.
 
-この段階ではPHPやJavascriptでも学んだif文やfor文など復習しながら
+At this stage, I'm reviewing the if and for statements that I learned in PHP and Javascript.
 
-python独特の文法にも慣れていきました。
+I also got used to the unique grammar of python.
 
-基礎固めにも役立ったのでやって良かったです！
+I'm glad I did it because it helped me solidify the basics!
 
-### 3.AIアプリを触ってみた
+### 3.I touched the AI application.
 
-一通り処理を学んだら用意されているAIアプリを触ってみます。
+Once you have learned the process, you can try out the AI application provided.
 
-ある程度処理を学んでからさわると自分で拡張させてみたいことや
+After learning the process to a certain extent, I realized that I wanted to extend and improve it.
 
-改善してみたいことに気づけたので現在処理を付け足したりしています。
+I'm currently working on adding more processing to it.
 
-<img width="414" alt="AIアプリ.png" src="https://qiita-image-store.s3.amazonaws.com/0/199085/61455778-e37d-3e3a-66c3-9a32d277a8c0.png">
+<img width="414" alt="AI application.png" src="https://qiita-image-store.s3.amazonaws.com/0/199085/61455778-e37d-3e3a-66c3-9a32d277a8c0.png">
 
-個人的に返答のパターンなどを豊富にしたりしました。
+I've personally added a variety of response patterns.
 
-## まとめ
+## Summary
 
-pythonが巷で話題だったので今回触ってみました。
+Python has been a hot topic in the world, so I tried it this time.
 
-新しい言語を独学で学ぶのは不安もありましたが今回は本に沿って進めていき、プロゲートなどを併用したので一人でも進めることができました。
+I was worried about learning a new language on my own, but this time I followed the book and used progates, so I was able to proceed on my own.
 
-また環境構築からバック、フロントを踏まえてアプリを一通りさわれたのもいい経験になったのかなと思います。
+I think it was also a good experience for me to be able to build the environment, backend, and frontend of the application.
 
-これからも興味のある言語は触ってみるフットワークの軽さを大事にしていきたいです。
+I would like to keep my footwork light and try out languages that interest me in the future.
 
-色々と穴の多い記事になってしまいましたが暖かい目でみていただけると幸いです。
+There are many holes in this article, but I would appreciate it if you could look at it with warm eyes.
 
-ここまでお読みいただきありがとうございました。
+Thank you for reading this far.

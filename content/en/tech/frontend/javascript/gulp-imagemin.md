@@ -11,90 +11,90 @@ tags:
   - Gulp
 ---
 
-## Githubはこちら
+## Github is here.
 
 https://github.com/GenkiMatsubara/imagemin_gulp
 
-### Githubからクローンした場合の手順
+### Steps to follow when cloning from Github
 
-nodeなどの環境構築が既にできていれば下記の3ステップで画像圧縮ができます
+If you have already built an environment such as node, you can compress images in the following three steps
 
-1.クローンする
-(もしもURL変わってたらGithubからクローンしてください)
-
-```
- git clone https://github.com/GenkiMatsubara/imagemin_gulp.git
-```
-
-2.nodemoduleをインストール
+1.Clone the file.
+(If the URL has changed, please clone it from Github)
 
 ```
  git clone https://github.com/GenkiMatsubara/imagemin_gulp.git
 ```
 
-3.実行
+2.Install nodemodule
+
+```
+ git clone https://github.com/GenkiMatsubara/imagemin_gulp.git
+```
+
+3.execution
 
 ```
 gulp img
 ```
 
-## Nodeの環境などが用意できていない場合
+## If you don't have Node environment, etc.
 
-下記の1~11のコマンドを実行すると画像の圧縮がすぐに行えるようになります
+If you don't have a Node environment or something like that, you can run commands 1~11 below to compress images immediately.
 
-自分で導入する際にgulpやimageminを調べたりして
-大変だったのでコピペだけで使えるようにまとめました。
+When I installed it myself, I had to look up gulp and imagemin.
+It was a lot of work to figure out gulp and imagemin when I installed it, so I put it together so that you can use it just by copying and pasting.
 
-ターミナルでコマンドを実行してください。
+Please run the command in a terminal.
 
-## 実行準備
+## Prepare to run
 
-### 1 nodebrewをインストール
+### 1 Install nodebrew
 
-nodebrewをインストールするには[homebrew](https://brew.sh/index_ja)をインストールしてください。
-(デザイナーさんなど普段nodeを使用してない方はnodebrewのインストールでエラーになるかも)
+To install nodebrew, please install [homebrew](https://brew.sh/index_ja).
+(Designers and other people who don't usually use node may get an error when installing nodebrew).
 
 ```
 brew install nodebrew
 ```
 
-### 2 yarnをインストール
+### 2 Install yarn
 
 ```
 brew install yarn
 ```
 
-### 3 npm init (npmを使うための設定)
+### 3 npm init (configuration for using npm)
 
 ```
 npm init
 ```
 
-### 4 srcファイルを作成
+### 4 Create src file
 
 ```
 mkdir src
 ```
 
-### 5 distファイルを作成
+### 5 Create a dist file
 
 ```
 mkdir dist
 ```
 
-### 6 gulpfile.jsを作成
+### 6 Create gulpfile.js
 
 ```
 touch gulpfile.js
 ```
 
-### 7 gulpをインストール
+### 7 Install gulp
 
 ```
 npm install gulp
 ```
 
-### 8 imageminをインストール
+### 8 Install imagemin
 
 [imagemin](https://www.npmjs.com/package/gulp-imagemin)
 
@@ -102,7 +102,7 @@ npm install gulp
 npm i gulp-imagemin
 ```
 
-### 9 imagemin-mozjpegをインストール
+### 9 Install imagemin-mozjpeg
 
 [imagemin-mozjpeg](https://www.npmjs.com/package/imagemin-mozjpeg)
 
@@ -110,7 +110,7 @@ npm i gulp-imagemin
 npm i imagemin-mozjpeg
 ```
 
-### 10 imagemin-pngquantをインストール
+### 10 Install imagemin-pngquant
 
 [imagemin-pngquant](https://www.npmjs.com/package/imagemin-pngquant)
 
@@ -118,7 +118,7 @@ npm i imagemin-mozjpeg
 npm i imagemin-pngquant
 ```
 
-ここまで実行するとこのようなディレクトリ構造になっています。
+After running this far, you should have a directory structure like this.
 
 <img
   width="409"
@@ -126,15 +126,15 @@ npm i imagemin-pngquant
   src="https://qiita-image-store.s3.amazonaws.com/0/199085/1b1523f4-4bdc-e7e4-d581-fcf16f6e8509.png">
 
 ```
-├ dist　　　　　　　　　　　　　　　　　　 ・圧縮した画像が置かれる　(ディストリビューションの略)
-├ gulpfile.js                        ・gulｐの設定を行う
-├ node_modules                       ・nodeの設定が補完される
-├ package-lock.json                  ・nodeのバージョンを表記する
-├ package.json                       ・nodeの設定を記述する
-└ src                                ・圧縮前の画像を保管する
+├ dist　　　　　　　　　　　　　　　　　　 ・where the compressed image is placed (short for distribution)
+├ gulpfile.js                        ・Configure Gulp settings.
+├ node_modules                       ・node configuration will be complemented.
+├ package-lock.json                  ・Notate the version of node
+├ package.json                       ・Describe the node configuration
+└ src                                ・Store the image before compression.
 ```
 
-### 11 gulpfile.jsに下記をコピぺする
+### 11 Copy and paste the following into gulpfile.js
 
 gulpfile.js
 
@@ -162,17 +162,17 @@ gulp.task('img', () => {
 });
 ```
 
-### 実行
+### execution
 
-上記を設定のうえ実行します。
+Configure the above settings and execute.
 
 ```
 gulp img
 ```
 
-***png画像を圧縮***
+***png image compressed***.
 
-圧縮前 (37KB)
+Before compression (37KB)
 
 ![test.png](https://qiita-image-store.s3.amazonaws.com/0/199085/aea5a96c-8fe3-9cae-69e2-a76890232e1d.png)
 
@@ -183,15 +183,15 @@ gulp-imagemin: Minified 1 image (saved 25 kB - 67%)
 Finished 'img' after 527 ms
 ```
 
-圧縮後 (12KB)
+After compression (12KB)
 
 ![test.png](https://qiita-image-store.s3.amazonaws.com/0/199085/14039952-73fb-1b0f-bb63-7a9d4f5146a0.png)
 
-***jpg画像を圧縮***
+***Compresses jpg images***.
 
-スマホで撮った写真を圧縮してみる。
+Try to compress photos taken with a smartphone.
 
-圧縮前 (1.9MB)
+Before compression (1.9MB)
 
 ![test.jpg](https://qiita-image-store.s3.amazonaws.com/0/199085/ed453547-6e43-01ef-afa3-8e6a81c2201b.jpeg)
 
@@ -202,16 +202,18 @@ gulp-imagemin: Minified 1 image (saved 25 kB - 67%)
 Finished 'img' after 571 ms
 ```
 
-圧縮後 (1.2MB)
+After compression (1.2MB)
 
 ![test.jpg](https://qiita-image-store.s3.amazonaws.com/0/199085/69530871-5b4e-1b28-64ed-06d9c79aed45.jpeg)
 
 ## まとめ
 
-画像容量を6割近く削減することができました。
-デザイナーではない素人目ですが画像の劣化などあまり気になりませんでした。
+## Summary
 
-・基本的に `gulpfile.js` を変更すれば設定を変更可能です。
-・細かい圧縮の設定などを変更したい場合はリンクの公式のオプションを参考にしてみてください。
+I was able to reduce the image size by almost 60%.
+I'm not a designer, so I'm an amateur, but I didn't notice much degradation in the images.
 
-ここまでお読みいただきありがとうございました。
+- Basically, the settings can be changed by modifying `gulpfile.js`.
+- If you want to change the detailed compression settings, please refer to the official options in the link.
+
+Thank you for reading this far.

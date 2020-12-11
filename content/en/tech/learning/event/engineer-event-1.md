@@ -10,88 +10,88 @@ tags:
   - event
 ---
 
-## この記事を書いた人
+## The author of this article
 
-23歳エンジニア1年目のエンジニア。
-土日ももっと学習したくなり、ここ２ヶ月週２回程のペースで勉強会に参加中。
+23 years old, first year engineer.
+I want to learn more on Saturdays and Sundays, so I've been attending study groups about twice a week for the past two months.
 
-## この記事の主な内容
+## Main contents of this article
 
-- 勉強会に参加してみて感じたメリット
-- 勉強会で感じたデメリット
-- 勉強会に参加して何が身についたのか？
-- まとめ
+- Advantages of participating in study sessions
+- Demerits I felt from the study sessions
+- What did I learn by participating in the study group?
+- Summary
 
-## 勉強会に参加して感じたメリット
+## Advantages I felt from participating in the study sessions
 
-1. 知識が深まる・普段知れないことを知ることができた。
-2. 他の企業が今どんな技術を用いているか知ることができた。
-3. エンジニア同士の出会いがある
+1. I was able to deepen my knowledge and learn things that I wouldn't normally know.
+I was able to find out what technologies other companies are using now. 3.
+3. meet other engineers.
 
-### 1.知識が深まる・普段知れないことを知ることができた
+### I was able to deepen my knowledge and learn things that I don't normally know.
 
-普段業務で触っている技術や知見を深めるのはもちろん興味はあるが触ったことのない技術に関する勉強会に参加して今まで興味レベルだったものを一歩踏み込んで学ぶことができました。
+In addition to deepening my knowledge of the technologies that I use in my daily work, I was able to take a step further in learning about technologies that I was interested in but had never touched before by participating in a workshop.
 
-**発表者に直接質問できるのも大きなメリットのひとつだと思います！**
-資料などを用意してあることも多くあとで読み返しながら復習することも可能なのはありがたいです。
+**The ability to ask questions directly to the presenters is also a big advantage! **I think one of the biggest advantages is that you can ask questions directly to the presenter!
+I also appreciate the fact that many of the materials are prepared so that I can read and review them later.
 
-### 2.他の企業が今どんな技術を用いているか知ることができた
+### 2. I was able to learn what other companies are using now.
 
-勉強会の中には企業を代表して発表される時もありよく使用するサービスやゲームなどの技術の話などを聞きたくて勉強会に参加することもありとても興味深い話が聞けました。
+There were times when I attended a study session where a representative from a company gave a presentation, and it was very interesting to hear about the technologies used in services and games.
 
-勉強会に参加する際に技術ではなくサービスで決める時もあります。
+There are times when I decide to attend a study session based on the service rather than the technology.
 
-実例を踏まえながら解説していただける上その企業への理解度も増すことができました。
+It was a great opportunity for me to learn more about the company.
 
-### 3.エンジニア同士の出会いがある
+### 3. Meet other engineers
 
-**個人的に勉強会に参加する上で1番のメリット**だと思います。
+**I personally think this is the best benefit** of participating in a study group.
 
-ほとんどの勉強会には懇談する時間が設けられているので自分よりキャリアのあるエンジニアと話すことで自分のキャリアプランの参考になったりこれまでに経験されたことなど自社の方には**聞きにくい質問**などをこの場で聞くことができる。
+Most of the study sessions have a time for discussion, so you can talk with engineers who have more experience than you, which can be helpful for your own career planning.
 
-また、勉強会自体勤務後の時間や休日に多いのでそのプライベートな時間を割いて参加されているので**特に学習意欲の高い方エンジニア**の方が多いと感じました。
-なので自分よりも頑張っている方と出会うとモチベーションもより高まりますし、ご自身が実践されている勉強法なども聞くことができます。
+In addition, since the study sessions themselves are often held after work or on holidays, I felt that many of the participants were engineers** who were particularly motivated to learn, since they took time out of their personal time to attend.
+So when you meet people who are working harder than you, your motivation will increase and you can hear about their own study methods.
 
-## 勉強会のデメリット
+## Disadvantages of study groups
 
-1.一定時間拘束される
-2.学びのスピードが一定
-3.学習コストがかかってしまう
+1. You are restricted to a certain amount of time.
+2. Learning speed is constant.
+Learning costs are high.
 
-### 1.一定時間拘束される
+## Disadvantages of study groups
 
-当然ですが勉強会に参加するためには移動か必要となります。
+Of course, you need to travel to attend a study session.
 
-移動時間や待ち時間などの時間を踏まえると学習効率は高いと言えるのだろうかと疑問に思うこともありました。
+In order to participate in a study session, you need to travel and wait for a while.
 
-### 2.学びのスピードが一定
+### 2. Learning speed is constant
 
-勉強会は学びのペースが全体に影響されるのでわからない時などはいいのですが復習のつもりで参加すると時間を持て余すこともあります。
+In study groups, the pace of learning is influenced by the whole group, which is good when you don't know what you're learning, but when you join a group with the intention of reviewing, you may have too much time on your hands.
 
-ネットで学ぶこともできるのことを踏まえると勉強会ではなく家で個人的に勉強した方が身につく量が多い人もいるだろうと感じました。
-わからない時は質問などできてありがたい時ももちろんあるのですが。
-個人的には興味レベルの技術やまだよく知らない言語などの勉強会に参加するのが効率がいいのかなと思っています。
+Given that you can also learn on the Internet, I felt that some people would be able to learn more if they studied privately at home instead of in a study group.
+Of course, there are times when it's nice to be able to ask questions when you don't understand something.
+I personally think that it is more efficient to participate in study groups for technologies that you are interested in or languages that you don't know well yet.
 
-### 3.参加費がかかる
+### 3. Cost of participation
 
-勉強会の中には参加費が発生するものも多くは参加費がかかります。
+Many study groups charge a participation fee.
 
-お金を払っているからとよりやる気にすることもできるかもしれませんがネットなどでは無料で学べることも多いのでデメリットとさせていただきます。
+This is a disadvantage because you can learn for free on the Internet.
 
-## 勉強会に参加してなにが身についたのか？
+What did I learn by participating in the ## study group?
 
-・聞いたことがあるレベルを知っているレベルにすることができる。
-・技術に対する理解を深めることができる。
-・エンジニアの人脈が広がる。
-・実際にどのように実践しているか実例を聞いたりして実際にエンジニアと会って話すのでコミュ力が上がる。
-・いろんな企業の方がいるので視野が広がる。
-・自分よりすごい方ばかりなのでよりモチベーションが高まる。
+You can change your level of knowledge from "I've heard of it before" to "I know about it".
+Deepen my understanding of technology.
+To expand the network of engineers.
+I can actually meet and talk with engineers and hear examples of how they are actually doing things, so I can improve my communication skills.
+I can broaden my horizons because there are people from various companies.
+Motivation will increase because there are more amazing people than you.
 
-## まとめ
+## Summary
 
-「週末を無意味に過ごすよりは何か身につけよう」と漠然と勉強会に参加しだしたのですが、この２ヶ月でたくさんの先輩エンジニアの方々と出会うことができキャリアの相談を聞いていただいたり、知らなかったことを知るきっかけに勉強会はちょうどいいなと感じました。
-勉強している感覚があまりなく気軽に学べる勉強会は個人的には向いているなと感じています。
+I started attending study groups vaguely, thinking "I'd rather learn something than spend my weekends pointlessly," but in the past two months I've met a lot of senior engineers who have given me advice on my career, and I've found study groups to be a good opportunity to learn things I didn't know.
+I felt that the study sessions were a good opportunity for me to learn something I didn't know. I personally feel that the study sessions are suitable for me because I can learn easily without feeling like I am studying.
 
-今後は気になった勉強会をQiitaに投稿して学びをアウトプットしていけたらなと思います。
+In the future, I would like to post study sessions that I am interested in on Qiita and output my learning.
 
-ここまでお読みいただきありがとうございました。
+Thank you for reading this far. Translated with www.DeepL.com/Translator (free version)

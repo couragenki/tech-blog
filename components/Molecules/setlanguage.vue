@@ -90,7 +90,7 @@
   width: 50px;
   height: 30px;
   margin: auto;
-  padding: 8px 16px;
+  padding: 5px 20px;
   color: #444;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;

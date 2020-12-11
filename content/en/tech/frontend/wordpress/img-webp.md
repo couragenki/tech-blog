@@ -11,44 +11,44 @@ tags:
   - WebP
 ---
 
-## 個人サイトのjpg、png画像をWebPに変換してみる
+## Convert jpg and png images from personal site to WebP.
 
-wordpressで回してるサイトなのでこちらはプラグインを使用した一括変換を使用。
+Since the site is running on wordpress, I used a batch conversion using a plugin here.
 
-今までにアップロードしたものの変換とこれからアップロードする画像の変換設定の2つを行う。
+There are two conversion settings: one for images that have been uploaded so far and one for images that will be uploaded in the future.
 
-[参考にした手順](https://tekito-style.me/columns/wordpress-image-webp)
+[Procedures used for reference](https://tekito-style.me/columns/wordpress-image-webp)
 
-サイト内全体で画像を1500枚くらい使っている。
+I'm using about 1500 images throughout the site.
 
-モバイルでの表示速度が遅くモバイルの離脱率が高いのが現在抱える問題。
+The current problem is that the display speed on mobile is slow and the mobile abandonment rate is high.
 
-### サイト内の画像をWebP変換前
+### Images in the site before WebP conversion
 
-#### ページの画像による通信量
+Amount of traffic caused by images on the #### page
 
-![WebP変換前のスコア](/img/webp変換前スコア.png "WebP変換前のスコア")
+![Score before WebP conversion](/img/webp変換前スコア.png "Score before WebP conversion")
 
-![WebP変換前の通信](/img/webp変換前.png "WebP変換前の通信")
+![Communication before WebP conversion](/img/webp変換前.png "Communication before WebP conversion")
 
-### サイト内の画像をWebP変換後
+### Images in the site after WebP conversion
 
-#### ページの画像による通信量
+Communication volume due to images on #### page
 
-![WebP変換後のスコア](/img/webp変換後スコア.png "WebP変換後のスコア")
+![Score after WebP conversion](/img/webp変換後スコア.png "Score after WebP conversion")
 
-![WebP変換後の通信](/img/webp変換後.png "WebP変換後の通信")
+![Communication after WebP conversion](/img/webp変換後.png "Communication after WebP conversion")
 
-imgリソースがTOPページで2.9MB
+img resource is 2.9MB on top page
 
-### 結果
+### Results
 
-#### WordPressプラグインで画像をWebPに変換した結果
+#### Result of converting images to WebP with WordPress plugin.
 
-* GoogleはWeb Pの使用を推奨しているのでベストプラクティスのスコアが向上した。
-* 通信量などはがサイト全体で大きく改善できた。特に画像が多めのサイトなので効果が大きかった。
-* 表示に置いて目に見える劣化などはない* スコアが改善されると嬉しい
+* Google recommends the use of Web P, so the best practices score improved.
+* Google recommends the use of Web P, so the best practices score improved. This was especially effective for sites with a lot of images.
+* No visible degradation in display * Glad to see the score improve
 
-~~あっ、PageSpeed Insightsのスコアを事前に計測するの忘れてた…~~
+~~Oh, I forgot to measure my PageSpeed Insights score beforehand...~~
 
-終わります！
+It's over!

@@ -11,36 +11,36 @@ tags:
   - TypeScript
 ---
 
-NuxtTypeScript公式サイトのセットアップにしたがって進めます。
+Follow the setup instructions on the official NuxtTypeScript website.
 
-こちらの記事のnodeのバージョンは`v11.9.0`です。
+The version of node in this article is `v11.9.0`.
 
 https://typescript.nuxtjs.org/ja/guide/setup.html
 
-## 1.インストール実行
+## 1. Run the installation
 
- `npm init`を実行しプロジェクトを作成。
+ Run `npm init` to create a project.
 
 `yarn add --dev @nuxt/typescript-build`
 or
 `npm install --save-dev @nuxt/typescript-build`
 
-上記の実行後 `git status` で確認すると
+If you check with `git status` after running the above
 
 ```json
 node_modules/
 package-lock.json
 ```
 
-の差分が発生します。
+differences.
 
-## 2.gitで除外するファイルを設定する
+## 2.git to set the files to be excluded.
 
-`vim .gitignore` でgit管理から除外するファイルを作成します。
+Create a file to exclude from git management with `vim .gitignore`.
 
 ![スクリーンショット 2020-06-13 17.00.23.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/ff62f3f3-7510-750e-1bf7-63bd6846e540.png)
 
-作成したファイルに除外する設定を記載する
+Include the settings to exclude in the file you created.
 
 ```.gitignore
 /node_modules
@@ -48,15 +48,15 @@ package-lock.json
 .nuxt/
 ```
 
-`.nuxt/` はビルド差分の管理が大変なので無視しています。
+`.nuxt/` is ignored because of the difficulty in managing build diffs.
 
 ![スクリーンショット 2020-06-13 17.00.57.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/e25fcaa0-f0ba-593f-984c-9567e124b2f6.png)
 
 ## 3.nuxt.config.jsを作成
 
-`vim nuxt.config.js` でnuxt.config.jsを作成する。
+`vim nuxt.config.js` to create nuxt.config.js.
 
-作成後、設定を追記。
+After creating it, add the settings.
 
 .eslintrc.js
 
@@ -66,11 +66,11 @@ export default {
 }
 ```
 
-## 4.tsconfig.jsonを作成
+## 4. Create tsconfig.json
 
-`vim tsconfig.json` でtsconfig.jsonを作成する。
+Use `vim tsconfig.json` to create tsconfig.json.
 
-作成後、設定を追記。
+After creating it, add the configuration.
 
 ```json
 {
@@ -108,11 +108,11 @@ export default {
 }
 ```
 
-## 5. Vueを使用するためのファイルを作成
+## 5. Create a file to use Vue
 
 `vim vue-shim.d.ts`
 
-初期設定を記載する。
+Describe the initial settings.
 
 vue-shim.d.ts
 
@@ -123,13 +123,13 @@ declare module "*.vue" {
 }
 ```
 
-インストールと設定ができたのでコミットする
+Now that you have installed and configured, commit.
 
-自分はここまで完了したら作成したリポジトリにコミットしました。
+When I finished, I committed to the repository I created.
 
-gitignoreに除外ファイルを設定しているので `git status`すると下記のような差分になります。
+I've set up gitignore to exclude files, so when I `git status`, the diff looks like this
 
-`git status` で確認。
+`git status` Check with
 
 ```.gitignore
 .gitignore
@@ -140,7 +140,7 @@ tsconfig.json
 vue-shim.d.ts
 ```
 
-こちらで問題ないので一旦コミット
+No problem here, so commit once.
 
 ```
 git add --all
@@ -149,21 +149,21 @@ git commit -m 'nuxt+typescriptで環境構築'
 
 [nuxt+typescriptで環境構築](https://github.com/GenkiMatsubara/genki-blog/commit/921e4b7c79aa042ccfa37b2ad9db9ef954683a27)
 
-## 6.TypeScriptに関する設定追加
+## 6.Added settings for TypeScript
 
-typeCheckについてはこちら
+Learn more about typeCheck
 
 https://typescript.nuxtjs.org/ja/guide/setup.html#typecheck
 
-ignoreNotFoundWarningsについてはこちら
+Learn more about ignoreNotFoundWarnings.
 
 https://typescript.nuxtjs.org/ja/guide/setup.html#ignoreNotFoundWarnings
 
-loaderについてはこちら
+For more information about loader, click here.
 
 https://typescript.nuxtjs.org/ja/guide/setup.html#loaders
 
-これらを踏まえてnuxt.config.jsに追記していきます。
+Based on these, we will add them to nuxt.config.js.
 
 nuxt.config.js
 
@@ -186,25 +186,25 @@ export default {
 }
 ```
 
-ここの差分は僕のGithubに置いておきます。
+I'll put the diff here on my Github.
 
 [Typescriptの設定を追記](https://github.com/GenkiMatsubara/genki-blog/commit/7abc4ab09ac6da5c39ee53da2c1d8d263abf8789)
 
-## 7.Runtimeの設定
+## 7.Setting up Runtime
 
-まずはインストールを実行
+Run the installation first.
 
 https://typescript.nuxtjs.org/ja/guide/runtime.html
 
 `npm install @nuxt/typescript-runtime`
 
-その後package.jsonに
+Then add to package.json
 
-- `script`
-- `dependencies`
-- `dependencies`
+- `script
+- `dependencies
+- `dependencies`.
 
-を追記していく。
+in the package.json file.
 
 `vim package.json`
 
@@ -226,35 +226,35 @@ package.json
   },
 ```
 
-上記の設定の記載が完了したら`npm i`でインストールしてくる。
+After completing the description of the above settings, go ahead and install it with `npm i`.
 
-ログはこんなにnuxtのロゴが表示されます。
+The log will show the logo of nuxt so much.
 
 ![スクリーンショット 2020-06-13 18.54.20.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/27305cb8-0cd9-f0e9-2bb4-d9d711ba0ad1.png)
 
-その後、ビルド、スタートと順に実行。
+Then, build and start in that order.
 
 `npm run build`
 
 `npm run start`
 
-特に設定していなければ http://localhost:3000/ にアクセス
+If you haven't set it up, go to http://localhost:3000/
 
 ![スクリーンショット 2020-06-13 18.58.17.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/0ffa85b5-8917-01a6-1712-f328a2e6a65b.png)
 
-ここの作業のコミット
+Commit the work here.
 [runtimeの設定](https://github.com/GenkiMatsubara/genki-blog/commit/fa424efb7a88b05cfabc52cbce0a0f2c661126e2)
 
-## 8.Lint設定
+## 8.Lint Settings
 
-インストール
+Installation
 
-こちらをどちらも実行する
+Run both of these
 
 `npm i -D @nuxtjs/eslint-config-typescript`
 `npm i eslint --save-dev`
 
-ファイルを作成し設定を記載
+Create a file and describe the settings
 
 `vim .eslintrc.js`
 
@@ -268,7 +268,7 @@ module.exports = {
 }
 ```
 
-package.jsonのscriptにlintの実行を行うための記載
+Include the script in package.json to execute the lint
 
 package.json
 
@@ -276,23 +276,23 @@ package.json
 "lint": "eslint --ext .ts,.js,.vue ."
 ```
 
-`npm run lint` で実行する
+`npm run lint` Run it in
 
 ```
   vue-shim.d.ts
   1:16  error  Strings must use singlequote  quotes
 ```
 
-エラーを吐いてくれました。
+It gave me an error.
 
-ここの作業のコミット
+Committing the work here
 
 [Lintを追加](https://github.com/GenkiMatsubara/genki-blog/commit/16ce6d75a5ba7a73c0c3bfe646f34e8f49562eee)
 
-## 環境構築完了
+## Environment build complete
 
-ここまでくれば環境構築は完了です。
+If you've made it this far, you've finished building the environment.
 
-お疲れ様でした！
+Thanks for your help!
 
 [Nuxt.js + TypeScriptでの開発事始め](https://qiita.com/GenkiMatsubara/items/d223bf6023b9c6c3fe6a)に続きます。

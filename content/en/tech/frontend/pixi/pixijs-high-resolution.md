@@ -11,51 +11,51 @@ tags:
   - pixi
 ---
 
-## 今回の問題
+## This issue
 
-高解像度端末でPixi.jsを用いて画像を表示した場合に
-ぼやけて表示されてしまう。
+When displaying images using Pixi.js on high resolution devices
+images are displayed blurry.
 
-## 今回のゴール
+## Goal of this project
 
-iPhoneのRetinaディスプレイ端末のような高解像端末でも
-ぼやけずに表示が可能になる。
+To make it possible to display images without blurring even on high-resolution devices such as iPhone Retina display devices.
+The goal of this project is to make it possible to display images on high-resolution devices such as the iPhone's Retina display devices without blurring.
 
-### 実際に行った対応
+### Actual steps taken
 
-Pixiのアプリケーションに対して下記の設定を追加する。
+Add the following settings to the Pixi application.
 
 ```javascript
 resolution: window.devicePixelRatio || 1,
 autoResize: true
 ```
 
-### 高解像度端末に対する対応ってそもそもなに？
+### What is support for high-resolution devices anyway?
 
-高解像度端末に対する対応ってそもそもなに？
-という方にはこちらのリンクが分かりやすいのでオススメです。
+What is support for high-resolution devices?
+If you're wondering, this link is a good place to start.
 
 http://un-tech.jp/display-resolution/
 
-### 今回ハマったところ
+### Where I got stuck this time.
 
-元々はpixi-spineがぼやけているのを改修するタスクだったのですが
-調べていくとそもそもPixiの画像全体がぼやけていることに気づいた。
+Originally, the task was to fix a blurry pixi-spine.
+As I looked into it, I realized that the entire Pixi image was blurry to begin with.
 
-色々調べていくうちに解像度を設定できることには気づいたのですが
-autoResizeのオプションがあることを知らずに色々と自分で試行錯誤しました。
+As I looked around, I noticed that I could set the resolution, but
+I didn't know there was an autoResize option, so I did a lot of trial and error myself.
 
 https://github.com/pixijs/pixi-compressed-textures
 
-というかnpmのPixiのコメントにautoResizeに関する記載書いてね〜〜〜😭と気づいた時は思いましたw
+When I realized that there was no mention of autoResize in npm's Pixi comments 😭, I thought to myself, "What the heck?
 
-他のオプションはちゃんと解説はしてるのに…
+The other options are well explained, but...
 
-Pixi内部のrendererが何やっているか１つづつ読んでいてオプションに気がつきました、という沼にハマったお話です。
+This is a story of how I got stuck in the swamp of reading what the renderer inside Pixi was doing one by one and noticed the option.
 
-## 最後に
+## Lastly
 
-HTML5ゲームの開発でPixiを業務で触っていますがネット上にこれまでの知見がないため基本的に海外のGitHubのissueが頼りだったりします。
-そのため実際の開発では実装よりも問題の調査などに時間を取られてしまうのが現状です。
+I've been working on Pixi for HTML5 game development, but since I don't have any previous knowledge on the Internet, I've been relying on GitHub issues from overseas.
+Therefore, in actual development, I spend more time investigating problems than implementing them.
 
-今後伸びてくる分野だと思っているので記事を書いてくれる方が一人でも多いとPixi.jsの発展に繋がっていくのではと思い記事を書きました。
+We believe that this is an area that will grow in the future, so we thought that if even one more person wrote an article about it, it would lead to the development of Pixi.js.

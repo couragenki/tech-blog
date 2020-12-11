@@ -10,58 +10,58 @@ tags:
   - HTML
 ---
 
-## faviconとは
+## What is a favicon?
 
-faviconとはブラウザのタブに表示される画像です。
-例えばGoogleChromeではデフォルトではスクショのようにグレーの地球儀のロゴになっています。
+A favicon is an image that appears in the tabs of your browser.
+For example, in Google Chrome, the default image is a gray globe logo as shown in the screenshot.
 
 <img width="151" alt="スクリーンショット 2020-06-14 0.37.15.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/fd075f6c-26ee-cd90-130a-4f096c9fd5a3.png">
 
-画像サイズは`16px × 16px`ととても細かいです。
+The image size is `16px x 16px`, which is very fine.
 
-今回はこちらの画像を追加していこうと思います。
+I am going to add this image here.
 
-## faviconを作成する
+## Create a favicon.
 
-### まずは元画像を用意する
-faviconの元になる画像を作成します。
-今回はcanvaで作成していきます。
+## First, prepare the original image.
+Let's create the original image for the favicon.
+This time, we will use canva to create it.
 
-お手軽にバナーなども様々な画像を作成できる無料のサービスなのでよく使用しています。
+I often use canva because it's a free service that allows you to easily create a variety of images, including banners.
 
 https://www.canva.com/
 
-今回はテキストで作っていきたいと思います。
+This time I would like to make it with text.
 
 <img width="1386" alt="スクリーンショット 2020-06-14 0.30.17.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/a1bbb271-cd28-6269-7e3c-eace7309f6be.png">
 
-センスはともかくできました。
+I'm not sure if I have good taste, but it's done.
 
-### できた画像をfaviconに変換する
+### Convert the created image to a favicon
 
-できた画像をこちらのツールにアップロードして変換します。
+Upload the created image to this tool and convert it.
 
-今回の変換にはこちらのファビコン作成ツールさんを利用させていただきます。
-[ファビコン作成ツール](https://www.websiteplanet.com/ja/webtools/favicon-generator/)
+I will be using this favicon creation tool for this conversion.
+[Favicon Creation Tool](https://www.websiteplanet.com/ja/webtools/favicon-generator/)
 
-ダウンロードしたzipファイルを解凍すると16x16サイズのfaviconが作成できます。
+Unzip the downloaded zip file to create a 16x16 size favicon.
 
-## 完成！！
+## Finished!
 ![favicon-16x16.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/2f438bae-2265-06e5-db3e-322d0ee8c566.png)
 
-ちっさい！
-なんだかこの感じ、高校生時代のガラケー時代の絵文字を思い出しました笑
+It's so tiny!
+This kind of reminds me of the emoji from my high school days when I was in Galaga.
 
-実際のサイトに適用するとこんな感じです。
+This is what it looks like when applied to an actual website.
 
 <img width="191" alt="スクリーンショット 2020-06-14 1.22.17.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/244a9741-844c-4e62-2703-a9cf3d07884d.png">
 
-2文字までならなんとか読めるサイズになりますね。
+It's a readable size for up to two characters.
 
-自分の場合は最低限でよかったのでこんな感じですが
+In my case, this is the minimum I needed.
 
-ロゴが作れる方や絵が良い方は恋ってみるのもありだと思います。
+If you can make a logo or a picture, you can try it.
 
-最近ではSVGでのfaviconの作成も可能になっているので次はそちらも試してみたいと思います。
+Recently, it has become possible to create favicons in SVG, so I would like to try that next.
 
-最後までお読みいただきありがとうございました。
+Thank you for reading to the end.

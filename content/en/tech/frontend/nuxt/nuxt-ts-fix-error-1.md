@@ -11,24 +11,24 @@ tags:
   - TypeScript
 ---
 
-## 今回の記事の内容
-nuxt.jsでの開発中に発生したエラーの対応
+## Contents of this article
+Dealing with errors that occur during development in nuxt.js
 
-## エラーの内容
+## Error Description
 
-該当のエラー
+The relevant error
 
 ```
 Component template should contain exactly one root element. If you are using v-if on multiple elements, use v-else-if to chain them instead.
 ```
 
-翻訳すると
+The translation is
 
-```
-コンポーネントテンプレートには、ルートエレメントを1つだけ含める必要があります。
+````
+A component template must contain only one root element.
 ```
 
-### エラーの該当コード
+### The corresponding code of the error
 
 ``` pages/index.vue
 <template>
@@ -37,12 +37,12 @@ Component template should contain exactly one root element. If you are using v-i
 </template>
 ```
 
-あ、これ凡ミスや…
+Oh, that's a common mistake...
 
-### 修正したコード
+### Fixed code.
 
-つまり`<template>`タグの中のルートエレメントは1つだけにする必要があるのでコードを修正しました。
-`div`タグを追加しその中に元々のタグを追加しました。
+This means that there needs to be only one root element in the `<template>` tag, so I modified the code.
+I added a `div` tag and added the original tag inside it.
 
 ``` pages/index.vue
 <template>
@@ -53,7 +53,7 @@ Component template should contain exactly one root element. If you are using v-i
 </template>
 ```
 
-## まとめ
-ゼロからnuxt.jsを環境構築をして開発してるとたまにタグを忘れがちなので注意せねばと自分への戒めを含めて記事にしました。
+## Summary
+I've written this article as a reminder to myself to be careful because sometimes I tend to forget tags when I'm developing nuxt.js from scratch.
 
-完
+Finish
