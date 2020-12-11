@@ -18,12 +18,12 @@
           </a>
         </li>
         <li class="intoro__sns__list__icon">
-          <a href="https://github.com/GenkiMatsubara" target="_blank">
+          <a href="https://github.com/couragenki" target="_blank">
             <img alt="Githubアイコン" src="/common/github.svg" />
           </a>
         </li>
         <li class="intoro__sns__list__icon">
-          <a href="https://qiita.com/GenkiMatsubara" target="_blank">
+          <a href="https://qiita.com/couragenki" target="_blank">
             <img alt="Qiitaアイコン" src="/common/qiita.png" />
           </a>
         </li>

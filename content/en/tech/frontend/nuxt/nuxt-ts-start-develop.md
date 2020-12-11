@@ -13,7 +13,7 @@ tags:
 
 ## Review of previous article
 
-This article is a continuation of [Previous Environment Setup](https://qiita.com/GenkiMatsubara/items/d8a809c383c4fef9ecda).
+This article is a continuation of [Previous Environment Setup](https://qiita.com/couragenki/items/d8a809c383c4fef9ecda).
 
 The goal of this article is to create a static site, so we'll start by adding pages.
 
@@ -140,6 +140,6 @@ As with the errors, set utf-8 and add the viewport early on.
 
 This is the basics of the basics, but I learned a lot from watching the official documentation and the videos provided by the official developers, as I noticed methods I didn't know about.
 
-I've already pushed the diff to [my Github](https://github.com/GenkiMatsubara/genki-blog/commit/c09c14e06eacff910473700ad3ddbaae6e1e63bb).
+I've already pushed the diff to [my Github](https://github.com/couragenki/genki-blog/commit/c09c14e06eacff910473700ad3ddbaae6e1e63bb).
 
 To be continued

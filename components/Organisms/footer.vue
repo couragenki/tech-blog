@@ -32,12 +32,10 @@
           <a href="https://twitter.com/couragenki" target="_blank">Twitter</a>
         </div>
         <div class="footer__button github">
-          <a href="https://github.com/GenkiMatsubara" target="_blank"
-            >Git Hub</a
-          >
+          <a href="https://github.com/couragenki" target="_blank">Git Hub</a>
         </div>
         <div class="footer__button qiita">
-          <a href="https://qiita.com/GenkiMatsubara" target="_blank">Qiita</a>
+          <a href="https://qiita.com/couragenki" target="_blank">Qiita</a>
         </div>
         <div class="footer__button instagram">
           <a href="https://www.instagram.com/genki.matsubara/" target="_blank"

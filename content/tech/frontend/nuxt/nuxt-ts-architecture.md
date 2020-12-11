@@ -147,7 +147,7 @@ git add --all
 git commit -m 'nuxt+typescriptで環境構築'
 ```
 
-[nuxt+typescriptで環境構築](https://github.com/GenkiMatsubara/genki-blog/commit/921e4b7c79aa042ccfa37b2ad9db9ef954683a27)
+[nuxt+typescriptで環境構築](https://github.com/couragenki/genki-blog/commit/921e4b7c79aa042ccfa37b2ad9db9ef954683a27)
 
 ## 6.TypeScriptに関する設定追加
 
@@ -188,7 +188,7 @@ export default {
 
 ここの差分は僕のGithubに置いておきます。
 
-[Typescriptの設定を追記](https://github.com/GenkiMatsubara/genki-blog/commit/7abc4ab09ac6da5c39ee53da2c1d8d263abf8789)
+[Typescriptの設定を追記](https://github.com/couragenki/genki-blog/commit/7abc4ab09ac6da5c39ee53da2c1d8d263abf8789)
 
 ## 7.Runtimeの設定
 
@@ -243,7 +243,7 @@ package.json
 ![スクリーンショット 2020-06-13 18.58.17.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/0ffa85b5-8917-01a6-1712-f328a2e6a65b.png)
 
 ここの作業のコミット
-[runtimeの設定](https://github.com/GenkiMatsubara/genki-blog/commit/fa424efb7a88b05cfabc52cbce0a0f2c661126e2)
+[runtimeの設定](https://github.com/couragenki/genki-blog/commit/fa424efb7a88b05cfabc52cbce0a0f2c661126e2)
 
 ## 8.Lint設定
 
@@ -287,7 +287,7 @@ package.json
 
 ここの作業のコミット
 
-[Lintを追加](https://github.com/GenkiMatsubara/genki-blog/commit/16ce6d75a5ba7a73c0c3bfe646f34e8f49562eee)
+[Lintを追加](https://github.com/couragenki/genki-blog/commit/16ce6d75a5ba7a73c0c3bfe646f34e8f49562eee)
 
 ## 環境構築完了
 
@@ -295,4 +295,4 @@ package.json
 
 お疲れ様でした！
 
-[Nuxt.js + TypeScriptでの開発事始め](https://qiita.com/GenkiMatsubara/items/d223bf6023b9c6c3fe6a)に続きます。
+[Nuxt.js + TypeScriptでの開発事始め](https://qiita.com/couragenki/items/d223bf6023b9c6c3fe6a)に続きます。

@@ -61,4 +61,4 @@ Vue.jsの様々な機能に触れられると考えたためです。
 ゲームを作ってみたかったので今回の題材を考えたのですがVue.jsの基本機能をキャッチアップするのにいい課題だったと思います。
 
 成果物
-https://github.com/GenkiMatsubara/DCG
+https://github.com/couragenki/DCG

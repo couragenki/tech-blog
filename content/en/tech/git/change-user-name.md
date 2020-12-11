@@ -12,7 +12,7 @@ tags:
 
 I've changed my github account name and user name, so I'll change my local settings as well.
 Before modification `rantaro`.
-After modification `GenkiMatsubara`.
+After modification `couragenki`.
 
 ## Things to change this time
 
@@ -103,22 +103,22 @@ Use `ssh -T git@github.com` to check the connection.
 ```
 genki:genki-blog matsubaragenki$ ssh -T git@github.com
 Enter passphrase for key '/Users/matsubaragenki/.ssh/id_rsa': 
-Hi GenkiMatsubara! You've successfully authenticated, but GitHub does not provide shell access.
+Hi couragenki! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
 Now that the connection is confirmed, try to push to the repository you created.
 
 ```
 $git push
-$Username for 'https://github.com': GenkiMatsubara
-Password for 'https://GenkiMatsubara@github.com': 
+$Username for 'https://github.com': couragenki
+Password for 'https://couragenki@github.com': 
 Enumerating objects: 6, done.
 Counting objects: 100% (6/6), done.
 Delta compression using up to 4 threads
 Compressing objects: 100% (5/5), done.
 Writing objects: 100% (6/6), 772 bytes | 772.00 KiB/s, done.
 Total 6 (delta 0), reused 0 (delta 0)
-To https://github.com/GenkiMatsubara/genki-blog.git
+To https://github.com/couragenki/genki-blog.git
  * [new branch]      master -> master
 $ 
 ```

@@ -61,4 +61,4 @@ I actually made a card game.
 We chose this subject because we wanted to make a game, but I think it was a good assignment to catch up on the basic functions of Vue.js.
 
 Deliverables
-https://github.com/GenkiMatsubara/DCG
+https://github.com/couragenki/DCG

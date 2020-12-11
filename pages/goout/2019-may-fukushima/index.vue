@@ -1,11 +1,14 @@
 <template>
   <DefaultTemplate :isContainer="false">
     <div class="travel">
-      <div style="position: relative;">
+      <div style="position: relative">
         <div class="travel__header__wrapper">
           <div class="travel__header">
             <div class="travel__header__airplane">
-              <a href="https://www.instagram.com/genki.matsubara/" target="_blank">
+              <a
+                href="https://www.instagram.com/genki.matsubara/"
+                target="_blank"
+              >
                 <img alt="飛行機アイコン" src="/common/airplane.svg" />
               </a>
             </div>
@@ -17,17 +20,20 @@
                   </a>
                 </li>
                 <li class="travel__header__sns__list__icon">
-                  <a href="https://github.com/GenkiMatsubara" target="_blank">
+                  <a href="https://github.com/couragenki" target="_blank">
                     <img alt="Githubアイコン" src="/common/github.svg" />
                   </a>
                 </li>
                 <li class="travel__header__sns__list__icon">
-                  <a href="https://qiita.com/GenkiMatsubara" target="_blank">
+                  <a href="https://qiita.com/couragenki" target="_blank">
                     <img alt="Qiitaアイコン" src="/common/qiita.png" />
                   </a>
                 </li>
                 <li class="travel__header__sns__list__icon">
-                  <a href="https://www.instagram.com/genki.matsubara/" target="_blank">
+                  <a
+                    href="https://www.instagram.com/genki.matsubara/"
+                    target="_blank"
+                  >
                     <img alt="instagramアイコン" src="/common/instagram.svg" />
                   </a>
                 </li>
@@ -37,7 +43,9 @@
         </div>
         <div
           class="travel__heroimg"
-          :style="{ backgroundImage: 'url(/photos/2019-may-fukushima/main.jpeg)'}"
+          :style="{
+            backgroundImage: 'url(/photos/2019-may-fukushima/main.jpeg)',
+          }"
         >
           <h1>ひとり旅 in 福島</h1>
         </div>
@@ -49,7 +57,9 @@
 
         <h3>福島旅行1日目</h3>
         <p>平成が終わり令和になる4月30日、福島に旅立つ。</p>
-        <p>一度行ってみたいと思いつつ社会人になってしまい行けてなかった福島。</p>
+        <p>
+          一度行ってみたいと思いつつ社会人になってしまい行けてなかった福島。
+        </p>
         <p>会津出身の友人に簡単なおすすめスポットを聞いていざ出発。</p>
         <img src="/photos/2019-may-fukushima/001.jpeg" />
         <p>新幹線でいざ福島。</p>
@@ -57,13 +67,17 @@
         <img src="/photos/2019-may-fukushima/002.jpeg" />
         <p>1時間半ほどで福島に無事到着。</p>
         <p>窓から風景を眺めつつあっという間の電車旅。</p>
-        <p>1日目は友人に教えてもらった飯坂温泉に向かう。福島駅からローカル線に乗り継ぐ。</p>
+        <p>
+          1日目は友人に教えてもらった飯坂温泉に向かう。福島駅からローカル線に乗り継ぐ。
+        </p>
         <img src="/photos/2019-may-fukushima/003.jpeg" />
         <img src="/photos/2019-may-fukushima/004.jpeg" />
         <br />
         <br />
         <h4>飯坂温泉</h4>
-        <p>ローカル線の車窓はついさっきまでいた東京とは違いとても落ち着いていました。</p>
+        <p>
+          ローカル線の車窓はついさっきまでいた東京とは違いとても落ち着いていました。
+        </p>
         <p>飯坂温泉に到着。</p>
         <img src="/photos/2019-may-fukushima/005.jpeg" />
         <img src="/photos/2019-may-fukushima/006.jpeg" />
@@ -71,7 +85,9 @@
         <p>地元の方に聞いてみてオススメの温泉に入ってみることに。</p>
         <img src="/photos/2019-may-fukushima/007.jpeg" />
         <img src="/photos/2019-may-fukushima/008.jpeg" />
-        <p>温泉街の落ち着いた雰囲気と落ち着いた街並みにリフレッシュさせていただきました。</p>
+        <p>
+          温泉街の落ち着いた雰囲気と落ち着いた街並みにリフレッシュさせていただきました。
+        </p>
         <p>急な休暇で宿を抑えることができなかったので福島駅にとんぼがえり。</p>
         <p>次に来るときはぜひ宿泊したいです。</p>
         <br />
@@ -85,15 +101,21 @@
         <img src="/photos/2019-may-fukushima/010.jpeg" />
         <img src="/photos/2019-may-fukushima/011.jpeg" />
 
-        <p>店長さんや地元の大学生やおじいさんと話ができとても楽しい時間でした。</p>
-        <p>途中で入店されたご夫婦に『会津に行くなら高速バスが便利だよ』と教えてもらう。</p>
+        <p>
+          店長さんや地元の大学生やおじいさんと話ができとても楽しい時間でした。
+        </p>
+        <p>
+          途中で入店されたご夫婦に『会津に行くなら高速バスが便利だよ』と教えてもらう。
+        </p>
         <p>盛り上がってきたところで日付が5/1に代わり『令和』を迎える。</p>
         <br />
         <br />
 
         <h3>福島旅行2日目</h3>
         <p>前日の飲み屋での情報を元に会津若松へ向かう。</p>
-        <p>駅で餃子とずんだシェイクをテイクアウトし道中食べたのですが美味しかった。</p>
+        <p>
+          駅で餃子とずんだシェイクをテイクアウトし道中食べたのですが美味しかった。
+        </p>
         <img src="/photos/2019-may-fukushima/012.jpeg" />
         <img src="/photos/2019-may-fukushima/013.jpeg" />
         <p>街並みがより歴史的になりとても落ち着いた雰囲気の街でした。</p>
@@ -104,19 +126,25 @@
         <img src="/photos/2019-may-fukushima/015.jpeg" />
         <p>お城の門の横には福島県立博物館を発見。</p>
         <p>特設展もやっているとのことで気になったので入館。</p>
-        <p>弥生時代から現代まで振り返る常設展、3.11を後世につなぐ特設展の2部構成でした。</p>
+        <p>
+          弥生時代から現代まで振り返る常設展、3.11を後世につなぐ特設展の2部構成でした。
+        </p>
         <img src="/photos/2019-may-fukushima/016.jpeg" />
         <p>会津嬢へ到着。</p>
         <p>東京で散ってしまっていた桜が残っており桜も楽しむ。</p>
         <img src="/photos/2019-may-fukushima/019.jpeg" />
         <img src="/photos/2019-may-fukushima/017.jpeg" />
         <p>お城の広場には出店がいくつも出ていて食べ歩きができました。</p>
-        <p>日本酒の飲み比べができる場所が何店かあり日本酒を楽しむことができました。</p>
+        <p>
+          日本酒の飲み比べができる場所が何店かあり日本酒を楽しむことができました。
+        </p>
         <img src="/photos/2019-may-fukushima/018.jpeg" />
         <br />
         <br />
         <h2>福島旅行ふりかえり</h2>
-        <p>初福島でしたが今回の旅行を通して福島を楽しむことができたと思います。</p>
+        <p>
+          初福島でしたが今回の旅行を通して福島を楽しむことができたと思います。
+        </p>
         <p>
           温泉、観光スポット、日本酒どれも魅力的で
           <br />普段東京でのハードな日々を忘れてリフレッシュできました。
@@ -135,7 +163,10 @@
         <p class="travel__end__sign">Genki</p>
         <div class="travel__end__icon">
           <div class="travel__end__icon__wrapper">
-            <img class="travel__end__icon__img" src="/common/profile-icon.jpg" />
+            <img
+              class="travel__end__icon__img"
+              src="/common/profile-icon.jpg"
+            />
           </div>
         </div>
 

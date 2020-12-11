@@ -15,17 +15,20 @@
               </a>
             </li>
             <li class="photopage__header__sns__list__icon">
-              <a href="https://github.com/GenkiMatsubara" target="_blank">
+              <a href="https://github.com/couragenki" target="_blank">
                 <img alt="Githubアイコン" src="/common/github.svg" />
               </a>
             </li>
             <li class="photopage__header__sns__list__icon">
-              <a href="https://qiita.com/GenkiMatsubara" target="_blank">
+              <a href="https://qiita.com/couragenki" target="_blank">
                 <img alt="Qiitaアイコン" src="/common/qiita.png" />
               </a>
             </li>
             <li class="photopage__header__sns__list__icon">
-              <a href="https://www.instagram.com/genki.matsubara/" target="_blank">
+              <a
+                href="https://www.instagram.com/genki.matsubara/"
+                target="_blank"
+              >
                 <img alt="instagramアイコン" src="/common/instagram.svg" />
               </a>
             </li>
@@ -46,12 +49,16 @@
           <div class="item bule">
             <div class="photopage__photoblock__location">
               <h2 class="photopage__photoblock__location__title">ひとり旅</h2>
-              <p class="photopage__photoblock__location__text">少ない荷物とたくさんの楽しみと</p>
+              <p class="photopage__photoblock__location__text">
+                少ない荷物とたくさんの楽しみと
+              </p>
             </div>
           </div>
-          <div class="item" :style="{ backgroundImage: 'url(/photos/1.jpg)'}">
+          <div class="item" :style="{ backgroundImage: 'url(/photos/1.jpg)' }">
             <div class="photopage__photoblock__location">
-              <h3 class="photopage__photoblock__location__title">日光 ※記事準備中</h3>
+              <h3 class="photopage__photoblock__location__title">
+                日光 ※記事準備中
+              </h3>
               <p class="photopage__photoblock__location__text">
                 2018
                 <br />徳川が眠る古都を求めて
@@ -63,7 +70,9 @@
           tag="div"
           to="/goout/2019-may-fukushima"
           class="over"
-          :style="{ backgroundImage: 'url(/photos/2019-may-fukushima/main.jpeg)'}"
+          :style="{
+            backgroundImage: 'url(/photos/2019-may-fukushima/main.jpeg)',
+          }"
         >
           <div class="photopage__photoblock__location">
             <h3 class="photopage__photoblock__location__title">福島</h3>
@@ -76,21 +85,33 @@
         <div class="list">
           <div class="item red">
             <div class="photopage__photoblock__location">
-              <h2 class="photopage__photoblock__location__title">日帰りお出かけ</h2>
-              <p class="photopage__photoblock__location__text">Oceans from above</p>
+              <h2 class="photopage__photoblock__location__title">
+                日帰りお出かけ
+              </h2>
+              <p class="photopage__photoblock__location__text">
+                Oceans from above
+              </p>
             </div>
           </div>
-          <div class="item" :style="{ backgroundImage: 'url(/photos/3.jpg)'}">
+          <div class="item" :style="{ backgroundImage: 'url(/photos/3.jpg)' }">
             <div class="photopage__photoblock__location">
-              <h3 class="photopage__photoblock__location__title">浅草 ※記事準備中</h3>
-              <p class="photopage__photoblock__location__text">歴史情緒溢れる江戸っ子の町</p>
+              <h3 class="photopage__photoblock__location__title">
+                浅草 ※記事準備中
+              </h3>
+              <p class="photopage__photoblock__location__text">
+                歴史情緒溢れる江戸っ子の町
+              </p>
             </div>
           </div>
         </div>
-        <div class="over" :style="{ backgroundImage: 'url(/photos/4.jpg)'}">
+        <div class="over" :style="{ backgroundImage: 'url(/photos/4.jpg)' }">
           <div class="photopage__photoblock__location">
-            <h3 class="photopage__photoblock__location__title">お台場 ※記事準備中</h3>
-            <p class="photopage__photoblock__location__text">海風とアトラクションを感じに</p>
+            <h3 class="photopage__photoblock__location__title">
+              お台場 ※記事準備中
+            </h3>
+            <p class="photopage__photoblock__location__text">
+              海風とアトラクションを感じに
+            </p>
           </div>
         </div>
       </div>
@@ -109,7 +130,10 @@
 
         <div class="photopage__end__icon">
           <div class="photopage__end__icon__wrapper">
-            <img class="photopage__end__icon__img" src="/common/profile-icon.jpg" />
+            <img
+              class="photopage__end__icon__img"
+              src="/common/profile-icon.jpg"
+            />
           </div>
         </div>
 

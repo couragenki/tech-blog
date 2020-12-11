@@ -13,7 +13,7 @@ tags:
 
 ## Githubはこちら
 
-https://github.com/GenkiMatsubara/imagemin_gulp
+https://github.com/couragenki/imagemin_gulp
 
 ### Githubからクローンした場合の手順
 
@@ -23,13 +23,13 @@ nodeなどの環境構築が既にできていれば下記の3ステップで画
 (もしもURL変わってたらGithubからクローンしてください)
 
 ```
- git clone https://github.com/GenkiMatsubara/imagemin_gulp.git
+ git clone https://github.com/couragenki/imagemin_gulp.git
 ```
 
 2.nodemoduleをインストール
 
 ```
- git clone https://github.com/GenkiMatsubara/imagemin_gulp.git
+ git clone https://github.com/couragenki/imagemin_gulp.git
 ```
 
 3.実行

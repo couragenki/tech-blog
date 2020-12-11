@@ -13,7 +13,7 @@ tags:
 
 ## Github is here.
 
-https://github.com/GenkiMatsubara/imagemin_gulp
+https://github.com/couragenki/imagemin_gulp
 
 ### Steps to follow when cloning from Github
 
@@ -23,13 +23,13 @@ If you have already built an environment such as node, you can compress images i
 (If the URL has changed, please clone it from Github)
 
 ```
- git clone https://github.com/GenkiMatsubara/imagemin_gulp.git
+ git clone https://github.com/couragenki/imagemin_gulp.git
 ```
 
 2.Install nodemodule
 
 ```
- git clone https://github.com/GenkiMatsubara/imagemin_gulp.git
+ git clone https://github.com/couragenki/imagemin_gulp.git
 ```
 
 3.execution

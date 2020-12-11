@@ -15,13 +15,13 @@ tags:
 今回はfaviconを作成してサイトに追加していきます。
 箸休め的な記事です。
 
-[Nuxt.js + TypeScriptでの開発事始め](https://qiita.com/GenkiMatsubara/items/d223bf6023b9c6c3fe6a)
+[Nuxt.js + TypeScriptでの開発事始め](https://qiita.com/couragenki/items/d223bf6023b9c6c3fe6a)
 
 
 ## Nuxt.jsのサイトにfaviconを適用させる
 
 faviconの作り方に関してはこちらに記載しています。
-[5分でサクッとfaviconを作成する手順](https://qiita.com/GenkiMatsubara/items/8ec90f30956dfc0e57f8)
+[5分でサクッとfaviconを作成する手順](https://qiita.com/couragenki/items/8ec90f30956dfc0e57f8)
 
 faviconは静的で更新させることは滅多にないので`static`へ追加します。
 
@@ -97,7 +97,7 @@ assetsにはwebpackしたいアセットを置きます
 webpackのbuildに画像の容量圧縮のフローなどを追加しておくと手間が省けてヒューマンエラーで圧縮忘れなども起こらなくなるので安心です。
 画像の圧縮に関してはこちらに記事を書きました。
 
-[【非エンジニアでもコピペですぐに使える】画像の圧縮機能](https://qiita.com/GenkiMatsubara/items/cf2714382bfc6fb89081)
+[【非エンジニアでもコピペですぐに使える】画像の圧縮機能](https://qiita.com/couragenki/items/cf2714382bfc6fb89081)
 
 ### assetsに配置するもの
 

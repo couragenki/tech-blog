@@ -15,13 +15,13 @@ tags:
 In this article, we will create a favicon and add it to the site.
 This article is like a chopstick rest.
 
-[Beginning of development with Nuxt.js + TypeScript](https://qiita.com/GenkiMatsubara/items/d223bf6023b9c6c3fe6a)
+[Beginning of development with Nuxt.js + TypeScript](https://qiita.com/couragenki/items/d223bf6023b9c6c3fe6a)
 
 
 ## Applying favicon to a Nuxt.js site
 
 How to make favicons can be found here.
-[How to create a favicon quickly in 5 minutes](https://qiita.com/GenkiMatsubara/items/8ec90f30956dfc0e57f8)
+[How to create a favicon quickly in 5 minutes](https://qiita.com/couragenki/items/8ec90f30956dfc0e57f8)
 
 Since favicons are static and rarely updated, add them to `static`.
 
@@ -97,7 +97,7 @@ Editing and generating images is my personal favorite process, so I'll introduce
 If you add the image compression flow to webpack build, you can save time and avoid human error.
 I wrote an article about image compression here.
 
-[[Even non-engineers can use it right away by copying and pasting] image compression function](https://qiita.com/GenkiMatsubara/items/cf2714382bfc6fb89081)
+[[Even non-engineers can use it right away by copying and pasting] image compression function](https://qiita.com/couragenki/items/cf2714382bfc6fb89081)
 
 ### Things to place in assets
 
