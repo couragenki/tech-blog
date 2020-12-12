@@ -51,6 +51,9 @@
             <li>
               <n-link :to="$i18n.path('goout')">GoOut</n-link>
             </li>
+            <li>
+              <SetLanguage />
+            </li>
           </ul>
         </div>
       </div>
