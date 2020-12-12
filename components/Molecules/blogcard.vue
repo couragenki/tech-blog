@@ -3,56 +3,30 @@
     <div
       class="card-img-top"
       v-if="blogImage"
-      :style="{ backgroundImage: 'url(' + blogImage + ')' }"
+      :style="{ backgroundImage: 'url(' + blogImage + ')'}"
     >
       <div
         class="card-category"
-        :class="{
-          green: blogCategory == 'tech',
-          red: blogCategory == 'marketing',
-        }"
-      >
-        {{ blogCategory }}
-      </div>
+        :class="{green: blogCategory == 'tech', red: blogCategory == 'marketing'}"
+      >{{blogCategory}}</div>
       <div class="card-title">
-        <p
-          class="card-title-text"
-          :class="{
-            green: blogCategory == 'tech',
-            red: blogCategory == 'marketing',
-          }"
-        >
-          {{ blogTitle }}
-        </p>
+        <p class="card-title-text" :class="{green: blogCategory == 'tech', red: blogCategory == 'marketing'}">{{blogTitle}}</p>
       </div>
     </div>
     <div class="card-img-top shape" v-else>
       <div
         class="card-category"
-        :class="{
-          green: blogCategory == 'tech',
-          red: blogCategory == 'marketing',
-        }"
-      >
-        {{ blogCategory }}
-      </div>
+        :class="{green: blogCategory == 'tech', red: blogCategory == 'marketing'}"
+      >{{blogCategory}}</div>
       <div class="card-title">
-        <p
-          class="card-title-text"
-          :class="{
-            green: blogCategory == 'tech',
-            red: blogCategory == 'marketing',
-          }"
-        >
-          {{ blogTitle }}
-        </p>
+        <p class="card-title-text" :class="{green: blogCategory == 'tech', red: blogCategory == 'marketing'}">{{blogTitle}}</p>
       </div>
     </div>
     <div class="card-body">
-      <p class="card-date">{{ setDate(blogDate) }}</p>
-      <p class="card-text">{{ blogText }}</p>
+      <p class="card-date">{{setDate(blogDate)}}</p>
+      <p class="card-text">{{blogText}}</p>
       <ul class="card-tag" v-for="(item, index) in blogTags" :key="index">
-        <li>#{{ item }}&nbsp;</li>
+        <li>#{{item}}&nbsp;</li>
       </ul>
     </div>
   </nuxt-link>
@@ -113,7 +87,7 @@ export default {
       const m = date.substring(5, 7);
       const d = date.substring(8, 10);
 
-      return y + "/" + m + "/" + d;
+      return y + "年" + m + "月" + d + "日";
     },
   },
 };
@@ -158,11 +132,11 @@ export default {
         border: #9e9e9e solid 2px;
       }
       .red {
-        border: #e80000 solid 2px;
-      }
-      .green {
-        border: #37e437 solid 2px;
-      }
+          border: #e80000 solid 2px;
+        }
+        .green {
+          border: #37e437 solid 2px;
+        }
     }
     .red {
       background: #e80000;

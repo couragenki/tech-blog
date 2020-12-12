@@ -14,33 +14,27 @@
           </div>
           <p class="profile__name">GENKI MATSUBARA</p>
           <p class="footer__text">
-            {{ $t("footer.text2") }}
-          </p>
-          <p class="footer__text">
-            {{ $t("footer.text3") }}
-            <n-link :to="$i18n.path('profile')">{{ $t("footer.text4") }}</n-link
-            >{{ $t("footer.text5") }}
+            長崎出身の25歳。高卒で東芝に入社しその後独学でプログラミングを学習しWEB系のエンジニアに転身。写真を撮るのが好きでカメラを持って出かけています。プロフィールは
+            <n-link to="/profile">こちら</n-link>から。
           </p>
         </div>
         <hr class="footer__line" />
         <p class="footer__intoro">MESSEGE</p>
         <div class="footer__button"></div>
-        <p class="footer__text">{{ $t("footer.text1") }}</p>
+        <p class="footer__text">ご連絡はSNSのDMにてお願い致します。</p>
         <hr class="footer__line" />
         <p class="footer__intoro">FOLLOW ME</p>
         <div class="footer__button twitter">
-          <a href="https://twitter.com/couragenki" target="_blank">Twitter</a>
+          <a href="https://twitter.com/couragenki" target="_blank">TWITTER</a>
         </div>
         <div class="footer__button github">
-          <a href="https://github.com/couragenki" target="_blank">Git Hub</a>
+          <a href="https://github.com/GenkiMatsubara" target="_blank">GIT HUB</a>
         </div>
         <div class="footer__button qiita">
-          <a href="https://qiita.com/couragenki" target="_blank">Qiita</a>
+          <a href="https://qiita.com/GenkiMatsubara" target="_blank">QIITA</a>
         </div>
         <div class="footer__button instagram">
-          <a href="https://www.instagram.com/genki.matsubara/" target="_blank"
-            >Instagram</a
-          >
+          <a href="https://www.instagram.com/genki.matsubara/" target="_blank">INSTAGRAM</a>
         </div>
       </div>
       <div class="footer__container__clum__b">
@@ -48,74 +42,52 @@
         <p class="footer__subintoro">ABOUT</p>
         <ul>
           <li>
-            <n-link :to="$i18n.path('')">{{ $t("links.home") }}</n-link>
+            <n-link to="/">トップ</n-link>
           </li>
           <li>
-            <n-link :to="$i18n.path('profile')">{{
-              $t("links.profile")
-            }}</n-link>
+            <n-link to="/profile">自己紹介</n-link>
           </li>
           <li>
-            <n-link :to="$i18n.path('policy')">{{ $t("links.policy") }}</n-link>
+            <n-link to="/policy">プライバシーポリシー</n-link>
           </li>
         </ul>
         <hr class="footer__line" />
-        <n-link :to="$i18n.path('tech')" tag="div" class="footer__subintoro"
-          >TECH</n-link
-        >
+        <n-link to="/tech" tag="div" class="footer__subintoro">TECH</n-link>
         <ul class="footer__links">
           <li>
-            <n-link :to="$i18n.path('tech/frontend')">{{
-              $t("links.frontend")
-            }}</n-link>
+            <n-link to="/tech/frontend">フロントエンド</n-link>
           </li>
           <li>
-            <n-link :to="$i18n.path('tech/backend')">{{
-              $t("links.backend")
-            }}</n-link>
+            <n-link to="/tech/backend">バックエンド</n-link>
           </li>
           <li>
-            <n-link :to="$i18n.path('tech/infra')">{{
-              $t("links.infra")
-            }}</n-link>
+            <n-link to="/tech/infra">インフラ</n-link>
           </li>
           <li>
-            <n-link :to="$i18n.path('tech/git')">Git</n-link>
+            <n-link to="/tech/git">Git</n-link>
           </li>
         </ul>
         <hr class="footer__line" />
-        <n-link
-          :to="$i18n.path('marketing')"
-          tag="div"
-          class="footer__subintoro"
-          >MARKETING</n-link
-        >
+        <n-link to="/marketing" tag="div" class="footer__subintoro">MARKETING</n-link>
 
         <ul class="footer__links">
           <li>
-            <n-link :to="$i18n.path('marketing/sns')">SNS</n-link>
+            <n-link to="/marketing/sns">SNS</n-link>
           </li>
           <li>
-            <n-link :to="$i18n.path('marketing/blog')">{{
-              $t("links.blog")
-            }}</n-link>
+            <n-link to="/marketing/blog">ブログ</n-link>
           </li>
         </ul>
         <hr class="footer__line" />
         <p class="footer__subintoro">TAGS</p>
         <p class="footer__tags">
-          <n-link :to="$i18n.path('tech/frontend/javascript/')"
-            >#JavaScript</n-link
-          >&nbsp;
-          <n-link :to="$i18n.path('tech/frontend/vue/')">#Vue.js</n-link>&nbsp;
-          <n-link :to="$i18n.path('tech/frontend/gatsby/')">#Gatsby.js</n-link
-          >&nbsp;
-          <n-link :to="$i18n.path('tech/frontend/markup/')">#Markup</n-link
-          >&nbsp;
-          <n-link :to="$i18n.path('tech/backend/python/')">#Python</n-link
-          >&nbsp;
-          <n-link :to="$i18n.path('tech/infra/docker/')">#Docker</n-link>&nbsp;
-          <n-link :to="$i18n.path('tech/git')">#Git</n-link>&nbsp;
+          <n-link to="/tech/frontend/javascript/">#JavaScript</n-link>&nbsp;
+          <n-link to="/tech/frontend/vue/">#Vue.js</n-link>&nbsp;
+          <n-link to="/tech/frontend/gatsby/">#Gatsby.js</n-link>&nbsp;
+          <n-link to="/tech/frontend/markup/">#Markup</n-link>&nbsp;
+          <n-link to="/tech/backend/python/">#Python</n-link>&nbsp;
+          <n-link to="/tech/infra/docker/">#Docker</n-link>&nbsp;
+          <n-link to="/tech/git">#Git</n-link>&nbsp;
         </p>
         <hr class="footer__line" />
       </div>
@@ -152,7 +124,7 @@ export default {
   &__container {
     width: 100%;
     height: 100%;
-    max-width: 1240px;
+    max-width: 1024px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;

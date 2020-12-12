@@ -4,12 +4,10 @@
       <div class="content" :class="{ PostStyle: isPostsPage }">
         <slot />
       </div>
+      <!-- <SideBar /> -->
     </div>
     <div class="container" v-else>
-      <div
-        class="content"
-        :class="{ PostStyle: isPostsPage, full: !isSidebar }"
-      >
+      <div class="content" :class="{ PostStyle: isPostsPage, full: !isSidebar }">
         <slot />
       </div>
     </div>
@@ -77,8 +75,8 @@ export default {
 .PostStyle {
   /deep/ * {
     font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体",
-      "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
-      "メイリオ", "Meiryo", "verdana", sans-serif;
+      "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ",
+      "Meiryo", "verdana", sans-serif;
   }
   /deep/ img {
     max-width: 100%;

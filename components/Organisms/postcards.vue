@@ -1,8 +1,6 @@
 <template>
   <div>
-    <p v-if="setPostData.length">
-      {{ showIndex + 1 }}/{{ setPostData.length }} page
-    </p>
+    <p>{{showIndex + 1}}/{{setPostData.length}}ページ目</p>
     <div class="posts">
       <BlogCrad
         v-for="article in setPostData[showIndex]"
@@ -16,17 +14,15 @@
         :blogImage="article.image || null"
       />
     </div>
-    <div class="sort__buttons" v-if="setPostData.length">
+    <div class="sort__buttons">
       <button
         class="sort__buttons__button"
-        v-for="(item, index) in setPostData.length"
-        :key="index"
+        v-for="(item, index) in setPostData.length" :key="index"
         v-on:click="changeData(index)"
-        :class="{ dateActive: showIndex == index }"
-        v-scroll-to="'#pageTop'"
-        to
+        :class="{dateActive: showIndex == index}"
+        v-scroll-to="'#pageTop'" to
       >
-        {{ index + 1 }}
+        {{index + 1}}
       </button>
     </div>
   </div>
@@ -51,48 +47,29 @@ export default {
       },
     },
   },
-  computed: {
+  computed:{
     setPostData() {
-      let japaneseArray = [];
-      let englishArray = [];
+      let allNewsArray = [];
+      for(let i of Object.keys(this.data)) {
+        allNewsArray.push(this.data[i])
+      }
+      allNewsArray.sort((a,b) => {
+        return (a.date < b.date ? 1 : -1);
+      });
 
-      for (let i of Object.keys(this.data)) {
-        if (!this.data[i].path) return;
-        if (this.data[i].path.slice(0, 4) === "/en/") {
-          englishArray.push(this.data[i]);
-          englishArray.sort((a, b) => {
-            return a.date < b.date ? 1 : -1;
-          });
-        } else {
-          japaneseArray.push(this.data[i]);
-          japaneseArray.sort((a, b) => {
-            return a.date < b.date ? 1 : -1;
-          });
-        }
+      let allNewsArrayLength = allNewsArray.length;
+      let cut = 12;
+      let showArray = [];
+      for(let i = 0; i < Math.ceil(allNewsArrayLength / cut); i++) {
+        let j = i * cut;
+        showArray.push(allNewsArray.slice(j, j + cut));
       }
-
-      if (this.$i18n.locale === "ja") {
-        return this.cutArray(japaneseArray);
-      }
-      if (this.$i18n.locale === "en") {
-        return this.cutArray(englishArray);
-      }
+      return showArray;
     },
   },
   methods: {
-    changeData(index) {
+    changeData(index){
       this.showIndex = index;
-    },
-    cutArray(array) {
-      if (!array.length) return;
-      let allArrayLength = array.length;
-      let cut = 12;
-      let calculatedArray = [];
-      for (let i = 0; i < Math.ceil(allArrayLength / cut); i++) {
-        let j = i * cut;
-        calculatedArray.push(array.slice(j, j + cut));
-      }
-      return calculatedArray;
     },
   },
 };
@@ -113,9 +90,9 @@ export default {
   }
 }
 .dateActive {
-  background: blue;
-  color: white;
-}
+    background: blue;
+    color: white;
+  }
 .sort__buttons {
   text-align: center;
   &__button {

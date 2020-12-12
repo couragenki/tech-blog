@@ -12,7 +12,6 @@
     "bootstrap-vue": "^2.16.0",
     "csvtojson": "^2.0.10",
     "nuxt": "^2.14.1",
-    "vue-i18n": "^8.22.2",
     "vue-scrollto": "^2.18.2"
   },
   "devDependencies": {

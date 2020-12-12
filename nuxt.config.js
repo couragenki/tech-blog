@@ -6,7 +6,6 @@ export default {
   plugins: [
     { src: '~plugins/ga.js', mode: 'client' },
     { src: '~/plugins/vue-scrollto' },
-    '~/plugins/i18n.js'
   ],
   buildModules: [
     ['@nuxt/typescript-build', {
@@ -64,11 +63,5 @@ export default {
     scss: [
       './assets/styles/_variables.scss',
     ]
-  },
-  router: {
-    middleware: 'i18n'
-  },
-  generate: {
-    routes: ['/en', '/en/policy']
   },
 }

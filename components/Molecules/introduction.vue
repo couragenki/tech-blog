@@ -2,13 +2,13 @@
   <div class="intoro">
     <div class="intoro__title">Profile</div>
     <div class="intoro__icon">
-      <img
-        class="intoro__icon__img"
-        alt="プロフィール画像"
-        width="512"
-        src="/common/profile-icon.jpg"
-      />
+      <img class="intoro__icon__img" alt="プロフィール画像" width="512" src="/common/profile-icon.jpg" />
     </div>
+    <!-- <div class="intoro__sectiontext">---ひとこと---</div>
+    <p class="intoro__sentence">
+      長崎出身の25歳です。
+      <br />負けん気だけで生きてきました。
+    </p>-->
     <div class="intoro__sectiontext">---SNS---</div>
     <div class="intoro__sns">
       <ul class="intoro__sns__list">
@@ -18,12 +18,12 @@
           </a>
         </li>
         <li class="intoro__sns__list__icon">
-          <a href="https://github.com/couragenki" target="_blank">
+          <a href="https://github.com/GenkiMatsubara" target="_blank">
             <img alt="Githubアイコン" src="/common/github.svg" />
           </a>
         </li>
         <li class="intoro__sns__list__icon">
-          <a href="https://qiita.com/couragenki" target="_blank">
+          <a href="https://qiita.com/GenkiMatsubara" target="_blank">
             <img alt="Qiitaアイコン" src="/common/qiita.png" />
           </a>
         </li>

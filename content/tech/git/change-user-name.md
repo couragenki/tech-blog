@@ -12,7 +12,7 @@ tags:
 
 この度githubのアカウント名とユーザー名を変更したのでローカルの設定も合わせて変更する
 修正前`rantaro`
-修正後`couragenki`
+修正後`GenkiMatsubara`
 
 ## 今回変更するもの
 
@@ -103,22 +103,22 @@ titleは書かなくても大丈夫です。
 ```
 genki:genki-blog matsubaragenki$ ssh -T git@github.com
 Enter passphrase for key '/Users/matsubaragenki/.ssh/id_rsa': 
-Hi couragenki! You've successfully authenticated, but GitHub does not provide shell access.
+Hi GenkiMatsubara! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
 接続確認できたので作成したリポジトリにプッシュしてみる
 
 ```
 $git push
-$Username for 'https://github.com': couragenki
-Password for 'https://couragenki@github.com': 
+$Username for 'https://github.com': GenkiMatsubara
+Password for 'https://GenkiMatsubara@github.com': 
 Enumerating objects: 6, done.
 Counting objects: 100% (6/6), done.
 Delta compression using up to 4 threads
 Compressing objects: 100% (5/5), done.
 Writing objects: 100% (6/6), 772 bytes | 772.00 KiB/s, done.
 Total 6 (delta 0), reused 0 (delta 0)
-To https://github.com/couragenki/genki-blog.git
+To https://github.com/GenkiMatsubara/genki-blog.git
  * [new branch]      master -> master
 $ 
 ```

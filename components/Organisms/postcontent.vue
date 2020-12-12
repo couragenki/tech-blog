@@ -1,12 +1,10 @@
 <template>
   <div>
-    <h1 class="post__title">{{ post.title }}</h1>
-    <p class="post__date">{{ setDate(post.created_at) }}</p>
+    <!-- <nuxt-link :to="'/' + post.type + '/' + catergory">⇦ {{catergory}}</nuxt-link> -->
+    <h1 class="post__title">{{post.title}}</h1>
+    <p class="post__date">{{setDate(post.created_at)}}</p>
     <nuxt-content :document="post" />
-    <BackButton
-      :link="'/' + post.type + '/' + catergory"
-      :text="catergory + 'の記事一覧へ戻る'"
-    />
+    <BackButton :link="'/' + post.type + '/' + catergory" :text="catergory + 'の記事一覧へ戻る'" />
   </div>
 </template>
 
@@ -45,7 +43,7 @@ export default {
       const m = date.substring(5, 7);
       const d = date.substring(8, 10);
 
-      return y + "/" + m + "/" + d;
+      return y + "年" + m + "月" + d + "日";
     },
   },
 };
