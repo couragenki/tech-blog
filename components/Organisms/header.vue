@@ -13,16 +13,16 @@
           <n-link :to="$i18n.path('')">HOME</n-link>
         </li>
         <li>
-          <n-link to="/profile">PROFILE</n-link>
+          <n-link :to="$i18n.path('/profile')">PROFILE</n-link>
         </li>
         <li>
-          <n-link to="/tech">TECH</n-link>
+          <n-link :to="$i18n.path('/tech')">TECH</n-link>
         </li>
         <li>
-          <n-link to="/marketing">MARKETING</n-link>
+          <n-link :to="$i18n.path('/marketing')">MARKETING</n-link>
         </li>
         <li>
-          <n-link to="/goout">GoOut</n-link>
+          <n-link :to="$i18n.path('/goout')">GoOut</n-link>
         </li>
         <SetLanguage />
       </ul>
@@ -40,16 +40,16 @@
               <n-link :to="$i18n.path('')">HOME</n-link>
             </li>
             <li>
-              <n-link to="/profile">PROFILE</n-link>
+              <n-link :to="$i18n.path('/profile')">PROFILE</n-link>
             </li>
             <li>
-              <n-link to="/tech">TECH</n-link>
+              <n-link :to="$i18n.path('/tech')">TECH</n-link>
             </li>
             <li>
-              <n-link to="/marketing">MARKETING</n-link>
+              <n-link :to="$i18n.path('/marketing')">MARKETING</n-link>
             </li>
             <li>
-              <n-link to="/goout">GoOut</n-link>
+              <n-link :to="$i18n.path('/goout')">GoOut</n-link>
             </li>
           </ul>
         </div>
