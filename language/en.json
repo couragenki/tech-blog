@@ -51,6 +51,12 @@
         "text4": " here ",
         "text5": "for a profile"
     },
+    "profile": {
+        "intoro": "Introduce",
+        "intorotext1": "I am 25 years old and from Nagasaki.",
+        "intorotext2": "When I was 22 years old, I bought a computer for the first time in my life and started programming.",
+        "intorotext3": "As more and more things come up every day that I don't understand, I will output them on this blog once I have input them."
+    },
     "policy": {
         "title": "Privacy Policy",
         "text1": "About the ads on this site",
