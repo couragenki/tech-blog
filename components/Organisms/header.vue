@@ -4,60 +4,71 @@
       <!-- ロゴ -->
       <div class="header__title">
         <p class="header__title__text">
-          <n-link to="/">couragenki</n-link>
+          <n-link :to="$i18n.path('')">couragenki</n-link>
         </p>
       </div>
       <!-- カテゴリー -->
       <ul class="header__category">
         <li>
-          <n-link to="/">HOME</n-link>
+          <n-link :to="$i18n.path('')">HOME</n-link>
         </li>
         <li>
-          <n-link to="/profile">PROFILE</n-link>
+          <n-link :to="$i18n.path('profile')">PROFILE</n-link>
         </li>
         <li>
-          <n-link to="/tech">TECH</n-link>
+          <n-link :to="$i18n.path('tech')">TECH</n-link>
         </li>
         <li>
-          <n-link to="/marketing">MARKETING</n-link>
+          <n-link :to="$i18n.path('marketing')">MARKETING</n-link>
         </li>
         <li>
-          <n-link to="/goout">GoOut</n-link>
+          <n-link :to="$i18n.path('goout')">GoOut</n-link>
         </li>
+        <SetLanguage />
       </ul>
 
+      <!-- スマホメニュー -->
       <div class="header__mobile">
         <div class="menu">
-        <label for="type1">
-          <img src="/common/menu.svg">
-        </label>
-        <input type="checkbox" id="type1" class="accordion">
+          <label for="type1">
+            <img src="/common/menu.svg" />
+          </label>
+
+          <input type="checkbox" id="type1" class="accordion" />
           <ul id="links1">
             <li>
-              <n-link to="/">HOME</n-link>
+              <n-link :to="$i18n.path('')">HOME</n-link>
             </li>
             <li>
-              <n-link to="/profile">PROFILE</n-link>
+              <n-link :to="$i18n.path('profile')">PROFILE</n-link>
             </li>
             <li>
-              <n-link to="/tech">TECH</n-link>
+              <n-link :to="$i18n.path('tech')">TECH</n-link>
             </li>
             <li>
-              <n-link to="/marketing">MARKETING</n-link>
+              <n-link :to="$i18n.path('marketing')">MARKETING</n-link>
             </li>
             <li>
-              <n-link to="/goout">GoOut</n-link>
+              <n-link :to="$i18n.path('goout')">GoOut</n-link>
+            </li>
+            <li>
+              <SetLanguage />
             </li>
           </ul>
         </div>
       </div>
+      <!-- スマホメニュー -->
     </div>
   </header>
 </template>
 
 <script>
+import SetLanguage from "@/components/Molecules/setlanguage.vue";
 export default {
   name: "Header",
+  components: {
+    SetLanguage,
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -121,13 +132,14 @@ export default {
     display: none;
     .menu {
       padding-top: 0.3em;
+      display: flex;
       ul {
         width: 100%;
         position: absolute;
         top: 3.8em;
         right: 0;
         margin: 0;
-        background :#efefef;
+        background: #efefef;
         list-style: none;
         z-index: 999;
       }
@@ -156,10 +168,10 @@ export default {
     label {
       display: block;
       margin: 0 0 4px 0;
-      padding : 8px;
+      padding: 8px;
       line-height: 1;
-      color :#fff;
-      cursor :pointer;
+      color: #fff;
+      cursor: pointer;
     }
     input {
       display: none;
@@ -184,6 +196,11 @@ export default {
       }
     }
   }
+  .lang {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -203,6 +220,9 @@ export default {
     }
     &__mobile {
       display: block;
+    }
+    .lang {
+      display: none;
     }
   }
 }

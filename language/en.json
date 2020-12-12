@@ -1,0 +1,73 @@
+{
+    "base": {
+        "ja": "日本語",
+        "en": "English"
+    },
+    "links": {
+        "home": "Home",
+        "about": "About",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "infra": "Infrastructure",
+        "profile": "Profile",
+        "policy": "Privacy Policy",
+        "blog": "Blog",
+        "returnhome": "Return to Home"
+    },
+    "meta": {
+        "content": "This is a page about web technologies. I write various articles on front-end, back-end, etc."
+    },
+    "home": {
+        "title": "Hello world!",
+        "introduction": "This page is set in English"
+    },
+    "common": {
+        "en": "English",
+        "ja": "Japanese",
+        "category": "category",
+        "language": "Language",
+        "current": "Current Language"
+    },
+    "markepage": {
+        "title": "Marketing page",
+        "text1": "Here is a collection of articles about marketing"
+    },
+    "toppage": {
+        "title": "List of articles about web development",
+        "subtext": "Web technology, marketing and other output blogs",
+        "techlink": "Technology Blog",
+        "techtext1": "This is an article about programming done with JavaScript,PHP.",
+        "techtext2": "Mainly a blog about JavaScript",
+        "techtext3": "A blog about the back-end language"
+    },
+    "techpage": {
+        "title": "Pages about technology",
+        "text1": "It is a collection of articles about technology and programming."
+    },
+    "footer": {
+        "text1": "Please contact us via DM on social media.",
+        "text2": "A 25-year-old from Nagasaki Prefecture in Japan. After graduating from high school, he joined Toshiba and taught himself programming and became a web-based engineer. I love to take pictures and go out with my camera.",
+        "text3": "Click",
+        "text4": " here ",
+        "text5": "for a profile"
+    },
+    "profile": {
+        "intoro": "Introduce",
+        "intorotext1": "I am 25 years old and from Nagasaki.",
+        "intorotext2": "When I was 22 years old, I bought a computer for the first time in my life and started programming.",
+        "intorotext3": "As more and more things come up every day that I don't understand, I will output them on this blog once I have input them."
+    },
+    "policy": {
+        "title": "Privacy Policy",
+        "text1": "About the ads on this site",
+        "text2": "This site uses third-party advertising services (Google Adsense, A8.net, Amazon Associates, Value Commerce, iTunes, and affiliate programs).",
+        "text3": "These ad-serving companies may use 'cookies' (but not names, addresses, email addresses, or phone numbers) to display advertisements for products and services that may be of interest to you, and information about your access to the Site and other sites.",
+        "text4": "To learn more about this process and how to prevent such information from being used by ad-serving companies in regards to Google Adsense, please click here.",
+        "text5": "About the access analysis tools we use",
+        "text6": "This site uses Google Analytics, an access analysis tool by Google.",
+        "text7": "This Google Analytics uses cookies for the collection of traffic data.",
+        "text8": "This traffic data is collected anonymously and does not identify any individual.",
+        "text9": "You can refuse the collection of this feature by disabling cookies, so please check your browser's settings.",
+        "text10": "To learn more about this agreement, click here or here."
+    }
+}

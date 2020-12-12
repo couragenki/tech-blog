@@ -12,47 +12,35 @@
       <p class="category__title">カテゴリー</p>
       <ul>
         <li>
-          <n-link to="/tech">テック</n-link>
+          <n-link :to="$i18n.path('tech')">テック</n-link>
           <ul class="category__links">
             <li>
-              <n-link to="/tech/frontend">フロントエンド</n-link>
+              <n-link :to="$i18n.path('tech/frontend')">フロントエンド</n-link>
             </li>
             <li>
-              <n-link to="/tech/backend">バックエンド</n-link>
+              <n-link :to="$i18n.path('tech/backend')">バックエンド</n-link>
             </li>
             <li>
-              <n-link to="/tech/infra">インフラ</n-link>
+              <n-link :to="$i18n.path('tech/infra')">インフラ</n-link>
             </li>
             <li>
-              <n-link to="/tech/git">Git</n-link>
+              <n-link :to="$i18n.path('tech/git')">Git</n-link>
             </li>
           </ul>
         </li>
         <li>
-          <n-link to="/marketing">マーケティング</n-link>
+          <n-link :to="$i18n.path('marketing')">マーケティング</n-link>
           <ul class="category__links">
             <li>
-              <n-link to="/marketing/sns">SNS</n-link>
+              <n-link :to="$i18n.path('marketing/sns')">SNS</n-link>
             </li>
             <li>
-              <n-link to="/marketing/blog">ブログ</n-link>
+              <n-link :to="$i18n.path('marketing/blog')">ブログ</n-link>
             </li>
           </ul>
         </li>
       </ul>
     </div>
-    <!-- <div class="tag">
-      <p class="tag__title">ジャンル</p>
-        <p>
-          <n-link to="/tech/frontend/javascript/">#JavaScript</n-link>&nbsp;
-          <n-link to="/tech/frontend/vue/">#Vue.js</n-link>&nbsp;
-          <n-link to="/tech/frontend/gatsby/">#Gatsby.js</n-link>&nbsp;
-          <n-link to="/tech/frontend/markup/">#Markup</n-link>&nbsp;
-          <n-link to="/tech/backend/python/">#Python</n-link>&nbsp;
-          <n-link to="/tech/infra/docker/">#Docker</n-link>&nbsp;
-          <n-link to="/tech/git">#Git</n-link>&nbsp;
-        </p>
-    </div>-->
   </div>
 </template>
 

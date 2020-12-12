@@ -7,13 +7,13 @@ image: /img/tech.jpg
 description: Nuxt.jsとTypeScriptを用いた開発環境構築ができたので基本的な開発手順の準備を行っていきたいと思います。
 type: tech
 tags:
-  - Next.js
+  - Nuxt.js
   - TypeScript
 ---
 
 ## 前回のおさらい
 
-この記事は[前回の環境構築](https://qiita.com/GenkiMatsubara/items/d8a809c383c4fef9ecda)の続きです
+この記事は[前回の環境構築](https://qiita.com/couragenki/items/d8a809c383c4fef9ecda)の続きです
 
 今回のゴールは静的サイト製作なのでpageの追加から行なっていきます。
 
@@ -140,6 +140,6 @@ head: {
 
 基礎の基礎ですが公式ドキュメントや公式が用意してくれている動画を見ながら進めていると知らなかったメソッドなどに気づくことができるので学びがありました。
 
-今回の差分を[僕のGithub](https://github.com/GenkiMatsubara/genki-blog/commit/c09c14e06eacff910473700ad3ddbaae6e1e63bb)にプッシュ済みです。
+今回の差分を[僕のGithub](https://github.com/couragenki/genki-blog/commit/c09c14e06eacff910473700ad3ddbaae6e1e63bb)にプッシュ済みです。
 
 続く
