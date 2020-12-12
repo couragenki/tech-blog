@@ -11,7 +11,7 @@
 
     <p>{{ $t("toppage.subtext") }}</p>
     <h3>
-      <n-link :to="$i18n.path('/tech')">{{ $t("toppage.techlink") }}</n-link>
+      <n-link :to="$i18n.path('tech')">{{ $t("toppage.techlink") }}</n-link>
     </h3>
     <p>{{ $t("toppage.techtext1") }}</p>
     <h4>
@@ -21,7 +21,7 @@
     </h4>
     <p>{{ $t("toppage.techtext2") }}</p>
     <h4>
-      <n-link :to="$i18n.path('/tech/backend')">{{
+      <n-link :to="$i18n.path('tech/backend')">{{
         $t("links.backend")
       }}</n-link>
     </h4>

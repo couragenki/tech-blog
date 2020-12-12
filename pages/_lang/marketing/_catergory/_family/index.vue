@@ -15,7 +15,7 @@
   />
   <DefaultTemplate v-else :isPostsPage="true">
     <BackButton
-      :link="$i18n.path('/marketing/' + catergory)"
+      :link="$i18n.path('marketing/' + catergory)"
       :text="setButtonText(catergory)"
     />
     <h2>{{ settitle(family) }}</h2>

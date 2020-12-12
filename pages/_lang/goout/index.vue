@@ -68,7 +68,7 @@
         </div>
         <n-link
           tag="div"
-          :to="$i18n.path('/goout/2019-may-fukushima')"
+          :to="$i18n.path('goout/2019-may-fukushima')"
           class="over"
           :style="{
             backgroundImage: 'url(/photos/2019-may-fukushima/main.jpeg)',

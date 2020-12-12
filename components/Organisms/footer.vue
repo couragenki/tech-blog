@@ -60,7 +60,7 @@
           </li>
         </ul>
         <hr class="footer__line" />
-        <n-link :to="$i18n.path('/tech')" tag="div" class="footer__subintoro"
+        <n-link :to="$i18n.path('tech')" tag="div" class="footer__subintoro"
           >TECH</n-link
         >
         <ul class="footer__links">

@@ -1,6 +1,6 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <BackButton :link="$i18n.path('/tech/')" :text="setButton()" />
+    <BackButton :link="$i18n.path('tech/')" :text="setButton()" />
     <h2>{{ setTitle(catergory) }}</h2>
     <p>{{ setDisc() }}</p>
     <PostCards v-if="$i18n.locale === 'en'" :data="enTech" />

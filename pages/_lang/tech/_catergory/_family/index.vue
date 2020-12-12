@@ -15,10 +15,11 @@
   />
   <DefaultTemplate v-else :isPostsPage="true">
     <BackButton
-      :link="$i18n.path('/tech/' + catergory)"
+      :link="$i18n.path('tech/' + catergory)"
       :text="setButtonText(catergory)"
     />
     <h2>{{ settitle(family) }}</h2>
+    oooo
     <PostCards v-if="$i18n.locale === 'en'" :data="enTech" />
     <PostCards v-else :data="jpTech" />
   </DefaultTemplate>

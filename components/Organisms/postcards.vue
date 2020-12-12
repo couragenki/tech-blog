@@ -1,6 +1,8 @@
 <template>
   <div>
-    <p>{{ showIndex + 1 }}/{{ setPostData.length }} page</p>
+    <p v-if="setPostData.length">
+      {{ showIndex + 1 }}/{{ setPostData.length }} page
+    </p>
     <div class="posts">
       <BlogCrad
         v-for="article in setPostData[showIndex]"
@@ -14,7 +16,7 @@
         :blogImage="article.image || null"
       />
     </div>
-    <div class="sort__buttons">
+    <div class="sort__buttons" v-if="setPostData.length">
       <button
         class="sort__buttons__button"
         v-for="(item, index) in setPostData.length"
@@ -55,6 +57,7 @@ export default {
       let englishArray = [];
 
       for (let i of Object.keys(this.data)) {
+        if (!this.data[i].path) return;
         if (this.data[i].path.slice(0, 4) === "/en/") {
           englishArray.push(this.data[i]);
           englishArray.sort((a, b) => {
@@ -81,6 +84,7 @@ export default {
       this.showIndex = index;
     },
     cutArray(array) {
+      if (!array.length) return;
       let allArrayLength = array.length;
       let cut = 12;
       let calculatedArray = [];
