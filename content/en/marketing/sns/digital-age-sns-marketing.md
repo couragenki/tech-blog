@@ -1,6 +1,6 @@
 ---
-title: 【読書ブログ】デジタル時代の基礎知識『SNSマーケティング』 「つながり」と「共感」で利益を生み出す新しいルール
-description: SNSマーケティングについて網羅的に解説したデジタル時代の基礎知識『SNSマーケティング』 「つながり」と「共感」で利益を生み出す新しいルールを読んで学んだことを解説していきます。
+title: 【Reading Blog】New Rules for Generating Profits through "Connection" and "Empathy" - SNS Marketing, Basic Knowledge for the Digital Age
+description: I'm going to explain what I learned from reading "SNS Marketing", a comprehensive guide to SNS marketing, the new rules for generating profits through "connection" and "empathy".
 type: marketing
 created_at: 2019-05-05
 updated_at: null
@@ -10,67 +10,67 @@ tags:
   - SNS
 ---
 
-## この本から学べること
+## What you can learn from this book.
 
-* SNSマーケティングの基礎について学ぶことができる
-* SNSごとの特性や傾向について学ぶことができる
-* 実際の投稿時にどのようなことを気をつけるかを知ることができる
+* Learn about the basics of social networking marketing
+* Learn about the characteristics and trends of different social networking sites
+* Learn what to watch out for when actually posting
 
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=genki001-22&m=amazon&o=9&p=8&l=as1&IS2=1&detail=1&asins=4798155349&linkId=a1120b9feb3addaa6f13f050c90a75c0&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr"></iframe>
 
-### 自分がこの本を買った理由
+### Why I bought this book.
 
-* 個人的アカウントでInstagramをやっていたのでワンランク上の投稿がしたいと思った。
-* 私の場合は企業のPR用のTwitteｒアカウントの運用を担当することになった
-* 実例を用いた解説やデータに基づいた解説が多かった本書を購入しました
+* I had been doing Instagram for my personal account and wanted to take my posts up a notch.
+* In my case, I was in charge of managing a Twitter account for corporate PR.
+* I bought this book because it had a lot of explanations using actual examples and based on data.
 
-### こんな方に特にオススメ
+### Especially recommended for.
 
-* 企業のマーケティングや広報の担当の方
-* 普段やっているSNSで周りに差をつけたい方
-* SNSやネットを使って注目を集める方法を知りたい方
-* SNSでの投稿の傾向や分析のやり方について学びたい方
+* People in charge of corporate marketing and public relations.
+* People who want to stand out from the crowd on their regular social networking sites.
+* Those who want to know how to use social networking and the Internet to get attention.
+* Those who want to learn about the trends of posts on social networking sites and how to analyze them.
 
 
-## この本を通して私が学んだこと
+## What I've learned through this book.
 
-### どのようなターゲットに向けて情報を発信するのか？またその情報をどのように分析していけば良いのか？
+## What kind of target audience do you want to send your information to? How to analyze the information?
 
-SNS毎の特徴やユーザー数、使用のされ方などを比較してありそれぞれのSNSにおいてどのような投稿が効果的かを学ぶことができました。
+I was able to compare the characteristics of each SNS, the number of users, and how they are used, and learn what kind of posts are effective for each SNS.
 
-* ユーザー数はどのくらいか？
-* 使用しているユーザーはどのような人が多いのか
-* そのSNSのユーザーの特徴は何か？
+* How many users are there?
+* What kind of people are using it?
+* What are the characteristics of the users of the social network?
 
-### 投稿を最高のコンテンツにするために気をつけるべきこと
+### Things to keep in mind to make your posts the best content they can be.
 
-SNSへの投稿でどのようなことを意識するとユーザーに価値が伝わる投稿ができるようになるのか？
+What do you need to keep in mind when posting to a social networking site to make sure your posts convey value to users?
 
-1.  タイムリーである
-2.  親しみやすい
-3.  共感できる
-4.  役に立つ
-5.  ユーザー参加型である
+1. be timely
+2. friendly
+3. empathetic
+4. useful
+5. user-participatory
 
-本書より引用
+Quotes from this book
 
-### SNSに投稿すべきではない内容
+### Content that should not be posted on social networking sites
 
-これは私もやってしまいがちな自分が投稿したい内容ではなく、ターゲットに対して価値のある投稿をするということの重要性を再確認させられました。
+This reminded me of the importance of posting content that is valuable to the target audience, rather than content that you want to post, which I tend to do.
 
-### フォロワーとエンゲージメントの関係
+### Relationship between Followers and Engagement
 
-エンゲージメントという耳慣れない言葉ですが、この本を通してSNS分析において重要なエンゲージメントを理解することができました。
+Engagement is a word I'm not familiar with, but through this book I was able to understand the importance of engagement in SNS analysis.
 
-[エンゲージメントとは？](https://ferret-plus.com/933)
+[What is Engagement?](https://ferret-plus.com/933)
 
-## まとめ
+## Summary
 
-この本から学んだことを活かしてSNS運用を続けた結果、
-元々200人代だった個人のInstagramアカウントは850人を超えるまでに成長し
-企業のTwitte運営では地盤を作ることができました。
+As a result of using what I learned from this book and continuing to manage my social network
+My personal Instagram account, which was originally in the 200's, has grown to over 850 users.
+As a result, my personal Instagram account, which was originally in the 200s, grew to over 850 users, and I was able to build a solid foundation for my corporate Twitte operation.
 
-本書にはSNS運営において基本となる重要な内容が
-わかりやすくまとめられているので購入して学んで良かったです。
+In this book, the basic and important contents of social network management are
+I'm glad I bought this book and learned from it.
 
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=genki001-22&m=amazon&o=9&p=8&l=as1&IS2=1&detail=1&asins=4798155349&linkId=a1120b9feb3addaa6f13f050c90a75c0&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr"></iframe>

@@ -28,6 +28,10 @@
         "language": "Language",
         "current": "Current Language"
     },
+    "markepage": {
+        "title": "Marketing page",
+        "text1": "Here is a collection of articles about marketing"
+    },
     "toppage": {
         "title": "List of articles about web development",
         "subtext": "Web technology, marketing and other output blogs",

@@ -1,26 +1,26 @@
 <template>
   <PostTemplate
-    v-if="enTech.title && $i18n.locale === 'en'"
+    v-if="enMarketing.title && $i18n.locale === 'en'"
     :isPostsPage="true"
-    :post="enTech"
+    :post="enMarketing"
     :catergory="catergory"
     :family="family"
   />
   <PostTemplate
-    v-else-if="jpTech.title && $i18n.locale === 'jp'"
+    v-else-if="jpMarketing.title && $i18n.locale === 'jp'"
     :isPostsPage="true"
-    :post="jpTech"
+    :post="jpMarketing"
     :catergory="catergory"
     :family="family"
   />
   <DefaultTemplate v-else :isPostsPage="true">
     <BackButton
-      :link="$i18n.path('/tech/' + catergory)"
+      :link="$i18n.path('/marketing/' + catergory)"
       :text="setButtonText(catergory)"
     />
     <h2>{{ settitle(family) }}</h2>
-    <PostCards v-if="$i18n.locale === 'en'" :data="enTech" />
-    <PostCards v-else :data="jpTech" />
+    <PostCards v-if="$i18n.locale === 'en'" :data="enMarketing" />
+    <PostCards v-else :data="jpMarketing" />
   </DefaultTemplate>
 </template>
 
@@ -82,11 +82,15 @@ export default {
   },
   async asyncData({ $content, params }) {
     const { catergory, family, slug } = params;
-    const jpTech = await $content("tech", catergory, family).fetch();
-    const enTech = await $content("/en/tech", catergory, family).fetch();
+    const jpMarketing = await $content("marketing", catergory, family).fetch();
+    const enMarketing = await $content(
+      "/en/marketing",
+      catergory,
+      family
+    ).fetch();
     return {
-      jpTech,
-      enTech,
+      jpMarketing,
+      enMarketing,
       catergory,
       family,
     };

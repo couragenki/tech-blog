@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>{{ showIndex + 1 }}/{{ setPostData.length }}ページ目</p>
+    <p>{{ showIndex + 1 }}/{{ setPostData.length }} page</p>
     <div class="posts">
       <BlogCrad
         v-for="article in setPostData[showIndex]"

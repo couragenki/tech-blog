@@ -27,8 +27,13 @@ export default {
     let jaArticle;
     let enArticle;
 
-    jaArticle = await $content("tech", catergory, family, slug).fetch();
-    enArticle = await $content("/en/tech", catergory, family, slug).fetch();
+    jaArticle = await $content("marketing", catergory, family, slug).fetch();
+    enArticle = await $content(
+      "/en/marketing",
+      catergory,
+      family,
+      slug
+    ).fetch();
 
     return {
       jaArticle,

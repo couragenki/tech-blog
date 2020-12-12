@@ -1,6 +1,6 @@
 ---
-title: 【読書ブログ】影響力を数値化 ヒットを生み出す「共感マーケティング」のすすめ
-description: 共感マーケティングについて学習した内容をブログにしましｔ、
+title: 【Reading Blog】 Quantifying Influence - Empathy Marketing to Create a Hit
+description: I wrote a blog about what I learned about empathy marketing.
 type: marketing
 created_at: 2019-05-05
 updated_at: null
@@ -11,78 +11,78 @@ tags:
   - SNS
 ---
 
-## この本から学べること
+## What you can learn from this book.
 
-* SNSの変遷と情報の伝わり方の移り変わりについて学べる
-* インフルエンサーとはなにか？なぜ注目されているのかを学べる
-* Instagramでウケる投稿の比較、アカウントの運営のやり方を学べる
+* Learn about the evolution of social networking sites and the shifting ways in which information is conveyed.
+* What is an influencer? What are influencers and why are they getting so much attention?
+* Learn how to compare the most popular posts on Instagram and how to manage your account.
 
 <iframe style="width: 120px; height: 240px;" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=genki001-22&m=amazon&o=9&p=8&l=as1&IS2=1&detail=1&asins=4296101315&linkId=8b6a2e63c3194d478eb968dca703a77b&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
-## 自分がこの本を買った理由
+## Why I bought this book.
 
-* 企業のSNS運用をすることになり知識が欲しかった
-* 個人のInstagramアカウントをワンランクアップさせたかった
-* インフルエンサーが意識していることを学びたかった
+* I'm going to be managing a company's social network and I wanted to get some knowledge.
+* I wanted to take my personal Instagram account to the next level.
+* I wanted to learn what influencers are aware of.
 
-### こんな方に特にオススメ
+### Specially recommended for.
 
-* SNSでのマーケティング担当者
-* Instagramの投稿をワンランクアップさせたい方
-* インフルエンサーについて知りたい方
-* 『共感』という要素をマーケティングに活かすにはどうすればいいか学びたい方
+* People in charge of marketing on social networking sites
+* Anyone who wants to improve their Instagram posts.
+* People who want to know more about influencers
+* People who want to learn how to utilize the element of "empathy" in their marketing.
 
-この本を通して私が学んだこと
+What I've learned through this book.
 
-### この20年のSNSユーザーの変化について
-1999年から今後2022年におけるユーザーの変遷について学ぶことができました。
-ガラケー時代では『個人』で完結していたSNSが『集団』に広がり
-『共有』されるようになり現在の『共感』という変遷を辿ってきたことを
-図を用いながら解説してありこれからどういったSNSが注目を集めるかを学べました。
+### How social networking users have changed over the past 20 years.
+I learned about the changes in users from 1999 to 2022.
+This book is about the changes in social networking from 1999 to 2022.
+In the Galapagos era, SNS was completed by "individuals", but it spread to "groups" and became "shared", which led to the current transition of "empathy".
+I was able to learn what kind of SNS will attract attention in the future.
 
-### 消費者が宣伝をやってくれる時代
-ネットが普及したことによって個々人がSNSを通じてシェアするのが当たり前になったことにより
-消費者が商品を知るまでのアプローチが変わってきたことによって今まで以上にSNSでの
-ユーザーへのアプローチが重要になったことを学びました。
+### The age when consumers do the advertising for us
+With the spread of the Internet, it has become commonplace for individuals to share through SNS.
+As a result, it has become more important than ever to reach out to consumers through social networking sites.
+I learned that approaching users through SNS has become more important than ever.
 
-### 投稿の共感値を高める重要な５要素
+### The five key factors that increase the empathy value of a post
 
-1.  影響の範囲の値（リーチエフェクト）
-2.  承認の値（アプルーバルエフェクト）
-3.  発見の値（ハッシュタグエフェクト）
-4.  参考の値（キャプションエフェクト）
-5.  印象の値（イメージエフェクト）
-本書より引用
+1. the value of the sphere of influence (reach effect)
+The value of approval (Approval Effect)
+Value of discovery (hashtag effect)
+Reference Value (Caption Effect)
+Value of Impression (Image Effect)
+Quotes from this book
 
-これらを公式を用いながらより効果的な投稿をするために必要な要素を図解されていて
-なぜインフルエンサーの投稿には注目が集まるのかを解説されています。
+It illustrates the elements necessary for more effective posts using formulas.
+This article explains why influencer posts attract more attention.
 
-### インフルエンサーに必要な要素とは何か？
+### What are the elements needed to be an influencer?
 
-写真の撮り方や投稿のやり方といったテクニックから、アカウント運営における
-自身のポジショニングのやり方や共感してもらえるために日々意識していることを知ることができました。
+What are the essential elements of an influencer?
+I was able to learn about techniques such as how to take photos and how to post, as well as how to position myself in account management and what I am conscious of every day in order to make people sympathize with me.
 
-特に参考になったのが私の場合は写真をいかに綺麗に撮るかばかりを意識していたのですが
-本書では写真と同じくらいどういった文章を書いて共感してもらうかも重要視しており
-私のアカウント運営において足りていなかったポイントを学ぶことができました。
+What I found particularly helpful was that in my case, I was only conscious of how to take beautiful photos.
+In this book, the author emphasizes the importance of writing and getting people to sympathize with you as much as the photos.
+I was able to learn the points that I was lacking in my account management.
 
-### ハッシュタグの効果について
+### The effect of hashtags
 
-全く同じ投稿であった場合ハッシュタグの有無がどのように影響するのかを知りました。
+I learned how the presence or absence of a hashtag affects a post that is exactly the same.
 
-Instagramにおいてハッシュタグはユーザーに投稿を知ってもらう重要なワードになっており投稿を検索する際にハッシュタグ検索が重要な要素となっている。
+In Instagram, hashtags have become an important word to let users know about a post and hashtag search has become an important factor when searching for posts.
 
-### Instagramでのインフルエンサーを用いたキャンペーンの実例
+### Examples of campaigns using influencers on Instagram
 
-Instagramでインフルエンサーを用いた商品宣伝の効果を実例を用いながら解説してあり学ぶことができました。
+I was able to learn about the effects of using influencers to promote products on Instagram by using actual examples.
 
-実際にプロモーションをかけるとなるとかなりの費用がかかってしまいトライアンドエラーを複数回繰り返すわけにもいかないので本書での効果的だった実例を紹介してあり参考になりました。
+This book is a great reference for those who want to learn how to promote their products on Instagram.
 
-## まとめ
+## Summary
 
-普段眺めているSNSやインフルエンサーの投稿の裏には
-こんなにも工夫や戦略が隠れていたのかという目から鱗の一冊でした。
-今後のSNSにおいて重要になる『共感』という要素について深く理解することができ、
-日々接するSNSへの視点が変わる一冊です。
+Behind the posts of social networks and influencers that we usually see
+This book was an eye-opening experience for me.
+I was able to gain a deeper understanding of the element of "empathy" that will become important in the future of SNS.
+This is a book that will change the way you look at the SNS you interact with everyday.
 
 <iframe style="width: 120px; height: 240px;" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=genki001-22&m=amazon&o=9&p=8&l=as1&IS2=1&detail=1&asins=4296101315&linkId=8b6a2e63c3194d478eb968dca703a77b&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>

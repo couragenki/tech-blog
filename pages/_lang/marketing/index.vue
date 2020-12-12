@@ -1,8 +1,8 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
     <BackButton :to="$i18n.path('')" :text="$t('links.returnhome')" />
-    <h1>{{ $t("techpage.title") }}</h1>
-    <p>{{ $t("techpage.text1") }}</p>
+    <h1>{{ $t("markepage.title") }}</h1>
+    <p>{{ $t("markepage.text1") }}</p>
     <PostCards v-if="$i18n.locale === 'en'" :data="enData" />
     <PostCards v-else :data="jpData" />
   </DefaultTemplate>
@@ -22,13 +22,13 @@ export default {
     let setTitle;
     let setDisc;
     if (this.$i18n.locale === "en") {
-      setTitle = "Tech | couragenki";
+      setTitle = "Marketing | couragenki";
       setDisc =
-        "This is a page about web technologies. I write various articles on front-end, back-end, etc.";
+        "This is a page about marketing, where you can find articles about social networking and blogging.";
     } else {
       setDisc =
-        "WEB技術に関するページです。フロントエンド、バックエンドなど様々な記事を書いています。";
-      setTitle = "テック | couragenki";
+        "マーケティングに関するページです。SNSやブログに関する記事を見つけることができます。";
+      setTitle = "マーケティング | couragenki";
     }
     return {
       title: setTitle,
@@ -52,14 +52,17 @@ export default {
     };
   },
   async asyncData({ $content }) {
-    let jpQuery = $content("tech", { deep: true }).sortBy("date", "desc");
-    let enQuery = $content("/en/tech", { deep: true }).sortBy("date", "desc");
-    const jpTech = await jpQuery.fetch();
-    const enTech = await enQuery.fetch();
-    const jpData = jpTech.sort(function (a, b) {
+    let jpQuery = $content("marketing", { deep: true }).sortBy("date", "desc");
+    let enQuery = $content("/en/marketing", { deep: true }).sortBy(
+      "date",
+      "desc"
+    );
+    const jpMarketing = await jpQuery.fetch();
+    const enMarketing = await enQuery.fetch();
+    const jpData = jpMarketing.sort(function (a, b) {
       return new Date(b.date) - new Date(a.date);
     });
-    const enData = enTech.sort(function (a, b) {
+    const enData = enMarketing.sort(function (a, b) {
       return new Date(b.date) - new Date(a.date);
     });
 
