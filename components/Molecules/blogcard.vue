@@ -113,7 +113,7 @@ export default {
       const m = date.substring(5, 7);
       const d = date.substring(8, 10);
 
-      return y + "/" + m + "/" + d + "/";
+      return y + "/" + m + "/" + d;
     },
   },
 };

@@ -1,5 +1,10 @@
 <template>
-  <PostTemplate :isPostsPage="true" :post="article" />
+  <PostTemplate
+    v-if="$i18n.locale === 'en'"
+    :isPostsPage="true"
+    :post="enArticle"
+  />
+  <PostTemplate v-else :isPostsPage="true" :post="jpArticle" />
 </template>
 
 <script>
@@ -10,21 +15,20 @@ export default {
   },
   data() {
     return {
-      pageTitle: '',
-      pageDescription: '',
+      pageTitle: "",
+      pageDescription: "",
     };
   },
   async asyncData({ $content, params, error }) {
-    let article;
+    let jpArticle;
+    let enArticle;
 
-    try {
-      article = await $content("tech", params.slug).fetch();
-    } catch (e) {
-      error({ message: "tech-data not found" });
-    }
+    jpArticle = await $content("tech", params.slug).fetch();
+    enArticle = await $content("/en/tech", params.slug).fetch();
 
     return {
-      article,
+      jpArticle,
+      enArticle,
     };
   },
 };

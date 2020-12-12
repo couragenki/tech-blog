@@ -3,7 +3,8 @@
     <BackButton :to="$i18n.path('')" :text="$t('links.returnhome')" />
     <h1>{{ $t("techpage.title") }}</h1>
     <p>{{ $t("techpage.text1") }}</p>
-    <PostCards :data="data" />
+    <PostCards v-if="$i18n.locale === 'en'" :data="enData" />
+    <PostCards v-else :data="jpData" />
   </DefaultTemplate>
 </template>
 
@@ -36,14 +37,20 @@ export default {
     ],
   },
   async asyncData({ $content }) {
-    let query = $content("tech", { deep: true }).sortBy("date", "desc");
-    const tech = await query.fetch();
-    const data = tech.sort(function (a, b) {
+    let jpQuery = $content("tech", { deep: true }).sortBy("date", "desc");
+    let enQuery = $content("/en/tech", { deep: true }).sortBy("date", "desc");
+    const jpTech = await jpQuery.fetch();
+    const enTech = await enQuery.fetch();
+    const jpData = jpTech.sort(function (a, b) {
+      return new Date(b.date) - new Date(a.date);
+    });
+    const enData = enTech.sort(function (a, b) {
       return new Date(b.date) - new Date(a.date);
     });
 
     return {
-      data,
+      jpData,
+      enData,
     };
   },
 };

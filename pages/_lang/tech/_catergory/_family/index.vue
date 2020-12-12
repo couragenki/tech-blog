@@ -1,15 +1,26 @@
 <template>
   <PostTemplate
-    v-if="tech.title"
+    v-if="enTech.title && $i18n.locale === 'en'"
     :isPostsPage="true"
-    :post="tech"
+    :post="jpTech"
+    :catergory="catergory"
+    :family="family"
+  />
+  <PostTemplate
+    v-else-if="jpTech.title && $i18n.locale === 'jp'"
+    :isPostsPage="true"
+    :post="jpTech"
     :catergory="catergory"
     :family="family"
   />
   <DefaultTemplate v-else :isPostsPage="true">
-    <BackButton :link="'/tech/' + catergory" :text="catergory + 'の記事一覧へ戻る'" />
+    <BackButton
+      :link="$i18n.path('/tech/' + catergory)"
+      :text="setButtonText(catergory)"
+    />
     <h2>{{ family }}に関する記事一覧</h2>
-    <PostCards :data="tech" />
+    <PostCards v-if="$i18n.locale === 'en'" :data="enTech" />
+    <PostCards v-else :data="jpTech" />
   </DefaultTemplate>
 </template>
 
@@ -54,17 +65,21 @@ export default {
     };
   },
   methods: {
-    setMeta(family) {
-      this.pageMetaTitle = family;
-      this.pageMetaDescription = family + "に関する記事一覧を表示しています。";
-      this.pageMetaImg = "https://couragenki.com/common/og.jpg";
+    setButtonText(catergory) {
+      if (this.$i18n.locale === "en") {
+        return "Back to" + catergory + "List Page";
+      } else {
+        return catergory + "の記事一覧へ戻る";
+      }
     },
   },
   async asyncData({ $content, params }) {
     const { catergory, family, slug } = params;
-    const tech = await $content("tech", catergory, family).fetch();
+    const jpTech = await $content("tech", catergory, family).fetch();
+    const enTech = await $content("/en/tech", catergory, family).fetch();
     return {
-      tech,
+      jpTech,
+      enTech,
       catergory,
       family,
     };
