@@ -26,14 +26,21 @@ export default {
     const { catergory, family, slug } = params;
     let jaArticle;
     let enArticle;
-
-    jaArticle = await $content("marketing", catergory, family, slug).fetch();
-    enArticle = await $content(
-      "/en/marketing",
-      catergory,
-      family,
-      slug
-    ).fetch();
+    try {
+      jaArticle = await $content("marketing", catergory, family, slug).fetch();
+    } catch (e) {
+      error({ message: "jaArticle not found" });
+    }
+    try {
+      enArticle = await $content(
+        "/en/marketing",
+        catergory,
+        family,
+        slug
+      ).fetch();
+    } catch (e) {
+      error({ message: "enArticle not found" });
+    }
 
     return {
       jaArticle,

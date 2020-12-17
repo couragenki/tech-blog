@@ -82,12 +82,19 @@ export default {
   },
   async asyncData({ $content, params }) {
     const { catergory, family, slug } = params;
-    const jpMarketing = await $content("marketing", catergory, family).fetch();
-    const enMarketing = await $content(
-      "/en/marketing",
-      catergory,
-      family
-    ).fetch();
+    let jpMarketing;
+    let enMarketing;
+    try {
+      jpMarketing = await $content("marketing", catergory, family).fetch();
+    } catch (e) {
+      error({ message: "jpMarketing not found" });
+    }
+    try {
+      enMarketing = await $content("/en/marketing", catergory, family).fetch();
+    } catch (e) {
+      error({ message: "enMarketing not found" });
+    }
+
     return {
       jpMarketing,
       enMarketing,

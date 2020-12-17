@@ -22,9 +22,16 @@ export default {
   async asyncData({ $content, params, error }) {
     let jpArticle;
     let enArticle;
-
-    jpArticle = await $content("marketing", params.slug).fetch();
-    enArticle = await $content("/en/marketing", params.slug).fetch();
+    try {
+      jpArticle = await $content("marketing", params.slug).fetch();
+    } catch (e) {
+      error({ message: "jpArticle not found" });
+    }
+    try {
+      enArticle = await $content("/en/marketing", params.slug).fetch();
+    } catch (e) {
+      error({ message: "enArticle not found" });
+    }
 
     return {
       jpArticle,

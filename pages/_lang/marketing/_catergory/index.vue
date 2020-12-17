@@ -73,16 +73,31 @@ export default {
   },
   async asyncData({ $content, params }) {
     const { catergory, family, slug } = params;
-    let jpQuery = $content("marketing", catergory, { deep: true }).sortBy(
-      "date",
-      "desc"
-    );
-    let enQuery = $content("/en/marketing", catergory, { deep: true }).sortBy(
-      "date",
-      "desc"
-    );
-    const jpMarketing = await jpQuery.fetch();
-    const enMarketing = await enQuery.fetch();
+    let jpQuery;
+    let jpMarketing;
+    let enQuery;
+    let enMarketing;
+
+    try {
+      jpQuery = $content("marketing", catergory, { deep: true }).sortBy(
+        "date",
+        "desc"
+      );
+      jpMarketing = await jpQuery.fetch();
+    } catch (e) {
+      error({ message: "jpQuery not found" });
+    }
+
+    try {
+      enQuery = $content("/en/marketing", catergory, { deep: true }).sortBy(
+        "date",
+        "desc"
+      );
+
+      enMarketing = await enQuery.fetch();
+    } catch (e) {
+      error({ message: "jpQuery not found" });
+    }
 
     return {
       jpMarketing,
