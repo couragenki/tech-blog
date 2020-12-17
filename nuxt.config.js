@@ -68,7 +68,4 @@ export default {
   router: {
     middleware: 'i18n'
   },
-  generate: {
-    routes: ['/en', '/en/policy']
-  },
 }

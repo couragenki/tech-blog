@@ -51,11 +51,19 @@ export default {
   },
   watchQuery: true,
   async asyncData({ $content }) {
-    let query = $content("", { deep: true }).sortBy("date", "desc");
-    const tech = await query.fetch();
-    const data = tech.sort(function (a, b) {
-      return new Date(b.date) - new Date(a.date);
-    });
+    let query;
+    let tech;
+    let data;
+
+    try {
+      query = $content("", { deep: true }).sortBy("date", "desc");
+      tech = await query.fetch();
+      data = tech.sort(function (a, b) {
+        return new Date(b.date) - new Date(a.date);
+      });
+    } catch (e) {
+      error({ message: "enData not found" });
+    }
 
     return { data };
   },
