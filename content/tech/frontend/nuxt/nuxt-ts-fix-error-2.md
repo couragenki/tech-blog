@@ -7,7 +7,7 @@ image: /img/tech.jpg
 description: Nuxt.js開発中に発生したエラーの解消までを記事にしました。
 type: tech
 tags:
-  - Next.js
+  - Nuxt.js
   - TypeScript
 ---
 

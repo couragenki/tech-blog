@@ -7,7 +7,7 @@ image: /img/tech.jpg
 description: Nuxt.jsとTypeScriptを用いた開発環境構築の手順をキャッチアップしたので記事にしています。記載のコマンド通りに実行していただければ再現できると思います。
 type: tech
 tags:
-  - Next.js
+  - Nuxt.js
   - TypeScript
 ---
 

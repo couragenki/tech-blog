@@ -7,7 +7,7 @@ image: /img/tech.jpg
 description: Now that we have built a development environment using Nuxt.js and TypeScript, I'd like to prepare the basic development procedures.
 type: tech
 tags:
-  - Next.js
+  - Nuxt.js
 ---
 
 ## Continued from last time.

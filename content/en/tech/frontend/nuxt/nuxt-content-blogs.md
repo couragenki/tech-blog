@@ -7,7 +7,7 @@ image: /img/tech.jpg
 description: This is a reminder of how to create a site using nuxt-content. You can now create a site easily using the useful functions.
 type: tech
 tags:
-  - Next.js
+  - Nuxt.js
   - nuxt-content
 ---
 

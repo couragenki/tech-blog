@@ -7,7 +7,7 @@ image: /img/tech.jpg
 description: I'm writing this article as I caught up with the process of building a development environment using Nuxt.js and TypeScript. If you follow the described commands, you should be able to reproduce it.
 type: tech
 tags:
-  - Next.js
+  - Nuxt.js
   - TypeScript
 ---
 

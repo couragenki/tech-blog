@@ -7,7 +7,7 @@ image: /img/tech.jpg
 description: nuxt-contentを使ってサイトを作成した備忘録です。便利機能を使ってお手軽にサイト作成することができるようになりました。
 type: tech
 tags:
-  - Next.js
+  - Nuxt.js
   - nuxt-content
 ---
 
