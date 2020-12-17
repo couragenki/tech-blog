@@ -34,9 +34,6 @@
             <li>
               <n-link :to="$i18n.path('marketing/sns')">SNS</n-link>
             </li>
-            <li>
-              <n-link :to="$i18n.path('marketing/blog')">ブログ</n-link>
-            </li>
           </ul>
         </li>
       </ul>

@@ -95,11 +95,6 @@
           <li>
             <n-link :to="$i18n.path('marketing/sns')">SNS</n-link>
           </li>
-          <li>
-            <n-link :to="$i18n.path('marketing/blog')">{{
-              $t("links.blog")
-            }}</n-link>
-          </li>
         </ul>
         <hr class="footer__line" />
         <p class="footer__subintoro">TAGS</p>

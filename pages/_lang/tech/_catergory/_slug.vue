@@ -20,6 +20,7 @@ export default {
     };
   },
   async asyncData({ $content, params, error }) {
+    const { catergory, family, slug } = params;
     let jpArticle;
     let enArticle;
 
