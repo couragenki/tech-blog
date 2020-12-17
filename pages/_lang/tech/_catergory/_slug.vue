@@ -23,9 +23,16 @@ export default {
     const { catergory, family, slug } = params;
     let jpArticle;
     let enArticle;
-
-    jpArticle = await $content("tech", params.slug).fetch();
-    enArticle = await $content("/en/tech", params.slug).fetch();
+    try {
+      jpArticle = await $content("tech", params.slug).fetch();
+    } catch (e) {
+      error({ message: "jpTech not found" });
+    }
+    try {
+      enArticle = await $content("/en/tech", params.slug).fetch();
+    } catch (e) {
+      error({ message: "enTech not found" });
+    }
 
     return {
       jpArticle,

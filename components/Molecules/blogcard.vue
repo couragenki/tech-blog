@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link class="card" :to="link">
+  <n-link tag="div" class="card" :to="link">
     <div
       class="card-img-top"
       v-if="blogImage"
@@ -55,7 +55,7 @@
         <li>#{{ item }}&nbsp;</li>
       </ul>
     </div>
-  </nuxt-link>
+  </n-link>
 </template>
 
 <script>

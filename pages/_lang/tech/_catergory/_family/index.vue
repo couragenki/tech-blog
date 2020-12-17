@@ -83,8 +83,21 @@ export default {
   },
   async asyncData({ $content, params }) {
     const { catergory, family, slug } = params;
-    const jpTech = await $content("tech", catergory, family).fetch();
-    const enTech = await $content("/en/tech", catergory, family).fetch();
+    let jpTech;
+    let enTech;
+
+    try {
+      jpTech = await $content("tech", catergory, family).fetch();
+    } catch (e) {
+      error({ message: "jpTech not found" });
+    }
+
+    try {
+      enTech = await $content("/en/tech", catergory, family).fetch();
+    } catch (e) {
+      error({ message: "enTech not found" });
+    }
+
     return {
       jpTech,
       enTech,

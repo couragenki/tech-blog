@@ -25,9 +25,6 @@
             <li>
               <n-link :to="$i18n.path('tech/infra')">> インフラ</n-link>
             </li>
-            <li>
-              <n-link :to="$i18n.path('tech/git')">> Git</n-link>
-            </li>
           </ul>
         </div>
       </li>
@@ -55,9 +52,6 @@
           </li>
           <li>
             <n-link :to="$i18n.path('tech/infra')">> インフラ</n-link>
-          </li>
-          <li>
-            <n-link :to="$i18n.path('tech/git')">> Git</n-link>
           </li>
         </ul>
       </div>

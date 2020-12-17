@@ -1,8 +1,6 @@
 <template>
   <div>
-    <p v-if="setPostData.length">
-      {{ showIndex + 1 }}/{{ setPostData.length }} page
-    </p>
+    <p v-if="setPostData">{{ showIndex + 1 }}/{{ setPostData.length }} page</p>
     <div class="posts">
       <BlogCrad
         v-for="article in setPostData[showIndex]"
@@ -16,7 +14,7 @@
         :blogImage="article.image || null"
       />
     </div>
-    <div class="sort__buttons" v-if="setPostData.length">
+    <div class="sort__buttons" v-if="setPostData">
       <button
         class="sort__buttons__button"
         v-for="(item, index) in setPostData.length"

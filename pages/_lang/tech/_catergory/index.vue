@@ -3,8 +3,8 @@
     <BackButton :link="$i18n.path('tech/')" :text="setButton()" />
     <h2>{{ setTitle(catergory) }}</h2>
     <p>{{ setDisc() }}</p>
-    <!-- <PostCards v-if="$i18n.locale === 'en'" :data="enTech" />
-    <PostCards v-else :data="jpTech" /> -->
+    <PostCards v-if="$i18n.locale === 'en'" :data="enTech" />
+    <PostCards v-else :data="jpTech" />
   </DefaultTemplate>
 </template>
 
@@ -73,16 +73,30 @@ export default {
   },
   async asyncData({ $content, params }) {
     const { catergory, family, slug } = params;
-    let jpQuery = $content("tech", catergory, { deep: true }).sortBy(
-      "date",
-      "desc"
-    );
-    let enQuery = $content("/en/tech", catergory, { deep: true }).sortBy(
-      "date",
-      "desc"
-    );
-    const jpTech = await jpQuery.fetch();
-    const enTech = await enQuery.fetch();
+    let jpQuery;
+    let jpTech;
+    let enQuery;
+    let enTech;
+
+    try {
+      jpQuery = $content("tech", catergory, { deep: true }).sortBy(
+        "date",
+        "desc"
+      );
+      jpTech = await jpQuery.fetch();
+    } catch (e) {
+      error({ message: "jpQuery not found" });
+    }
+
+    try {
+      enQuery = $content("/en/tech", catergory, { deep: true }).sortBy(
+        "date",
+        "desc"
+      );
+      enTech = await enQuery.fetch();
+    } catch (e) {
+      error({ message: "jpQuery not found" });
+    }
 
     return {
       jpTech,

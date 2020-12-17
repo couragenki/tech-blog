@@ -1,7 +1,7 @@
 <template>
-  <nuxt-link class="backbutton" :to="link">
+  <n-link class="backbutton" :to="link">
     <p class="backbutton__text">{{ text }}</p>
-  </nuxt-link>
+  </n-link>
 </template>
 
 <script>
@@ -11,7 +11,7 @@ export default {
     link: {
       type: String,
       default: () => {
-        return "/tech";
+        return "/";
       },
     },
     text: {

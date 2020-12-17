@@ -52,16 +52,32 @@ export default {
     };
   },
   async asyncData({ $content }) {
-    let jpQuery = $content("tech", { deep: true }).sortBy("date", "desc");
-    let enQuery = $content("/en/tech", { deep: true }).sortBy("date", "desc");
-    const jpTech = await jpQuery.fetch();
-    const enTech = await enQuery.fetch();
-    const jpData = jpTech.sort(function (a, b) {
-      return new Date(b.date) - new Date(a.date);
-    });
-    const enData = enTech.sort(function (a, b) {
-      return new Date(b.date) - new Date(a.date);
-    });
+    let jpQuery;
+    let jpTech;
+    let jpData;
+    let enQuery;
+    let enTech;
+    let enData;
+
+    try {
+      jpQuery = $content("tech", { deep: true }).sortBy("date", "desc");
+      jpTech = await jpQuery.fetch();
+      jpData = jpTech.sort(function (a, b) {
+        return new Date(b.date) - new Date(a.date);
+      });
+    } catch (e) {
+      error({ message: "jpData not found" });
+    }
+
+    try {
+      enQuery = $content("/en/tech", { deep: true }).sortBy("date", "desc");
+      enTech = await enQuery.fetch();
+      enData = enTech.sort(function (a, b) {
+        return new Date(b.date) - new Date(a.date);
+      });
+    } catch (e) {
+      error({ message: "enData not found" });
+    }
 
     return {
       jpData,

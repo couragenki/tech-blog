@@ -27,8 +27,16 @@ export default {
     let jaArticle;
     let enArticle;
 
-    jaArticle = await $content("tech", catergory, family, slug).fetch();
-    enArticle = await $content("/en/tech", catergory, family, slug).fetch();
+    try {
+      jaArticle = await $content("tech", catergory, family, slug).fetch();
+    } catch (e) {
+      error({ message: "jaArticle not found" });
+    }
+    try {
+      enArticle = await $content("/en/tech", catergory, family, slug).fetch();
+    } catch (e) {
+      error({ message: "enArticle not found" });
+    }
 
     return {
       jaArticle,

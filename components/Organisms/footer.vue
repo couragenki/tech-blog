@@ -79,9 +79,6 @@
               $t("links.infra")
             }}</n-link>
           </li>
-          <li>
-            <n-link :to="$i18n.path('tech/git')">Git</n-link>
-          </li>
         </ul>
         <hr class="footer__line" />
         <n-link
@@ -110,7 +107,6 @@
           <n-link :to="$i18n.path('tech/backend/python/')">#Python</n-link
           >&nbsp;
           <n-link :to="$i18n.path('tech/infra/docker/')">#Docker</n-link>&nbsp;
-          <n-link :to="$i18n.path('tech/git')">#Git</n-link>&nbsp;
         </p>
         <hr class="footer__line" />
       </div>
