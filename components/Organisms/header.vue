@@ -10,9 +10,6 @@
       <!-- カテゴリー -->
       <ul class="header__category">
         <li>
-          <n-link to="/">HOME</n-link>
-        </li>
-        <li>
           <n-link to="/profile">PROFILE</n-link>
         </li>
         <li>
@@ -21,21 +18,15 @@
         <li>
           <n-link to="/marketing">MARKETING</n-link>
         </li>
-        <li>
-          <n-link to="/goout">GoOut</n-link>
-        </li>
       </ul>
 
       <div class="header__mobile">
         <div class="menu">
-        <label for="type1">
-          <img src="/common/menu.svg">
-        </label>
-        <input type="checkbox" id="type1" class="accordion">
+          <label for="type1">
+            <img src="/common/menu.svg" />
+          </label>
+          <input type="checkbox" id="type1" class="accordion" />
           <ul id="links1">
-            <li>
-              <n-link to="/">HOME</n-link>
-            </li>
             <li>
               <n-link to="/profile">PROFILE</n-link>
             </li>
@@ -44,9 +35,6 @@
             </li>
             <li>
               <n-link to="/marketing">MARKETING</n-link>
-            </li>
-            <li>
-              <n-link to="/goout">GoOut</n-link>
             </li>
           </ul>
         </div>
@@ -71,8 +59,6 @@ export default {
     justify-content: space-between;
     padding-left: 16px;
     padding-right: 16px;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
   }
   // ロゴ
   &__title {
@@ -127,7 +113,7 @@ export default {
         top: 3.8em;
         right: 0;
         margin: 0;
-        background :#efefef;
+        background: #efefef;
         list-style: none;
         z-index: 999;
       }
@@ -156,10 +142,10 @@ export default {
     label {
       display: block;
       margin: 0 0 4px 0;
-      padding : 8px;
+      padding: 8px;
       line-height: 1;
-      color :#fff;
-      cursor :pointer;
+      color: #fff;
+      cursor: pointer;
     }
     input {
       display: none;

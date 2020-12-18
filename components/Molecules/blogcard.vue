@@ -3,31 +3,57 @@
     <div
       class="card-img-top"
       v-if="blogImage"
-      :style="{ backgroundImage: 'url(' + blogImage + ')'}"
+      :style="{ backgroundImage: 'url(' + blogImage + ')' }"
     >
       <div
         class="card-category"
-        :class="{green: blogCategory == 'tech', red: blogCategory == 'marketing'}"
-      >{{blogCategory}}</div>
+        :class="{
+          green: blogCategory == 'tech',
+          red: blogCategory == 'marketing',
+        }"
+      >
+        {{ blogCategory }}
+      </div>
       <div class="card-title">
-        <p class="card-title-text" :class="{green: blogCategory == 'tech', red: blogCategory == 'marketing'}">{{blogTitle}}</p>
+        <p
+          class="card-title-text"
+          :class="{
+            green: blogCategory == 'tech',
+            red: blogCategory == 'marketing',
+          }"
+        >
+          {{ blogTitle }}
+        </p>
       </div>
     </div>
     <div class="card-img-top shape" v-else>
       <div
         class="card-category"
-        :class="{green: blogCategory == 'tech', red: blogCategory == 'marketing'}"
-      >{{blogCategory}}</div>
+        :class="{
+          green: blogCategory == 'tech',
+          red: blogCategory == 'marketing',
+        }"
+      >
+        {{ blogCategory }}
+      </div>
       <div class="card-title">
-        <p class="card-title-text" :class="{green: blogCategory == 'tech', red: blogCategory == 'marketing'}">{{blogTitle}}</p>
+        <p
+          class="card-title-text"
+          :class="{
+            green: blogCategory == 'tech',
+            red: blogCategory == 'marketing',
+          }"
+        >
+          {{ blogTitle }}
+        </p>
       </div>
     </div>
     <div class="card-body">
-      <p class="card-date">{{setDate(blogDate)}}</p>
-      <p class="card-text">{{blogText}}</p>
+      <p class="card-date">{{ setDate(blogDate) }}</p>
       <ul class="card-tag" v-for="(item, index) in blogTags" :key="index">
-        <li>#{{item}}&nbsp;</li>
+        <li>#{{ item }}&nbsp;</li>
       </ul>
+      <p class="card-text">{{ blogText }}</p>
     </div>
   </nuxt-link>
 </template>
@@ -113,9 +139,9 @@ export default {
   .card-img-top {
     height: auto;
     min-height: 9rem;
-    max-height: 14rem;
+    max-height: 16rem;
     transition: all 0.5s;
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 0 8px 8px;
@@ -132,11 +158,11 @@ export default {
         border: #9e9e9e solid 2px;
       }
       .red {
-          border: #e80000 solid 2px;
-        }
-        .green {
-          border: #37e437 solid 2px;
-        }
+        border: #e80000 solid 2px;
+      }
+      .green {
+        border: #37e437 solid 2px;
+      }
     }
     .red {
       background: #e80000;
@@ -152,7 +178,7 @@ export default {
     max-height: 5rem;
     .card-date {
       margin: 0;
-      font-size: 1em;
+      font-size: 0.9em;
       font-weight: 700;
       margin-bottom: 0.3em;
       color: black;
@@ -175,6 +201,10 @@ export default {
       -webkit-box-orient: vertical;
       overflow: hidden;
       li {
+        background: #d6cfcf;
+        padding: 3px 0;
+        margin-left: 3px;
+        border-radius: 6px;
         color: black;
         font-size: 0.8em;
       }

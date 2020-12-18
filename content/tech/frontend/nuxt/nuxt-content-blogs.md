@@ -15,12 +15,15 @@ tags:
 nuxt-contentの機能が便利だったのでブログを作成してみる。
 
 nuxtのバージョンは`2.14.1`以降のものがおすすめです。
+
 generateでの手間を省けます。
+
 今までは`processmd`とか設定を書かないと行けなかったんですが手間が省けて便利です。
 
 ## nuxt-contentで情報を取得して表示する
 
 表示するデータを取得して記事マークダウンの日付が新しい順にソートする。
+
 `deep: true`にしてあげると`tech`ディレクトリ以下の階層の情報を全て取得している。
 
 Githubのソースコードのexampleを参考にしながら進めました。
@@ -42,6 +45,7 @@ async asyncData({ $content }) {
 
 ## bootstrapを使用する
 nuxt-contentは関係ないですがブログカードなどのbootstrapのUIを使いたかったので追加する。
+
 https://www.npmjs.com/package/bootstrap-vue
 
 `npm i bootstrap-vue`
@@ -89,6 +93,7 @@ head: {
 ```
 
 マークダウンの情報を取得して動的に変更するように設定する。
+
 ページで`nuxt-content`で取得→テンプレートにデータを渡す、という流れです。
 
 ``` components/Templates/posttemplate.vue
@@ -143,6 +148,7 @@ head: {
 ## Nuxt.jsで作成したサイトにGoogle Analyticsを追加する
 
 公式のドキュメントが参考になりました。
+
 https://ja.nuxtjs.org/faq/ga/
 
 1. `plugins`を追加する
@@ -192,20 +198,29 @@ export default ({ app }) => {
 ```
 
 ### 2.google analyticsからトラッキングIDを取得する
+
 Googleのアカウントがあれば無料で取得できます。
+
 ![91992353-00469580-ed6f-11ea-8bd1-c8e8febdf431.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/e1e5a18e-37da-5a03-66cb-e041180a7c92.png)
 
 google analytics
+
 https://analytics.google.com/
 
 ### 3.本番に反映して確認する
+
 設定を反映した後にアナリティクスを確認するとユーザーが増えたことを確認できました。
+
 こちらでアナリティクスの設定は完了になります。
+
 ![91992250-e016d680-ed6e-11ea-8227-4a8633d66bb2.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/63cf820c-4dce-3c6b-77ac-202960e06613.png)
 
 ## サイトマップを追加する(nuxt-content版)
+
 nuxtjs/sitemapを使用します。
+
 今回はnuxt-contentで
+
 https://www.npmjs.com/package/@nuxtjs/sitemap
 
 `npm install @nuxtjs/sitemap`
@@ -215,7 +230,9 @@ https://www.npmjs.com/package/@nuxtjs/sitemap
 ```
 
 サイトマップの指定の仕方はnuxtでのサイトマップの追加と基本的に同じです。
+
 `nuxt-content`でそれぞれパスを取得しています。
+
 (一括で取得してしまっても良いかもしれないです)
 
 ``` nuxt.config.js
@@ -235,6 +252,7 @@ sitemap: {
 ```
 
 ここまで追加できたら本番に反映する。
+
 その後にGoogleサーチコンソールのサイトマップにこちらを追加する。
 
 `https://サイトのURL/sitemap.xml`
@@ -244,21 +262,27 @@ sitemap: {
 ## 今回の成果物
 
 【公開したサイト】
+
 https://couragenki.com/
+
 ![og.jpg](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/90da7c0e-e7bb-70c9-a3b3-4a348da341b8.jpeg)
 
 netlifyが便利なのでgithubを連携して公開しています。
+
 2週間ほどで開発してユーザーのフィードバックが欲しいので公開してしまう。
 
 以前公開していたサイトより初期表示速度が改善できました。
+
 公開して１ヶ月ほどですがリニューアル前のワードプレスのサイトより直帰率が約２０％ほど下がりました。
 
 カスタマイズしたい箇所がまだたくさんあるので今後も開発を続けていこうと思います。
 
 
 ## 感想
+
 - nuxt-contentは手間が省けて便利！
 - UIを考えるのが大変でした…早く慣れたい
 
 フィードバックやアドバイス等あればコメントいただけると幸いです。
+
 最後まで読んでいただきありがとうございました。

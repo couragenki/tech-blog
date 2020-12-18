@@ -1,8 +1,11 @@
 <template>
   <div>
     <Header />
-    <!-- <Navigation /> -->
-    <Container v-if="isContainer" :isPostsPage="isPostsPage" :isSidebar="isSidebar">
+    <Container
+      v-if="isContainer"
+      :isPostsPage="isPostsPage"
+      :isSidebar="isSidebar"
+    >
       <slot />
     </Container>
     <slot v-else />
@@ -12,14 +15,12 @@
 
 <script>
 import Header from "@/components/Organisms/header.vue";
-import Navigation from "@/components/Organisms/navigation.vue";
 import Container from "@/components/Organisms/container.vue";
 import Footer from "@/components/Organisms/footer.vue";
 export default {
   name: "DefaultTemplate",
   components: {
     Header,
-    Navigation,
     Container,
     Footer,
   },

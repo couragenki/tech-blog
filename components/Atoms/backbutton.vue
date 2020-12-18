@@ -1,6 +1,6 @@
 <template>
   <nuxt-link class="backbutton" :to="link">
-    <p class="backbutton__text">{{text}}</p>
+    <p class="backbutton__text">{{ text }}</p>
   </nuxt-link>
 </template>
 
@@ -32,8 +32,10 @@ export default {
   text-decoration: none;
   display: inline-block;
   padding: 0.5em;
+  border-radius: 0.3em;
   &__text {
-    margin: 0;
+    margin: 0 !important;
+    line-height: 1em !important;
     padding-left: 0.5em;
   }
   &__text::before {

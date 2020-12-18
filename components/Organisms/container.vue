@@ -7,7 +7,10 @@
       <!-- <SideBar /> -->
     </div>
     <div class="container" v-else>
-      <div class="content" :class="{ PostStyle: isPostsPage, full: !isSidebar }">
+      <div
+        class="content"
+        :class="{ PostStyle: isPostsPage, full: !isSidebar }"
+      >
         <slot />
       </div>
     </div>
@@ -75,21 +78,21 @@ export default {
 .PostStyle {
   /deep/ * {
     font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体",
-      "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ",
-      "Meiryo", "verdana", sans-serif;
+      "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+      "メイリオ", "Meiryo", "verdana", sans-serif;
   }
   /deep/ img {
     max-width: 100%;
   }
   /deep/ h1 {
     font-size: 2em;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 70px;
   }
   /deep/ h2 {
-    font-size: 1.6em;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    font-size: 1.8em;
+    margin-top: 120px;
+    margin-bottom: 50px;
   }
   /deep/ h3 {
     font-size: 1.2rem;

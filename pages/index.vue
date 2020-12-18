@@ -2,21 +2,6 @@
   <DefaultTemplate>
     <h2>WEB系の記事一覧</h2>
     <PostCards :data="data" />
-
-    <h2>カテゴリー</h2>
-    <p>WEB技術、マーケティングなどのアウトプットブログです</p>
-    <h3>
-      <n-link to="tech">技術ブログ</n-link>
-    </h3>
-    <p>JavaScript,PHPと行ったプログラミングに関する記事です。</p>
-    <h4>
-      <n-link to="tech/frontend">フロントエンド</n-link>
-    </h4>
-    <p>おもにJavaScriptに関するブログです</p>
-    <h4>
-      <n-link to="tech/backend">バックエンド</n-link>
-    </h4>
-    <p>バックエンド言語に関するブログです</p>
   </DefaultTemplate>
 </template>
 

@@ -1,6 +1,5 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <BackButton link="/" text="ホームへ戻る" />
     <h2>マーケティング INDEX</h2>
     <p>マーケティングに関する記事をまとめています</p>
     <PostCards :data="marketing" />
@@ -20,9 +19,23 @@ export default {
   head: {
     titleTemplate: "マーケティング | couragenki",
     meta: [
-      { hid: "description", name: "description", content: "マーケティングに関するページです。SNSやブログに関する記事を見つけることができます。"},
-      { hid: 'og:title', property: 'og:title', content: 'マーケティング | couragenki' },
-      { hid: "og:description", name: "og:description", content: "マーケティングに関するページです。SNSやブログに関する記事を見つけることができます。"},
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "マーケティングに関するページです。SNSやブログに関する記事を見つけることができます。",
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "マーケティング | couragenki",
+      },
+      {
+        hid: "og:description",
+        name: "og:description",
+        content:
+          "マーケティングに関するページです。SNSやブログに関する記事を見つけることができます。",
+      },
     ],
   },
   async asyncData({ $content }) {

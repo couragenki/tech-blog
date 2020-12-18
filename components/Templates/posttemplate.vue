@@ -1,18 +1,29 @@
 <template>
   <div>
     <Header />
-    <div v-if="post.image" class="post__img" :style="{ backgroundImage: 'url(' + post.image + ')'}">
-    </div>
+    <div
+      v-if="post.image"
+      class="post__img"
+      :style="{ backgroundImage: 'url(' + post.image + ')' }"
+    ></div>
 
     <div
       class="hero-bg"
-      :class="{green: post.type == 'tech', red: post.type == 'marketing', yellow: post.type == 'notes'}"
+      :class="{
+        green: post.type == 'tech',
+        red: post.type == 'marketing',
+        yellow: post.type == 'notes',
+      }"
       v-else
-    >
-    </div>
+    ></div>
 
     <Container :isPostsPage="isPostsPage" :isSidebar="isSidebar">
-      <PostContent v-on="setMeta(post)" :post="post" :catergory="catergory" :family="family" />
+      <PostContent
+        v-on="setMeta(post)"
+        :post="post"
+        :catergory="catergory"
+        :family="family"
+      />
     </Container>
     <Footer />
   </div>

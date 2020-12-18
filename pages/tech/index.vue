@@ -1,6 +1,5 @@
 <template>
   <DefaultTemplate :isPostsPage="true">
-    <BackButton link="/" text="ホームへ戻る" />
     <h1>Techページ</h1>
     <p>技術やプログラミングに関する記事をまとめています。</p>
     <PostCards :data="data" />
@@ -20,9 +19,19 @@ export default {
   head: {
     title: "テック",
     meta: [
-      { hid: "description", name: "description", content: "WEB技術に関するページです。フロントエンド、バックエンドなど様々な記事を見つけることが可能です。"},
-      { hid: 'og:title', property: 'og:title', content: 'テック | couragenki' },
-      { hid: "og:description", name: "og:description", content: "WEB技術に関するページです。フロントエンド、バックエンドなど様々な記事を見つけることが可能です。"},
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "WEB技術に関するページです。フロントエンド、バックエンドなど様々な記事を見つけることが可能です。",
+      },
+      { hid: "og:title", property: "og:title", content: "テック | couragenki" },
+      {
+        hid: "og:description",
+        name: "og:description",
+        content:
+          "WEB技術に関するページです。フロントエンド、バックエンドなど様々な記事を見つけることが可能です。",
+      },
     ],
   },
   async asyncData({ $content }) {
