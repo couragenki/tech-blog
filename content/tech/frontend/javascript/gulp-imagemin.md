@@ -11,25 +11,25 @@ tags:
   - Gulp
 ---
 
-## Githubはこちら
+## Github はこちら
 
-https://github.com/GenkiMatsubara/imagemin_gulp
+https://github.com/couragenki/imagemin_gulp
 
-### Githubからクローンした場合の手順
+### Github からクローンした場合の手順
 
-nodeなどの環境構築が既にできていれば下記の3ステップで画像圧縮ができます
+node などの環境構築が既にできていれば下記の 3 ステップで画像圧縮ができます
 
 1.クローンする
-(もしもURL変わってたらGithubからクローンしてください)
+(もしも URL 変わってたら Github からクローンしてください)
 
 ```
- git clone https://github.com/GenkiMatsubara/imagemin_gulp.git
+ git clone https://github.com/couragenki/imagemin_gulp.git
 ```
 
-2.nodemoduleをインストール
+2.nodemodule をインストール
 
 ```
- git clone https://github.com/GenkiMatsubara/imagemin_gulp.git
+ git clone https://github.com/couragenki/imagemin_gulp.git
 ```
 
 3.実行
@@ -38,63 +38,63 @@ nodeなどの環境構築が既にできていれば下記の3ステップで画
 gulp img
 ```
 
-## Nodeの環境などが用意できていない場合
+## Node の環境などが用意できていない場合
 
-下記の1~11のコマンドを実行すると画像の圧縮がすぐに行えるようになります
+下記の 1~11 のコマンドを実行すると画像の圧縮がすぐに行えるようになります
 
-自分で導入する際にgulpやimageminを調べたりして
+自分で導入する際に gulp や imagemin を調べたりして
 大変だったのでコピペだけで使えるようにまとめました。
 
 ターミナルでコマンドを実行してください。
 
 ## 実行準備
 
-### 1 nodebrewをインストール
+### 1 nodebrew をインストール
 
-nodebrewをインストールするには[homebrew](https://brew.sh/index_ja)をインストールしてください。
-(デザイナーさんなど普段nodeを使用してない方はnodebrewのインストールでエラーになるかも)
+nodebrew をインストールするには[homebrew](https://brew.sh/index_ja)をインストールしてください。
+(デザイナーさんなど普段 node を使用してない方は nodebrew のインストールでエラーになるかも)
 
 ```
 brew install nodebrew
 ```
 
-### 2 yarnをインストール
+### 2 yarn をインストール
 
 ```
 brew install yarn
 ```
 
-### 3 npm init (npmを使うための設定)
+### 3 npm init (npm を使うための設定)
 
 ```
 npm init
 ```
 
-### 4 srcファイルを作成
+### 4 src ファイルを作成
 
 ```
 mkdir src
 ```
 
-### 5 distファイルを作成
+### 5 dist ファイルを作成
 
 ```
 mkdir dist
 ```
 
-### 6 gulpfile.jsを作成
+### 6 gulpfile.js を作成
 
 ```
 touch gulpfile.js
 ```
 
-### 7 gulpをインストール
+### 7 gulp をインストール
 
 ```
 npm install gulp
 ```
 
-### 8 imageminをインストール
+### 8 imagemin をインストール
 
 [imagemin](https://www.npmjs.com/package/gulp-imagemin)
 
@@ -102,7 +102,7 @@ npm install gulp
 npm i gulp-imagemin
 ```
 
-### 9 imagemin-mozjpegをインストール
+### 9 imagemin-mozjpeg をインストール
 
 [imagemin-mozjpeg](https://www.npmjs.com/package/imagemin-mozjpeg)
 
@@ -110,7 +110,7 @@ npm i gulp-imagemin
 npm i imagemin-mozjpeg
 ```
 
-### 10 imagemin-pngquantをインストール
+### 10 imagemin-pngquant をインストール
 
 [imagemin-pngquant](https://www.npmjs.com/package/imagemin-pngquant)
 
@@ -134,30 +134,33 @@ npm i imagemin-pngquant
 └ src                                ・圧縮前の画像を保管する
 ```
 
-### 11 gulpfile.jsに下記をコピぺする
+### 11 gulpfile.js に下記をコピぺする
 
 gulpfile.js
 
 ```javascript
-const gulp = require('gulp');
-const distDir = 'dist';
-const srcDir = 'src';
-const imagemin = require('gulp-imagemin');
-const pngquant = require('imagemin-pngquant');
-const mozjpeg = require('imagemin-mozjpeg');
+const gulp = require("gulp");
+const distDir = "dist";
+const srcDir = "src";
+const imagemin = require("gulp-imagemin");
+const pngquant = require("imagemin-pngquant");
+const mozjpeg = require("imagemin-mozjpeg");
 
-gulp.task('img', () => {
-  return gulp.src(srcDir + '/*.{png,jpg,gif,PNG,JPG,GIF}')
-    .pipe(imagemin([
-      pngquant('65-80'),
-      mozjpeg({
-        quality: 80,
-        progressive: true
-      }),
-      imagemin.svgo(),
-      imagemin.optipng(),
-      imagemin.gifsicle()
-    ]))
+gulp.task("img", () => {
+  return gulp
+    .src(srcDir + "/*.{png,jpg,gif,PNG,JPG,GIF}")
+    .pipe(
+      imagemin([
+        pngquant("65-80"),
+        mozjpeg({
+          quality: 80,
+          progressive: true,
+        }),
+        imagemin.svgo(),
+        imagemin.optipng(),
+        imagemin.gifsicle(),
+      ])
+    )
     .pipe(gulp.dest(distDir));
 });
 ```
@@ -170,7 +173,7 @@ gulp.task('img', () => {
 gulp img
 ```
 
-***png画像を圧縮***
+**_png 画像を圧縮_**
 
 圧縮前 (37KB)
 
@@ -187,7 +190,7 @@ Finished 'img' after 527 ms
 
 ![test.png](https://qiita-image-store.s3.amazonaws.com/0/199085/14039952-73fb-1b0f-bb63-7a9d4f5146a0.png)
 
-***jpg画像を圧縮***
+**_jpg 画像を圧縮_**
 
 スマホで撮った写真を圧縮してみる。
 
@@ -208,7 +211,7 @@ Finished 'img' after 571 ms
 
 ## まとめ
 
-画像容量を6割近く削減することができました。
+画像容量を 6 割近く削減することができました。
 デザイナーではない素人目ですが画像の劣化などあまり気になりませんでした。
 
 ・基本的に `gulpfile.js` を変更すれば設定を変更可能です。
