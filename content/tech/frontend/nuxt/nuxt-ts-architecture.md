@@ -11,15 +11,15 @@ tags:
   - TypeScript
 ---
 
-NuxtTypeScript公式サイトのセットアップにしたがって進めます。
+NuxtTypeScript 公式サイトのセットアップにしたがって進めます。
 
-こちらの記事のnodeのバージョンは`v11.9.0`です。
+こちらの記事の node のバージョンは`v11.9.0`です。
 
 https://typescript.nuxtjs.org/ja/guide/setup.html
 
 ## 1.インストール実行
 
- `npm init`を実行しプロジェクトを作成。
+`npm init`を実行しプロジェクトを作成。
 
 `yarn add --dev @nuxt/typescript-build`
 or
@@ -28,15 +28,14 @@ or
 上記の実行後 `git status` で確認すると
 
 ```json
-node_modules/
-package-lock.json
+node_modules / package - lock.json
 ```
 
 の差分が発生します。
 
-## 2.gitで除外するファイルを設定する
+## 2.git で除外するファイルを設定する
 
-`vim .gitignore` でgit管理から除外するファイルを作成します。
+`vim .gitignore` で git 管理から除外するファイルを作成します。
 
 ![スクリーンショット 2020-06-13 17.00.23.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/ff62f3f3-7510-750e-1bf7-63bd6846e540.png)
 
@@ -52,9 +51,9 @@ package-lock.json
 
 ![スクリーンショット 2020-06-13 17.00.57.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/e25fcaa0-f0ba-593f-984c-9567e124b2f6.png)
 
-## 3.nuxt.config.jsを作成
+## 3.nuxt.config.js を作成
 
-`vim nuxt.config.js` でnuxt.config.jsを作成する。
+`vim nuxt.config.js` で nuxt.config.js を作成する。
 
 作成後、設定を追記。
 
@@ -62,13 +61,13 @@ package-lock.json
 
 ```javascript
 export default {
-  buildModules: ['@nuxt/typescript-build']
-}
+  buildModules: ["@nuxt/typescript-build"],
+};
 ```
 
-## 4.tsconfig.jsonを作成
+## 4.tsconfig.json を作成
 
-`vim tsconfig.json` でtsconfig.jsonを作成する。
+`vim tsconfig.json` で tsconfig.json を作成する。
 
 作成後、設定を追記。
 
@@ -78,11 +77,7 @@ export default {
     "target": "es2018",
     "module": "esnext",
     "moduleResolution": "node",
-    "lib": [
-      "esnext",
-      "esnext.asynciterable",
-      "dom"
-    ],
+    "lib": ["esnext", "esnext.asynciterable", "dom"],
     "esModuleInterop": true,
     "allowJs": true,
     "sourceMap": true,
@@ -90,25 +85,16 @@ export default {
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": [
-        "./*"
-      ],
-      "@/*": [
-        "./*"
-      ]
+      "~/*": ["./*"],
+      "@/*": ["./*"]
     },
-    "types": [
-      "@types/node",
-      "@nuxt/types"
-    ]
+    "types": ["@types/node", "@nuxt/types"]
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
 ```
 
-## 5. Vueを使用するためのファイルを作成
+## 5. Vue を使用するためのファイルを作成
 
 `vim vue-shim.d.ts`
 
@@ -118,8 +104,8 @@ vue-shim.d.ts
 
 ```typescript
 declare module "*.vue" {
-  import Vue from 'vue'
-  export default Vue
+  import Vue from "vue";
+  export default Vue;
 }
 ```
 
@@ -127,7 +113,7 @@ declare module "*.vue" {
 
 自分はここまで完了したら作成したリポジトリにコミットしました。
 
-gitignoreに除外ファイルを設定しているので `git status`すると下記のような差分になります。
+gitignore に除外ファイルを設定しているので `git status`すると下記のような差分になります。
 
 `git status` で確認。
 
@@ -147,50 +133,53 @@ git add --all
 git commit -m 'nuxt+typescriptで環境構築'
 ```
 
-[nuxt+typescriptで環境構築](https://github.com/GenkiMatsubara/genki-blog/commit/921e4b7c79aa042ccfa37b2ad9db9ef954683a27)
+[nuxt+typescript で環境構築](https://github.com/couragenki/genki-blog/commit/921e4b7c79aa042ccfa37b2ad9db9ef954683a27)
 
-## 6.TypeScriptに関する設定追加
+## 6.TypeScript に関する設定追加
 
-typeCheckについてはこちら
+typeCheck についてはこちら
 
 https://typescript.nuxtjs.org/ja/guide/setup.html#typecheck
 
-ignoreNotFoundWarningsについてはこちら
+ignoreNotFoundWarnings についてはこちら
 
 https://typescript.nuxtjs.org/ja/guide/setup.html#ignoreNotFoundWarnings
 
-loaderについてはこちら
+loader についてはこちら
 
 https://typescript.nuxtjs.org/ja/guide/setup.html#loaders
 
-これらを踏まえてnuxt.config.jsに追記していきます。
+これらを踏まえて nuxt.config.js に追記していきます。
 
 nuxt.config.js
 
 ```javascript
 export default {
   buildModules: [
-    ['@nuxt/typescript-build', {
-      typeCheck: true,
-      ignoreNotFoundWarnings: true
-    }]
+    [
+      "@nuxt/typescript-build",
+      {
+        typeCheck: true,
+        ignoreNotFoundWarnings: true,
+      },
+    ],
   ],
   loaders: {
     ts: {
-      silent: true
+      silent: true,
     },
     tsx: {
-      silent: true
-    }
-  }
-}
+      silent: true,
+    },
+  },
+};
 ```
 
-ここの差分は僕のGithubに置いておきます。
+ここの差分は僕の Github に置いておきます。
 
-[Typescriptの設定を追記](https://github.com/GenkiMatsubara/genki-blog/commit/7abc4ab09ac6da5c39ee53da2c1d8d263abf8789)
+[Typescript の設定を追記](https://github.com/couragenki/genki-blog/commit/7abc4ab09ac6da5c39ee53da2c1d8d263abf8789)
 
-## 7.Runtimeの設定
+## 7.Runtime の設定
 
 まずはインストールを実行
 
@@ -198,7 +187,7 @@ https://typescript.nuxtjs.org/ja/guide/runtime.html
 
 `npm install @nuxt/typescript-runtime`
 
-その後package.jsonに
+その後 package.json に
 
 - `script`
 - `dependencies`
@@ -228,7 +217,7 @@ package.json
 
 上記の設定の記載が完了したら`npm i`でインストールしてくる。
 
-ログはこんなにnuxtのロゴが表示されます。
+ログはこんなに nuxt のロゴが表示されます。
 
 ![スクリーンショット 2020-06-13 18.54.20.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/27305cb8-0cd9-f0e9-2bb4-d9d711ba0ad1.png)
 
@@ -243,9 +232,9 @@ package.json
 ![スクリーンショット 2020-06-13 18.58.17.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/199085/0ffa85b5-8917-01a6-1712-f328a2e6a65b.png)
 
 ここの作業のコミット
-[runtimeの設定](https://github.com/GenkiMatsubara/genki-blog/commit/fa424efb7a88b05cfabc52cbce0a0f2c661126e2)
+[runtime の設定](https://github.com/couragenki/genki-blog/commit/fa424efb7a88b05cfabc52cbce0a0f2c661126e2)
 
-## 8.Lint設定
+## 8.Lint 設定
 
 インストール
 
@@ -262,13 +251,11 @@ package.json
 
 ```javascript
 module.exports = {
-  extends: [
-    '@nuxtjs/eslint-config-typescript'
-  ]
-}
+  extends: ["@nuxtjs/eslint-config-typescript"],
+};
 ```
 
-package.jsonのscriptにlintの実行を行うための記載
+package.json の script に lint の実行を行うための記載
 
 package.json
 
@@ -287,7 +274,7 @@ package.json
 
 ここの作業のコミット
 
-[Lintを追加](https://github.com/GenkiMatsubara/genki-blog/commit/16ce6d75a5ba7a73c0c3bfe646f34e8f49562eee)
+[Lint を追加](https://github.com/couragenki/genki-blog/commit/16ce6d75a5ba7a73c0c3bfe646f34e8f49562eee)
 
 ## 環境構築完了
 
@@ -295,4 +282,4 @@ package.json
 
 お疲れ様でした！
 
-[Nuxt.js + TypeScriptでの開発事始め](https://qiita.com/GenkiMatsubara/items/d223bf6023b9c6c3fe6a)に続きます。
+[Nuxt.js + TypeScript での開発事始め](https://qiita.com/couragenki/items/d223bf6023b9c6c3fe6a)に続きます。

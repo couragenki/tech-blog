@@ -4,29 +4,29 @@
       <div class="photopage__header">
         <div class="photopage__header__airplane">
           <a href="https://www.instagram.com/genki.matsubara/" target="_blank">
-            <img alt="飛行機アイコン" src="/common/airplane.svg" />
+            <img alt="飛行機アイコン" src="/common/airplane.svg">
           </a>
         </div>
         <nav class="photopage__header__sns">
           <ul class="photopage__header__sns__list">
             <li class="photopage__header__sns__list__icon">
               <a href="https://twitter.com/couragenki" target="_blank">
-                <img alt="twitterアイコン" src="/common/twitter.svg" />
+                <img alt="twitterアイコン" src="/common/twitter.svg">
               </a>
             </li>
             <li class="photopage__header__sns__list__icon">
-              <a href="https://github.com/GenkiMatsubara" target="_blank">
-                <img alt="Githubアイコン" src="/common/github.svg" />
+              <a href="https://github.com/couragenki" target="_blank">
+                <img alt="Githubアイコン" src="/common/github.svg">
               </a>
             </li>
             <li class="photopage__header__sns__list__icon">
-              <a href="https://qiita.com/GenkiMatsubara" target="_blank">
-                <img alt="Qiitaアイコン" src="/common/qiita.png" />
+              <a href="https://qiita.com/couragenki" target="_blank">
+                <img alt="Qiitaアイコン" src="/common/qiita.png">
               </a>
             </li>
             <li class="photopage__header__sns__list__icon">
               <a href="https://www.instagram.com/genki.matsubara/" target="_blank">
-                <img alt="instagramアイコン" src="/common/instagram.svg" />
+                <img alt="instagramアイコン" src="/common/instagram.svg">
               </a>
             </li>
           </ul>
@@ -34,10 +34,12 @@
       </div>
 
       <div class="photopage__intoro">
-        <h1 class="photopage__intoro__title">Go Out!</h1>
+        <h1 class="photopage__intoro__title">
+          Go Out!
+        </h1>
         <p class="photopage__intoro__text">
           外に行こう。まだ知らない街に行こう。
-          <br />新しい発見と思い出を求めて。
+          <br>新しい発見と思い出を求めて。
         </p>
       </div>
 
@@ -45,16 +47,22 @@
         <div class="list">
           <div class="item bule">
             <div class="photopage__photoblock__location">
-              <h2 class="photopage__photoblock__location__title">ひとり旅</h2>
-              <p class="photopage__photoblock__location__text">少ない荷物とたくさんの楽しみと</p>
+              <h2 class="photopage__photoblock__location__title">
+                ひとり旅
+              </h2>
+              <p class="photopage__photoblock__location__text">
+                少ない荷物とたくさんの楽しみと
+              </p>
             </div>
           </div>
           <div class="item" :style="{ backgroundImage: 'url(/photos/1.jpg)'}">
             <div class="photopage__photoblock__location">
-              <h3 class="photopage__photoblock__location__title">日光 ※記事準備中</h3>
+              <h3 class="photopage__photoblock__location__title">
+                日光 ※記事準備中
+              </h3>
               <p class="photopage__photoblock__location__text">
                 2018
-                <br />徳川が眠る古都を求めて
+                <br>徳川が眠る古都を求めて
               </p>
             </div>
           </div>
@@ -66,88 +74,108 @@
           :style="{ backgroundImage: 'url(/photos/2019-may-fukushima/main.jpeg)'}"
         >
           <div class="photopage__photoblock__location">
-            <h3 class="photopage__photoblock__location__title">福島</h3>
+            <h3 class="photopage__photoblock__location__title">
+              福島
+            </h3>
             <p class="photopage__photoblock__location__text">
               2019
-              <br />歴史豊かな街並みと温かみ
+              <br>歴史豊かな街並みと温かみ
             </p>
           </div>
         </n-link>
         <div class="list">
           <div class="item red">
             <div class="photopage__photoblock__location">
-              <h2 class="photopage__photoblock__location__title">日帰りお出かけ</h2>
-              <p class="photopage__photoblock__location__text">Oceans from above</p>
+              <h2 class="photopage__photoblock__location__title">
+                日帰りお出かけ
+              </h2>
+              <p class="photopage__photoblock__location__text">
+                Oceans from above
+              </p>
             </div>
           </div>
           <div class="item" :style="{ backgroundImage: 'url(/photos/3.jpg)'}">
             <div class="photopage__photoblock__location">
-              <h3 class="photopage__photoblock__location__title">浅草 ※記事準備中</h3>
-              <p class="photopage__photoblock__location__text">歴史情緒溢れる江戸っ子の町</p>
+              <h3 class="photopage__photoblock__location__title">
+                浅草 ※記事準備中
+              </h3>
+              <p class="photopage__photoblock__location__text">
+                歴史情緒溢れる江戸っ子の町
+              </p>
             </div>
           </div>
         </div>
         <div class="over" :style="{ backgroundImage: 'url(/photos/4.jpg)'}">
           <div class="photopage__photoblock__location">
-            <h3 class="photopage__photoblock__location__title">お台場 ※記事準備中</h3>
-            <p class="photopage__photoblock__location__text">海風とアトラクションを感じに</p>
+            <h3 class="photopage__photoblock__location__title">
+              お台場 ※記事準備中
+            </h3>
+            <p class="photopage__photoblock__location__text">
+              海風とアトラクションを感じに
+            </p>
           </div>
         </div>
       </div>
 
       <div class="photopage__end">
-        <h2 class="photopage__end__words">次はどこに出かける？</h2>
+        <h2 class="photopage__end__words">
+          次はどこに出かける？
+        </h2>
         <a href="https://www.instagram.com/genki.matsubara/" target="_blank">
           <div class="photopage__end__link">instagramの写真を見に行く</div>
         </a>
         <p class="photopage__end__messege">
           写真はiPhoneXとEOS kiss10で撮影
-          <br />またどこかで👋
+          <br>またどこかで👋
         </p>
 
-        <p class="photopage__end__sign">Genki</p>
+        <p class="photopage__end__sign">
+          Genki
+        </p>
 
         <div class="photopage__end__icon">
           <div class="photopage__end__icon__wrapper">
-            <img class="photopage__end__icon__img" src="/common/profile-icon.jpg" />
+            <img class="photopage__end__icon__img" src="/common/profile-icon.jpg">
           </div>
         </div>
 
-        <p class="photopage__end__name">Genki Matsubara</p>
+        <p class="photopage__end__name">
+          Genki Matsubara
+        </p>
       </div>
     </div>
   </DefaultTemplate>
 </template>
 
 <script>
-import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
+import DefaultTemplate from '@/components/Templates/defaulttemplate.vue'
 export default {
   components: {
-    DefaultTemplate,
+    DefaultTemplate
   },
   head: {
-    titleTemplate: "Go Out! | couragenki",
+    titleTemplate: 'Go Out! | couragenki',
     meta: [
       {
-        hid: "description",
-        name: "description",
+        hid: 'description',
+        name: 'description',
         content:
-          "写真家になりたかった僕が趣味の写真と旅行を楽しんでいるだけのページです。",
+          '写真家になりたかった僕が趣味の写真と旅行を楽しんでいるだけのページです。'
       },
       {
-        hid: "og:title",
-        property: "og:title",
-        content: "Go Out! | couragenki",
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Go Out! | couragenki'
       },
       {
-        hid: "og:description",
-        name: "og:description",
+        hid: 'og:description',
+        name: 'og:description',
         content:
-          "写真家になりたかった僕が趣味の写真と旅行を楽しんでいるだけのページです。",
-      },
-    ],
-  },
-};
+          '写真家になりたかった僕が趣味の写真と旅行を楽しんでいるだけのページです。'
+      }
+    ]
+  }
+}
 </script>
 
 <style lang="scss" scoped>

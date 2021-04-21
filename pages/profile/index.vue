@@ -15,36 +15,36 @@
       <div class="top-container">
         <div class="top-profile">
           <div class="top-profile-container">
-            <img alt="プロフィール画像" width="512" src="/common/profile-icon.jpg" />
+            <img alt="プロフィール画像" width="512" src="/common/profile-icon.jpg">
           </div>
         </div>
         <div class="top-intoro">
           <h2>自己紹介</h2>
           <p>
             長崎出身の25歳です。
-            <br />22歳の時に生まれて初めてパソコンを購入しプログラミングを始めました。
-            <br />日々次から次に分からないことが出てくるので、インプットしたらこちらのブログにアウトプットしていきます。
+            <br>22歳の時に生まれて初めてパソコンを購入しプログラミングを始めました。
+            <br>日々次から次に分からないことが出てくるので、インプットしたらこちらのブログにアウトプットしていきます。
           </p>
           <div class="sns">
             <ul class="sns__list">
               <li class="sns__list__icon">
                 <a href="https://twitter.com/couragenki" target="_blank">
-                  <img alt="twitterアイコン" src="/common/twitter.svg" />
+                  <img alt="twitterアイコン" src="/common/twitter.svg">
                 </a>
               </li>
               <li class="sns__list__icon">
-                <a href="https://github.com/GenkiMatsubara" target="_blank">
-                  <img alt="Githubアイコン" src="/common/github.svg" />
+                <a href="https://github.com/couragenki" target="_blank">
+                  <img alt="Githubアイコン" src="/common/github.svg">
                 </a>
               </li>
               <li class="sns__list__icon">
-                <a href="https://qiita.com/GenkiMatsubara" target="_blank">
-                  <img alt="Qiitaアイコン" src="/common/qiita.png" />
+                <a href="https://qiita.com/couragenki" target="_blank">
+                  <img alt="Qiitaアイコン" src="/common/qiita.png">
                 </a>
               </li>
               <li class="sns__list__icon">
                 <a href="https://www.instagram.com/genki.matsubara/" target="_blank">
-                  <img alt="instagramアイコン" src="/common/instagram.svg" />
+                  <img alt="instagramアイコン" src="/common/instagram.svg">
                 </a>
               </li>
             </ul>
@@ -61,13 +61,13 @@
 </template>
 
 <script>
-import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
-import BlogCrad from "@/components/Molecules/blogcard.vue";
-import PostCards from "@/components/Organisms/postcards.vue";
-import Header from "@/components/Organisms/header.vue";
-import Navigation from "@/components/Organisms/navigation.vue";
-import Container from "@/components/Organisms/container.vue";
-import Footer from "@/components/Organisms/footer.vue";
+import DefaultTemplate from '@/components/Templates/defaulttemplate.vue'
+import BlogCrad from '@/components/Molecules/blogcard.vue'
+import PostCards from '@/components/Organisms/postcards.vue'
+import Header from '@/components/Organisms/header.vue'
+import Navigation from '@/components/Organisms/navigation.vue'
+import Container from '@/components/Organisms/container.vue'
+import Footer from '@/components/Organisms/footer.vue'
 
 export default {
   components: {
@@ -77,27 +77,27 @@ export default {
     Header,
     Navigation,
     Container,
-    Footer,
+    Footer
   },
   watchQuery: true,
-  async asyncData({ $content, route }) {
-    const q = route.query.q;
+  async asyncData ({ $content, route }) {
+    const q = route.query.q
 
     // 前投稿から投稿日が新しい順12件に取得する
-    let query = $content("", { deep: true }).sortBy("date", "desc").limit(12);
+    let query = $content('', { deep: true }).sortBy('date', 'desc').limit(12)
 
     if (q) {
-      query = query.search("title", q);
+      query = query.search('title', q)
     }
 
-    const tech = await query.fetch();
+    const tech = await query.fetch()
 
     return {
       q,
-      tech,
-    };
-  },
-};
+      tech
+    }
+  }
+}
 </script>
 
 <style scoped lang="scss">
