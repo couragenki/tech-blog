@@ -78,14 +78,12 @@
 
 <script>
 import Introduction from '@/components/Molecules/introduction.vue'
-import BlogCrad from '@/components/Molecules/blogcard.vue'
 export default {
   name: 'Sidebar',
   components: {
-    BlogCrad,
     Introduction
   },
-  async asyncData ({ $content, route }) {
+  async asyncData ({ $content }) {
     const query = $content('', { deep: true }).sortBy('date', 'desc')
 
     const tech = await query.fetch()

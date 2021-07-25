@@ -17,7 +17,7 @@ export default {
     BackButton
   },
   async asyncData ({ $content, params }) {
-    const { catergory, family, slug } = params
+    const { catergory } = params
     const query = $content('business', catergory, { deep: true }).sortBy(
       'date',
       'desc'

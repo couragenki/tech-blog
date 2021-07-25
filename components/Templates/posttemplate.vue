@@ -31,7 +31,6 @@
 
 <script>
 import Header from '@/components/Organisms/header.vue'
-import Navigation from '@/components/Organisms/navigation.vue'
 import Container from '@/components/Organisms/container.vue'
 import Footer from '@/components/Organisms/footer.vue'
 import PostContent from '@/components/Organisms/postcontent.vue'
@@ -39,7 +38,6 @@ export default {
   name: 'PostTemplate',
   components: {
     Header,
-    Navigation,
     Container,
     Footer,
     PostContent

@@ -9,12 +9,10 @@
 <script>
 import DefaultTemplate from '@/components/Templates/defaulttemplate.vue'
 import PostCards from '@/components/Organisms/postcards.vue'
-import BackButton from '@/components/Atoms/backbutton.vue'
 export default {
   components: {
     DefaultTemplate,
-    PostCards,
-    BackButton
+    PostCards
   },
   async asyncData ({ $content }) {
     const query = $content('business', { deep: true }).sortBy('date', 'desc')
