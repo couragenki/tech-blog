@@ -1,15 +1,15 @@
 <template>
   <PostTemplate
-    v-if="marketing.title"
+    v-if="business.title"
     :isPostsPage="true"
-    :post="marketing"
+    :post="business"
     :catergory="catergory"
     :family="family"
   />
   <DefaultTemplate v-else :isPostsPage="true">
-    <BackButton :link="'/marketing/' + catergory" :text="catergory + 'の記事一覧へ戻る'" />
+    <BackButton :link="'/business/' + catergory" :text="catergory + 'の記事一覧へ戻る'" />
     <h2>{{ family }}に関する記事一覧</h2>
-    <PostCards :data="marketing" />
+    <PostCards :data="business" />
   </DefaultTemplate>
 </template>
 
@@ -63,9 +63,9 @@ export default {
   },
   async asyncData({ $content, params }) {
     const { catergory, family, slug } = params;
-    const marketing = await $content("marketing", catergory, family).fetch();
+    const business = await $content("business", catergory, family).fetch();
     return {
-      marketing,
+      business,
       catergory,
       family,
     };

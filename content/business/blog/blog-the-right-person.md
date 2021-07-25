@@ -1,11 +1,11 @@
 ---
 title: ブログが向いている人とは？
 description: どんな人がブログを執筆するのに向いているのか解説していきます。
-type: marketing
+type: business
 created_at: 2019-01-16
 updated_at: null
 date: 2019-01-16
-image: /img/marketing.jpg
+image: /img/business.jpg
 tags:
   - blog
 ---

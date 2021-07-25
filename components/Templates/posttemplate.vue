@@ -12,7 +12,7 @@
       class="hero-bg"
       :class="{
         green: post.type == 'tech',
-        red: post.type == 'marketing',
+        red: post.type == 'business',
         yellow: post.type == 'notes',
       }"
     />

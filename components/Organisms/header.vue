@@ -4,37 +4,51 @@
       <!-- ロゴ -->
       <div class="header__title">
         <p class="header__title__text">
-          <n-link to="/">couragenki</n-link>
+          <n-link to="/">
+            couragenki
+          </n-link>
         </p>
       </div>
       <!-- カテゴリー -->
       <ul class="header__category">
         <li>
-          <n-link to="/profile">PROFILE</n-link>
+          <n-link to="/profile">
+            PROFILE
+          </n-link>
         </li>
         <li>
-          <n-link to="/tech">TECH</n-link>
+          <n-link to="/tech">
+            TECH
+          </n-link>
         </li>
         <li>
-          <n-link to="/marketing">MARKETING</n-link>
+          <n-link to="/business">
+            business
+          </n-link>
         </li>
       </ul>
 
       <div class="header__mobile">
         <div class="menu">
           <label for="type1">
-            <img src="/common/menu.svg" />
+            <img src="/common/menu.svg">
           </label>
-          <input type="checkbox" id="type1" class="accordion" />
+          <input id="type1" type="checkbox" class="accordion">
           <ul id="links1">
+            <!-- <li>
+              <n-link to="/profile">
+                PROFILE
+              </n-link>
+            </li> -->
             <li>
-              <n-link to="/profile">PROFILE</n-link>
+              <n-link to="/tech">
+                TECH
+              </n-link>
             </li>
             <li>
-              <n-link to="/tech">TECH</n-link>
-            </li>
-            <li>
-              <n-link to="/marketing">MARKETING</n-link>
+              <n-link to="/business">
+                BUSINESS
+              </n-link>
             </li>
           </ul>
         </div>
@@ -45,8 +59,8 @@
 
 <script>
 export default {
-  name: "Header",
-};
+  name: 'Header'
+}
 </script>
 <style lang="scss" scoped>
 .header {

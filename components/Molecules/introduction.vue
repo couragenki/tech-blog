@@ -6,11 +6,6 @@
     <div class="intoro__icon">
       <img class="intoro__icon__img" alt="プロフィール画像" width="512" src="/common/profile-icon.jpg">
     </div>
-    <!-- <div class="intoro__sectiontext">---ひとこと---</div>
-    <p class="intoro__sentence">
-      長崎出身の25歳です。
-      <br />負けん気だけで生きてきました。
-    </p>-->
     <div class="intoro__sectiontext">
       ---SNS---
     </div>

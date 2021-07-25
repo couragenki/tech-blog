@@ -1,41 +1,61 @@
 <template>
   <div class="sidebar">
     <div class="about">
-      <p class="about__title">Welcom to Couragenki!!</p>
-      <p>WEB開発全般とマーケティングの学んだ内容をアウトプットしていきます。</p>
+      <p class="about__title">
+        Welcom to Couragenki!!
+      </p>
+      <p>WEB開発全般とビジネスサイドの学んだ内容をアウトプットしていきます。</p>
       <p>Courage(勇気)とGenki(元気)を届けるWEBブログです。</p>
     </div>
     <div class="intoro">
       <Introduction />
     </div>
     <div class="category">
-      <p class="category__title">カテゴリー</p>
+      <p class="category__title">
+        カテゴリー
+      </p>
       <ul>
         <li>
-          <n-link to="/tech">テック</n-link>
+          <n-link to="/tech">
+            テック
+          </n-link>
           <ul class="category__links">
             <li>
-              <n-link to="/tech/frontend">フロントエンド</n-link>
+              <n-link to="/tech/frontend">
+                フロントエンド
+              </n-link>
             </li>
             <li>
-              <n-link to="/tech/backend">バックエンド</n-link>
+              <n-link to="/tech/backend">
+                バックエンド
+              </n-link>
             </li>
             <li>
-              <n-link to="/tech/infra">インフラ</n-link>
+              <n-link to="/tech/infra">
+                インフラ
+              </n-link>
             </li>
             <li>
-              <n-link to="/tech/git">Git</n-link>
+              <n-link to="/tech/git">
+                Git
+              </n-link>
             </li>
           </ul>
         </li>
         <li>
-          <n-link to="/marketing">マーケティング</n-link>
+          <n-link to="/business">
+            ビジネスサイド
+          </n-link>
           <ul class="category__links">
             <li>
-              <n-link to="/marketing/sns">SNS</n-link>
+              <n-link to="/business/sns">
+                SNS
+              </n-link>
             </li>
             <li>
-              <n-link to="/marketing/blog">ブログ</n-link>
+              <n-link to="/business/blog">
+                ブログ
+              </n-link>
             </li>
           </ul>
         </li>
@@ -57,27 +77,27 @@
 </template>
 
 <script>
-import Introduction from "@/components/Molecules/introduction.vue";
-import BlogCrad from "@/components/Molecules/blogcard.vue";
+import Introduction from '@/components/Molecules/introduction.vue'
+import BlogCrad from '@/components/Molecules/blogcard.vue'
 export default {
-  name: "Sidebar",
+  name: 'Sidebar',
   components: {
     BlogCrad,
-    Introduction,
+    Introduction
   },
-  async asyncData({ $content, route }) {
-    let query = $content("", { deep: true }).sortBy("date", "desc");
+  async asyncData ({ $content, route }) {
+    const query = $content('', { deep: true }).sortBy('date', 'desc')
 
-    const tech = await query.fetch();
+    const tech = await query.fetch()
     // const data = tech.sort(function(a,b){
     //   return new Date(b.date) - new Date(a.date);
     // })
 
     return {
-      tech,
-    };
-  },
-};
+      tech
+    }
+  }
+}
 </script>
 <style lang="scss" scoped>
 .sidebar {

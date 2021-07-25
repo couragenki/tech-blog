@@ -65,11 +65,11 @@
               トップ
             </n-link>
           </li>
-          <li>
+          <!-- <li>
             <n-link to="/profile">
               自己紹介
             </n-link>
-          </li>
+          </li> -->
           <li>
             <n-link to="/policy">
               プライバシーポリシー
@@ -103,18 +103,18 @@
           </li>
         </ul>
         <hr class="footer__line">
-        <n-link to="/marketing" tag="div" class="footer__subintoro">
-          MARKETING
+        <n-link to="/business" tag="div" class="footer__subintoro">
+          BUSINESS
         </n-link>
 
         <ul class="footer__links">
           <li>
-            <n-link to="/marketing/sns">
+            <n-link to="/business/sns">
               SNS
             </n-link>
           </li>
           <li>
-            <n-link to="/marketing/blog">
+            <n-link to="/business/blog">
               ブログ
             </n-link>
           </li>

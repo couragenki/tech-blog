@@ -45,8 +45,8 @@ export default {
     routes: async () => {
       const { $content } = require('@nuxt/content')
       const tech = await $content("tech", { deep: true }).only(['path']).fetch()
-      const marketing = await $content("marketing", { deep: true }).only(['path']).fetch()
-      const posts = Object.assign(tech, marketing);
+      const business = await $content("business", { deep: true }).only(['path']).fetch()
+      const posts = Object.assign(tech, business);
 
       return posts.map(article => article.path)
     }

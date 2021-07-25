@@ -9,7 +9,7 @@
         class="card-category"
         :class="{
           green: blogCategory == 'tech',
-          red: blogCategory == 'marketing',
+          red: blogCategory == 'business',
         }"
       >
         {{ blogCategory }}
@@ -19,7 +19,7 @@
           class="card-title-text"
           :class="{
             green: blogCategory == 'tech',
-            red: blogCategory == 'marketing',
+            red: blogCategory == 'business',
           }"
         >
           {{ blogTitle }}
@@ -31,7 +31,7 @@
         class="card-category"
         :class="{
           green: blogCategory == 'tech',
-          red: blogCategory == 'marketing',
+          red: blogCategory == 'business',
         }"
       >
         {{ blogCategory }}
@@ -41,7 +41,7 @@
           class="card-title-text"
           :class="{
             green: blogCategory == 'tech',
-            red: blogCategory == 'marketing',
+            red: blogCategory == 'business',
           }"
         >
           {{ blogTitle }}

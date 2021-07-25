@@ -1,11 +1,11 @@
 ---
 title: 【読書ブログ】デジタル時代の基礎知識『SNSマーケティング』 「つながり」と「共感」で利益を生み出す新しいルール
 description: SNSマーケティングについて網羅的に解説したデジタル時代の基礎知識『SNSマーケティング』 「つながり」と「共感」で利益を生み出す新しいルールを読んで学んだことを解説していきます。
-type: marketing
+type: business
 created_at: 2019-05-05
 updated_at: null
 date: 2019-05-05
-image: /img/marketing.jpg
+image: /img/business.jpg
 tags:
   - SNS
 ---
