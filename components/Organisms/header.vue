@@ -11,11 +11,11 @@
       </div>
       <!-- カテゴリー -->
       <ul class="header__category">
-        <li>
+        <!-- <li>
           <n-link to="/profile">
             PROFILE
           </n-link>
-        </li>
+        </li> -->
         <li>
           <n-link to="/tech">
             TECH
@@ -23,7 +23,7 @@
         </li>
         <li>
           <n-link to="/business">
-            business
+            BUSINESS
           </n-link>
         </li>
       </ul>
