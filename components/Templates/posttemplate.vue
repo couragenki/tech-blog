@@ -5,24 +5,24 @@
       v-if="post.image"
       class="post__img"
       :style="{ backgroundImage: 'url(' + post.image + ')' }"
-    ></div>
+    />
 
     <div
+      v-else
       class="hero-bg"
       :class="{
         green: post.type == 'tech',
         red: post.type == 'marketing',
         yellow: post.type == 'notes',
       }"
-      v-else
-    ></div>
+    />
 
-    <Container :isPostsPage="isPostsPage" :isSidebar="isSidebar">
+    <Container :is-posts-page="isPostsPage" :is-sidebar="isSidebar">
       <PostContent
-        v-on="setMeta(post)"
         :post="post"
         :catergory="catergory"
         :family="family"
+        v-on="setMeta(post)"
       />
     </Container>
     <Footer />
@@ -30,93 +30,93 @@
 </template>
 
 <script>
-import Header from "@/components/Organisms/header.vue";
-import Navigation from "@/components/Organisms/navigation.vue";
-import Container from "@/components/Organisms/container.vue";
-import Footer from "@/components/Organisms/footer.vue";
-import PostContent from "@/components/Organisms/postcontent.vue";
+import Header from '@/components/Organisms/header.vue'
+import Navigation from '@/components/Organisms/navigation.vue'
+import Container from '@/components/Organisms/container.vue'
+import Footer from '@/components/Organisms/footer.vue'
+import PostContent from '@/components/Organisms/postcontent.vue'
 export default {
-  name: "PostTemplate",
+  name: 'PostTemplate',
   components: {
     Header,
     Navigation,
     Container,
     Footer,
-    PostContent,
+    PostContent
   },
   props: {
     isPostsPage: {
       type: Boolean,
       default: () => {
-        return false;
-      },
+        return false
+      }
     },
     isSidebar: {
       type: Boolean,
       default: () => {
-        return true;
-      },
+        return true
+      }
     },
     post: {
       type: Object,
       default: () => {
-        return {};
-      },
+        return {}
+      }
     },
     catergory: {
       type: String,
       default: () => {
-        return null;
-      },
+        return null
+      }
     },
     family: {
       type: String,
       default: () => {
-        return null;
-      },
-    },
+        return null
+      }
+    }
   },
-  data() {
+  data () {
     return {
-      pageMetaTitle: "",
-      pageMetaDescription: "",
-      pageMetaImg: "",
-    };
+      pageMetaTitle: '',
+      pageMetaDescription: '',
+      pageMetaImg: ''
+    }
   },
-  head() {
-    const metaTitle = this.pageMetaTitle;
-    const metaDescription = this.pageMetaDescription;
-    const metaImg = this.pageMetaImg;
+  methods: {
+    setMeta (post) {
+      this.pageMetaTitle = post.title
+      this.pageMetaDescription = post.description
+      this.pageMetaImg = post.image
+    }
+  },
+  head () {
+    const metaTitle = this.pageMetaTitle
+    const metaDescription = this.pageMetaDescription
+    const metaImg = this.pageMetaImg
     return {
       title: metaTitle,
       meta: [
         {
-          hid: "og:title",
-          property: "og:title",
-          content: metaTitle + " | couragenki",
+          hid: 'og:title',
+          property: 'og:title',
+          content: metaTitle + ' | couragenki'
         },
         {
-          hid: "description",
-          name: "description",
-          content: metaDescription,
+          hid: 'description',
+          name: 'description',
+          content: metaDescription
         },
         {
-          hid: "og:description",
-          name: "og:description",
-          content: metaDescription,
+          hid: 'og:description',
+          name: 'og:description',
+          content: metaDescription
         },
-        { hid: "og:image", property: "og:image", content: metaImg },
-      ],
-    };
-  },
-  methods: {
-    setMeta(post) {
-      this.pageMetaTitle = post.title;
-      this.pageMetaDescription = post.description;
-      this.pageMetaImg = post.image;
-    },
-  },
-};
+        { hid: 'og:image', property: 'og:image', content: metaImg }
+      ]
+    }
+  }
+}
 </script>
 <style lang="scss" scoped>
 .post-heroimg {

@@ -1,8 +1,8 @@
 <template>
   <nuxt-link class="card" :to="link">
     <div
-      class="card-img-top"
       v-if="blogImage"
+      class="card-img-top"
       :style="{ backgroundImage: 'url(' + blogImage + ')' }"
     >
       <div
@@ -26,7 +26,7 @@
         </p>
       </div>
     </div>
-    <div class="card-img-top shape" v-else>
+    <div v-else class="card-img-top shape">
       <div
         class="card-category"
         :class="{
@@ -49,74 +49,78 @@
       </div>
     </div>
     <div class="card-body">
-      <p class="card-date">{{ setDate(blogDate) }}</p>
-      <ul class="card-tag" v-for="(item, index) in blogTags" :key="index">
+      <p class="card-date">
+        {{ setDate(blogDate) }}
+      </p>
+      <ul v-for="(item, index) in blogTags" :key="index" class="card-tag">
         <li>#{{ item }}&nbsp;</li>
       </ul>
-      <p class="card-text">{{ blogText }}</p>
+      <p class="card-text">
+        {{ blogText }}
+      </p>
     </div>
   </nuxt-link>
 </template>
 
 <script>
 export default {
-  name: "BlogCrad",
+  name: 'BlogCrad',
   props: {
     link: {
       type: String,
       default: () => {
-        return "/tech";
-      },
+        return '/tech'
+      }
     },
     blogCategory: {
       type: String,
       default: () => {
-        return "カテゴリー";
-      },
+        return 'カテゴリー'
+      }
     },
     blogImage: {
       type: String,
       default: () => {
-        return "/img/sample1.jpg";
-      },
+        return '/img/sample1.jpg'
+      }
     },
     blogTitle: {
       type: String,
       default: () => {
-        return "記事タイトル";
-      },
+        return '記事タイトル'
+      }
     },
     blogDate: {
       type: String,
       default: () => {
-        return null;
-      },
+        return null
+      }
     },
     blogText: {
       type: String,
       default: () => {
-        return "記事紹介文";
-      },
+        return '記事紹介文'
+      }
     },
     blogTags: {
       type: Array,
       default: () => {
-        return ["tag1", "tag2"];
-      },
-    },
+        return ['tag1', 'tag2']
+      }
+    }
   },
   methods: {
-    setDate(date) {
-      if (!date) return "不明";
+    setDate (date) {
+      if (!date) { return '不明' }
 
-      const y = date.substring(0, 4);
-      const m = date.substring(5, 7);
-      const d = date.substring(8, 10);
+      const y = date.substring(0, 4)
+      const m = date.substring(5, 7)
+      const d = date.substring(8, 10)
 
-      return y + "年" + m + "月" + d + "日";
-    },
-  },
-};
+      return y + '年' + m + '月' + d + '日'
+    }
+  }
+}
 </script>
 <style scoped lang="scss">
 @import "~~/node_modules/bootstrap/scss/bootstrap.scss";

@@ -6,36 +6,36 @@
 </template>
 
 <script>
-import DefaultTemplate from "@/components/Templates/defaulttemplate.vue";
-import BlogCrad from "@/components/Molecules/blogcard.vue";
-import PostCards from "@/components/Organisms/postcards.vue";
-import Header from "@/components/Organisms/header.vue";
-import Container from "@/components/Organisms/container.vue";
-import Footer from "@/components/Organisms/footer.vue";
+import DefaultTemplate from '@/components/Templates/defaulttemplate.vue'
+import BlogCrad from '@/components/Molecules/blogcard.vue'
+import PostCards from '@/components/Organisms/postcards.vue'
+import Header from '@/components/Organisms/header.vue'
+import Container from '@/components/Organisms/container.vue'
+import Footer from '@/components/Organisms/footer.vue'
 
 export default {
-  head: {
-    title: "トップページ",
-  },
   components: {
     DefaultTemplate,
     BlogCrad,
     PostCards,
     Header,
     Container,
-    Footer,
+    Footer
   },
-  watchQuery: true,
-  async asyncData({ $content }) {
-    let query = $content("", { deep: true }).sortBy("date", "desc");
-    const tech = await query.fetch();
+  async asyncData ({ $content }) {
+    const query = $content('', { deep: true }).sortBy('date', 'desc')
+    const tech = await query.fetch()
     const data = tech.sort(function (a, b) {
-      return new Date(b.date) - new Date(a.date);
-    });
+      return new Date(b.date) - new Date(a.date)
+    })
 
-    return { data };
+    return { data }
   },
-};
+  head: {
+    title: 'トップページ'
+  },
+  watchQuery: true
+}
 </script>
 
 <style scoped lang="scss">

@@ -1,31 +1,31 @@
 <template>
-  <PostTemplate :isPostsPage="true" :post="article" />
+  <PostTemplate :is-posts-page="true" :post="article" />
 </template>
 
 <script>
-import PostTemplate from "@/components/Templates/posttemplate.vue";
+import PostTemplate from '@/components/Templates/posttemplate.vue'
 export default {
   components: {
-    PostTemplate,
+    PostTemplate
   },
-  data() {
-    return {
-      pageTitle: '',
-      pageDescription: '',
-    };
-  },
-  async asyncData({ $content, params, error }) {
-    let article;
+  async asyncData ({ $content, params, error }) {
+    let article
 
     try {
-      article = await $content("tech", params.slug).fetch();
+      article = await $content('tech', params.slug).fetch()
     } catch (e) {
-      error({ message: "tech-data not found" });
+      error({ message: 'tech-data not found' })
     }
 
     return {
-      article,
-    };
+      article
+    }
   },
-};
+  data () {
+    return {
+      pageTitle: '',
+      pageDescription: ''
+    }
+  }
+}
 </script>
